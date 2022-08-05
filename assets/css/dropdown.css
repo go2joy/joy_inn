@@ -3,13 +3,13 @@
   display: inline-block;
   background-color: white;
   border: none;
-  color: #e77026;
+  color: #ff6400;
   display: inline-block;
   cursor: pointer;
 }
 .drop-btn::after {
   border: 1px solid;
-  background-color: #e77026;
+  background-color: #ff6400;
   content: '';
   display: block;
   height: 4px;

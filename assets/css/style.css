@@ -1,23 +1,36 @@
 body {
   font-size: 12px;
   font-family: sans-serif;
-  color: #000;
+  color: #0000;
+  margin: 0;
 }
+
 ul{
   list-style: none;
+}
+.container {
+  margin: 0 24VH;;
 }
 .row,
 .flex {
   display: flex;
   gap: 10px;
 }
-.header-label {
-  font-size: 1rem;
-  color: #504848;
-}
 .logo-image {
   width: 150px;
   height: 80px;
+}
+.gap-52 {
+  gap: 52px
+}
+.logo-social {
+  width: 30px;
+  height: 28px;
+}
+.logo-contract {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
 }
 .center {
   text-align: center;
@@ -28,26 +41,32 @@ ul{
 .right {
   text-align: right;
 }
-.header_right {
+.align-right {
   justify-content: end;
 }
 .mr-12 {
   margin-right: 12px !important;
 }
+.mb-12 {
+  margin-bottom: 12px !important;
+}
+.pt-100 {
+  padding-top: 100px;
+}
 .bold {
   font-weight: bold;
 }
 .login-button {
-  background-color: #e77026;
+  background-color: #ff6400;
   border-radius: 8px;
   width: 120px;
   height: 40px;
   margin: auto 0;
   border: none;
-  color: #fff;
+  color: #ffffff;
 }
 .seperate {
-  background-color: #e9e6e6;
+  background-color: #cccccc;
   height: 32px;
   width: 2px;
 }
@@ -62,6 +81,18 @@ ul{
 }
 .ver-center {
   margin: auto 0;
+}
+.homepage_footer {
+  position: absolute;
+  bottom: 0;
+  height: 400px;
+  width: 100%;
+  background-image: linear-gradient(90deg, #ff6400, #feb22b );
+  color: #ffffff;
+}
+.homepage_header {
+  font-size: 1rem;
+  color: #7f7f7f;
 }
 @media (min-width: 768px) {
   .col-md-3, .col-md-8 {
