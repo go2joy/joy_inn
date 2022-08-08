@@ -1,7 +1,7 @@
 body {
   font-size: 12px;
   font-family: sans-serif;
-  color: #0000;
+  color: #000;
   margin: 0;
 }
 
@@ -10,6 +10,60 @@ ul{
 }
 .container {
   margin: 0 24VH;;
+}
+.homepage {
+  flex-direction: column;
+}
+.homepage_header {
+  font-size: 1rem;
+  color: #7f7f7f;
+}
+.homepage_main {
+  text-align: center;
+}
+.homepage_banner {
+  position: relative;
+  height: 300px;
+  font-size: 14px;
+  color: #ffff;
+  margin: 0;
+  padding: 0;
+}
+.homepage_four-value-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.four-value_img {
+  width: 80px;
+  height: 120px;
+}
+.four-value_label{
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  margin: 0 12px;
+}
+.four-value_label p {
+  margin: 12px 0;
+}
+.four-value_label--organe {
+  color: #ff6400;
+  font-weight: 600;
+}
+.four-value_label--size {
+  font-size: 20px;
+}
+.homepage_footer {
+  bottom: 0;
+  position: absolute;
+  max-height: 380px;
+  width: 100%;
+  background-image: linear-gradient(90deg, #ff6400, #feb22b );
+  color: #ffffff;
+}
+.footer__container {
+  padding-top: 50px;
 }
 .row,
 .flex {
@@ -23,14 +77,16 @@ ul{
 .gap-52 {
   gap: 52px
 }
-.logo-social {
-  width: 30px;
-  height: 28px;
+.social {
+  margin: 15px 15px 30px;
+}
+.social__logo {
+  font-size: 22px;
+  margin-right: 12px;
 }
 .logo-contract {
-  width: 20px;
-  height: 20px;
-  fill: #ffffff;
+  font-size: 16px;
+  margin-right: 12px;
 }
 .center {
   text-align: center;
@@ -50,9 +106,6 @@ ul{
 .mb-12 {
   margin-bottom: 12px !important;
 }
-.pt-100 {
-  padding-top: 100px;
-}
 .bold {
   font-weight: bold;
 }
@@ -65,10 +118,19 @@ ul{
   border: none;
   color: #ffffff;
 }
-.seperate {
+.globe-icon {
+  font-size: 16px;
+  margin-right: 8px;
+}
+.ver-seperate {
   background-color: #cccccc;
   height: 32px;
   width: 2px;
+}
+.hor-seperate {
+  background-color: #cccccc;
+  height: 2px;
+  width: 100%;
 }
 .col-md-3, .col-md-8 {
   position: relative;
@@ -82,18 +144,7 @@ ul{
 .ver-center {
   margin: auto 0;
 }
-.homepage_footer {
-  position: absolute;
-  bottom: 0;
-  height: 400px;
-  width: 100%;
-  background-image: linear-gradient(90deg, #ff6400, #feb22b );
-  color: #ffffff;
-}
-.homepage_header {
-  font-size: 1rem;
-  color: #7f7f7f;
-}
+
 @media (min-width: 768px) {
   .col-md-3, .col-md-8 {
       float: left;
