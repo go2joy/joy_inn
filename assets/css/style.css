@@ -1,7 +1,7 @@
 body {
   font-size: 12px;
   font-family: 'Averta Std CY';
-  color: #000;
+  color: #333333;
   margin: 0;
 }
 ul{
@@ -17,6 +17,11 @@ ul{
 .homepage_header {
   font-size: 1rem;
   color: #7f7f7f;
+}
+.header-label {
+  font-size: 16px;
+  line-height: 20px;
+  color: #656565;
 }
 .homepage_main {
   text-align: center;
@@ -85,15 +90,17 @@ ul{
 }
 .content-box_label--bold {
   font-weight: 600;
-  font-size: 15px;
+  font-size: 22px;
+  margin-bottom: 0 !important;
 }
 .content-box .content-box_label--grey {
-  color: #7f7f7f;
-  font-size: 12px;
+  color: #808080;
+  font-weight: 400;
+  font-size: 16px;
 }
 .content-box_icon {
-  width: 50px;
-  height: 50px;
+  width: 57.73px;
+  height: 57.73px;
   margin: 0 auto;
 }
 .content-box:hover {
@@ -127,13 +134,14 @@ ul{
   transform: matrix(-0.99, -0.09, 0.17, -1, 0, 0);
 }
 .box_lable-1 {
-  font-style: Semibold;
-  font-size: 32px;
+  font-weight: 600;
+  font-size: 32px;  
   padding: 0 42px;
 }
 .box_lable-2 {
-  font-style: Regular;
+  font-weight: 400;
   font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
 }
 .video-link {
   top: 262px;
@@ -152,6 +160,9 @@ ul{
   font-weight: 600;
   font-size: 36px !important;
 }
+.five-sense {
+  position: relative;
+}
 .five-sense-content{
   font-weight: 400;
   font-size: 16px;
@@ -169,6 +180,13 @@ ul{
 }
 .content_left {
   flex-direction: column;
+}
+.content_right {
+  width: 1200px;
+  height: 576px;
+  position: absolute;
+  top: 6px;
+  right: 0;
 }
 .slider-content {
   width: 300px;
@@ -201,6 +219,20 @@ ul{
 .five-sense-bt.prev {
   float: left;
   margin-right: 20px;
+}
+.swiper-button-disabled {
+  filter: hue-rotate(40deg) saturate(0.5) brightness(390%) saturate(4); 
+}
+.swiper-slide.five-sense-detail-slide {
+  height: 80%;
+  opacity: 0.5;
+  margin: auto 0;
+  border-radius: 15px;
+}
+.swiper-slide.five-sense-detail-slide.swiper-slide-active {
+  height: 100%;
+  opacity: 1;
+  border-radius: 15px;
 }
 .bt-next {
   right: -66px !important;
@@ -298,7 +330,7 @@ ul{
   width: 100%;
   margin-bottom: 20px;
 }
-.col-md-3, .col-md-8 {
+.col-md-3, .col-md-8, .col-md-9 {
   position: relative;
   min-height: 1px;
   padding-right: 15px;
@@ -312,13 +344,16 @@ ul{
 }
 
 @media (min-width: 768px) {
-  .col-md-3, .col-md-8 {
-      float: left;
+  .col-md-3, .col-md-8, .col-md-9 {
+    float: left;
   }
   .col-md-3 {
-      width: 29.16666667%;
+    width: 29.16666667%;
   }
   .col-md-8 {
-      width: 70.83333333%;
+    width: 70.83333333%;
+  }
+  .col-md-9 {
+    width: 79.16667%;
   }
 }
