@@ -3,6 +3,10 @@
 ```
 /
 |__index.html
+|__assets/
+    |__image/
+    |__css/
+    |__js/
 |__about us/
     |__index.html
 |__branch/
