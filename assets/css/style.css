@@ -143,10 +143,10 @@ ul{
   color: rgba(255, 255, 255, 0.8);
 }
 .video-link {
-  top: 262px;
-  position: absolute;
-  left: 140px;
+  transform: scale(1) translateY(-374px);
   border-radius: 15px;
+  width: 60vw;
+  height: 78vh;
 }
 .five-swiper-block {
   height: 400px;
@@ -181,11 +181,12 @@ ul{
   flex-direction: column;
 }
 .content_right {
-  max-width: 1200px;
+  max-width: 66vw;
   height: 576px;
   position: absolute;
-  top: 6px;
-  right: 0;
+}
+.float-right-five-sense {
+  transform: scale(1) translateX(361px);
 }
 .slider-content {
   width: 300px;
@@ -238,6 +239,9 @@ ul{
 }
 .bt-prev {
   left: -66px !important;
+}
+.five-sense-detail-image {
+  border-radius: 15px;
 }
 .homepage_footer {
   max-height: 380px;
