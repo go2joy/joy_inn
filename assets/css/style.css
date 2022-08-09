@@ -8,7 +8,8 @@ ul{
   list-style: none;
 }
 .container {
-  margin: 0 24VH;
+  margin: auto;
+  max-width: calc(1296px + 5.6rem);
 }
 .homepage {
   flex-direction: column;
@@ -24,7 +25,7 @@ ul{
   flex-basis: auto;
 }
 .main_content {
-  background-image: linear-gradient(0deg, #e4e1e1, #ffff);
+  background-image: #ffff;
   padding-bottom: 16px;
 }
 .main_banner {
@@ -39,7 +40,8 @@ ul{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 44px 0 100px;
+  margin-top: 44px;
+  margin-bottom: 100px;
 }
 .four-values_img {
   width: 80px;
@@ -141,10 +143,25 @@ ul{
 }
 .five-swiper-block {
   height: 400px;
+  position: relative;
+}
+.five-swiper {
+  position: unset !important;
+}
+.label-2 {
+  font-weight: 600;
+  font-size: 36px !important;
+}
+.five-sense-content{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: justify;
+  color: rgba(128, 128, 128, 0.8);
 }
 .custom-img {
-  width: 80% !important;
-  height: 320px !important;
+  width: 100% !important;
+  height: 553px !important;
 }
 .img-rabbit {
   width: 167px;
@@ -155,15 +172,41 @@ ul{
 }
 .slider-content {
   width: 300px;
+  height: 400px
 }
-.label-1 {
+.label-five-sense-1 {
   font-weight: 600;
   font-size: 16px;
   color: #E77026;
 }
-.label-2 {
+.label-five-sense-2 {
   font-weight: 600;
   font-size: 36px;
+}
+.five-sense-content-slide {
+  text-align: left !important;
+  display: block !important;
+}
+.five-sense-slide {
+  position: relative;
+  height: 100%;
+}
+.five-sense-bt {
+  top: unset !important;
+  position: relative !important;
+  right: unset !important;
+  left: unset !important;
+  display: block;
+}
+.five-sense-bt.prev {
+  float: left;
+  margin-right: 20px;
+}
+.bt-next {
+  right: -66px !important;
+}
+.bt-prev {
+  left: -66px !important;
 }
 .homepage_footer {
   max-height: 380px;
@@ -195,6 +238,9 @@ ul{
 }
 .gap-52 {
   gap: 52px
+}
+.cl-white {
+  color: #7f7f7f !important;
 }
 .social {
   margin: 15px 15px 30px;
