@@ -24,6 +24,10 @@
   margin: 0;
   padding: 0;
 }
+.banner-img {
+  object-fit: fill !important;
+}
+
 .main_four-values {
   display: flex;
   flex-direction: column;
@@ -163,12 +167,12 @@
   flex-direction: column;
 }
 .content_right {
-  max-width: 52vw;
+  width: 96%;
   height: 576px;
-  position: absolute;
+  overflow: initial;
 }
 .float-right-five-sense {
-  transform: scale(1) translateX(361px);
+  transform: scale(1) translateX(15px);
 }
 .slider-content {
   width: 300px;
