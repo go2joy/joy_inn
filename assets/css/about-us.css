@@ -1,0 +1,286 @@
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+@font-face{
+  font-family:'Glyphicons Halflings';
+  src:url("https://stackpath.bootstrapcdn.com/bootstrap/3.3.6/fonts/glyphicons-halflings-regular.eot");
+  src:url("https://stackpath.bootstrapcdn.com/bootstrap/3.3.6/fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"),
+  url("https://stackpath.bootstrapcdn.com/bootstrap/3.3.6/fonts/glyphicons-halflings-regular.woff2") format("woff2"),
+  url("https://stackpath.bootstrapcdn.com/bootstrap/3.3.6/fonts/glyphicons-halflings-regular.woff") format("woff"),
+  url("https://stackpath.bootstrapcdn.com/bootstrap/3.3.6/fonts/glyphicons-halflings-regular.ttf") format("truetype"),
+  url("https://stackpath.bootstrapcdn.com/bootstrap/3.3.6/fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular") format("svg")
+}
+/* 
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+* {
+  box-sizing: border-box;
+  line-height: 1.5 !important;
+}
+
+html {
+  font-size: 8px;
+  height: 100%;
+} 
+
+body {
+  font-family: 'Averta Std CY';
+  position: relative;
+  line-height: 1.5;
+  font-size: 14px;
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  background: #f2f2f2;
+
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+input,
+textarea {
+  font-size: 2rem;
+}
+
+input,
+textarea,
+button,
+select,
+label,
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  outline: none;
+}
+*/
+
+/* VISSION */
+.main_content {
+    background-image: #ffff;
+    padding-bottom: 16px;
+}
+.about-us_main {
+    text-align: center;
+    display: block;
+    flex: 1;
+    flex-basis: auto;
+}
+.section {
+    margin: 86px 0;
+}
+.container-section {
+    width: 100%;
+    max-width: 1312px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.vision {
+    min-height: 100vh;
+    border: 1px solid;
+    position: relative;
+    padding-top: 86px;
+}
+.vision-content {
+    position: absolute;
+    width: 100%;
+}
+.vision_joy-hotel {
+}
+.vision-mission {
+    width: 100%;
+    height: 1017px;
+    position: relative;
+}
+.vision-mision-top {
+    position: relative;
+    width: 100%;
+    float: right;
+    
+}
+.vision-mission-content {
+    position: relative;
+    width: 100%;
+    float: right;
+}
+.vision-mision-top-image {
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    
+}
+.vision-mision-top-image img{
+    width: 309px;
+    height: auto; 
+
+}
+.vision-mission-background {
+    width: 50%;
+    height: 866px;
+    margin-top: 151px;
+    float: right;
+    background-image: linear-gradient(to right,#E77026, #F3A846);
+    border-radius: 15px 0px 0px 15px;
+    position: relative;
+}
+.vision-mission-center-content {
+    position: absolute;
+    z-index: 10;
+    padding-left: 163px;
+    text-align: left;
+}
+.is-title-vision-mission-center-content {
+    font-size: 32px;
+    color: #ffffff;
+    font-weight: 600;
+}
+.is-sub-vision-mission-center-content {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.8);
+    padding-top: 32px;
+}
+.is-title-left {
+    font-size: 36px;
+    font-family: 'Averta Std CY';
+    font-weight: 600;
+    line-height: 48px;
+    text-transform: uppercase;
+}
+.vision_joy-hotel_text {
+    text-align: left;
+    padding-bottom: 64px;
+    margin-top: 35px;
+}
+.color-g2j {
+    color: #E77026;
+}
+.vision_joy-hotel_banner {
+    position: absolute;
+    z-index: 4;
+}
+
+.collapse-list {
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.collapse-open {
+    display: none;
+}
+
+.collapse-painel {
+    visibility: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height .1s;
+    visibility: .3s;
+    opacity: .3s;
+}
+
+.collapse-open:checked ~ .collapse-painel {
+    max-height: 100%;
+    opacity: 100;
+    visibility: visible
+}
+
+.collapse-list li {
+    background: rgba(199, 94, 26, 0.46);
+    border-radius: 12px;
+    margin-bottom: 19px;
+}
+
+.collapse-list .collapse-btn {
+    /* background: rgba(199, 94, 26, 0.46); */
+    border-radius: 12px;
+    cursor: pointer;
+    display: block;
+    padding: 36px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 0;
+    color: rgba(255, 255, 255, 1);
+    text-transform: uppercase;
+    font-weight: normal;
+    transition: background-color .2s ease;
+}
+
+.collapse-list li:hover {
+    background: rgba(199, 94, 26, 0.46);
+}
+
+.collapse-open ~ .collapse-btn i{
+    float: right;
+}
+
+/* .collapse-open:checked ~ .collapse-btn i{
+    content: "\e113";
+} */
+
+.collapse-list .collapse-inner {
+    padding: 0 36px 36px 36px;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* TIME LINE */
