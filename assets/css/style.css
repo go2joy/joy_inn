@@ -125,13 +125,13 @@
   color: rgba(255, 255, 255, 0.8);
 }
 .video-link {
-  transform: scale(1) translateY(-300px);
+  transform: scale(1) translateY(-280px);
   width: 45vw;
   height: 45vh;
 }
 .video-label {
   transform: scale(1) translateY(200px);
-  padding: 0 337px;
+  padding: 0 20%;
 
 }
 .five-swiper-block {
@@ -207,7 +207,7 @@
   margin-right: 20px;
 }
 .swiper-button-disabled {
-  filter: invert(54%) sepia(46%) saturate(4119%) hue-rotate(351deg) brightness(99%) contrast(84%);
+  filter: invert(14%) sepia(1%) saturate(0%) hue-rotate(355deg) brightness(98%) contrast(82%);
 }
 .swiper-slide.five-sense-detail-slide {
   height: 80%;
@@ -228,6 +228,25 @@
 }
 .five-sense-detail-image {
   border-radius: 15px;
+}
+.top-hotel-content {
+  width: 200px;
+  height: 100px;
+  flex-direction: column;
+}
+.top-hotels_label {
+  font-weight: 600;
+  font-size: 36px;
+}
+.top-hotels_label span {
+  font-weight: 600;
+  font-size: 36px;
+  color: #E77026;
+}
+.top-hotels_slide {
+  height: 500px;
+  width: 100%;
+  overflow: hidden;
 }
 .homepage_footer {
   max-height: 380px;
@@ -294,15 +313,6 @@
 }
 .bold {
   font-weight: bold;
-}
-.login-button {
-  background-color: #E77026;
-  border-radius: 8px;
-  width: 120px;
-  height: 40px;
-  margin: auto 0;
-  border: none;
-  color: #ffffff;
 }
 .globe-icon {
   font-size: 16px;
