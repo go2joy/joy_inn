@@ -19,9 +19,11 @@
     |__index.html
 ```
 ### Design material
+##### Current working on version 2.1
 ```
 https://www.figma.com/file/Cj6UHq4L0tMbgkJpa1wPMS/%5BServiSense%5D-Joy-Hotel?node-id=580%3A2716
 ```
+##### Hotel details
 ```
 https://docs.google.com/spreadsheets/d/1vvx1dAKrED5OnnRyaXoVtFWFg_chvTv73E3ubWEODFM/edit#gid=0
 ```
