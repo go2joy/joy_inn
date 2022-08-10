@@ -15,12 +15,10 @@ ul{
 }
 
 .container {
-  /* width: 100%; */
-  /* max-width: 1312px; */
-  /* padding: 0 24px; */
-  width: 100vw;
+  width: 100%;
+  max-width: 1312px;
+  padding: 0 24px;
   margin: 0 auto;
-  padding: 0 315px
 }
 
 /* text */
@@ -61,6 +59,16 @@ ul{
   text-transform: uppercase;
   border: none
 }
+.login-button {
+  background-color: #E77026;
+  border-radius: 8px;
+  width: 120px;
+  height: 40px;
+  margin: auto 0;
+  border: none;
+  color: #ffffff;
+}
+
 .rounded-md {
   border-radius: 6px !important;
 }
