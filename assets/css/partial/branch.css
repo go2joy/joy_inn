@@ -1,0 +1,96 @@
+@import '../layout.css';
+@import '../global.css';
+
+/* Branch page style */
+.branch__container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+/* Hotel Logo */
+.branch__container__logo {
+  width: calc(100% - 410px - 30px);
+  overflow: hidden;
+}
+.branch__container__logo img{
+  width: 100%;
+}
+
+/* Hotel Info */
+.branch__container__hotel {
+  display: flex;
+  flex-direction: column;
+  width: 410px;
+  padding: 24px;
+  overflow: hidden;
+  background-color: white;
+  text-align: left;
+}
+.hotel__title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  color: #333333;
+  text-transform: uppercase;
+  margin: 20px 0 24px;
+  text-align: left;
+}
+/* Hotel facility */
+.facility {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 36px;
+}
+.facility__item {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 10px 10px 0;
+  width: fit-content;
+  padding: 5px 10px;
+  background-color: #FDF5F0;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #E77026;
+  letter-spacing: 0.01em;
+}
+.facility__item__icon {
+  margin-right: 8px;
+}
+.facility__item:hover {
+  color: #fff;
+  background: linear-gradient(180deg, #E77026 0%, #F3A846 100%);
+  box-shadow: 0px 60px 80px rgba(0, 0, 0, 0.06);
+}
+.facility__item:hover .facility__item__icon {
+  filter: hue-rotate(40deg) saturate(0.5) brightness(390%) saturate(4); 
+}
+
+/* hotel info detail */
+.hotel__info {
+  padding-top: 40px;
+}
+.hotel__info__item {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #808080;
+  margin-bottom: 22px;
+}
+.hotel__info__item img {
+  margin-right: 16px;
+  width: 22px;
+  height: 22px;
+}
+.hotel__desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: justify;
+  color: #808080;
+  margin-bottom: 36px;
+}
