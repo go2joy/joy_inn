@@ -1,0 +1,29 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.layout_header {
+  font-size: 1rem;
+  color: #7f7f7f;
+}
+.layout_main {
+  text-align: center;
+  display: block;
+  flex: 1;
+  flex-basis: auto;
+}
+.layout_footer {
+  margin-top: auto;
+  max-height: 380px;
+  width: 100%;
+  background: linear-gradient(90deg, #E77026 0%, #F3A846 100%);
+  color: #ffffff;
+}
+
+/* header */
+.header-label {
+  font-size: 16px;
+  line-height: 20px;
+  color: #656565;
+}
