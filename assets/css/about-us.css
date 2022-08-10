@@ -7,7 +7,9 @@ h1, h2, h3, h4, h5, h6, p {
 	font: inherit;
 	vertical-align: baseline;
 }
-
+body {
+    margin: 0;
+}
 /* 
 
 html, body, div, span, applet, object, iframe,
@@ -110,6 +112,17 @@ a {
     display: block;
     flex: 1;
     flex-basis: auto;
+}
+.main_banner {
+  position: relative;
+  height: 600px;
+  font-size: 14px;
+  color: #ffff;
+  margin: 0;
+  padding: 0;
+}
+.banner-img {
+  object-fit: fill !important;
 }
 .section {
     /* padding: 86px 0; */
@@ -324,21 +337,26 @@ a {
 .timeline {
   position: relative;
   width: 100%;
+  max-width: 1312px;
+  
   margin: 0 auto;
-max-width: 100vw;
-  margin: 0 auto;
-  /* padding: 0 315px */
 }
 
 .timeline::after {
   content: '';
   position: absolute;
   width: 2px;
-  background: #006E51;
+  background: linear-gradient(90deg, #E77026 -1.17%, rgba(231, 112, 38, 0) 100%);
+
   top: 0;
   bottom: 0;
   left: 50%;
   margin-left: -1px;
+}
+.is-title-timeline {
+    font-size: 36px;
+    font-weight: 600;
+    padding-bottom: 61px;
 }
 .timeline1 {
     position:relative;
@@ -348,7 +366,7 @@ max-width: 100vw;
 }
 .timeline3 {
 position:relative;
-   padding-top: 150px;
+   padding-top: 215px;
 }
 .container-timeline {
   position: relative;
@@ -382,7 +400,7 @@ position:relative;
 .container-timeline.right3 {
     left: 50%;
     position: absolute;
-    top: 200px;
+    top: 280px;
 }
 .container-timeline.right2 {
     left: 50%;
@@ -432,10 +450,10 @@ position:relative;
 }
 
 .container-timeline.left .date {
-  right: -235px;
+  right: -255px;
 }
 .container-timeline.left1 .date {
-  right: 35px;
+  right: 60px;
 }
 .container-timeline.right .date {
   left: -235px;
@@ -476,35 +494,34 @@ position:relative;
   left: 56px;
 }
 .container-timeline.right1 .icon {
-  left: 56px;
+  left: 70px;
 }
 
 .container-timeline .content {
-  padding: 30px 90px 30px 30px;
+  /* padding: 30px 90px 30px 30px; */
   background: #F6D155;
   position: relative;
-  margin-right: 30px;
+  margin-right: 60px;
 }
 .container-timeline .content1 {
-  padding: 30px 90px 30px 30px;
   background: rgba(231, 112, 38, 0.1);
-border-radius: 15px;
-  position: relative;
-  left: 30px;
-  width: 530px;
+    border-radius: 15px;
+    position: relative;
+    left: 60px;
+    width: 595px;
 }
 .container-timeline .content2 {
-  padding: 30px 30px 30px 30px;
-  background: rgba(231, 112, 38, 0.1);
-border-radius: 15px;
-  position: relative;
-  right: 30px;
-  top: 40px;
+    background: rgba(231, 112, 38, 0.1);
+    border-radius: 15px;
+    position: relative;
+    top: 70px;
+    width: 595px;
 }
 .content1-info {
     display: grid;
     grid-template-columns: 1fr 1fr;
     text-align: left;
+    padding: 15px;
 }
 .content1-info .is-number {
     font-size: 55px;
@@ -515,6 +532,26 @@ border-radius: 15px;
     padding: 15px;
 }
 .content1-info .is-text {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(51, 51, 51, 0.8);
+    padding-top: 9px;
+}
+.content2-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: right;
+    padding: 15px;
+}
+.content2-info .is-number {
+    font-size: 55px;
+    font-weight: 600;
+    color: rgba(231, 112, 38, 1);
+}
+.block {
+    padding: 15px;
+}
+.content2-info .is-text {
     font-size: 16px;
     font-weight: 600;
     color: rgba(51, 51, 51, 0.8);
@@ -542,18 +579,18 @@ border-radius: 15px;
   color: #000000;
 }
 .timeline-image {
-    margin-right: 30px;
+    margin-right: 60px;
     text-align: right;
 }
 .timeline-image img{
-    width: 530px;
+    width: 595px;
 }
 .timeline-image1 {
-    margin-left: 30px;
+    margin-left: 60px;
     text-align: right;
 }
 .timeline-image1 img{
-    width: 530px;
+    width: 595px;
 }
 @media (max-width: 767.98px) {
   .timeline::after {
@@ -598,4 +635,65 @@ border-radius: 15px;
     padding: 30px 30px 30px 90px;
     border-radius: 500px 0 0 500px;
   }
+}
+.section-joy-hotel {
+    padding-top: 86px;
+}
+.is-title-joy-hotel {
+    font-size: 36px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.joy-hotel-block {
+    width: 100%;
+    max-width: 1312px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 31px;
+    padding-top: 61px;
+}
+.joy-hotel-block1 img{
+    height: calc(100% - 31px);
+}
+.joy-hotel-block2 {
+    
+}
+.is-block {
+    /* height: 370px; */
+    box-shadow: 0px 60px 80px rgba(0, 0, 0, 0.06);
+    border-radius: 12px;
+    margin-bottom: 31px;
+    padding: 45px 37px;
+    min-height: 273px;
+}
+.is-block:hover {
+    background: linear-gradient(180deg, #E77026 0%, #F3A846 100%);
+}
+.is-icon img{
+    filter: invert(52%) sepia(81%) saturate(4352%) hue-rotate(2deg) brightness(103%) contrast(107%);
+}
+.is-block:hover .is-icon img {
+    filter: hue-rotate(40deg) saturate(0.5) brightness(390%) saturate(4); 
+}
+.content-block-joy-hotel {
+    padding-top: 30px;
+}
+.is-title-block-joy-hotel {
+    font-size: 22px;
+    font-weight: 600;
+    color: rgba(51, 51, 51, 1);
+}
+.is-block:hover .is-title-block-joy-hotel {
+    color: #ffffff;
+}
+.is-content-block-joy-hotel{
+    color: rgba(128, 128, 128, 1);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+}
+.is-block:hover .is-content-block-joy-hotel{
+    color: rgba(255, 255, 255, 0.8);
 }
