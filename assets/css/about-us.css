@@ -10,6 +10,19 @@ h1, h2, h3, h4, h5, h6, p {
 body {
     margin: 0;
 }
+.main_banner_title{
+  width: 90%;
+  position: absolute;
+  left: 50%;
+  bottom: 80px;
+  transform: translate(-50%);
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 68px;
+  color: #fff;
+  z-index: 10;
+  text-align: center;
+}
 /* 
 
 html, body, div, span, applet, object, iframe,
@@ -232,7 +245,22 @@ a {
 @media screen and (max-width: 1366px) {
     .vision_joy-hotel_banner img{
         width: 80%;
-    }    
+    }
+    .timeline-image img {
+      width: 400px !important;
+    }  
+    .timeline-image1 img {
+      width: 400px !important;
+    }  
+    .container-timeline .content2 {
+      width: 400px !important;
+    } 
+    .container-timeline .content1 {
+      width: 400px !important;
+    }  
+    .container-timeline.right2 {
+      top: 125px !important;
+    }
 }
 .collapse-list {
     margin-bottom: 0;
@@ -249,7 +277,7 @@ a {
     visibility: hidden;
     max-height: 0;
     opacity: 0;
-    
+  
     border-radius: 0 0 12px 12px;
 }
 
@@ -293,30 +321,17 @@ a {
 }
 .collapse-list li:hover .collapse-painel{
     background: rgba(199, 94, 26, 0.46);
-    animation: collapvision 2s infinite;
-    
+    visibility: visible;
+    max-height: 100%;
+    opacity: 1;
+    transition: 0.3s;
 }
+
 .collapse-list li:hover i {
     transform: rotate(180deg) !important;
+    transition: 0.3s;
 }
-@keyframes collapvision {
-    0% {
-        max-height: 0;
-        opacity: 0;
-        visibility: visible;
-    }
-    30% {
-        max-height: 50%;
-        opacity: 50;
-        visibility: visible;
-    }
-    100% {
-        
-        max-height: 100%;
-        opacity: 100;
-        visibility: visible;
-    }
-}
+
 .collapse-open ~ .collapse-btn i{
     float: right;
     
@@ -447,10 +462,26 @@ position:relative;
   text-transform: uppercase;
   letter-spacing: 1px;
   z-index: 1;
+  margin-top: -15px;
 }
-
+.container-timeline .date1 {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #006E51;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 1;
+  margin-top: -15px;
+}
 .container-timeline.left .date {
-  right: -255px;
+  right: -403px;
+}
+.container-timeline.left .date1 {
+  right: -505px;
 }
 .container-timeline.left1 .date {
   right: 60px;
@@ -578,6 +609,15 @@ position:relative;
   line-height: 22px;
   color: #000000;
 }
+.is-year-timeline {
+  font-size: 36px;
+  font-weight: 600;
+}
+.is-sub-year-timeline {
+  font-size: 24px;
+  font-weight: 600;
+  color: rgba(51, 51, 51, 1);
+}
 .timeline-image {
     margin-right: 60px;
     text-align: right;
@@ -667,15 +707,19 @@ position:relative;
     margin-bottom: 31px;
     padding: 45px 37px;
     min-height: 273px;
+    background: #ffffff;
 }
 .is-block:hover {
     background: linear-gradient(180deg, #E77026 0%, #F3A846 100%);
+    
 }
 .is-icon img{
     filter: invert(52%) sepia(81%) saturate(4352%) hue-rotate(2deg) brightness(103%) contrast(107%);
+    transition: filter 0.4s all;
 }
 .is-block:hover .is-icon img {
     filter: hue-rotate(40deg) saturate(0.5) brightness(390%) saturate(4); 
+    transition: filter 0.4s all;
 }
 .content-block-joy-hotel {
     padding-top: 30px;
@@ -705,9 +749,35 @@ position:relative;
     font-weight: 600;
     text-transform: uppercase;
 }
+.go2choise-block {
+padding: 0 48px;
+position: relative;
+}
+.go2choise-block .swiper-button-prev,.swiper-button-next{
+  color: rgba(149, 149, 149, 0.7);
+}
+.go2choise-block .swiper-button-next{
+  color: rgba(149, 149, 149, 0.7);
+}
 .go2choise-block .swiper-container {
     width: 100%;
  
+}
+.go2choise-block .swiper-pagination-bullet-active {
+  background-color: #ff6400;
+  width: 31px;
+  height: 6px;
+  border-radius: 3px;
+}
+.go2choise-block .swiper-pagination-bullet {
+  height: 6px;
+left: 923px;
+border-radius: 3px;
+background: rgba(231, 112, 38, 0.5);
+
+}
+.go2choise-block .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: 71px;
 }
 .is-title-slide-go2choise {
     font-size: 24px;
@@ -776,4 +846,9 @@ height: 300px;
     height: 60px;
     border-radius: 50%;
     background-color: rgba(196, 196, 196, 1);
+}
+.section-contact {
+  width: 100%;
+  background: rgba(231, 112, 38, 0.07);
+  height: 680px
 }
