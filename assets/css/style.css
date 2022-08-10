@@ -1,15 +1,3 @@
-body {
-  font-size: 12px;
-  font-family: 'Averta Std CY';
-  color: #333333;
-  margin: 0;
-}
-ul{
-  list-style: none;
-}
-.container {
-  margin: 0 24VH;;
-}
 .homepage {
   flex-direction: column;
 }
@@ -28,10 +16,6 @@ ul{
   flex: 1;
   flex-basis: auto;
 }
-.main_content {
-  background-image: #ffff;
-  padding-bottom: 16px;
-}
 .main_banner {
   position: relative;
   height: 600px;
@@ -44,8 +28,7 @@ ul{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 44px;
-  margin-bottom: 100px;
+  margin-top: 44px !important;
 }
 .four-values_img {
   width: 80px;
@@ -114,26 +97,21 @@ ul{
 }
 .main_video {
   position: relative;
-  margin-bottom: 400px;
 }
 .video-box {
-  background: linear-gradient(180deg, rgba(180, 85, 26, 0.2) 0%, rgba(255, 157, 96, 0.2) 41.19%), radial-gradient(79.66% 87.65% at 25.97% 60.5%, #E77026 0%, #C4652A 96.64%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-  border-radius: 30px;
-  padding: 2% 31% 30%;
+  background-image: url('../images/banner/video-bg.png');
   color: #fff;
-}
-.video-backgound {
-  position: absolute;
-  left: 0;
-  top: 0;
+  display: inline-block;
+  height: 626.51px;
   width: 100%;
-  height: 100%;
-  background: rgba(231, 112, 38, 0.08);
-  border-radius: 30px;
-  transform: matrix(-0.99, -0.09, 0.17, -1, 0, 0);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
 }
 .box_lable-1 {
   font-weight: 600;
+  color: rgba(255, 255, 255, 0.8);
   font-size: 32px;  
   padding: 0 42px;
 }
@@ -143,10 +121,14 @@ ul{
   color: rgba(255, 255, 255, 0.8);
 }
 .video-link {
-  transform: scale(1) translateY(-374px);
-  border-radius: 15px;
-  width: 60vw;
-  height: 78vh;
+  transform: scale(1) translateY(-300px);
+  width: 45vw;
+  height: 45vh;
+}
+.video-label {
+  transform: scale(1) translateY(200px);
+  padding: 0 337px;
+
 }
 .five-swiper-block {
   height: 400px;
@@ -181,7 +163,7 @@ ul{
   flex-direction: column;
 }
 .content_right {
-  max-width: 66vw;
+  max-width: 52vw;
   height: 576px;
   position: absolute;
 }
@@ -221,7 +203,7 @@ ul{
   margin-right: 20px;
 }
 .swiper-button-disabled {
-  filter: hue-rotate(40deg) saturate(0.5) brightness(390%) saturate(4); 
+  filter: invert(54%) sepia(46%) saturate(4119%) hue-rotate(351deg) brightness(99%) contrast(84%);
 }
 .swiper-slide.five-sense-detail-slide {
   height: 80%;
@@ -235,10 +217,10 @@ ul{
   border-radius: 15px;
 }
 .bt-next {
-  right: -66px !important;
+  right: 244px !important;
 }
 .bt-prev {
-  left: -66px !important;
+  left: 244px !important;
 }
 .five-sense-detail-image {
   border-radius: 15px;
@@ -250,7 +232,7 @@ ul{
   color: #ffffff;
 }
 .footer__container {
-  padding-top: 20px;
+  padding-top: 20px !important;
 }
 .row,
 .flex {
