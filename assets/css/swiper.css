@@ -28,6 +28,25 @@
   height: 100%;
   object-fit: cover;
 }
-.swiper-button-disabled {
-  c;
+
+.swiper-container {
+  width: 100%;
+  margin: 40px 0;
+  padding: 45px 0;
+}
+
+.swiper-container .swiper-slide {
+  opacity: 0.4;
+  overflow: hidden;
+  transition: .7s;
+}
+
+.swiper-container .swiper-slide img {
+  width: 100%;
+}
+
+.swiper-container .swiper-slide-active {
+  opacity: 1;
+  z-index: 1;
+  transform: scale(1.5);
 }

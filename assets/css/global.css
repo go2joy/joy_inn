@@ -13,6 +13,7 @@ body {
 ul{
   list-style: none;
 }
+
 .container {
   /* width: 100%; */
   /* max-width: 1312px; */
@@ -21,6 +22,21 @@ ul{
   margin: 0 auto;
   padding: 0 315px
 }
+
+/* text */
+.limit-text-line-1 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+.limit-text-line-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
 /* Color */
 .bg-primary-1 {
   background: rgba(231, 112, 38, 0.03) !important;
@@ -31,6 +47,7 @@ ul{
 .bg-white {
   background-color: white !important;
 }
+
 /* button */
 .button--default {
   padding: 18px;
@@ -44,7 +61,6 @@ ul{
   text-transform: uppercase;
   border: none
 }
-/* Border */
 .rounded-md {
   border-radius: 6px !important;
 }
@@ -54,6 +70,7 @@ ul{
 .rounded-xl {
   border-radius: 12px !important;
 }
+
 /* Pointer */
 .pointer {
   cursor: pointer;
@@ -64,11 +81,62 @@ ul{
   height: 1px;
   background: rgba(0, 0, 0, 0.07);;
 }
+
 /* main */
 .main_content {
   width: 100%;
   background-image: #ffff;
-  padding-bottom: 50px;
+  padding-bottom: 16px;
+}
+.main_banner {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  font-size: 14px;
+  color: #ffff;
+  margin-bottom: 89px;
+}
+.main_banner_dummy {
+  margin-top: calc(100% * (700 / 1920));
+}
+.main_banner_content {
+  position: absolute;
+  inset: 0;
+}
+.main_banner_title{
+  width: 90%;
+  position: absolute;
+  left: 50%;
+  bottom: 80px;
+  transform: translate(-50%);
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 68px;
+  color: #fff;
+  z-index: 10;
+  text-align: center;
+}
+.footer__container {
+  padding-top: 20px;
+}
+.row,
+.flex {
+  display: flex;
+  gap: 10px;
+}
+.logo-image-header {
+  width: 134px;
+  height: 52px;
+  margin: 12px 0;
+}
+.logo-image-footer {
+  width: 160px;
+  height: 62px;
+}
+.logo-image-ser {
+  width: 70px;
+  height: 32px;
+  margin-top: 8px;
 }
 .gap-52 {
   gap: 52px
@@ -98,6 +166,9 @@ ul{
 }
 .align-right {
   justify-content: end;
+}
+.mr-8 {
+  margin-right: 12px !important;
 }
 .mr-12 {
   margin-right: 12px !important;
