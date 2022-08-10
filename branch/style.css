@@ -1,0 +1,78 @@
+@import '../assets/css/layout.css';
+@import '../assets/css/global.css';
+
+
+/* Branch page style */
+.branch__container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+.branch__container--left {
+  display: flex;
+  flex-direction: column;
+  width: 410px;
+  margin-right: 30px;
+  padding: 24px;
+  overflow: hidden;
+  background-color: white;
+}
+.branch__container--right {
+  width: calc(100% - 410px - 30px);
+  overflow: hidden;
+}
+.branch__container--right img{
+  width: 100%;
+}
+.branch__title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  color: #333333;
+  text-transform: uppercase;
+  margin: 20px 0 24px;
+  text-align: center;
+}
+
+/* facility */
+.facility {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 36px;
+}
+.facility__item {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 10px 10px 0;
+  width: fit-content;
+  padding: 5px 10px;
+  background-color: #FDF5F0;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #E77026;
+  letter-spacing: 0.01em;
+}
+.facility__item__icon {
+  margin-right: 8px;
+}
+.hotel__info {
+  padding-top: 40px;
+}
+.hotel__info__item {
+  /* display: inline-block; */
+
+}
+.hotel__info__item img {
+  width: 22px;
+  height: 22px;
+  color: #E77026;
+}
+.hotel__desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: justify;
+  color: #808080;
+}
