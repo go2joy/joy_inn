@@ -381,6 +381,99 @@
                     </div>
                 </div>
             </section>
+            <section class="section section-go2choise">
+                <div class="go2choise-block">
+                    <div class="is-title-go2choise">
+                        <p class="top-hotels_label color-g2j"> GO2CHOICE!</p>
+                    </div>
+                    <div class="top-hotels_slide">
+                        <div class="swiper-container-go2choise">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide" >
+                                    <div class="block-slide">
+                                        <div class="is-title-slide-go2choise">
+                                            <p>It was fun and memorized!</p>
+                                        </div>
+                                        <div class="is-content-slide-go2choise">
+                                            <p>"Every year, we come back to Joy Hotel for our anni, It was extremely
+                                                interesting and enjoyable! We are happy with our stay in this hotel and
+                                                we
+                                                love meals here".</p>
+                                        </div>
+                                        <div class="block-user-info">
+                                            <div class="is-logo-user">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide ">
+                                    <div class="block-slide">
+                                        <div class="is-title-slide-go2choise">
+                                            <p>It was fun and memorized!</p>
+                                        </div>
+                                        <div class="is-content-slide-go2choise">
+                                            <p>"Every year, we come back to Joy Hotel for our anni, It was extremely
+                                                interesting and enjoyable! We are happy with our stay in this hotel and
+                                                we
+                                                love meals here".</p>
+                                        </div>
+                                        <div class="block-user-info">
+                                            <div class="is-logo-user">
+
+                                            </div>
+                                            <div class="name-user">
+                                                <!-- <p class="is-name">Annette Black</p>
+                                                <p class="is-locale">Hà Nội</p> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide ">
+                                    <div class="block-slide">
+                                        <div class="is-title-slide-go2choise">
+                                            <p>It was fun and memorized!</p>
+                                        </div>
+                                        <div class="is-content-slide-go2choise">
+                                            <p>"Every year, we come back to Joy Hotel for our anni, It was extremely
+                                                interesting and enjoyable! We are happy with our stay in this hotel and
+                                                we
+                                                love meals here".</p>
+                                        </div>
+                                        <div class="block-user-info">
+                                            <div class="is-logo-user">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide ">
+                                    <div class="block-slide">
+                                        <div class="is-title-slide-go2choise">
+                                            <p>It was fun and memorized!</p>
+                                        </div>
+                                        <div class="is-content-slide-go2choise">
+                                            <p>"Every year, we come back to Joy Hotel for our anni, It was extremely
+                                                interesting and enjoyable! We are happy with our stay in this hotel and
+                                                we
+                                                love meals here".</p>
+                                        </div>
+                                        <div class="block-user-info">
+                                            <div class="is-logo-user">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
         <div class="homepage_footer">
             <div class="container footer__container">
@@ -460,6 +553,37 @@
             </div>
         </div>
     </div>
-    
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiperBanner = new Swiper(".banner-swiper", {});
+
+        
+        const swiper = new Swiper('.swiper-container-go2choise', {
+            centeredSlides: true,
+            loop: true,
+            speed: 500,
+            slidesPerView: 3,
+            spaceBetween: 80,
+            autoplay: {
+                delay: 30000,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+
+                1280: {
+                    slidesPerView: 3,
+                    
+                },
+                2561 : {
+                    slidesPerView: 3,
+                }
+
+            },
+        });
+    </script>
 </body>
 </html>

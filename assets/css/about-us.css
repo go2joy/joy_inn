@@ -697,3 +697,83 @@ position:relative;
 .is-block:hover .is-content-block-joy-hotel{
     color: rgba(255, 255, 255, 0.8);
 }
+.section-go2choise {
+    padding-top: 86px;
+}
+.is-title-go2choise {
+    font-size: 36px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.go2choise-block .swiper-container {
+    width: 100%;
+ 
+}
+.is-title-slide-go2choise {
+    font-size: 24px;
+    font-weight: 700;
+    color: #808080;
+    text-align: left;
+}
+.is-content-slide-go2choise {
+    font-size: 16px;
+    font-weight: 400;
+    color: #808080;
+    text-align: left;
+    padding-top: 27px;
+}
+.go2choise-block .swiper-container-go2choise .swiper-slide-active .is-title-slide-go2choise {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: left;
+}
+.go2choise-block .swiper-container-go2choise .swiper-slide-active .is-content-slide-go2choise {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: left;
+}
+.section-go2choise {
+    margin-top: 68px;
+    background: url(../images/banner/bg-slide.png)
+}
+.swiper-container-go2choise {
+    padding-top: 67px;
+}
+.go2choise-block .swiper-container-go2choise .swiper-slide-active {
+box-shadow: 0px 60px 80px rgba(0, 0, 0, 0.06);
+border-radius: 12px;
+height: 300px;
+transform: scale(1.2);
+z-index: 100;
+background: linear-gradient(180deg, #E77026 0%, #F3A846 100%) !important;
+
+}
+.block-slide {
+    padding: 65px 41px;
+}
+.go2choise-block .swiper-container-go2choise .swiper-slide {
+    /* padding: 65x 41px !important; */
+    display: block;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 12px;
+height: 300px;
+
+}
+.block-user-info {
+    padding-top: 28px;
+}
+.go2choise-block .swiper-container-go2choise .swiper-slide-active .is-logo-user {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #ffffff !important;
+}
+.is-logo-user {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(196, 196, 196, 1);
+}
