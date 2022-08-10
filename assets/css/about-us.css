@@ -7,15 +7,7 @@ h1, h2, h3, h4, h5, h6, p {
 	font: inherit;
 	vertical-align: baseline;
 }
-@font-face{
-  font-family:'Glyphicons Halflings';
-  src:url("https://stackpath.bootstrapcdn.com/bootstrap/3.3.6/fonts/glyphicons-halflings-regular.eot");
-  src:url("https://stackpath.bootstrapcdn.com/bootstrap/3.3.6/fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"),
-  url("https://stackpath.bootstrapcdn.com/bootstrap/3.3.6/fonts/glyphicons-halflings-regular.woff2") format("woff2"),
-  url("https://stackpath.bootstrapcdn.com/bootstrap/3.3.6/fonts/glyphicons-halflings-regular.woff") format("woff"),
-  url("https://stackpath.bootstrapcdn.com/bootstrap/3.3.6/fonts/glyphicons-halflings-regular.ttf") format("truetype"),
-  url("https://stackpath.bootstrapcdn.com/bootstrap/3.3.6/fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular") format("svg")
-}
+
 /* 
 
 html, body, div, span, applet, object, iframe,
@@ -132,7 +124,7 @@ a {
 }
 .vision {
     min-height: 100vh;
-    border: 1px solid;
+    /* border: 1px solid; */
     position: relative;
     padding-top: 86px;
 }
@@ -169,7 +161,10 @@ a {
 }
 .vision-mision-top-image img{
     width: 309px;
-    height: auto; 
+    height: auto;
+    @media (max-width: 1366px) {
+        width: 209px;
+    }
 
 }
 .vision-mission-background {
@@ -217,11 +212,20 @@ a {
     position: absolute;
     z-index: 4;
 }
-
+.vision_joy-hotel_banner img{
+    width: 100%;
+    
+}
+@media screen and (max-width: 1366px) {
+    .vision_joy-hotel_banner img{
+        width: 80%;
+    }    
+}
 .collapse-list {
     margin-bottom: 0;
     padding-left: 0;
     list-style: none;
+    padding-top: 45px;
 }
 
 .collapse-open {
@@ -235,26 +239,29 @@ a {
     transition: max-height .1s;
     visibility: .3s;
     opacity: .3s;
+    border-radius: 0 0 12px 12px;
 }
 
-.collapse-open:checked ~ .collapse-painel {
+/* .collapse-open:checked ~ .collapse-painel {
     max-height: 100%;
     opacity: 100;
     visibility: visible
-}
+} */
 
 .collapse-list li {
     background: rgba(199, 94, 26, 0.46);
     border-radius: 12px;
     margin-bottom: 19px;
 }
-
+.collapse-list li:hover .collapse-btn{
+    border-radius: 12px 12px 0 0;
+}
 .collapse-list .collapse-btn {
-    /* background: rgba(199, 94, 26, 0.46); */
-    border-radius: 12px;
+    background: rgba(199, 94, 26, 0.46);
     cursor: pointer;
     display: block;
     padding: 36px;
+    border-radius: 12px;
     font-size: 22px;
     font-weight: 600;
     margin-bottom: 0;
@@ -263,13 +270,35 @@ a {
     font-weight: normal;
     transition: background-color .2s ease;
 }
-
-.collapse-list li:hover {
-    background: rgba(199, 94, 26, 0.46);
+.collapse-list .collapse-btn:focus-visible {
+outline: none; 
 }
-
+.collapse-list li:hover .collapse-painel{
+    background: rgba(199, 94, 26, 0.46);
+    animation: collapvision 1s infinite
+}
+.collapse-list li:hover i {
+    transform: rotate(180deg) !important;
+}
+@keyframes collapvision {
+    0% {
+        max-height: 0;
+        opacity: 0;
+    }
+    30% {
+        max-height: 50%;
+        opacity: 100;
+        visibility: visible;
+    }
+    100% {
+        max-height: 100%;
+        opacity: 100;
+        visibility: visible;
+    }
+}
 .collapse-open ~ .collapse-btn i{
     float: right;
+    
 }
 
 /* .collapse-open:checked ~ .collapse-btn i{
