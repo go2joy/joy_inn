@@ -387,6 +387,7 @@ a {
     font-size: 36px;
     font-weight: 600;
     padding-bottom: 61px;
+    text-transform: uppercase;
 }
 .timeline1 {
     position:relative;
@@ -857,8 +858,8 @@ background: linear-gradient(180deg, #E77026 0%, #F3A846 100%) !important;
     justify-content: space-around;
   }
 .go2choise-block .swiper-container-go2choise .swiper-slide-active .is-logo-user {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background-color: #ffffff !important;
 }
