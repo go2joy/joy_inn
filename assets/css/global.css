@@ -202,13 +202,13 @@ ul{
   font-weight: bold;
 }
 .ver-seperate {
-  background-color: #cccccc;
+  background-color: #dcdbdbb3;
   height: 32px;
-  width: 2px;
+  width: 1px;
 }
 .hor-seperate {
-  background-color: #cccccc;
-  height: 2px;
+  background-color: #dcdbdbb3;
+  height: 1px;
   width: 100%;
   margin-bottom: 12px;
 }
