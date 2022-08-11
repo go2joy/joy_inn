@@ -13,7 +13,6 @@ body {
     margin: 0;
 }
 .promotion-list_main {
-    text-align: center;
     display: block;
     flex: 1;
     flex-basis: auto;
@@ -30,6 +29,9 @@ body {
     grid-template-columns: 1fr 1fr;
     margin-bottom: 89px;
 
+}
+.promotion-block-list .footer_left {
+    text-align: left;
 }
 .color-g2j {
     color: #ff6400;
