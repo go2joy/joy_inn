@@ -767,6 +767,7 @@ position:relative;
 .go2choise-block {
 padding: 0 48px;
 position: relative;
+max-height: 700px;
 }
 .go2choise-block .swiper-button-prev,.swiper-button-next{
   color: rgba(149, 149, 149, 0.7);
@@ -821,9 +822,11 @@ background: rgba(231, 112, 38, 0.5);
 }
 .section-go2choise {
     margin-top: 68px;
-    background: url(../../images/banner/bg-slide.png)
+    background: url(../../images/banner/bg-slide.png);
+    max-height: 668px;
 }
 .swiper-container-go2choise {
+  max-height: 512px;
     padding-top: 67px;
 }
 .go2choise-block .swiper-container-go2choise .swiper-slide-active {
