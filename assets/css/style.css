@@ -247,11 +247,7 @@
   font-weight: 600;
   font-size: 28px;
 }
-.hotel-des {
-  font-weight: 400;
-  font-size: 16px;
-  color: #fff;
-}
+
 .top-hotel-wrapper {
   height: 390px !important;
 }
@@ -307,10 +303,6 @@
 }
 .social__logo {
   font-size: 22px;
-  margin-right: 12px;
-}
-.logo-contract {
-  font-size: 16px;
   margin-right: 12px;
 }
 .center {
