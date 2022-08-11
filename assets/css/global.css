@@ -14,14 +14,16 @@ a {
   color: #333333;;
   text-decoration: unset;
 }
+a:hover {
+  color: #E77026;;
+}
 ul{
   list-style: none;
 }
 
 .container {
-  width: 100%;
-  max-width: 1312px;
-  padding: 0 24px;
+  width: 80%; 
+  padding: 0; 
   margin: 0 auto;
 }
 
@@ -212,7 +214,7 @@ ul{
   width: 100%;
   margin-bottom: 12px;
 }
-.col-md-3, .col-md-8, .col-md-9 {
+.col-md-3, .col-md-8, .col-md-9, .col-md-6, .col-md-4  {
   position: relative;
   min-height: 1px;
   padding-right: 15px;
@@ -224,13 +226,18 @@ ul{
 .ver-center {
   margin: auto 0;
 }
-
 @media (min-width: 768px) {
-  .col-md-3, .col-md-8, .col-md-9 {
+  .col-md-3, .col-md-8, .col-md-9, .col-md-6, .col-md-4 {
     float: left;
   }
   .col-md-3 {
     width: 29.16666667%;
+  }
+  .col-md-4 {
+    width: 37.5%; 
+  }
+  .col-md-6 {
+    width: 54.16667%;
   }
   .col-md-8 {
     width: 70.83333333%;
