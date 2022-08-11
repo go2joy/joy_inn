@@ -40,7 +40,10 @@
   overflow: hidden;
   transition: .7s;
 }
-
+.swiper-container .swiper-wrapper{
+  width: unset;
+  height: unset;
+}
 .swiper-container .swiper-slide img {
   width: 100%;
 }

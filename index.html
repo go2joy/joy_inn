@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/global.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
   <link rel="stylesheet" href="assets/css/dropdown.css">
   <link rel="stylesheet" href="assets/css/swiper.css">
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
@@ -18,17 +19,17 @@
 </head>
 <body>
   <div class="homepage">
-    <div class="homepage_header">
+    <div class="layout_header container">
       <div class="row">
-        <div class="header_left col-md-3 flex ver-center">
+        <div class="header_left col-md-4 flex ver-center">
           <p class="header-label mr-12"> ƯU ĐÃI </p>
-          <p class="header-label mr-12"> ĐẶT PHÒNG </p>
+          <a class="header-label ver-center" href="/joy_inn/branch"> ĐẶT PHÒNG </a>
         </div>
-        <div class="header_center col-md-8 center">
+        <div class="header_center col-md-6 center">
           <img class="logo-image-header" src="./assets/images/icon/logo-header.png" alt="">
         </div>
-        <div class="align-right col-md-3 flex ver-center">
-          <p class="header-label ver-center"> HỢP TÁC </p>
+        <div class="align-right col-md-4 flex ver-center">
+          <a class="header-label ver-center" href="/joy_inn/about-us"> HỢP TÁC </a>
           <p class="header-label ver-center"> BLOG </p>
           <p class="ver-seperate"> </p>
           <div class="dropdown ver-center">
@@ -73,7 +74,7 @@
               <img class="four-values_img" src="assets/images/rabbit/Hotel-Joy-Inn-캐릭터(여자).png" alt="">
               <div class="four-values_label">
                 <p class="four-values_label--organe">JOY HOTEL</p>
-                <p class="four-values_label--size">4 GIÁ TRỊ KHÔNG THỂ BỎ QUA</p>
+                <p class="four-values_label--size block-label">4 GIÁ TRỊ KHÔNG THỂ BỎ QUA</p>
               </div>
               <img class="four-values_img" src="assets/images/rabbit/Hotel-Joy-Inn-캐릭터(남자).png" alt="">
             </div>
@@ -380,98 +381,282 @@
         </div>
         <div class="top-hotels">
           <div>
-            <p class="top-hotels_label"> KHÁCH SẠN NẰM TRONG CHUỖI <span>JOY HOTEL</span></p>
+            <p class="block-label"> KHÁCH SẠN NẰM TRONG CHUỖI <span>JOY HOTEL</span></p>
             <div class="top-hotels_slide">
               <div class="swiper-container">
-                <div class="swiper-wrapper">
+                <div class="swiper-wrapper top-hotel-wrapper">
                     <div
                       class="swiper-slide flex top-hotel-content"
-                      style="background-image: url('assets/images/banner/banner-1.jpeg');
-                      background-size: contain;
-                      background-repeat: no-repeat;
-                      background-position: center;"
+                      style="background-image: url('assets/images/banner/top-hotel.png');"
                     >
-                      <p> Joy inn Cộng Hòa</p>
-                      <p> We have a lot ò efort to bring mỏe quality time</p>
-                      <button>
+                      <p class="hotel-name"> Joy inn Cộng Hòa</p>
+                      <p class="hotel-des"> We have a lot of efort to bring more quality time</p>
+                      <a class="watch-room-button" href="/joy_inn/joyinn-cong-hoa" >
                         XEM PHÒNG
-                      </button>
+                      </a>
                     </div>
                     <div
                       class="swiper-slide flex top-hotel-content"
-                      style="background-image: url('assets/images/banner/banner-1.jpeg');
-                      background-size: contain;
-                      background-repeat: no-repeat;
-                      background-position: center;"
+                      style="background-image: url('assets/images/branch-joyinn-1.jpg');"
                     >
-                      <p> Joy inn Cộng Hòa</p>
-                      <p> We have a lot ò efort to bring mỏe quality time</p>
-                      <button>
+                      <p class="hotel-name"> Joy inn Boutique Trung Hoa</p>
+                      <p class="hotel-des"> We have a lot of efort to bring more quality time</p>
+                      <a class="watch-room-button" href="/joy_inn/joyinn-boutique-trung-hoa" >
                         XEM PHÒNG
-                      </button>
+                      </a>
                     </div>
                     <div
                       class="swiper-slide flex top-hotel-content"
-                      style="background-image: url('assets/images/banner/banner-1.jpeg');
-                      background-size: contain;
-                      background-repeat: no-repeat;
-                      background-position: center;"
+                      style="background-image: url('assets/images/branch-joyinn-2.jpg');"
                     >
-                      <p> Joy inn Cộng Hòa</p>
-                      <p> We have a lot ò efort to bring mỏe quality time</p>
-                      <button>
+                      <p class="hotel-name"> Joy inn Nguyen Thi Thap</p>
+                      <p class="hotel-des"> We have a lot of efort to bring more quality time</p>
+                      <a class="watch-room-button" href="/joy_inn/joyinn-nguyen-thi-thap" >
                         XEM PHÒNG
-                      </button>
+                      </a>
                     </div>
                     <div
                       class="swiper-slide flex top-hotel-content"
-                      style="background-image: url('assets/images/banner/banner-1.jpeg');
-                      background-size: contain;
-                      background-repeat: no-repeat;
-                      background-position: center;"
+                      style="background-image: url('assets/images/banner/top-hotel.png');"
                     >
-                      <p> Joy inn Cộng Hòa</p>
-                      <p> We have a lot ò efort to bring mỏe quality time</p>
-                      <button>
+                      <p class="hotel-name"> Joy inn Cộng Hòa</p>
+                      <p class="hotel-des"> We have a lot of efort to bring more quality time</p>
+                      <a class="watch-room-button" href="joy_inn/joyinn-cong-hoa" >
                         XEM PHÒNG
-                      </button>
+                      </a>
                     </div>
                     <div
                       class="swiper-slide flex top-hotel-content"
-                      style="background-image: url('assets/images/banner/banner-1.jpeg');
-                      background-size: contain;
-                      background-repeat: no-repeat;
-                      background-position: center;"
+                      style="background-image: url('assets/images/banner/top-hotel.png');"
                     >
-                      <p> Joy inn Cộng Hòa</p>
-                      <p> We have a lot ò efort to bring mỏe quality time</p>
-                      <button>
+                      <p class="hotel-name"> Joy inn Cộng Hòa</p>
+                      <p class="hotel-des"> We have a lot of efort to bring more quality time</p>
+                      <a class="watch-room-button" href="joy_inn/joyinn-cong-hoa" >
                         XEM PHÒNG
-                      </button>
+                      </a>
                     </div>
                     <div
                       class="swiper-slide flex top-hotel-content"
-                      style="background-image: url('assets/images/banner/banner-1.jpeg');
-                      background-size: contain;
-                      background-repeat: no-repeat;
-                      background-position: center;"
+                      style="background-image: url('assets/images/banner/top-hotel.png');"
                     >
-                      <p> Joy inn Cộng Hòa</p>
-                      <p> We have a lot ò efort to bring mỏe quality time</p>
-                      <button>
+                      <p class="hotel-name"> Joy inn Cộng Hòa</p>
+                      <p class="hotel-des"> We have a lot of efort to bring more quality time</p>
+                      <a class="watch-room-button" href="joy_inn/joyinn-cong-hoa" >
                         XEM PHÒNG
-                      </button>
+                      </a>
                     </div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <img
+                  class="swiper-button-top-prev top-hotel-bt prev"
+                  src="./assets/images/icon/prev.svg" alt=""
+                >
+                <img
+                  class="swiper-button-top-next top-hotel-bt next"
+                  src="./assets/images/icon/next.svg" alt=""
+                >
               </div>
             </div>
           </div>
         </div>
+        <div class="go2-choise">
+          <div>
+            <p class="block-label"> <span>GO2CHOICE</span>!</p>
+            <div>
+              <div class="go2-choise_slide container">
+                <div class="swiper-go2-choise">
+                  <div class="swiper-wrapper go2-choise-wrapper">
+                    <div
+                      class="swiper-slide flex go2-choise-content"
+                    >
+                      <p class="go2-choise-content--large-text">It was fun and memorized!</p>
+                      <p class="go2-choise-content--small-text">
+                        "Every year, we come back to Joy Hotel for our anni, It was extremely
+                        interesting and enjoyable! We are happy with our stay in this hotel and
+                        we
+                        love meals here".
+                      </p>
+                      <div class="user-info flex">
+                        <div class="logo-user">
+                        </div>
+                        <div class="user-info">
+                          <p class="user-name"> Annaette Black</p>
+                          <p class="user-location"> Hà Nội</p>
+                        </div>
+                        <div class="user-apostrophe flex">
+                          <img class="apostrophe" src="./assets/images/icon/apostrophe.svg" alt="">
+                          <img class="apostrophe" src="./assets/images/icon/apostrophe.svg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="swiper-slide flex go2-choise-content"
+                    >
+                      <p class="go2-choise-content--large-text">It was fun and memorized!</p>
+                      <p class="go2-choise-content--small-text">
+                        "Every year, we come back to Joy Hotel for our anni, It was extremely
+                        interesting and enjoyable! We are happy with our stay in this hotel and
+                        we
+                        love meals here".
+                      </p>
+                      <div class="user-info flex">
+                        <div class="logo-user">
+                        </div>
+                        <div class="user-info">
+                          <p class="user-name"> Annaette Black</p>
+                          <p class="user-location"> Hà Nội</p>
+                        </div>
+                        <div class="user-apostrophe flex">
+                          <img class="apostrophe" src="./assets/images/icon/apostrophe.svg" alt="">
+                          <img class="apostrophe" src="./assets/images/icon/apostrophe.svg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="swiper-slide flex go2-choise-content"
+                    >
+                      <p class="go2-choise-content--large-text">It was fun and memorized!</p>
+                      <p class="go2-choise-content--small-text">
+                        "Every year, we come back to Joy Hotel for our anni, It was extremely
+                        interesting and enjoyable! We are happy with our stay in this hotel and
+                        we
+                        love meals here".
+                      </p>
+                      <div class="user-info flex">
+                        <div class="logo-user">
+                        </div>
+                        <div class="user-info">
+                          <p class="user-name"> Annaette Black</p>
+                          <p class="user-location"> Hà Nội</p>
+                        </div>
+                        <div class="user-apostrophe flex">
+                          <img class="apostrophe" src="./assets/images/icon/apostrophe.svg" alt="">
+                          <img class="apostrophe" src="./assets/images/icon/apostrophe.svg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="swiper-slide flex go2-choise-content"
+                    >
+                      <p class="go2-choise-content--large-text">It was fun and memorized!</p>
+                      <p class="go2-choise-content--small-text">
+                        "Every year, we come back to Joy Hotel for our anni, It was extremely
+                        interesting and enjoyable! We are happy with our stay in this hotel and
+                        we
+                        love meals here".
+                      </p>
+                      <div class="user-info flex">
+                        <div class="logo-user">
+                        </div>
+                        <div class="user-info">
+                          <p class="user-name"> Annaette Black</p>
+                          <p class="user-location"> Hà Nội</p>
+                        </div>
+                        <div class="user-apostrophe flex">
+                          <img class="apostrophe" src="./assets/images/icon/apostrophe.svg" alt="">
+                          <img class="apostrophe" src="./assets/images/icon/apostrophe.svg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="near-you container">
+          <div class="left">
+            <p class="block-label">TÌM <span>JOY HOTEL</span> GẦN BẠN</p>
+            <div class="row">
+              <div class="col-md-4 scroll-y list-hotel">
+                <div class="hotel-box">
+                  <p>JOY INN CỘNG HÒA</p>
+                  <p>
+                    <img class="lo-img" src="assets/images/icon/location.svg" alt="">
+                    1153 Đường Cộng Hòa, HCM
+                  </p>
+                </div>
+                <div class="hotel-box">
+                  <p>JOY INN CỘNG HÒA</p>
+                  <p>
+                    <img class="lo-img" src="assets/images/icon/location.svg" alt="">
+                    1153 Đường Cộng Hòa, HCM
+                  </p>
+                </div>
+                <div class="hotel-box">
+                  <p>JOY INN CỘNG HÒA</p>
+                  <p>
+                    <img class="lo-img" src="assets/images/icon/location.svg" alt="">
+                    1153 Đường Cộng Hòa, HCM
+                  </p>
+                </div>
+                <div class="hotel-box">
+                  <p>JOY INN CỘNG HÒA</p>
+                  <p>
+                    <img class="lo-img" src="assets/images/icon/location.svg" alt="">
+                    1153 Đường Cộng Hòa, HCM
+                  </p>
+                </div>
+                <div class="hotel-box">
+                  <p>JOY INN CỘNG HÒA</p>
+                  <p>
+                    <img class="lo-img" src="assets/images/icon/location.svg" alt="">
+                    1153 Đường Cộng Hòa, HCM
+                  </p>
+                </div>
+                <div class="hotel-box">
+                  <p>JOY INN CỘNG HÒA</p>
+                  <p>
+                    <img class="lo-img" src="assets/images/icon/location.svg" alt="">
+                    1153 Đường Cộng Hòa, HCM
+                  </p>
+                </div>
+                <div class="hotel-box">
+                  <p>JOY INN CỘNG HÒA</p>
+                  <p>
+                    <img class="lo-img" src="assets/images/icon/location.svg" alt="">
+                    1153 Đường Cộng Hòa, HCM
+                  </p>
+                </div>
+                <div class="hotel-box">
+                  <p>JOY INN CỘNG HÒA</p>
+                  <p>
+                    <img class="lo-img" src="assets/images/icon/location.svg" alt="">
+                    1153 Đường Cộng Hòa, HCM
+                  </p>
+                </div>
+                <div class="hotel-box">
+                  <p>JOY INN CỘNG HÒA</p>
+                  <p>
+                    <img class="lo-img" src="assets/images/icon/location.svg" alt="">
+                    1153 Đường Cộng Hòa, HCM
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-8">
+                <img class="map-img" src="assets/images/banner/loca-cong-hoa.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="libary container">
+          <div class="left">
+            <p class="block-label">THƯ VIỆN ẢNH <img class="four-values_img" src="assets/images/rabbit/캐릭터-응용4-1(솔로-사랑표현).png" alt=""></p>
+            <div class="row"> 
+              <img src="assets/images/banner/banner-1.jpeg" class="col-md-3 p-0" style="object-fit: cover;">
+              <div class="row col-md-8 p-0" style="flex-direction: column;">
+                <img src="assets/images/banner/banner-1.jpeg" class="p-0 fit-img">
+                <div class="flex p-0" style="gap: 2;">
+                  <img src="assets/images/banner/banner-1.jpeg" class="p-0" style="width: 50%;">
+                  <img src="assets/images/banner/banner-1.jpeg" class="p-0" style="width: 49%;">
+                </div>
+              </div>
+            </div>
+            </div>
+        </div>
+        </div>
       </div>
     </div>
-    <div class="homepage_footer">
+    <div class="layout_footer">
       <div class="container footer__container">
         <div class="flex mb-12">
           <div class="footer_left col-md-8" class="" >
@@ -486,10 +671,10 @@
         </div>
         <div class="flex">
           <div class="footer_left col-md-8">
-            <p>
+            <p class="hotel-des">
               "Joy Inn Hotel là chuỗi khách sạn tinh giản dành cho giới trẻ, mang đến hơi thở tươi mới và những trải nghiệm tuyệt vời dành cho các cặp đôi. Vận hành với 2 hệ thống Joy Inn và Joy Boutique Hotel, chúng tôi mang đến cho khách hàng những dịch vụ chuyên nghiệp, tiện nghi từ cơ sở vật chất đến tinh thần sẵn sàng phục vụ của đội ngũ nhân viên.
             </p>
-            <p>
+            <p class="hotel-des">
               Joy Inn Hotel -  Check-in một lần là nhớ mãi."
             </p>
           </div>
@@ -510,14 +695,14 @@
           <div class="footer_left col-md-3">
             <div class="flex gap-52">
               <div>
-                <p> Ưu đãi</p>
-                <p> Hợp tác</p>
-                <p> Blog</p>
+                <p class="hotel-des"> Ưu đãi</p>
+                <a class="hotel-des" href="/joy_inn/about-us"> Hợp tác </a>
+                <p class="hotel-des"> Blog</p>
               </div>
               <div>
-                <p> Chính sách</p>
-                <p> Đặt phòng</p>
-                <p> Đăng nhập</p>
+                <p class="hotel-des"> Chính sách</p>
+                <p class="hotel-des"> Đặt phòng</p>
+                <p class="hotel-des"> Đăng nhập</p>
               </div>
             </div>
           </div>
@@ -531,13 +716,13 @@
         <div class="hor-seperate"></div>
         <div class="row ">
           <div class="col-md-3">
-            <p>
+            <p class="hotel-des">
               <i class="fas fa-globe globe-icon"></i>
               <span>Tiếng Việt</span>
             </p>
           </div>
           <div class="col-md-8 center">
-            <p>@2022 ServiSense. All Right Reserved.</p>
+            <p class="hotel-des">@2022 ServiSense. All Right Reserved.</p>
           </div>
           <div class="col-md-3 right">
             <img class="logo-image-ser" src="./assets/images/icon/ser.svg" alt="">
@@ -577,7 +762,7 @@
       slidesPerView: 3,
       spaceBetween: 30,
     });
-    const swiper = new Swiper('.swiper-container', {
+    const swiper1 = new Swiper('.swiper-container', {
       centeredSlides: true,
       loop: true,
       speed: 500,
@@ -587,8 +772,8 @@
           delay: 30000,
       },
       navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: '.swiper-button-top-next',
+          prevEl: '.swiper-button-top-prev',
       },
       breakpoints: {
 
@@ -605,7 +790,36 @@
               slidesPerView: 3.75,
           },
       },
-  });
+    });
+    const swiper2 = new Swiper('.swiper-go2-choise', {
+      centeredSlides: true,
+      loop: true,
+      speed: 500,
+      slidesPerView: 1.5,
+      spaceBetween: 30,
+      autoplay: {
+          delay: 30000,
+      },
+      navigation: {
+        nextEl: '.swiper-button-choice-next',
+        prevEl: '.swiper-button-choice-prev',
+      },
+      breakpoints: {
+
+          640: {
+              slidesPerView: 2.5,
+          },
+          768: {
+              slidesPerView: 2.75,
+          },
+          1080: {
+              slidesPerView: 3.25,
+          },
+          1280: {
+              slidesPerView: 3.75,
+          },
+      },
+    });
   </script>
 </body>
 </html>

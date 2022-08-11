@@ -6,13 +6,16 @@
     <!-- 
         - favicon
     -->
-    <link href="../assets/images/favicon.png" rel="icon">
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
     <title>About US</title>
     <!-- 
     - custom css link
     -->
-    <link rel="stylesheet" href=" ../assets/css/about-us.css" />
+    
+    <link rel="stylesheet" href="../assets/css/partial/about-us.css" />
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/layout.css">
     <link rel="stylesheet" href="../assets/css/dropdown.css">
     <link rel="stylesheet" href="../assets/css/swiper.css">
     <script src="https://kit.fontawesome.com/c5c1190657.js" crossorigin="anonymous"></script>
@@ -27,32 +30,32 @@
     />
 </head>
 <body>
-    <div class="homepage">
-        <div class="homepage_header">
-            <div class="row">
-                <div class="header_left col-md-3 flex ver-center">
-                    <p class="header-label mr-12"> ƯU ĐÃI </p>
-                    <p class="header-label mr-12"> ĐẶT PHÒNG </p>
-                </div>
-                <div class="header_center col-md-8 center">
-                    <img class="logo-image-header" src="../assets/images/icon/logo-header.png" alt="">
-                </div>
-                <div class="align-right col-md-3 flex ver-center">
-                    <p class="header-label mr-12 ver-center"> HỢP TÁC </p>
-                    <p class="header-label mr-12 ver-center"> BLOG </p>
-                    <p class="ver-seperate"> </p>
-                    <div class="dropdown ver-center">
-                        <button class="drop-btn bold mr-12">EN</button>
-                        <div class="dropdown-content">
-                            <a class="" href="#">EN</a>
-                            <a class="" href="#">VN</a>
-                        </div>
-                    </div>
-                    <button class="login-button">
-                        ĐĂNG NHẬP
-                    </button>
-                </div>
+    <div class="about-us">
+        <div class="layout_header container">
+        <div class="row">
+            <div class="header_left col-md-4 flex ver-center">
+                <p class="header-label mr-12"> ƯU ĐÃI </p>
+                <a class="header-label ver-center" href="/joy_inn/branch"> ĐẶT PHÒNG </a>
             </div>
+            <div class="header_center col-md-6 center">
+                <img class="logo-image-header" src="../assets/images/icon/logo-header.png" alt="">
+            </div>
+            <div class="align-right col-md-4 flex ver-center">
+                <a class="header-label ver-center" href="/joy_inn/about-us"> HỢP TÁC </a>
+                <p class="header-label ver-center"> BLOG </p>
+                <p class="ver-seperate"> </p>
+                <div class="dropdown ver-center">
+                    <button class="drop-btn bold mr-12">EN</button>
+                    <div class="dropdown-content">
+                        <a class="" href="#">EN</a>
+                        <a class="" href="#">VN</a>
+                    </div>
+                </div>
+                <button class="login-button">
+                    ĐĂNG NHẬP
+                </button>
+            </div>
+        </div>
         </div>
         <div class="about-us_main">
             <!-- 
@@ -67,12 +70,12 @@
                                 <div class="swiper-slide">
                                     <img src="../assets/images/banner/banner-branch.png" alt="">
                                 </div>
-                                <div class="swiper-slide">
+                                <!-- <div class="swiper-slide">
                                     <img src="../assets/images/banner/banner-1.jpeg" alt="">
                                 </div>
                                 <div class="swiper-slide">
                                     <img src="../assets/images/banner/banner-1.jpeg" alt="">
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -90,7 +93,7 @@
                                 <p class="is-title-left">đổi mới tiêu chuẩn về khách sạn theo giờ</p>
                             </div>
                             <div class="vision_joy-hotel_banner">
-                                <img src="../assets//images/banner/vision-joyin.png" alt="">
+                                <img src="../assets/images/banner/vision-joyin.png" alt="">
                             </div>
                         </div>
                         <div class="vision-mission">
@@ -111,8 +114,11 @@
                                     <div class="collap-vision-mision-content">
                                         <ul class="collapse-list">
                                             <li>
-                                                <input class="collapse-open" type="checkbox" id="collapse-1">
-                                                <label class="collapse-btn" for="collapse-1">Tầm nhìn <i
+                                                <input onclick="handleClick(0)" name="check" class="collapse-open"
+                                                    type="checkbox"
+                                                    id="collapse-1">
+                                                <label  class="collapse-btn" for="collapse-1">Tầm
+                                                    nhìn <i
                                                         class="fa fa-angle-down"></i></label>
                                                 <div class="collapse-painel">
                                                     <div class="collapse-inner">
@@ -123,7 +129,9 @@
                                                 </div>
                                             </li>
                                             <li>
-                                                <input class="collapse-open" type="checkbox" id="collapse-2">
+                                                <input onclick="handleClick(1)" class="collapse-open" name="check"
+                                                    type="checkbox"
+                                                    id="collapse-2">
                                                 <label class="collapse-btn" for="collapse-2">Sứ mệnh <i
                                                         class="fa fa-angle-down"></i></label>
                                                 <div class="collapse-painel">
@@ -135,10 +143,12 @@
                                                 </div>
                                             </li>
                                             <li>
-                                                <input class="collapse-open" type="checkbox" id="collapse-3">
+                                                <input onclick="handleClick(2)" class="collapse-open" name="check"
+                                                    type="checkbox"
+                                                    id="collapse-3">
                                                 <label class="collapse-btn" for="collapse-3">Giá trị cốt lõi <i
                                                         class="fa fa-angle-down"></i></label>
-                                                <div class="collapse-painel">
+                                                <div aria-controls="collapse-painel" class="collapse-painel">
                                                     <div class="collapse-inner">
                                                         <p>Joy Inn là khách sạn tiên phong nâng cấp và đổi mới tiêu
                                                             chuẩn về khách sạn theo giờ, từ đó nâng cao giá trị cả thị
@@ -163,7 +173,8 @@
                         <div class="timeline1">
                             <div class="container-timeline left">
                                 <div class="content-left">
-                                    <div class="date">2019: JOY INN Cộng Hòa</div>
+                                    <div class="date"><span class="color-g2j is-year-timeline">2019</span><span class="is-sub-year-timeline">: JOY
+                                            INN Cộng Hòa</span></div>
 
                                     <div class="timeline-image">
                                         <img src="../assets/images/banner/timeline1.png" alt="">
@@ -211,7 +222,8 @@
                         </div>
                         <div class="timeline2">
                             <div class="container-timeline left1">
-                                <div class="date">2020: JOY BOUTIQUE Trung Hòa</div>
+                                <div class="date"><span class="color-g2j is-year-timeline">2020</span><span
+                                        class="is-sub-year-timeline">: JOY BOUTIQUE Trung Hòa</span></div>
 
                                 <div class="content2">
                                     <div class="content2-info">
@@ -263,7 +275,8 @@
                         <div class="timeline3">
                             <div class="container-timeline left">
                                 <div class="content-left">
-                                    <div class="date">2019: JOY INN Cộng Hòa</div>
+                                    <div class="date1"><span class="color-g2j is-year-timeline">2022</span><span
+                                            class="is-sub-year-timeline">: JOY INN Nguyễn Thị Thập</span></div>
 
                                     <div class="timeline-image">
                                         <img src="../assets/images/banner/timeline1.png" alt="">
@@ -318,7 +331,7 @@
                     </div>
                     <div class="joy-hotel-block">
                         <div class="joy-hotel-block1">
-                            <img src="../assets//images//banner/vision-joyin1.png" alt="">
+                            <img src="../assets/images/banner/vision-joyin1.png" alt="">
                         </div>
                         <div class="joy-hotel-block2">
                             <div class="joy-hotel-block2-content1 is-block">
@@ -402,7 +415,18 @@
                                         </div>
                                         <div class="block-user-info">
                                             <div class="is-logo-user">
-
+                                            </div>
+                                            <div class="infor-user">
+                                                <div class="is-name">
+                                                    <p>Ralph Edwards</p>
+                                                </div>
+                                                <div class="is-locale">
+                                                    <p>Hà Nội</p>
+                                                </div>
+                                            </div>
+                                            <div class="is-quote">
+                                                <img src="../assets/images/icon/quote1.svg" alt="">
+                                                <img src="../assets/images/icon/quote1.svg" alt="">
                                             </div>
                                         </div>
                                     </div>
@@ -420,29 +444,18 @@
                                         </div>
                                         <div class="block-user-info">
                                             <div class="is-logo-user">
-
                                             </div>
-                                            <div class="name-user">
-                                                <!-- <p class="is-name">Annette Black</p>
-                                                <p class="is-locale">Hà Nội</p> -->
+                                            <div class="infor-user">
+                                                <div class="is-name">
+                                                    <p>Jacob Jones</p>
+                                                </div>
+                                                <div class="is-locale">
+                                                    <p>IT Việc</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide ">
-                                    <div class="block-slide">
-                                        <div class="is-title-slide-go2choise">
-                                            <p>It was fun and memorized!</p>
-                                        </div>
-                                        <div class="is-content-slide-go2choise">
-                                            <p>"Every year, we come back to Joy Hotel for our anni, It was extremely
-                                                interesting and enjoyable! We are happy with our stay in this hotel and
-                                                we
-                                                love meals here".</p>
-                                        </div>
-                                        <div class="block-user-info">
-                                            <div class="is-logo-user">
-
+                                            <div class="is-quote">
+                                                <img src="../assets/images/icon/quote1.svg" alt="">
+                                                <img src="../assets/images/icon/quote1.svg" alt="">
                                             </div>
                                         </div>
                                     </div>
@@ -460,7 +473,43 @@
                                         </div>
                                         <div class="block-user-info">
                                             <div class="is-logo-user">
-
+                                            </div>
+                                            <div class="infor-user">
+                                                <div class="is-name">
+                                                    <p>Ralph Edwards</p>
+                                                </div>
+                                                <div class="is-locale">
+                                                    <p>Hà Nội</p>
+                                                </div>
+                                            </div>
+                                            <div class="is-quote">
+                                                <img src="../assets/images/icon/quote1.svg" alt="">
+                                                <img src="../assets/images/icon/quote1.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide ">
+                                    <div class="block-slide">
+                                        <div class="is-title-slide-go2choise">
+                                            <p>It was fun and memorized!</p>
+                                        </div>
+                                        <div class="is-content-slide-go2choise">
+                                            <p>"Every year, we come back to Joy Hotel for our anni, It was extremely
+                                                interesting and enjoyable! We are happy with our stay in this hotel and
+                                                we
+                                                love meals here".</p>
+                                        </div>
+                                        <div class="block-user-info">
+                                            <div class="is-logo-user">
+                                            </div>
+                                            <div class="infor-user">
+                                                <div class="is-name">
+                                                    <p>Jacob Jones</p>
+                                                </div>
+                                                <div class="is-locale">
+                                                    <p>Hà Nội</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -468,94 +517,121 @@
                                 
                                 
                             </div>
+                            <div class="swiper-pagination"></div>
                             <div class="swiper-button-next"></div>
                             <div class="swiper-button-prev"></div>
                         </div>
                     </div>
                 </div>
             </section>
+            <section class="section section-contact">
+                <div class="container-section-contact">
+                    <div class="section-contact-content">
+                        <div class="contact-form">
+                            <div class="is-title-contact-form">
+                                <p>trở thành đối tác của
+                                <span class="color-g2j"> Joy Hotel</span>!</p>
+                            </div>
+                            <div class="form-style">
+                                <form>
+                                    <input class="field-input" type="text" name="field1" placeholder="Họ và Tên*" />
+                                    <input class="field-input" type="text" name="field5" placeholder="Số điện thoại*" />
+                                    <input class="field-input" type="email" name="field2" placeholder="Email" />
+                                    <select class="field-input">
+                                        <option value="1">Nhu cầu hợp tác</option>
+                                        <option value="2">2</option>
+                                    </select>
+                                    <textarea class="field-area" placeholder="Ghi chú chi tiết"></textarea>
+                                    <input type="button" value="GỬI THÔNG TIN" />
+                                </form>
+                            </div>
+                        </div>
+                        <div class="contact-image">
+                            <img src="../assets/images/contact-image1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-        <div class="homepage_footer">
+        <div class="layout_footer">
             <div class="container footer__container">
-                <div class="flex mb-12">
-                    <div class="footer_left col-md-8" class="">
-                        <img class="logo-image-footer" src="../assets/images/icon/logo-footer.svg" alt="">
-                    </div>
-                    <div class="footer_left col-md-3">
-                        <h2> LIÊN HỆ</h2>
-                    </div>
-                    <div class="footer_left col-md-3">
-                        <h2> LIÊN KÊT NHANH</h2>
-                    </div>
+              <div class="flex mb-12">
+                <div class="footer_left col-md-8" class="" >
+                  <img class="logo-image-footer" src="../assets/images/icon/logo-footer.svg" alt="">
                 </div>
-                <div class="flex">
-                    <div class="footer_left col-md-8">
-                        <p>
-                            "Joy Inn Hotel là chuỗi khách sạn tinh giản dành cho giới trẻ, mang đến hơi thở tươi mới và
-                            những trải nghiệm tuyệt vời dành cho các cặp đôi. Vận hành với 2 hệ thống Joy Inn và Joy
-                            Boutique Hotel, chúng tôi mang đến cho khách hàng những dịch vụ chuyên nghiệp, tiện nghi từ
-                            cơ sở vật chất đến tinh thần sẵn sàng phục vụ của đội ngũ nhân viên.
-                        </p>
-                        <p>
-                            Joy Inn Hotel - Check-in một lần là nhớ mãi."
-                        </p>
-                    </div>
-                    <div class="footer_left col-md-3">
-                        <div class="flex mb-12">
-                            <i class="far fa-envelope logo-contract"></i>
-                            <p class="ver-center">hello@service.vn</p>
-                        </div>
-                        <div class="flex mb-12">
-                            <i class="fas fa-phone-alt logo-contract"></i>
-                            <p class="ver-center">+84 213 123 21</p>
-                        </div>
-                        <div class="flex mb-12">
-                            <i class="fas fa-home logo-contract"></i>
-                            <p class="ver-center">his is address</p>
-                        </div>
-                    </div>
-                    <div class="footer_left col-md-3">
-                        <div class="flex gap-52">
-                            <div>
-                                <p> Ưu đãi</p>
-                                <p> Hợp tác</p>
-                                <p> Blog</p>
-                            </div>
-                            <div>
-                                <p> Chính sách</p>
-                                <p> Đặt phòng</p>
-                                <p> Đăng nhập</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="footer_left col-md-3">
+                  <h2> LIÊN HỆ</h2>
                 </div>
-                <div class="flex social">
-                    <i class="fab fa-facebook-f social__logo"></i>
-                    <i class="fab fa-twitter social__logo"></i>
-                    <i class="fab fa-instagram social__logo"></i>
-                    <i class="fab fa-youtube social__logo"></i>
+                <div class="footer_left col-md-3">
+                  <h2> LIÊN KÊT NHANH</h2>
                 </div>
-                <div class="hor-seperate"></div>
-                <div class="row ">
-                    <div class="col-md-3">
-                        <p>
-                            <i class="fas fa-globe globe-icon"></i>
-                            <span>Tiếng Việt</span>
-                        </p>
-                    </div>
-                    <div class="col-md-8 center">
-                        <p>@2022 ServiSense. All Right Reserved.</p>
-                    </div>
-                    <div class="col-md-3 right">
-                        <img class="logo-image-ser" src="../assets/images/icon/ser.svg" alt="">
-                    </div>
+              </div>
+              <div class="flex">
+                <div class="footer_left col-md-8">
+                  <p class="hotel-des">
+                    "Joy Inn Hotel là chuỗi khách sạn tinh giản dành cho giới trẻ, mang đến hơi thở tươi mới và những trải nghiệm tuyệt vời dành cho các cặp đôi. Vận hành với 2 hệ thống Joy Inn và Joy Boutique Hotel, chúng tôi mang đến cho khách hàng những dịch vụ chuyên nghiệp, tiện nghi từ cơ sở vật chất đến tinh thần sẵn sàng phục vụ của đội ngũ nhân viên.
+                  </p>
+                  <p class="hotel-des">
+                    Joy Inn Hotel -  Check-in một lần là nhớ mãi."
+                  </p>
                 </div>
+                <div class="footer_left col-md-3">
+                  <div class="flex mb-12">
+                    <img class="logo-contract" src="../assets/images/icon/message.svg" alt="">
+                    <p class="ver-center">hello@service.vn</p>
+                  </div>
+                  <div class="flex mb-12">
+                    <img class="logo-contract" src="../assets/images/icon/calling.svg" alt="">
+                    <p class="ver-center">+84 213 123 21</p>
+                  </div>
+                  <div class="flex mb-12">
+                    <img class="logo-contract" src="../assets/images/icon/home.svg" alt="">
+                    <p class="ver-center">his is address</p>
+                  </div>
+                </div>
+                <div class="footer_left col-md-3">
+                  <div class="flex gap-52">
+                    <div>
+                      <p class="hotel-des"> Ưu đãi</p>
+                      <a class="hotel-des" href="/joy_inn/about-us"> Hợp tác </a>
+                      <p class="hotel-des"> Blog</p>
+                    </div>
+                    <div>
+                      <p class="hotel-des"> Chính sách</p>
+                      <p class="hotel-des"> Đặt phòng</p>
+                      <p class="hotel-des"> Đăng nhập</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex social">
+                <i class="fab fa-facebook-f social__logo"></i>
+                <i class="fab fa-twitter social__logo"></i>
+                <i class="fab fa-instagram social__logo"></i>
+                <i class="fab fa-youtube social__logo"></i>
+              </div>
+              <div class="hor-seperate"></div>
+              <div class="row ">
+                <div class="col-md-3">
+                  <p class="hotel-des">
+                    <i class="fas fa-globe globe-icon"></i>
+                    <span>Tiếng Việt</span>
+                  </p>
+                </div>
+                <div class="col-md-8 center">
+                  <p class="hotel-des">@2022 ServiSense. All Right Reserved.</p>
+                </div>
+                <div class="col-md-3 right">
+                  <img class="logo-image-ser" src="../assets/images/icon/ser.svg" alt="">
+                </div>
+              </div>
             </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <!-- Initialize Swiper -->
     <script>
+
         var swiperBanner = new Swiper(".banner-swiper", {});
 
         
@@ -572,6 +648,10 @@
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
+            pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            },
             breakpoints: {
 
                 1280: {
@@ -584,6 +664,19 @@
 
             },
         });
+    
+    // Collapse 
+    function handleClick(a) {
+        const element = document.getElementsByName('check')
+        console.log('element :>> ', element);
+        for (let i = 0; i < 3; i++) {
+            if(i === a) {
+                element[i].checked = true
+            }else {
+                element[i].checked = false
+            }
+        }
+}
     </script>
 </body>
 </html>
