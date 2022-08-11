@@ -668,12 +668,16 @@
     // Collapse 
     function handleClick(a) {
         const element = document.getElementsByName('check')
-        console.log('element :>> ', element);
         for (let i = 0; i < 3; i++) {
             if(i === a) {
                 element[i].checked = true
+                element[i].nextElementSibling.children[0].style.transform = "rotate(180deg)"
+                element[i].nextElementSibling.children[0].style.transition = "0.3s"
+
             }else {
                 element[i].checked = false
+                element[i].nextElementSibling.children[0].style.transform = "rotate(0deg)"
+                element[i].nextElementSibling.children[0].style.transition = "0.3s"
             }
         }
 }
