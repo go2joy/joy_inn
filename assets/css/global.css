@@ -101,7 +101,7 @@ ul{
 .main_content {
   width: 100%;
   background-image: #ffff;
-  padding-bottom: 16px;
+  padding-bottom: 36px;
 }
 .main_banner {
   position: relative;
@@ -209,17 +209,17 @@ ul{
   font-weight: bold;
 }
 .ver-seperate {
-  background-color: #cccccc;
+  background-color: #dcdbdbb3;
   height: 32px;
-  width: 2px;
+  width: 1px;
 }
 .hor-seperate {
-  background-color: #cccccc;
-  height: 2px;
+  background-color: #dcdbdbb3;
+  height: 1px;
   width: 100%;
   margin-bottom: 12px;
 }
-.col-md-3, .col-md-8, .col-md-9, .col-md-6, .col-md-4  {
+.col-md-3, .col-md-8, .col-md-9, .col-md-6, .col-md-4, .col-md-12 {
   position: relative;
   min-height: 1px;
   padding-right: 15px;
@@ -231,8 +231,14 @@ ul{
 .ver-center {
   margin: auto 0;
 }
+.scroll-y {
+  overflow-y: scroll;
+}
+.scroll-x {
+  overflow-x: scroll;
+}
 @media (min-width: 768px) {
-  .col-md-3, .col-md-8, .col-md-9, .col-md-6, .col-md-4 {
+  .col-md-3, .col-md-8, .col-md-9, .col-md-6, .col-md-4, .col-md-12 {
     float: left;
   }
   .col-md-3 {
@@ -249,5 +255,8 @@ ul{
   }
   .col-md-9 {
     width: 79.16667%;
+  }
+  .col-md-12 {
+    width: 100%;
   }
 }
