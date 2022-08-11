@@ -10,7 +10,10 @@ body {
 * {
   box-sizing: border-box;
 }
-
+a {
+  color: #333333;;
+  text-decoration: unset;
+}
 ul{
   list-style: none;
 }
