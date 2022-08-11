@@ -1,0 +1,216 @@
+@import '../layout.css';
+@import '../global.css';
+
+.room-detail__breadcrum {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 11px;
+}
+.room-detail__title {
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 68px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #333333;
+  margin-bottom: 63px;
+}
+.room-detail__facilities {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+.room-detail__facilities .facility__item {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px 10px 0;
+  width: 170px;
+  height: 117px;
+  padding: 5px 10px;
+  background-color: #FFF;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  color: #333333;
+  letter-spacing: 0.01em;
+  background: #FFFFFF;
+  box-shadow: 0px 24px 44px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.room-detail__facilities .facility__item__icon {
+  margin-right: 8px;
+  width: 47px;
+  height: 43px;
+  margin-bottom: 16px;
+}
+.room-detail__facilities .facility__item:hover {
+  color: #fff;
+  background: linear-gradient(180deg, #E77026 0%, #F3A846 100%);
+  box-shadow: 0px 60px 80px rgba(0, 0, 0, 0.06);
+}
+.room-detail__facilities .facility__item:hover .facility__item__icon {
+  filter: hue-rotate(40deg) saturate(0.5) brightness(10) saturate(4); 
+}
+/* facility for 'Tien nghi mien phi' */
+.room-detail__facilities .facility__item--free {
+  font-size: 18px;
+  line-height: 22px;
+  height: 102px;
+  width: 160px;
+}
+
+
+/* Images Grid */
+.room-detail__images__container {
+  display: grid;
+  gap: 30px;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin-bottom: 100px;
+}
+.room-detail__images--left {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+.room-detail__images--right-top {
+  grid-column: 3 / span 2;
+  grid-row: 1 / span 1;
+}
+.room-detail__images--right-bottom {
+  grid-column: 3 / span 2;
+  grid-row: 2 / span 1;
+}
+
+/* Image square by width*/
+.image_container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  font-size: 14px;
+  color: #ffff;
+}
+.image_container .image_dummy {
+  margin-top: 100%;
+}
+.image_container .image_content {
+  position: absolute;
+  inset: 0;
+}
+
+/* Room introduction */
+.room-detail__date-picker {
+  display: flex;
+  flex-direction: column;
+  width: 520px;
+  height: fit-content;
+  border: 1px solid #CACACA;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+.room-detail__intro {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: calc(100% - 520px);
+
+}
+.room-detail__intro__title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: #333333;
+  margin-bottom: 30px;
+}
+.room-detail__intro__desc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #808080;
+  margin-bottom: 80px;
+}
+
+/* Reference room */
+.reference-room {
+  background: #FEFAF8;
+  padding: 70px 0;
+}
+.reference-room__title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 42px;
+}
+/* Card Room */
+.card-room {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+}
+.card-room__image {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  font-size: 14px;
+  color: #ffff;
+}
+.card-room__image .image_dummy {
+  margin-top: calc(100% * (293 / 410));
+}
+.card-room__image .image_content {
+  position: absolute;
+  inset: 0;
+}
+.card-room__content {
+  padding: 20px
+}
+.card-room__title {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 32px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #333333;
+  text-align: left;
+  margin-bottom: 17px;
+}
+.card-room__facilities {
+  display: flex;
+}
+.card-room__facilities .facility__item {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 0.01em;
+}
+.card-room__facilities .facility__item .facility__item__icon{
+  margin-right: 8px;
+  width: 22px;
+  height: 22px;
+}
+
+/* swiper */
+.swiper-pagination {
+  position: inherit !important;
+  margin-top: 10px;
+  bottom: 0px !important;
+}
