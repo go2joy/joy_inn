@@ -333,14 +333,6 @@
 .bold {
   font-weight: bold;
 }
-.login-button {
-  background-color: #E77026;
-  border-radius: 8px;
-  width: 120px;
-  height: 40px;
-  margin: auto 0;
-  border: none;
-}
 .watch-room-button {
   background-color: #ffffff;
   border-radius: 8px;
@@ -349,7 +341,7 @@
   border: none;
   color: #E77026;
 }
-.watch-room-button:hover {
+.swiper-slide-active .watch-room-button:hover {
   background-color: #E77026;
   color: #ffffff;
 }

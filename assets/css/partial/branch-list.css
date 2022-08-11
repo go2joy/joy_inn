@@ -86,15 +86,39 @@
   background: #F9F9F9;
   border-radius: 6px;
 }
-.room__tag:hover {
-  color: #fff;
-  background: linear-gradient(180deg, #E77026 0%, #F3A846 100%);
-  box-shadow: 0px 60px 80px rgba(0, 0, 0, 0.06);
-}
 .room__desc {
   margin-top: 32px;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #808080;
+}
+
+/* pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+.pagination__btn {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  width: 36px;
+  height: 36px;
+  color: #CACACA;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+}
+.pagination__btn--nav {
+  background: #F9F9F9;
+}
+.pagination__btn--active {
+  color: #E77026 !important;
 }
