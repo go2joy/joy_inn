@@ -157,7 +157,7 @@ a {
     height: 1017px;
     /* border: 1px solid; */
     position: relative;
-    padding-top: 86px;
+    /* padding-top: 86px; */
 }
 .vision-content {
     position: absolute;
@@ -821,7 +821,7 @@ background: rgba(231, 112, 38, 0.5);
 }
 .section-go2choise {
     margin-top: 68px;
-    background: url(../images/banner/bg-slide.png)
+    background: url(../../images/banner/bg-slide.png)
 }
 .swiper-container-go2choise {
     padding-top: 67px;

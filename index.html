@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/global.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
   <link rel="stylesheet" href="assets/css/dropdown.css">
   <link rel="stylesheet" href="assets/css/swiper.css">
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
@@ -18,17 +19,17 @@
 </head>
 <body>
   <div class="homepage">
-    <div class="homepage_header">
+    <div class="layout_header container">
       <div class="row">
-        <div class="header_left col-md-3 flex ver-center">
+        <div class="header_left col-md-4 flex ver-center">
           <p class="header-label mr-12"> ƯU ĐÃI </p>
-          <p class="header-label mr-12"> ĐẶT PHÒNG </p>
+          <a class="header-label ver-center" href="/joy_inn/branch"> ĐẶT PHÒNG </a>
         </div>
-        <div class="header_center col-md-8 center">
+        <div class="header_center col-md-6 center">
           <img class="logo-image-header" src="./assets/images/icon/logo-header.png" alt="">
         </div>
-        <div class="align-right col-md-3 flex ver-center">
-          <p class="header-label ver-center"> HỢP TÁC </p>
+        <div class="align-right col-md-4 flex ver-center">
+          <a class="header-label ver-center" href="/joy_inn/about-us"> HỢP TÁC </a>
           <p class="header-label ver-center"> BLOG </p>
           <p class="ver-seperate"> </p>
           <div class="dropdown ver-center">
@@ -390,9 +391,29 @@
                     >
                       <p class="hotel-name"> Joy inn Cộng Hòa</p>
                       <p class="hotel-des"> We have a lot of efort to bring more quality time</p>
-                      <button class="watch-room-button">
+                      <a class="watch-room-button" href="/joy_inn/joyinn-cong-hoa" >
                         XEM PHÒNG
-                      </button>
+                      </a>
+                    </div>
+                    <div
+                      class="swiper-slide flex top-hotel-content"
+                      style="background-image: url('assets/images/branch-joyinn-1.jpg');"
+                    >
+                      <p class="hotel-name"> Joy inn Boutique Trung Hoa</p>
+                      <p class="hotel-des"> We have a lot of efort to bring more quality time</p>
+                      <a class="watch-room-button" href="/joy_inn/joyinn-boutique-trung-hoa" >
+                        XEM PHÒNG
+                      </a>
+                    </div>
+                    <div
+                      class="swiper-slide flex top-hotel-content"
+                      style="background-image: url('assets/images/branch-joyinn-2.jpg');"
+                    >
+                      <p class="hotel-name"> Joy inn Nguyen Thi Thap</p>
+                      <p class="hotel-des"> We have a lot of efort to bring more quality time</p>
+                      <a class="watch-room-button" href="/joy_inn/joyinn-nguyen-thi-thap" >
+                        XEM PHÒNG
+                      </a>
                     </div>
                     <div
                       class="swiper-slide flex top-hotel-content"
@@ -400,9 +421,9 @@
                     >
                       <p class="hotel-name"> Joy inn Cộng Hòa</p>
                       <p class="hotel-des"> We have a lot of efort to bring more quality time</p>
-                      <button class="watch-room-button">
+                      <a class="watch-room-button" href="joy_inn/joyinn-cong-hoa" >
                         XEM PHÒNG
-                      </button>
+                      </a>
                     </div>
                     <div
                       class="swiper-slide flex top-hotel-content"
@@ -410,9 +431,9 @@
                     >
                       <p class="hotel-name"> Joy inn Cộng Hòa</p>
                       <p class="hotel-des"> We have a lot of efort to bring more quality time</p>
-                      <button class="watch-room-button">
+                      <a class="watch-room-button" href="joy_inn/joyinn-cong-hoa" >
                         XEM PHÒNG
-                      </button>
+                      </a>
                     </div>
                     <div
                       class="swiper-slide flex top-hotel-content"
@@ -420,29 +441,9 @@
                     >
                       <p class="hotel-name"> Joy inn Cộng Hòa</p>
                       <p class="hotel-des"> We have a lot of efort to bring more quality time</p>
-                      <button class="watch-room-button">
+                      <a class="watch-room-button" href="joy_inn/joyinn-cong-hoa" >
                         XEM PHÒNG
-                      </button>
-                    </div>
-                    <div
-                      class="swiper-slide flex top-hotel-content"
-                      style="background-image: url('assets/images/banner/top-hotel.png');"
-                    >
-                      <p class="hotel-name"> Joy inn Cộng Hòa</p>
-                      <p class="hotel-des"> We have a lot of efort to bring more quality time</p>
-                      <button class="watch-room-button">
-                        XEM PHÒNG
-                      </button>
-                    </div>
-                    <div
-                      class="swiper-slide flex top-hotel-content"
-                      style="background-image: url('assets/images/banner/top-hotel.png');"
-                    >
-                      <p class="hotel-name"> Joy inn Cộng Hòa</p>
-                      <p class="hotel-des"> We have a lot of efort to bring more quality time</p>
-                      <button class="watch-room-button">
-                        XEM PHÒNG
-                      </button>
+                      </a>
                     </div>
                 </div>
                 <img
@@ -459,7 +460,7 @@
         </div>
       </div>
     </div>
-    <div class="homepage_footer">
+    <div class="layout_footer">
       <div class="container footer__container">
         <div class="flex mb-12">
           <div class="footer_left col-md-8" class="" >
@@ -499,7 +500,7 @@
             <div class="flex gap-52">
               <div>
                 <p class="hotel-des"> Ưu đãi</p>
-                <p class="hotel-des"> Hợp tác</p>
+                <a class="hotel-des" href="/joy_inn/about-us"> Hợp tác </a>
                 <p class="hotel-des"> Blog</p>
               </div>
               <div>
