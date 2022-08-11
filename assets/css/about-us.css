@@ -281,11 +281,13 @@ a {
     border-radius: 0 0 12px 12px;
 }
 
-/* .collapse-open:checked ~ .collapse-painel {
+.collapse-open:checked ~ .collapse-painel {
     max-height: 100%;
     opacity: 100;
-    visibility: visible
-} */
+    visibility: visible;
+    background: rgba(199, 94, 26, 0.46);
+    transition: .6s;
+}
 
 .collapse-list li {
     background: none;
@@ -312,6 +314,11 @@ a {
     font-weight: normal;
     /* transition: background-color .2s ease; */
 }
+.collapse-list .collapse-open:checked ~ .collapse-btn {
+  border-radius: 12px 12px 0 0;
+    border: none;
+    background: rgba(199, 94, 26, 0.46);
+}
 .collapse-list .collapse-btn:hover{
     border: none;
     background: rgba(199, 94, 26, 0.46);
@@ -319,15 +326,15 @@ a {
 .collapse-list .collapse-btn:focus-visible {
     outline: none; 
 }
-.collapse-list li:hover .collapse-painel{
+/* .collapse-list li .collapse-painel{
     background: rgba(199, 94, 26, 0.46);
     visibility: visible;
     max-height: 100%;
     opacity: 1;
     transition: 0.3s;
-}
+} */
 
-.collapse-list li:hover i {
+.collapse-list li:checked i {
     transform: rotate(180deg) !important;
     transition: 0.3s;
 }
@@ -829,23 +836,56 @@ background: linear-gradient(180deg, #E77026 0%, #F3A846 100%) !important;
     cursor: pointer;
     background: rgba(255, 255, 255, 1);
     border-radius: 12px;
-height: 300px;
+    height: 300px;
 
 }
 .block-user-info {
     padding-top: 28px;
-}
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-content: space-around;
+  }
 .go2choise-block .swiper-container-go2choise .swiper-slide-active .is-logo-user {
     width: 60px;
     height: 60px;
     border-radius: 50%;
     background-color: #ffffff !important;
 }
+.infor-user {
+  display: grid;
+  text-align: left;
+  grid-template-columns: 1fr;
+}
 .is-logo-user {
     width: 60px;
     height: 60px;
     border-radius: 50%;
     background-color: rgba(196, 196, 196, 1);
+    line-height: 25px;
+}
+.is-quote {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 15px;
+}
+.go2choise-block .swiper-container-go2choise .swiper-slide-active .is-quote {
+  filter: hue-rotate(40deg) saturate(0.5) brightness(390%) saturate(4); 
+    transition: filter 0.4s all;
+}
+.go2choise-block .is-quote img {
+  width: 19.58px !important;
+  height: 31.06px !important;
+}
+.is-name {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+.is-locale {
+  font-weight: 600;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);;
 }
 .section-contact {
   width: 100%;
@@ -941,4 +981,7 @@ margin-top: 54px;
   float: left;
   margin-right: 41px;
   
+}
+.form-style .field-area {
+  width: calc(80% + 41px);
 }
