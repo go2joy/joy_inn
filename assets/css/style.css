@@ -128,6 +128,7 @@
   transform: scale(1) translateY(-280px);
   width: 45vw;
   height: 45vh;
+  border-radius: 15px;
 }
 .video-label {
   transform: scale(1) translateY(200px);
@@ -167,9 +168,8 @@
   flex-direction: column;
 }
 .content_right {
-  width: 96%;
+  width: 90%;
   height: 576px;
-  overflow: hidden;
 }
 .float-right-five-sense {
   transform: scale(1) translateX(15px);
@@ -221,10 +221,10 @@
   border-radius: 15px;
 }
 .bt-next {
-  right: -28px !important;
+  right: -44px !important;
 }
 .bt-prev {
-  left: -28px !important;
+  left: -44px !important;
 }
 .five-sense-detail-image {
   border-radius: 15px;
@@ -274,7 +274,7 @@
   position: relative;
 }
 .homepage_footer {
-  max-height: 380px;
+  min-height: 380px;
   width: 100%;
   background: linear-gradient(90deg, #E77026 0%, #F3A846 100%);
   color: #ffffff;
@@ -342,6 +342,7 @@
   border: none;
   color: #E77026;
   padding-top: 8px;
+  font-size: 15px;
 }
 .swiper-slide-active .watch-room-button:hover {
   background-color: #E77026;
@@ -362,35 +363,15 @@
   width: 100%;
   margin-bottom: 20px;
 }
-.col-md-3, .col-md-8, .col-md-9 {
-  position: relative;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
-}
+
 .hor-center {
   margin: 0 auto;
 }
 .ver-center {
   margin: auto 0;
 }
-
-@media (min-width: 768px) {
-  .col-md-3, .col-md-8, .col-md-9 {
-    float: left;
-  }
-  .col-md-3 {
-    width: 29.16666667%;
-  }
-  .col-md-8 {
-    width: 70.83333333%;
-  }
-  .col-md-9 {
-    width: 79.16667%;
-  }
-}
-@media (min-width: 1250px) { 
+@media (max-width: 1250px) { 
   .content_right {
-    width: 74%;
+    width: 78%;
   }
 }

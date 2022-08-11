@@ -6,6 +6,8 @@
   <link rel="stylesheet" href="../assets/css/partial/branch.css">
   <link rel="stylesheet" href="../assets/css/dropdown.css">
   <link rel="stylesheet" href="../assets/css/swiper.css">
+  <link rel="stylesheet" href="../assets/css/global.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
   <script src="https://kit.fontawesome.com/c5c1190657.js" crossorigin="anonymous"></script>
   <!-- Link Swiper's CSS -->
@@ -17,18 +19,18 @@
 </head>
 <body>
   <div class="layout">
-    <div class="layout_header">
+    <div class="layout_header container">
       <div class="row">
-        <div class="header_left col-md-3 flex ver-center">
+        <div class="header_left col-md-4 flex ver-center">
           <p class="header-label mr-12"> ƯU ĐÃI </p>
-          <p class="header-label mr-12"> ĐẶT PHÒNG </p>
+          <a class="header-label ver-center" href="/joy_inn/branch"> ĐẶT PHÒNG </a>
         </div>
-        <div class="header_center col-md-8 center">
-          <img class="logo-image-header" src="../assets/images/icon/logo-header.png" alt="">
+        <div class="header_center col-md-6 center">
+          <img class="logo-image-header" src="../../assets/images/icon/logo-header.png" alt="">
         </div>
-        <div class="align-right col-md-3 flex ver-center">
-          <p class="header-label mr-12 ver-center"> HỢP TÁC </p>
-          <p class="header-label mr-12 ver-center"> BLOG </p>
+        <div class="align-right col-md-4 flex ver-center">
+          <a class="header-label ver-center" href="/joy_inn/about-us"> HỢP TÁC </a>
+          <p class="header-label ver-center"> BLOG </p>
           <p class="ver-seperate"> </p>
           <div class="dropdown ver-center">
             <button class="drop-btn bold mr-12">EN</button>
@@ -43,7 +45,6 @@
         </div>
       </div>
     </div>
-    
     <div class="layout_main bg-primary-1">
       <div class="main_banner">
         <div class="main_banner_dummy"></div>
@@ -211,12 +212,11 @@
         </div>
       </div>
     </div>
-
     <div class="layout_footer">
       <div class="container footer__container">
         <div class="flex mb-12">
           <div class="footer_left col-md-8" class="" >
-            <img class="logo-image-footer" src="../assets/images/icon/logo-footer.svg" alt="">
+            <img class="logo-image-footer" src="../../assets/images/icon/logo-footer.svg" alt="">
           </div>
           <div class="footer_left col-md-3">
             <h2> LIÊN HỆ</h2>
@@ -227,38 +227,38 @@
         </div>
         <div class="flex">
           <div class="footer_left col-md-8">
-            <p>
+            <p class="hotel-des">
               "Joy Inn Hotel là chuỗi khách sạn tinh giản dành cho giới trẻ, mang đến hơi thở tươi mới và những trải nghiệm tuyệt vời dành cho các cặp đôi. Vận hành với 2 hệ thống Joy Inn và Joy Boutique Hotel, chúng tôi mang đến cho khách hàng những dịch vụ chuyên nghiệp, tiện nghi từ cơ sở vật chất đến tinh thần sẵn sàng phục vụ của đội ngũ nhân viên.
             </p>
-            <p>
+            <p class="hotel-des">
               Joy Inn Hotel -  Check-in một lần là nhớ mãi."
             </p>
           </div>
           <div class="footer_left col-md-3">
             <div class="flex mb-12">
-              <i class="far fa-envelope logo-contract"></i>
+              <img class="logo-contract" src="assets/images/icon/message.svg" alt="">
               <p class="ver-center">hello@service.vn</p>
             </div>
             <div class="flex mb-12">
-              <i class="fas fa-phone-alt logo-contract"></i>
+              <img class="logo-contract" src="assets/images/icon/calling.svg" alt="">
               <p class="ver-center">+84 213 123 21</p>
             </div>
             <div class="flex mb-12">
-              <i class="fas fa-home logo-contract"></i>
+              <img class="logo-contract" src="assets/images/icon/home.svg" alt="">
               <p class="ver-center">his is address</p>
             </div>
           </div>
           <div class="footer_left col-md-3">
             <div class="flex gap-52">
               <div>
-                <p> Ưu đãi</p>
-                <p> Hợp tác</p>
-                <p> Blog</p>
+                <p class="hotel-des"> Ưu đãi</p>
+                <a class="hotel-des" href="/joy_inn/about-us"> Hợp tác </a>
+                <p class="hotel-des"> Blog</p>
               </div>
               <div>
-                <p> Chính sách</p>
-                <p> Đặt phòng</p>
-                <p> Đăng nhập</p>
+                <p class="hotel-des"> Chính sách</p>
+                <p class="hotel-des"> Đặt phòng</p>
+                <p class="hotel-des"> Đăng nhập</p>
               </div>
             </div>
           </div>
@@ -272,16 +272,16 @@
         <div class="hor-seperate"></div>
         <div class="row ">
           <div class="col-md-3">
-            <p>
+            <p class="hotel-des">
               <i class="fas fa-globe globe-icon"></i>
               <span>Tiếng Việt</span>
             </p>
           </div>
           <div class="col-md-8 center">
-            <p>@2022 ServiSense. All Right Reserved.</p>
+            <p class="hotel-des">@2022 ServiSense. All Right Reserved.</p>
           </div>
           <div class="col-md-3 right">
-            <img class="logo-image-ser" src="../assets/images/icon/ser.svg" alt="">
+            <img class="logo-image-ser" src="./assets/images/icon/ser.svg" alt="">
           </div>
         </div>
       </div>

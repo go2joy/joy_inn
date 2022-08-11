@@ -13,8 +13,7 @@
   flex-basis: auto;
 }
 .layout_footer {
-  margin-top: auto;
-  max-height: 380px;
+  min-height: 380px;
   width: 100%;
   background: linear-gradient(90deg, #E77026 0%, #F3A846 100%);
   color: #ffffff;
