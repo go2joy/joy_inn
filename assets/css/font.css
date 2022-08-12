@@ -1,5 +1,19 @@
 @font-face {
   font-family: 'Averta Std CY';
+  font-weight: 100;
+  font-display: block;
+  src: url("../fonts/Intelligent Design - AvertaStdCY-Thin_1.otf") format("opentype"); 
+}
+
+@font-face {
+  font-family: 'Averta Std CY';
+  font-weight: 300;
+  font-display: block;
+  src: url("../fonts/Intelligent Design - AvertaStdCY-Light_1.otf") format("opentype"); 
+}
+
+@font-face {
+  font-family: 'Averta Std CY';
   font-weight: 400;
   font-display: block;
   src: url("../fonts/Intelligent Design - AvertaStdCY-Regular_3.otf") format("opentype"); 
