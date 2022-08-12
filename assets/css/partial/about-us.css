@@ -136,9 +136,6 @@ a {
   margin: 0;
   padding: 0;
 }
-.banner-img {
-  object-fit: fill !important;
-}
 .section {
     /* padding: 86px 0; */
 }
