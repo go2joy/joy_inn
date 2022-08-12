@@ -153,6 +153,10 @@ ul{
 .footer__container {
   padding-top: 90px;
 }
+.footer__icon {
+  width: 20px;
+  height: 20px;
+}
 .hotel-des {
   font-weight: 300;
   font-size: 16px;
@@ -221,8 +225,11 @@ ul{
 .align-right {
   justify-content: end;
 }
+.mr-4 {
+  margin-right: 4px !important;
+}
 .mr-8 {
-  margin-right: 12px !important;
+  margin-right: 8px !important;
 }
 .mr-12 {
   margin-right: 12px !important;
@@ -244,6 +251,9 @@ ul{
 }
 .mb-80 {
   margin-bottom: 80px !important;
+}
+.pb-12 { 
+  padding-bottom: 12px !important;
 }
 .pb-30 {
   padding-bottom: 30px !important;
