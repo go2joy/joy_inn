@@ -48,7 +48,7 @@
   align-items: center;
   margin: 0 10px 10px 0;
   width: fit-content;
-  padding: 5px 10px;
+  padding: 6px 10px;
   background-color: #FDF5F0;
   font-weight: 600;
   font-size: 12px;
@@ -56,8 +56,11 @@
   color: #E77026;
   letter-spacing: 0.01em;
 }
-.facility__item__icon {
+.facility__item i {
+  display: flex;
+  align-items: center;
   margin-right: 8px;
+  font-size: 18px;
 }
 .facility__item:hover {
   color: #fff;
