@@ -344,6 +344,7 @@
   padding: 20px;
   border-left: 9px #E77026 solid;
   margin: 12px 0;
+  cursor: pointer;
 }
 .lo-img {
   width: 18px;
