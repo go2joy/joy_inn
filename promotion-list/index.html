@@ -37,7 +37,7 @@
                 <p class="header-label mr-12"> ƯU ĐÃI </p>
                 <a class="header-label ver-center" href="/joy_inn/branch"> ĐẶT PHÒNG </a>
             </div>
-            <div class="header_center col-md-6 center">
+            <div class="header_center col-md-4 center">
                 <img class="logo-image-header" src="../assets/images/icon/logo-header.png" alt="">
             </div>
             <div class="align-right col-md-4 flex ver-center">
@@ -45,10 +45,10 @@
                 <p class="header-label ver-center"> BLOG </p>
                 <p class="ver-seperate"> </p>
                 <div class="dropdown ver-center">
-                    <button class="drop-btn bold mr-12">EN</button>
+                    <button class="drop-btn bold mr-12">VN</button>
                     <div class="dropdown-content">
-                        <a class="" href="#">EN</a>
                         <a class="" href="#">VN</a>
+                        <a class="" href="#">EN</a>
                     </div>
                 </div>
                 <button class="login-button">
@@ -58,7 +58,7 @@
         </div>
         </div>
         <div class="promotion-list_main">
-             <!-- 
+            <!-- 
                 - #Banner
             -->
             <section class="section banner" aria-label="vision" id="vision">
@@ -278,7 +278,6 @@
     // Collapse 
     function handleClick(a) {
         const element = document.getElementsByName('check')
-        console.log('element :>> ', element);
         for (let i = 0; i < 3; i++) {
             if(i === a) {
                 element[i].checked = true
@@ -286,7 +285,7 @@
                 element[i].checked = false
             }
         }
-}
+    }
     </script>
 </body>
 </html>
