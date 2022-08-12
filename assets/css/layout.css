@@ -17,9 +17,11 @@
   box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
 }
 .layout_main {
+  text-align: center;
   display: block;
   flex: 1;
   flex-basis: auto;
+  margin-top: 85px;
 }
 .layout_footer {
   min-height: 380px;
