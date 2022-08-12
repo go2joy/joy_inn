@@ -1,6 +1,7 @@
 @import '../layout.css';
 @import '../global.css';
 @import '../select.css';
+@import '../style.css';
 
 .room-detail__breadcrum {
   font-weight: 400;
