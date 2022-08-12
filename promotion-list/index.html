@@ -7,7 +7,7 @@
         - favicon
     -->
     <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
-    <title>About US</title>
+    <title>Promotion</title>
     <!-- 
     - custom css link
     -->
@@ -31,34 +31,34 @@
 </head>
 <body style="background: rgba(231, 112, 38, 0.03);box-shadow: 0px 60px 80px rgba(0, 0, 0, 0.06);">
     <div class="promotion-list">
-        <div class="layout_header container">
-        <div class="row">
-            <div class="header_left col-md-4 flex ver-center">
-                 <a class="header-label ver-center" href="/joy_inn/promotion-list"> ƯU ĐÃI </a>
-                <a class="header-label ver-center" href="/joy_inn/branch"> ĐẶT PHÒNG </a>
-            </div>
-            <div class="header_center col-md-6 center">
-                <img class="logo-image-header" src="../assets/images/icon/logo-header.png" alt="">
-            </div>
-            <div class="align-right col-md-4 flex ver-center">
-                <a class="header-label ver-center" href="/joy_inn/about-us"> HỢP TÁC </a>
-                <p class="header-label ver-center"> BLOG </p>
-                <p class="ver-seperate"> </p>
-                <div class="dropdown ver-center">
-                    <button class="drop-btn bold mr-12">EN</button>
-                    <div class="dropdown-content">
-                        <a class="" href="#">EN</a>
-                        <a class="" href="#">VN</a>
-                    </div>
+        <div class="layout_header">
+            <div class="row">
+                <div class="header_left col-md-5 flex ver-center">
+                    <a class="header-label ver-center" href="/joy_inn/promotion-list"> ƯU ĐÃI </a>
+                    <a class="header-label ver-center" href="/joy_inn/branch"> ĐẶT PHÒNG </a>
                 </div>
-                <button class="login-button">
-                    ĐĂNG NHẬP
-                </button>
+                <div class="header_center col-md-2 center">
+                    <a href="/"><img class="logo-image-header" src="../assets/images/icon/logo-header.png" alt=""></a>
+                </div>
+                <div class="align-right col-md-5 flex ver-center">
+                    <a class="header-label ver-center padding-left-right-none" href="/joy_inn/about-us"> HỢP TÁC </a>
+                    <p class="header-label ver-center"> BLOG </p>
+                    <p class="ver-seperate"> </p>
+                    <div class="dropdown ver-center">
+                        <button class="drop-btn bold mr-12">VN</button>
+                        <div class="dropdown-content">
+                            <a class="" href="#">VN</a>
+                            <a class="" href="#">EN</a>
+                        </div>
+                    </div>
+                    <button class="login-button">
+                        ĐĂNG NHẬP
+                    </button>
+                </div>
             </div>
-        </div>
         </div>
         <div class="promotion-list_main">
-             <!-- 
+            <!-- 
                 - #Banner
             -->
             <section class="section banner" aria-label="vision" id="vision">
@@ -107,9 +107,11 @@
                                     <li>Áp dụng khi đặt phòng qua Fanpage cho tất cả chi nhánh.</li>
                                 </ul>
                             </div>
-                            <div class="is-button-promotion">
-                                <input type="button" value="ĐẶT PHÒNG NGAY" />
-                            </div>
+                            <a href="/joy_inn/branch">
+                                <div class="is-button-promotion">
+                                    <input type="button" value="ĐẶT PHÒNG NGAY" />
+                                </div>
+                            </a>
                         </div>
                     </div>
                     <div class="item-promotion">
@@ -127,9 +129,11 @@
                                     <li>Áp dụng tại JOY INN NGUYEN THI THAP</li>
                                 </ul>
                             </div>
-                            <div class="is-button-promotion">
-                                <input type="button" value="ĐẶT PHÒNG NGAY" />
-                            </div>
+                            <a href="/joy_inn/branch">
+                                <div class="is-button-promotion">
+                                    <input type="button" value="ĐẶT PHÒNG NGAY" />
+                                </div>
+                            </a>
                         </div>
                     </div>
                     <div class="item-promotion">
@@ -153,9 +157,11 @@
                                     <li>TẶNG Mỹ phẩm Hàn Quốc cao cấp</li>
                                 </ul>
                             </div>
-                            <div class="is-button-promotion">
-                                <input type="button" value="ĐẶT PHÒNG NGAY" />
-                            </div>
+                            <a href="/joy_inn/branch"> 
+                                <div class="is-button-promotion">
+                                    <input type="button" value="ĐẶT PHÒNG NGAY" />
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -276,7 +282,6 @@
     // Collapse 
     function handleClick(a) {
         const element = document.getElementsByName('check')
-        console.log('element :>> ', element);
         for (let i = 0; i < 3; i++) {
             if(i === a) {
                 element[i].checked = true
@@ -284,7 +289,7 @@
                 element[i].checked = false
             }
         }
-}
+    }
     </script>
 </body>
 </html>

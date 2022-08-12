@@ -164,6 +164,10 @@ ul{
   line-height: 24px;
   margin: 0;
 }
+.banner-img {
+  object-fit: fill !important;
+  max-height: 621px !important;
+}
 .row,
 .flex {
   display: flex;
@@ -181,8 +185,8 @@ ul{
 .logo-image-header {
   width: 184px;
   height: 82px;
-  margin: 12px 0;
-  object-fit: cover;
+  margin: 0;
+
 }
 .logo-image-footer {
   width: 160px;
@@ -271,6 +275,10 @@ ul{
   height: 1px;
   width: 100%;
   margin-bottom: 12px;
+}
+.padding-left-right-none {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 .col-md-2,
 .col-md-3,

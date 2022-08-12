@@ -16,9 +16,6 @@
   flex: 1;
   flex-basis: auto;
 }
-.banner-img {
-  object-fit: fill !important;
-}
 
 .main_four-values {
   display: flex;
