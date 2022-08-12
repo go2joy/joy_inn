@@ -1,0 +1,16 @@
+.custom-select {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	outline: none;
+	display: block;
+	width: 100%;
+	padding: 7px;
+  color: rgb(117, 117, 117);
+	margin-bottom: 10px;
+	font: 16px Arial, Helvetica, sans-serif;
+	height: 45px;
+	background: #FFFFFF;
+  border: 1px solid #CACACA;
+  border-radius: 8px;
+}
