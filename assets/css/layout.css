@@ -59,9 +59,17 @@
 }
 .is-messenger {
   text-align: right;
+  height: 50px;
 }
 .is-messenger:hover {
   transform: scale(1.05);
+}
+.is-btn-hotline {
+  height: 40px;
+  padding: 5px;
+}
+.is-btn-hotline img{
+  height: auto;
 }
 .is-btn-hotline:hover {
   transform: scale(1.05);
