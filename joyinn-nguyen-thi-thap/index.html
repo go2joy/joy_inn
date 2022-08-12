@@ -22,7 +22,7 @@
     <div class="layout_header container">
       <div class="row">
         <div class="header_left col-md-4 flex ver-center">
-          <p class="header-label mr-12"> ƯU ĐÃI </p>
+           <a class="header-label ver-center" href="/joy_inn/promotion-list"> ƯU ĐÃI </a>
           <a class="header-label ver-center" href="/joy_inn/branch"> ĐẶT PHÒNG </a>
         </div>
         <div class="header_center col-md-6 center">
@@ -313,7 +313,9 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <!-- Initialize Swiper -->
   <script>
-    var swiperBanner = new Swiper(".banner-swiper", {});
+    var swiperBanner = new Swiper(".banner-swiper", {
+      autoHeight: true
+    });
     var swiperFiveImg = new Swiper(".five-swiper", {
       navigation: {
         nextEl: ".swiper-button-next",
