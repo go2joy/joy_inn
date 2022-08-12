@@ -41,21 +41,6 @@ ul{
 .overflow-hidden {
   overflow: hidden !important;
 }
-.w-full {
-  width: 100%;
-}
-.w-half {
-  width: 50%;
-}
-.h-full {
-  height: 100%;
-}
-.border {
-  border: 1px solid #333333;
-}
-.overflow-hidden {
-  overflow: hidden !important;
-}
 
 /* text */
 .limit-text-line-1 {
