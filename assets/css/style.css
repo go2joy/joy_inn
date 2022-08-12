@@ -16,9 +16,6 @@
   flex: 1;
   flex-basis: auto;
 }
-.banner-img {
-  object-fit: fill !important;
-}
 
 .main_four-values {
   display: flex;
@@ -408,9 +405,6 @@
   width: 100%;
   background: linear-gradient(90deg, #E77026 0%, #F3A846 100%);
   color: #ffffff;
-}
-.footer__container {
-  padding-top: 20px !important;
 }
 .logo-image-footer {
   width: 160px;

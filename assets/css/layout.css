@@ -6,11 +6,22 @@
 .layout_header {
   font-size: 1rem;
   color: #7f7f7f;
+  position: fixed;
+  height: 85px;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background: #ffffff;
+  -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
 }
 .layout_main {
+  text-align: center;
   display: block;
   flex: 1;
   flex-basis: auto;
+  margin-top: 85px;
 }
 .layout_footer {
   min-height: 380px;
@@ -24,4 +35,34 @@
   font-size: 16px;
   line-height: 20px;
   color: #656565;
+  padding: 0 21px;
+}
+.styckyBtn {
+  display: block;
+  position: fixed;
+  bottom: 30%;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: none;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  /* pointer-events: none; */
+}
+
+.styckyBtn:hover {
+  background-color:none;
+}
+.is-messenger {
+  text-align: right;
+}
+.is-messenger:hover {
+  transform: scale(1.05);
+}
+.is-btn-hotline:hover {
+  transform: scale(1.05);
 }

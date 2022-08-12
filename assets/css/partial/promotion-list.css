@@ -12,22 +12,31 @@ h1, h2, h3, h4, h5, h6, p {
 body {
     margin: 0;
 }
-.promotion-list_main {
-    display: block;
-    flex: 1;
-    flex-basis: auto;
-}
 .container-section {
     width: 100%;
     max-width: 1312px;
     margin: 0 auto;
     padding: 0 24px;
 }
+.item-promotion img{ 
+    width: 100%;
+}
+@media (max-width: 1200px) {
+    .container-section {
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 12px;
+    }
+    .item-promotion {
+        width: 500px;
+    }
+}
 .promotion-block-list {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 89px;
+    margin: 89px 0;
 
 }
 .promotion-block-list .footer_left {

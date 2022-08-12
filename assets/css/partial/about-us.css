@@ -122,12 +122,6 @@ a {
     background-image: #ffff;
     padding-bottom: 16px;
 }
-.about-us_main {
-    text-align: center;
-    display: block;
-    flex: 1;
-    flex-basis: auto;
-}
 .main_banner {
   position: relative;
   height: 600px;
@@ -135,9 +129,6 @@ a {
   color: #ffff;
   margin: 0;
   padding: 0;
-}
-.banner-img {
-  object-fit: fill !important;
 }
 .section {
     /* padding: 86px 0; */
