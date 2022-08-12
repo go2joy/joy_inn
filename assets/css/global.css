@@ -140,7 +140,6 @@ ul{
   width: 100%;
   font-size: 14px;
   color: #ffff;
-  margin-bottom: 89px;
 }
 .main_banner_dummy {
   margin-top: calc(100% * (700 / 1920));
@@ -166,8 +165,6 @@ ul{
   padding-top: 20px;
 }
 .hotel-des {
-  font-weight: 400;
-  font-size: 16px;
   color: #fff;
 }
 .row,
@@ -188,6 +185,7 @@ ul{
   width: 184px;
   height: 82px;
   margin: 12px 0;
+  object-fit: cover;
 }
 .logo-image-footer {
   width: 160px;
