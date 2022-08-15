@@ -6,7 +6,10 @@
 .swiper-slide {
   height: auto !important;
 }
-
+a {
+  color: #333333;
+  text-decoration: unset !important;
+}
 .room-detail__header {
   margin-right: auto !important;
   margin-left: auto !important;
