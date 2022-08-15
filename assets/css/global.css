@@ -167,6 +167,9 @@ ul{
   line-height: 24px;
   margin: 0;
 }
+a.hotel-des:hover {
+  color: #333333 !important;
+}
 .banner-img {
   object-fit: fill !important;
   max-height: 612px !important;
