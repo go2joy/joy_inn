@@ -41,7 +41,7 @@
 .styckyBtn {
   display: block;
   position: fixed;
-  bottom: 100px;
+  bottom: 25px;
   right: 30px;
   z-index: 99;
   font-size: 18px;
