@@ -70,6 +70,7 @@ ul{
 
 /* button */
 .button--default {
+  display: block;
   padding: 18px;
   cursor: pointer;
   color: #ffffff;
@@ -83,6 +84,7 @@ ul{
   text-decoration: unset;
 }
 .button--default:hover {
+  text-decoration: unset;
   color: #ffffff;
   opacity: 0.7;
 }
@@ -136,6 +138,7 @@ ul{
 .main_banner_content {
   position: absolute;
   inset: 0;
+  overflow: hidden;
 }
 .main_banner_title{
   width: 90%;
@@ -151,7 +154,11 @@ ul{
   text-align: center;
 }
 .footer__container {
-  padding-top: 90px;
+  padding-top: 20px;
+}
+.footer__icon {
+  width: 20px;
+  height: 20px;
 }
 .hotel-des {
   font-weight: 300;
@@ -162,7 +169,7 @@ ul{
 }
 .banner-img {
   object-fit: fill !important;
-  max-height: 621px !important;
+  max-height: 612px !important;
 }
 .row,
 .flex {
@@ -181,8 +188,8 @@ ul{
 .logo-image-header {
   width: 184px;
   height: 82px;
-  margin: 12px 0;
-  object-fit: cover;
+  margin: 0;
+
 }
 .logo-image-footer {
   width: 160px;
@@ -225,8 +232,11 @@ ul{
 .align-right {
   justify-content: end;
 }
+.mr-4 {
+  margin-right: 4px !important;
+}
 .mr-8 {
-  margin-right: 12px !important;
+  margin-right: 8px !important;
 }
 .mr-12 {
   margin-right: 12px !important;
@@ -249,6 +259,9 @@ ul{
 .mb-80 {
   margin-bottom: 80px !important;
 }
+.pb-12 { 
+  padding-bottom: 12px !important;
+}
 .pb-30 {
   padding-bottom: 30px !important;
 }
@@ -265,6 +278,10 @@ ul{
   height: 1px;
   width: 100%;
   margin-bottom: 12px;
+}
+.padding-left-right-none {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 .col-md-2,
 .col-md-3,
