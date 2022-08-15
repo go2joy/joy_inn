@@ -296,7 +296,18 @@ a.hotel-des:hover {
 .col-md-9,
 .col-md-10,
 .col-md-11,
-.col-md-12 {
+.col-md-12,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12 {
   position: relative;
   min-height: 1px;
   padding-right: 15px;
@@ -325,40 +336,103 @@ a.hotel-des:hover {
   .col-md-9,
   .col-md-10,
   .col-md-11,
-  .col-md-12{
+  .col-md-12
+  {
     float: left;
   }
-  .col-md-2 {
+  .col-md-2
+  {
     width: 20.83333%;
   }
-  .col-md-3 {
+  .col-md-3
+  {
     width: 29.16666667%;
   }
-  .col-md-4 {
+  .col-md-4
+  {
     width: 37.5%; 
   }
-  .col-md-5 {
+  .col-md-5
+  {
     width: 45.83333%; 
   }
-  .col-md-6 {
+  .col-md-6
+  {
     width: 54.16667%;
   }
-  .col-md-7 {
+  .col-md-7
+  {
     width: 62.5%;
   }
-  .col-md-8 {
+  .col-md-8
+  {
     width: 70.83333333%;
   }
-  .col-md-9 {
+  .col-md-9
+  {
     width: 79.16667%;
   }
-  .col-md-10 {
+  .col-md-10
+  {
     width: 87.5%;
   }
-  .col-md-11 {
+  .col-md-11
+  {
     width: 95.8333%;
   }
-  .col-md-12 {
+  .col-md-12
+  {
+    width: 100%;
+  }
+}
+@media (max-width: 425px) {
+.container{
+  width: 95%
+}
+  .col-sm-2,
+  .col-sm-3,
+  .col-sm-4,
+  .col-sm-5,
+  .col-sm-6,
+  .col-sm-7,
+  .col-sm-8,
+  .col-sm-9,
+  .col-sm-10,
+  .col-sm-11,
+  .col-sm-12 {
+  float: left;
+  }
+  .col-sm-2 {
+    width: 20.83333%;
+  }
+  .col-sm-3 {
+    width: 29.16666667%;
+  }
+  .col-sm-4 {
+    width: 37.5%; 
+  }
+  .col-sm-5 {
+    width: 45.83333%; 
+  }
+  .col-sm-6{
+    width: 54.16667%;
+  }
+  .col-sm-7 {
+    width: 62.5%;
+  }
+  .col-sm-8 {
+    width: 70.83333333%;
+  }
+  .col-sm-9 {
+    width: 79.16667%;
+  }
+  .col-sm-10 {
+    width: 87.5%;
+  }
+  .col-sm-11 {
+    width: 95.8333%;
+  }
+  .col-sm-12 {
     width: 100%;
   }
 }
