@@ -8,17 +8,17 @@
   cursor: pointer;
 }
 .drop-btn::after {
-  border: 1px solid;
-  background-color: #ff6400;
+  background-image: url(../images/icon/polygon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
   content: '';
   display: block;
   height: 4px;
-  width: 4px;
+  width: 6px;
   margin-top: -4px;
   position: absolute;
-  transform: rotate(135deg);
-  right: -5px;
-  top: 50%;
+  right: -3px;
+  top: 12px;
   border-bottom-left-radius: 12px;
 }
 .dropdown-content {
