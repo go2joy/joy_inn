@@ -72,7 +72,7 @@
       </div>
 
       <div class="container">
-        <div class="room">
+        <a href="/joy_inn/standard-double-no-window-ntt-room" class="room">
           <div class="room__logo">
             <img src="../assets/images/branch-joyinn-3.jpg" alt="">
           </div>
@@ -99,9 +99,9 @@
           </div>
 
            
-        </div>
+        </a>
         
-        <div class="room">
+        <a href="/joy_inn/standard-with-window-ntt-room" class="room">
           <div class="room__logo">
             <img src="https://go2joy.s3-ap-southeast-1.amazonaws.com/hotel/12018/4479_1655174126_62a7f3ee9cdd3.jpg" alt="">
           </div>
@@ -128,9 +128,9 @@
           </div>
 
            
-        </div>
+        </a>
 
-        <div class="room">
+        <a href="/joy_inn/superior-double-ntt-room" class="room">
           <div class="room__logo">
             <img src="https://s3.go2joy.vn/1000w/hotel/12018/4479_1655174883_62a7f6e3592f4.jpg" alt="">
           </div>
@@ -157,9 +157,9 @@
           </div>
 
            
-        </div>
+        </a>
 
-        <div class="room">
+        <a href="/joy_inn/deluxe-double-ntt-room" class="room">
           <div class="room__logo">
             <img src="../assets/images/Deluxe-Double-Room.jpg" alt="">
           </div>
@@ -186,9 +186,9 @@
           </div>
 
            
-        </div>
+        </a>
 
-        <div class="room">
+        <a href="/joy_inn/deluxe-twin-ntt-room" class="room">
           <div class="room__logo">
             <img src="../assets/images/Deluxe-Twin-Room.jpg" alt="">
           </div>
@@ -215,7 +215,7 @@
           </div>
 
            
-        </div>
+        </a>
 
         <!-- <div class="pagination">
           <div class="pagination__btn">
@@ -307,19 +307,45 @@
     </div>
   </div>
   <div class="styckyBtn">
-        <div class="is-messenger">
-            <img src="../assets/images/messenger.png" alt="">
-        </div>
-        <div class="is-btn-hotline">
-            <img src="../assets/images/hotline1.png" alt="">
-        </div>
-        <div class="is-btn-hotline">
-            <img src="../assets/images/hotline2.png" alt="">
-        </div>
-        <div class="is-btn-hotline">
-            <img src="../assets/images/hotline3.png" alt="">
-        </div>
+    <div class="is-btn-hotline">
+      <img src="../assets/images/hotline1.png" alt="">
     </div>
+    <div class="is-btn-hotline">
+      <img src="../assets/images/hotline2.png" alt="">
+    </div>
+    <div class="is-btn-hotline">
+      <img src="../assets/images/hotline3.png" alt="">
+    </div>
+  </div>
+
+  <!-- Messenger Plugin chat Code -->
+  <div id="fb-root"></div>
+  <!-- Your Plugin chat code -->
+  <div id="fb-customer-chat" class="fb-customerchat">
+  </div>
+  <script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "109417457506998");
+    chatbox.setAttribute("attribution", "biz_inbox");
+  </script>
+  <!-- Your SDK code -->
+  <script>
+    window.fbAsyncInit = function() {
+    FB.init({
+        xfbml            : true,
+        version          : 'v14.0'
+    });
+    };
+
+    (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <!-- Initialize Swiper -->
   <script>

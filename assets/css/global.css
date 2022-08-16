@@ -1,4 +1,5 @@
 @import url('./font.css');
+@import url('./custom-fb-chat.css');
 
 body {
   font-size: 12px;
@@ -6,6 +7,7 @@ body {
   color: #333333;
   margin: 0;
   overflow-x: hidden;
+  width: 100%;
 }
 * {
   box-sizing: border-box;
@@ -156,6 +158,15 @@ ul{
 .footer__container {
   padding-top: 20px;
 }
+.footer__title {
+  font-family: 'Averta Std CY';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
 .footer__icon {
   width: 20px;
   height: 20px;
@@ -174,10 +185,14 @@ a.hotel-des:hover {
   object-fit: fill !important;
   max-height: 612px !important;
 }
-.row,
+
 .flex {
   display: flex;
-  gap: 10px;
+  gap: 20px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
 }
 .flex-wrap {
   flex-wrap: wrap;
@@ -342,31 +357,31 @@ a.hotel-des:hover {
   }
   .col-md-2
   {
-    width: 20.83333%;
+    flex-basis: 16.666%;
   }
   .col-md-3
   {
-    width: 29.16666667%;
+    flex-basis: 25%;
   }
   .col-md-4
   {
-    width: 37.5%; 
+    flex-basis: 33.333%;
   }
   .col-md-5
   {
-    width: 45.83333%; 
+    flex-basis: 41.666%; 
   }
   .col-md-6
   {
-    width: 54.16667%;
+    flex-basis: 50%; 
   }
   .col-md-7
   {
-    width: 62.5%;
+    flex-basis: 62.5%;
   }
   .col-md-8
   {
-    width: 70.83333333%;
+    flex-basis:66.666667%;
   }
   .col-md-9
   {
@@ -382,13 +397,13 @@ a.hotel-des:hover {
   }
   .col-md-12
   {
-    width: 100%;
+    flex: 0 0 100%;
   }
 }
-@media (max-width: 425px) {
-.container{
-  width: 95%
-}
+@media (max-width: 540px) {
+  .container{
+    width: 95%
+  }
   .col-sm-2,
   .col-sm-3,
   .col-sm-4,
@@ -402,26 +417,31 @@ a.hotel-des:hover {
   .col-sm-12 {
   float: left;
   }
-  .col-sm-2 {
-    width: 20.83333%;
+  .col-sm-2
+  {
+    flex-basis: 16.666%;
   }
-  .col-sm-3 {
-    width: 29.16666667%;
+  .col-sm-3
+  {
+    flex-basis: 25%;
   }
-  .col-sm-4 {
-    width: 37.5%; 
+  .col-sm-4
+  {
+    flex-basis: 33.333%;
   }
-  .col-sm-5 {
-    width: 45.83333%; 
+  .col-sm-5
+  {
+    flex-basis: 41.666%; 
   }
   .col-sm-6{
-    width: 54.16667%;
+    flex-basis: 50%; 
   }
   .col-sm-7 {
     width: 62.5%;
   }
   .col-sm-8 {
-    width: 70.83333333%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
   }
   .col-sm-9 {
     width: 79.16667%;
@@ -433,6 +453,6 @@ a.hotel-des:hover {
     width: 95.8333%;
   }
   .col-sm-12 {
-    width: 100%;
+    max-width: 100%;
   }
 }

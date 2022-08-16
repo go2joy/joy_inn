@@ -3,6 +3,56 @@
 @import '../select.css';
 @import '../style.css';
 
+.swiper-slide {
+  height: auto !important;
+}
+a {
+  color: #333333;
+  text-decoration: unset !important;
+}
+.room-detail__header {
+  margin-right: auto !important;
+  margin-left: auto !important;
+  justify-content: space-between;
+}
+.room-detail__header .header_left .header-label,
+.room-detail__header .header_right .header-label
+{
+  font-family: 'Averta Std CY';
+  font-size: 17px !important;
+  line-height: 20px !important;
+  color: #656565;
+  padding: 0 21px !important;
+  text-decoration: unset !important;
+}
+.room-detail__header .header_left .header-label:hover,
+.room-detail__header .header_right .header-label:hover {
+  color: #E77026 !important;
+}
+.btn-lang {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: capitalize;
+  color: #E66E31;
+}
+.btn-lang--item{
+  font-size: 16px;
+  text-decoration: unset !important;
+}
+.login-button {
+  padding: 12px 10px;
+  font-size: 15px;
+  background-color: #E77026;
+  border-radius: 8px;
+  width: 120px;
+  height: 40px;
+  margin: auto 0;
+  border: none;
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 19px;
+}
 .room-detail__breadcrum {
   font-weight: 400;
   font-size: 16px;
@@ -159,11 +209,17 @@
 /* Card Room */
 .card-room {
   display: flex;
+  flex: 1;
   width: 100%;
+  height: 100%;
   flex-direction: column;
   border-radius: 10px;
   overflow: hidden;
   background-color: #fff;
+  cursor: pointer;
+}
+.card-room:hover {
+  text-decoration: unset;
 }
 .card-room__image {
   position: relative;
@@ -180,7 +236,10 @@
   inset: 0;
 }
 .card-room__content {
-  padding: 20px
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 .card-room__title {
   font-weight: 600;
@@ -191,9 +250,15 @@
   color: #333333;
   text-align: left;
   margin-bottom: 17px;
+  /* height: 64px; */
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 .card-room__facilities {
   display: flex;
+  margin-top: auto;
 }
 .card-room__facilities .facility__item {
   display: flex;
@@ -234,12 +299,12 @@
 }
 .tab {
   position: relative;
-  display: inline-flex;
+  display: inline-flex; 
   justify-content: center;
   align-items: center;
   width: calc(100% / 3);
   height: 66px;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 18px;
   line-height: 22px;
   text-transform: uppercase;
