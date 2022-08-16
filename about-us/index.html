@@ -1116,8 +1116,7 @@
             // e?.preventDefault();
                 grecaptcha.ready(function() {
                 grecaptcha.execute('6LfRcXggAAAAANfDFk9ppYmcVo4ztrc_Iyw5UR6Q').then(function(token) {
-                    console.log('token :>> ', token);
-                    postAPISendMail(token)
+                    // postAPISendMail(token)
                 });
             });
         }
@@ -1129,9 +1128,9 @@
             const dataform = "<h2>Ho ten: Tuyen </h2> <br><h2>Email: tuyen.le@go2joy.vn</h2>"
             const params = {
                 token : token,
-                subject: "Send mail",
-                toEmailList: "tuyen.le@go2joy.vn",
-                ccEmailList: "levinhtuyen210@gmail.com",
+                subject: "JOY INN HOTEL - Yêu cầu hợp tác của bạn đang được xem xét",
+                toEmailList: "Joyinnhotel.vn@gmail.com",
+                ccEmailList: "",
                 content: dataform
             }
             const result = await axios.post("https://staging-api.go2joy.vn/api/v5/web-booking/other/sendEmailForJoyInn",
