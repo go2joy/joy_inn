@@ -26,6 +26,9 @@
     <script src="https://kit.fontawesome.com/c5c1190657.js" crossorigin="anonymous"></script>
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <script src="https://www.google.com/recaptcha/api.js?render=6LdH0n0hAAAAADeyQDAGx85xEp02VGlvrU-BY-nd">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
 </head>
 
 <body>
@@ -194,7 +197,7 @@
                                     </div>
                                     <div class="block">
                                         <p class="is-number">
-                                            <span id="number3-3">0</span> <span>%</span>
+                                            <span id="number3-3">0</span>
                                         </p>
                                         <p class="is-text">
                                             Đội ngũ nhân sự được đào tạo
@@ -202,7 +205,7 @@
                                     </div>
                                     <div class="block">
                                         <p class="is-number">
-                                            <span id="number3-4">0</span> <span>%</span>
+                                            <span id="number3-4">0</span>
                                         </p>
                                         <p class="is-text">
                                             Tỉ lệ đánh giá từ khách hàng
@@ -238,7 +241,7 @@
                                         </div>
                                         <div class="block">
                                             <p class="is-number">
-                                                <span id="number2-3">0</span> <span>%</span>
+                                                <span id="number2-3">0</span> 
                                             </p>
                                             <p class="is-text">
                                                 Đội ngũ nhân sự được đào tạo
@@ -246,7 +249,7 @@
                                         </div>
                                         <div class="block">
                                             <p class="is-number">
-                                                <span id="number2-4">0</span> <span>%</span>
+                                                <span id="number2-4">0</span> 
                                             </p>
                                             <p class="is-text">
                                                 Tỉ lệ đánh giá từ khách hàng
@@ -291,7 +294,7 @@
                                     </div>
                                     <div class="block">
                                         <p class="is-number">
-                                            <span id="number1-2">0</span> <span>%</span>
+                                            <span id="number1-2">0</span> 
                                         </p>
                                         <p class="is-text">
                                             Tối ưu chi phí vận hành
@@ -299,7 +302,7 @@
                                     </div>
                                     <div class="block">
                                         <p class="is-number">
-                                            <span id="number1-3">0</span> <span>%</span>
+                                            <span id="number1-3">0</span> 
                                         </p>
                                         <p class="is-text">
                                             Đội ngũ nhân sự được đào tạo
@@ -539,7 +542,7 @@
                                         <option value="4">Nhu cầu hợp tác 3</option>
                                     </select>
                                     <textarea class="field-area" placeholder="Ghi chú chi tiết"></textarea>
-                                    <input type="button" value="GỬI THÔNG TIN" />
+                                    <button onclick="onClickReCapcha()" type="submit">GỬI THÔNG TIN</button>
                                 </form>
                             </div>
                         </div>
@@ -622,7 +625,448 @@
                 </div>
               </div>
             </div>
-          </div>
+
+        </div>
+    </div>
+    <div class="about-us-is-mobile">
+        <section class="section vision" aria-label="vision" id="vision">
+            <div class="vision-content">
+                <div class="container-section">
+                    <div class="vision_joy-hotel">
+                        <div class="vision_joy-hotel_text">
+                            <p class="is-title-left color-black">joy hotel -</p>
+                            <p class="is-title-left color-white">đổi mới tiêu chuẩn về khách sạn theo giờ</p>
+                        </div>
+                    </div>
+                    <div class="vision_joy-hotel_banner">
+                        <img src="../assets/images/banner/vision-joyin-mobile.png" alt="">
+                    </div>
+                    <div class="vision-mission">
+                        <div class="vision-mission-content">
+                            <div class="vision-mission-center-content">
+                                <p class="is-title-vision-mission-center-content">Joy Hotel không đơn giản chỉ là
+                                    khách sạn cho cặp đôi!</p>
+                                <p class="is-sub-vision-mission-center-content">
+                                    Được vận hành bởi thương hiệu Hàn Quốc với 2 hệ thống Joy Inn & Joy Botique, Joy
+                                    Inn Hotel mang khuynh hướng trẻ trung, hiện đại, là sự lựa chọn hàng đầu dành
+                                    cho các bạn trẻ.
+                                </p>
+                                <div class="collap-vision-mision-content">
+                                    <ul class="collapse-list">
+                                        <li>
+                                            <input onclick="handleClick(0)" name="checked" class="collapse-open"
+                                                type="checkbox" id="collapsed-1">
+                                            <label class="collapse-btn" for="collapse-1">Tầm
+                                                nhìn <i class="fa fa-angle-down"></i></label>
+                                            <div class="collapse-painel">
+                                                <div class="collapse-inner">
+                                                    <p>Joy Inn là khách sạn tiên phong nâng cấp và đổi mới tiêu
+                                                        chuẩn về khách sạn theo giờ, từ đó nâng cao giá trị cả thị
+                                                        trường ở phân khúc này.</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <input onclick="handleClick(1)" class="collapse-open" name="checked"
+                                                type="checkbox" id="collapsed-2">
+                                            <label class="collapse-btn" for="collapse-2">Sứ mệnh <i
+                                                    class="fa fa-angle-down"></i></label>
+                                            <div class="collapse-painel">
+                                                <div class="collapse-inner">
+                                                    <p>Joy Inn là khách sạn tiên phong nâng cấp và đổi mới tiêu
+                                                        chuẩn về khách sạn theo giờ, từ đó nâng cao giá trị cả thị
+                                                        trường ở phân khúc này.</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <input onclick="handleClick(2)" class="collapse-open" name="checked"
+                                                type="checkbox" id="collapsed-3">
+                                            <label class="collapse-btn" for="collapse-3">Giá trị cốt lõi <i
+                                                    class="fa fa-angle-down"></i></label>
+                                            <div aria-controls="collapse-painel" class="collapse-painel">
+                                                <div class="collapse-inner">
+                                                    <p>Joy Inn là khách sạn tiên phong nâng cấp và đổi mới tiêu
+                                                        chuẩn về khách sạn theo giờ, từ đó nâng cao giá trị cả thị
+                                                        trường ở phân khúc này.</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section-timeline " aria-label="time-line" id="time-line">
+            <div class="is-title-timeline">
+                <p>Những <span class="color-g2j">con số</span> biết nói</p>
+            </div>
+            <div class="timeline-total">
+                <div class="timeline-mobile">
+                    <div class="time-mobile-1">
+                        <div class="container-timeline">
+                            <div class="content">
+                                <div class="content-title-timeline">
+                                    <p><span class="color-g2j is-year">2019</span> <br> JOY INN Cộng Hòa</p>
+                                </div>
+                                <div class="content-info">
+                                    <div class="block">
+                                        <p class="is-number color-g2j">
+                                            <span id="number3-1">0</span> <span class="is-percent">%</span>
+                                        </p>
+                                        <p class="is-text">
+                                            Tăng trưởng doanh thu
+                                        </p>
+                                    </div>
+                                    <div class="block">
+                                        <p class="is-number color-g2j">
+                                            <span id="number3-2">0</span> <span class="is-percent">%</span>
+                                        </p>
+                                        <p class="is-text">
+                                            Tối ưu chi phí vận hành
+                                        </p>
+                                    </div>
+                                    <div class="block">
+                                        <p class="is-number color-g2j">
+                                            <span id="number3-3">0</span>
+                                        </p>
+                                        <p class="is-text">
+                                            Đội ngũ nhân sự được đào tạo
+                                        </p>
+                                    </div>
+                                    <div class="block">
+                                        <p class="is-number color-g2j">
+                                            <span id="number3-4">0</span>
+                                        </p>
+                                        <p class="is-text">
+                                            Tỉ lệ đánh giá từ khách hàng
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="time-mobile-image">
+                        <img src="../assets/images/banner/timeline1.png" alt="">
+                    </div>
+                </div>
+                <div class="timeline-mobile">
+                    <div class="time-mobile-2">
+                        <div class="container-timeline">
+                            <div class="content">
+                                <div class="content-title-timeline">
+                                    <p><span class="color-g2j is-year">2019</span> <br> JOY INN Cộng Hòa</p>
+                                </div>
+                                <div class="content-info">
+                                    <div class="block">
+                                        <p class="is-number color-g2j">
+                                            <span id="number3-1">0</span> <span class="is-percent">%</span>
+                                        </p>
+                                        <p class="is-text">
+                                            Tăng trưởng doanh thu
+                                        </p>
+                                    </div>
+                                    <div class="block">
+                                        <p class="is-number color-g2j">
+                                            <span id="number3-2">0</span> <span class="is-percent">%</span>
+                                        </p>
+                                        <p class="is-text">
+                                            Tối ưu chi phí vận hành
+                                        </p>
+                                    </div>
+                                    <div class="block">
+                                        <p class="is-number color-g2j">
+                                            <span id="number3-3">0</span>
+                                        </p>
+                                        <p class="is-text">
+                                            Đội ngũ nhân sự được đào tạo
+                                        </p>
+                                    </div>
+                                    <div class="block">
+                                        <p class="is-number color-g2j">
+                                            <span id="number3-4">0</span>
+                                        </p>
+                                        <p class="is-text">
+                                            Tỉ lệ đánh giá từ khách hàng
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="time-mobile-image">
+                        <img src="../assets/images/banner/timeline1.png" alt="">
+                    </div>
+                </div>
+                <div class="timeline-mobile">
+                    <div class="time-mobile-2">
+                        <div class="container-timeline">
+                            <div class="content">
+                                <div class="content-title-timeline">
+                                    <p><span class="color-g2j is-year">2019</span> <br> JOY INN Cộng Hòa</p>
+                                </div>
+                                <div class="content-info">
+                                    <div class="block">
+                                        <p class="is-number color-g2j">
+                                            <span id="number3-1">0</span> <span class="is-percent">%</span>
+                                        </p>
+                                        <p class="is-text">
+                                            Tăng trưởng doanh thu
+                                        </p>
+                                    </div>
+                                    <div class="block">
+                                        <p class="is-number color-g2j">
+                                            <span id="number3-2">0</span> <span class="is-percent">%</span>
+                                        </p>
+                                        <p class="is-text">
+                                            Tối ưu chi phí vận hành
+                                        </p>
+                                    </div>
+                                    <div class="block">
+                                        <p class="is-number color-g2j">
+                                            <span id="number3-3">0</span>
+                                        </p>
+                                        <p class="is-text">
+                                            Đội ngũ nhân sự được đào tạo
+                                        </p>
+                                    </div>
+                                    <div class="block">
+                                        <p class="is-number color-g2j">
+                                            <span id="number3-4">0</span>
+                                        </p>
+                                        <p class="is-text">
+                                            Tỉ lệ đánh giá từ khách hàng
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="time-mobile-image">
+                        <img src="../assets/images/banner/timeline1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section-joy-hotel " aria-label="joy-hotel" id="joy-hotel">
+            <div class="joy-hotel">
+                <div class="is-title-joy-hotel">
+                    <p>gia nhập chuỗi khách sạn <span class="color-g2j">joy hotel</span></p>
+                </div>
+                <div class="slide-joy-hotel">
+                    <div class="swiper-container-joy-hotel">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="block-slide">
+                                    <div class="joy-hotel-block-content is-block">
+                                        <div class="is-icon">
+                                            <img src="../assets/images/icon/mobile.svg" alt="">
+                                        </div>
+                                        <div class="content-block-joy-hotel">
+                                            <p class="is-title-block-joy-hotel">Tối ưu chi phí đầu tư</p>
+                                            <ul class="is-content-block-joy-hotel">
+                                                <li>Cải tạo nội thất với chi phí hiệu quả</li>
+                                                <li> Hỗ trợ tài chính với chính sách ưu đãi từ ngân hàng</li>
+                                                <li> Các gói nhượng quyền tùy chỉnh, tương thíc với qui mô và định hướng
+                                                    vận
+                                                    hành của từng khách sạn</li>
+                                                <li> Hỗ trợ dịch vụ kế toán</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide ">
+                                <div class="block-slide">
+                                    <div class="joy-hotel-block-content is-block">
+                                        <div class="is-icon">
+                                            <img src="../assets/images/icon/house.svg" alt="">
+                                        </div>
+                                        <div class="content-block-joy-hotel">
+                                            <p class="is-title-block-joy-hotel">Tăng trưởng doanh thu</p>
+                                            <ul class="is-content-block-joy-hotel">
+                                                <li>Nâng cao doanh thu, công suất phòng hàng tháng</li>
+                                                <li> Hỗ trợ đặc biệt từ platform Go2Joy</li>
+                                                <li> Hỗ trợ tư vấn và triển khai kênh bán OTA uy tín</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide ">
+                                <div class="block-slide">
+                                    <div class="joy-hotel-block-content is-block">
+                                        <div class="is-icon">
+                                            <img src="../assets/images/icon/house.svg" alt="">
+                                        </div>
+                                        <div class="content-block-joy-hotel">
+                                            <p class="is-title-block-joy-hotel">Chuẩn hóa quy trình vận hành</p>
+                                            <ul class="is-content-block-joy-hotel">
+                                                <li>Cung cấp các SOP tùy chỉnh phù hợp từng qui mô khách sạn</li>
+                                                <li> Đào tạo nhân viên làm việc đúng qui trình và hiệu quả</li>
+                                                <li>Hỗ trợ đào tạo và bồi dưỡng nghiệp vụ chuyên môn dành cho nhân viên
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide ">
+                                <div class="block-slide">
+                                    <div class="joy-hotel-block-content is-block">
+                                        <div class="is-icon">
+                                            <img src="../assets/images/icon/house.svg" alt="">
+                                        </div>
+                                        <div class="content-block-joy-hotel">
+                                            <p class="is-title-block-joy-hotel">Tăng trưởng tiếp thị truyền thông</p>
+                                            <ul class="is-content-block-joy-hotel">
+                                                <li>Nền tảng flatform Go2Joy</li>
+                                                <li> Xuyên suốt được hỗ trợ từ các hoạt động Digital & Branding từ hệ
+                                                    thống Joy
+                                                    Inn Hotel</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section-go2choise">
+            <div class="go2choise-block">
+                <div class="is-title-go2choise">
+                    <p class="top-hotels_label color-g2j"> GO2CHOICE!</p>
+                </div>
+                <div class="top-hotels_slide">
+                    <div class="swiper-container-go2choise-is-mobile">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="block-slide">
+                                    <div class="is-title-slide-go2choise">
+                                        <p>It was fun and memorized!</p>
+                                    </div>
+                                    <div class="is-content-slide-go2choise">
+                                        <p>" The staff have been amazing and extremely helpful. They respond in a very
+                                            friendly manner to all questions of us and we will comeback if we have a
+                                            chance "</p>
+                                    </div>
+                                    <div class="block-user-info">
+                                        <div class="is-logo-user">
+                                        </div>
+                                        <div class="infor-user">
+                                            <div class="is-name">
+                                                <p>Ralph Edwards</p>
+                                            </div>
+                                            <div class="is-locale">
+                                                <p>ServiSense Agency</p>
+                                            </div>
+                                        </div>
+                                        <div class="is-quote">
+                                            <img src="../assets/images/icon/quote1.svg" alt="">
+                                            <img src="../assets/images/icon/quote1.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="block-slide">
+                                    <div class="is-title-slide-go2choise">
+                                        <p>It was fun and memorized!</p>
+                                    </div>
+                                    <div class="is-content-slide-go2choise">
+                                        <p>"Every year, we come back to Joy Hotel for our anni, It was extremely
+                                            interesting and enjoyable! We are happy with our stay in this hotel and
+                                            we
+                                            love meals here".</p>
+                                    </div>
+                                    <div class="block-user-info">
+                                        <div class="is-logo-user">
+                                        </div>
+                                        <div class="infor-user">
+                                            <div class="is-name">
+                                                <p>Ralph Edwards</p>
+                                            </div>
+                                            <div class="is-locale">
+                                                <p>Hà Nội</p>
+                                            </div>
+                                        </div>
+                                        <div class="is-quote">
+                                            <img src="../assets/images/icon/quote1.svg" alt="">
+                                            <img src="../assets/images/icon/quote1.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="block-slide">
+                                    <div class="is-title-slide-go2choise">
+                                        <p>It was fun and memorized!</p>
+                                    </div>
+                                    <div class="is-content-slide-go2choise">
+                                        <p>"The location of FT hotel is perfect and very central. I was very happy to
+                                            walk around the hotel, discover surrounding scenes such as beach, night
+                                            market, museum"</p>
+                                    </div>
+                                    <div class="block-user-info">
+                                        <div class="is-logo-user">
+                                        </div>
+                                        <div class="infor-user">
+                                            <div class="is-name">
+                                                <p>Jacob Jones</p>
+                                            </div>
+                                            <div class="is-locale">
+                                                <p>IT Việc</p>
+                                            </div>
+                                        </div>
+                                        <div class="is-quote">
+                                            <img src="../assets/images/icon/quote1.svg" alt="">
+                                            <img src="../assets/images/icon/quote1.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section-contact-is-mobile">
+            <div class="container-section-contact-is-mobile">
+                <div class="section-contact-is-mobile-content">
+                    <div class="contact-form">
+                        <div class="is-title-contact-form">
+                            <p>trở thành đối tác của
+                                <span class="color-g2j"> Joy Hotel</span>!</p>
+                        </div>
+                        <div class="form-style">
+                            <form>
+                                <input style="margin-right: 24px" class="field-input" type="text" name="field1" placeholder="Họ và tên*" />
+                                <input class="field-input" type="text" name="field5" placeholder="Số điện thoại*" />
+                                <input class="field-input" type="email" name="field2" placeholder="Email" />
+                                <select class="field-input">
+                                    <option value="1">Nhu cầu hợp tác</option>
+                                    <option value="2">Nhu cầu hợp tác 1</option>
+                                    <option value="3">Nhu cầu hợp tác 2</option>
+                                    <option value="4">Nhu cầu hợp tác 3</option>
+                                </select>
+                                <textarea class="field-area" placeholder="Ghi chú chi tiết"></textarea>
+                                <button onclick="onClickReCapcha()" type="submit">GỬI THÔNG TIN</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
     <div class="styckyBtn">
         <div class="is-btn-hotline">
@@ -635,42 +1079,68 @@
             <img src="../assets/images/hotline3.png" alt="">
         </div>
     </div>
-
-    <!-- Messenger Plugin chat Code -->
-    <div id="fb-root"></div>
-    <!-- Your Plugin chat code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
-    <script>
-        var chatbox = document.getElementById('fb-customer-chat');
-        chatbox.setAttribute("page_id", "109417457506998");
-        chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
-    <!-- Your SDK code -->
-    <script>
-        window.fbAsyncInit = function() {
-        FB.init({
-            xfbml            : true,
-            version          : 'v14.0'
-        });
-        };
-
-        (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+     <!-- Messenger Plugin chat Code -->
+     <div id="fb-root"></div>
+     <!-- Your Plugin chat code -->
+     <div id="fb-customer-chat" class="fb-customerchat">
+     </div>
+     <script>
+         var chatbox = document.getElementById('fb-customer-chat');
+         chatbox.setAttribute("page_id", "109417457506998");
+         chatbox.setAttribute("attribution", "biz_inbox");
+     </script>
+     <!-- Your SDK code -->
+     <script>
+         window.fbAsyncInit = function () {
+             FB.init({
+                 xfbml: true,
+                 version: 'v14.0'
+             });
+         };
+
+         (function (d, s, id) {
+             var js, fjs = d.getElementsByTagName(s)[0];
+             if (d.getElementById(id)) return;
+             js = d.createElement(s);
+             js.id = id;
+             js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+             fjs.parentNode.insertBefore(js, fjs);
+         }(document, 'script', 'facebook-jssdk'));
+     </script>
     <!-- Initialize Swiper -->
+    <script>
+        function onClickReCapcha(e) {
+            e.preventDefault();
+                grecaptcha.ready(function() {
+                grecaptcha.execute('6LdH0n0hAAAAADeyQDAGx85xEp02VGlvrU-BY-nd').then(function(token) {
+                    randomIndex(token)
+                });
+            });
+        }
+        async function randomIndex(token){
+            const dataform = "<h2>Ho ten: Tuyen </h2> <br><h2>Email: tuyen.le@go2joy.vn</h2>"
+            const params = {
+                token : token,
+                subject: "Send mail",
+                toEmailList: "tuyen.le@go2joy.vn",
+                ccEmailList: "levinhtuyen210@gmail.com",
+                content: dataform
+            }
+            const result = await axios.get("https://staging-api.go2joy.vn/api/v5/web-booking/other/sendEmailForJoyInn", {
+                params
+            }).then(function (response) {
+                console.log('response :>> ', response);
+                return response.data.data
+            })
+            
+        };
+    </script>
+    
     <script>
         var swiperBanner = new Swiper(".banner-swiper", {
             autoHeight: true
         });
-
-
         const swiper = new Swiper('.swiper-container-go2choise', {
             centeredSlides: true,
             loop: true,
@@ -700,26 +1170,81 @@
 
             },
         });
+        const swiperJoyHotel = new Swiper('.swiper-container-joy-hotel', {
+            centeredSlides: false,
+            loop: true,
+            speed: 500,
+            slidesPerView: 1.5,
+            spaceBetween: 10,
+            autoplay: {
+            delay: 30000,
+            },
+            pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            },
+            breakpoints: {
+            320: {
+            slidesPerView: 1.2,
 
+            },
+            540: {
+            slidesPerView: 2,
+            }
+
+            },
+        });
+        const swiperGo2choiseIsMobile = new Swiper('.swiper-container-go2choise-is-mobile', {
+            centeredSlides: false,
+            loop: true,
+            speed: 500,
+            spaceBetween: 20,
+            slidesPerView: 1,
+            autoplay: {
+            delay: 30000,
+            },
+            pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            },
+            breakpoints: {
+            320: {
+            slidesPerView: 1,
+
+            },
+            540: {
+            slidesPerView: 1,
+            }
+
+            },
+        });
+        
         // Collapse 
         function handleClick(a) {
             const element = document.getElementsByName('check')
+            const elemented = document.getElementsByName('checked')
             for (let i = 0; i < 3; i++) {
                 if (i === a) {
                     element[i].checked = true
                     element[i].nextElementSibling.children[0].style.transform = "rotate(180deg)"
                     element[i].nextElementSibling.children[0].style.transition = "0.3s"
+                    elemented[i].checked = true
+                    elemented[i].nextElementSibling.children[0].style.transform = "rotate(180deg)"
+                    elemented[i].nextElementSibling.children[0].style.transition = "0.3s"
+                    elemented[i].nextElementSibling.children[0].style.maxHeight= "100%"
+                    console.log('elemented[i] :>> ', elemented[i]);
+                    console.log('a,i :>> ', a,i);
 
                 } else {
                     element[i].checked = false
                     element[i].nextElementSibling.children[0].style.transform = "rotate(0deg)"
                     element[i].nextElementSibling.children[0].style.transition = "0.3s"
+                    elemented[i].checked = false
+                    elemented[i].nextElementSibling.children[0].style.transform = "rotate(0deg)"
+                    elemented[i].nextElementSibling.children[0].style.transition = "0.3s"
                 }
             }
         }
-
-
-
         //#region - start of - number counter animation
         let counter1 = 0
         let counter2 = 0
@@ -817,7 +1342,7 @@
             }
         });
 
-    </script>
+    </script>   
 </body>
 
 </html>
