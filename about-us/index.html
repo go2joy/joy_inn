@@ -26,7 +26,7 @@
     <script src="https://kit.fontawesome.com/c5c1190657.js" crossorigin="anonymous"></script>
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-    <script src="https://www.google.com/recaptcha/api.js?render=6LdH0n0hAAAAADeyQDAGx85xEp02VGlvrU-BY-nd">
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfRcXggAAAAANfDFk9ppYmcVo4ztrc_Iyw5UR6Q">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
 </head>
@@ -1115,7 +1115,7 @@
         function onClickReCapcha(e) {
             // e?.preventDefault();
                 grecaptcha.ready(function() {
-                grecaptcha.execute('6LdH0n0hAAAAADeyQDAGx85xEp02VGlvrU-BY-nd').then(function(token) {
+                grecaptcha.execute('6LfRcXggAAAAANfDFk9ppYmcVo4ztrc_Iyw5UR6Q').then(function(token) {
                     console.log('token :>> ', token);
                     postAPISendMail(token)
                 });
