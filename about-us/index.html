@@ -1081,15 +1081,20 @@
            
         </div>
     </div>
-    <div class="styckyBtn">
-        <div class="is-btn-hotline">
-            <img src="../assets/images/hotline1.png" alt="">
+    <div class="styckyBtn" id="styckyBtn" onclick="activeHotline()">
+        <div class="is-hotline">
+            <img src="../assets/images/mobile.png" alt="">
         </div>
-        <div class="is-btn-hotline">
-            <img src="../assets/images/hotline2.png" alt="">
-        </div>
-        <div class="is-btn-hotline">
-            <img src="../assets/images/hotline3.png" alt="">
+        <div class="info-hotline" id="info-hotline">
+            <div class="is-btn-hotline">
+                <img src="../assets/images/hotline1.png" alt="">
+            </div>
+            <div class="is-btn-hotline">
+                <img src="../assets/images/hotline2.png" alt="">
+            </div>
+            <div class="is-btn-hotline">
+                <img src="../assets/images/hotline3.png" alt="">
+            </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
@@ -1249,7 +1254,7 @@
             },
             breakpoints: {
             320: {
-            slidesPerView: 1.2,
+            slidesPerView: 1.25,
 
             },
             540: {
@@ -1406,7 +1411,23 @@
                 counterNumber3()
             }
         });
+        function activeHotline() {
+            const element = document.getElementById('styckyBtn')
+            const elementHotline = document.getElementById('info-hotline')
+            element.classList.add("is-active-styckyBtn")
+            elementHotline.classList.add("is-active-hotline")
+        }
+        var ignoreClickOnMeElement = document.getElementById('styckyBtn');
 
+        document.addEventListener('click', function(event) {
+        var isClickInsideElement = ignoreClickOnMeElement.contains(event.target);
+        if (!isClickInsideElement) {
+            const element = document.getElementById('styckyBtn')
+            const elementHotline = document.getElementById('info-hotline')
+            element.classList.remove("is-active-styckyBtn")
+            elementHotline.classList.remove("is-active-hotline")
+        }
+        });
     </script>   
 </body>
 

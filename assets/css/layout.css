@@ -38,12 +38,40 @@
   color: #656565;
   padding: 0 21px;
 }
+.is-hotline {
+  text-align: right;
+}
+.info-hotline {
+  opacity: 0;
+  max-height: 0;
+  width: 0;
+  
+}
+.styckyBtn:hover {
+  width: auto;
+}
+.styckyBtn:hover .info-hotline {
+  opacity: 1;
+  width: 100%;
+  max-height: 100%; 
+  transition: 1s ease;
+}
+.is-active-styckyBtn {
+  width: 189px !important;
+}
+.is-active-hotline {
+  opacity: 1 !important;
+  width: 100% !important;
+  max-height: 100% !important; 
+  transition: 1s ease;
+}
 .styckyBtn {
   display: block;
   position: fixed;
   bottom: 25px;
-  right: 30px;
+  right: 12px;
   z-index: 99;
+  width: 85px;
   font-size: 18px;
   border: none;
   outline: none;
@@ -78,6 +106,7 @@
 .is-btn-hotline:hover {
   transform: scale(1.05);
 }
+
 @media screen and (max-width: 540px) {
   .styckyBtn {
     display: none;
