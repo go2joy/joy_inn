@@ -124,6 +124,15 @@
   .g2j-branch .main_banner {
     margin-bottom: 50px;
   }
+  .g2j-branch .main_banner_title {
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 43px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    bottom: 10px;
+  }
   .branch__container {
     margin-bottom: 40px;
   }
@@ -139,6 +148,7 @@
     order: 2;
     width: 100%;
     margin: 0;
+    padding: 24px 14px;
   }
   .hotel__title {
     font-weight: 600;
