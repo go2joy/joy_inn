@@ -78,7 +78,7 @@
 .is-btn-hotline:hover {
   transform: scale(1.05);
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 540px) {
   .styckyBtn {
     display: none;
   }
@@ -86,7 +86,7 @@
     display: block;
     position: fixed;
     bottom: 10%;
-    right: 30px;
+    right: 10px;
     z-index: 99;
     font-size: 18px;
     border: none;
@@ -94,15 +94,15 @@
     background-color: none;
     color: white;
     cursor: pointer;
-    padding: 15px;
+    padding: 5px;
     border-radius: 4px;
     /* pointer-events: none; */
   }
   .styckyBtn-is-mobile .is-messenger {
     padding-right: 5px;
     text-align: right;
-    height: 110px;
-    width: 147px;
+        height: 55px;
+    width: 75px;
   }
   .styckyBtn-is-mobile .is-messenger img{
     width: 100%;
@@ -110,8 +110,8 @@
   }
   .styckyBtn-is-mobile .is-btn-hotline {
     text-align: right;
-    height: 110px;
-    width: 147px;
+        height: 55px;
+    width: 75px;
   }
   .styckyBtn-is-mobile .is-btn-hotline img{
     width: 100%;
