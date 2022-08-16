@@ -542,8 +542,9 @@
                                         <option value="4">Nhu cầu hợp tác 3</option>
                                     </select>
                                     <textarea class="field-area" placeholder="Ghi chú chi tiết"></textarea>
-                                    <button onclick="onClickReCapcha()" type="submit">GỬI THÔNG TIN</button>
+                                    
                                 </form>
+                                <button onclick="onClickReCapcha()" type="submit">GỬI THÔNG TIN</button>
                             </div>
                         </div>
                         <div class="contact-image">
@@ -1060,8 +1061,9 @@
                                     <option value="4">Nhu cầu hợp tác 3</option>
                                 </select>
                                 <textarea class="field-area" placeholder="Ghi chú chi tiết"></textarea>
-                                <button onclick="onClickReCapcha()" type="submit">GỬI THÔNG TIN</button>
+                                
                             </form>
+                            <button onclick="onClickReCapcha()" type="submit">GỬI THÔNG TIN</button>
                         </div>
                     </div>
                 </div>
@@ -1114,11 +1116,16 @@
             // e?.preventDefault();
                 grecaptcha.ready(function() {
                 grecaptcha.execute('6LdH0n0hAAAAADeyQDAGx85xEp02VGlvrU-BY-nd').then(function(token) {
-                    randomIndex(token)
+                    console.log('token :>> ', token);
+                    postAPISendMail(token)
                 });
             });
         }
-        async function randomIndex(token){
+        axios.defaults.headers = {
+            'Content-Type': 'application/json',
+            "cache-control":'no-cache'
+        }
+        async function postAPISendMail(token){
             const dataform = "<h2>Ho ten: Tuyen </h2> <br><h2>Email: tuyen.le@go2joy.vn</h2>"
             const params = {
                 token : token,
@@ -1129,7 +1136,6 @@
             }
             const result = await axios.post("https://staging-api.go2joy.vn/api/v5/web-booking/other/sendEmailForJoyInn",
             params).then(function (response) {
-                console.log('response :>> ', response);
                 return response.data.data
             })
             
