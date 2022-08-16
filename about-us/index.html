@@ -1111,7 +1111,7 @@
     <!-- Initialize Swiper -->
     <script>
         function onClickReCapcha(e) {
-            e.preventDefault();
+            e?.preventDefault();
                 grecaptcha.ready(function() {
                 grecaptcha.execute('6LdH0n0hAAAAADeyQDAGx85xEp02VGlvrU-BY-nd').then(function(token) {
                     randomIndex(token)
