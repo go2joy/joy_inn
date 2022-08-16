@@ -1127,9 +1127,8 @@
                 ccEmailList: "levinhtuyen210@gmail.com",
                 content: dataform
             }
-            const result = await axios.get("https://staging-api.go2joy.vn/api/v5/web-booking/other/sendEmailForJoyInn", {
-                params
-            }).then(function (response) {
+            const result = await axios.post("https://staging-api.go2joy.vn/api/v5/web-booking/other/sendEmailForJoyInn",
+            params).then(function (response) {
                 console.log('response :>> ', response);
                 return response.data.data
             })
