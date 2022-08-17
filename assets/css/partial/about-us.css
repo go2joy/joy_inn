@@ -1441,7 +1441,7 @@ font-size: 20px;
 .grecaptcha-badge {
   display: none;
 }
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 340px) {
   .about-us-is-mobile .section-go2choise .go2choise-block .swiper-container-go2choise-is-mobile .is-name {
       font-weight: 600;
       font-size: 16px;
