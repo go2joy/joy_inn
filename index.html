@@ -681,10 +681,10 @@
             <img class="logo-image-footer" src="assets/images/icon/logo-footer.svg" alt="">
           </div>
           <div class="footer_left col-md-3">
-            <h2 style="font-weight: 500;"> LIÊN HỆ</h2>
+            <h2 class="footer__title"> LIÊN HỆ</h2>
           </div>
           <div class="footer_left col-md-3">
-            <h2 style="font-weight: 500;"> LIÊN KÊT NHANH</h2>
+            <h2 class="footer__title"> LIÊN KẾT NHANH</h2>
           </div>
         </div>
         <div class="row mb-40">
@@ -749,19 +749,43 @@
     </div>
   </div>
   <div class="styckyBtn">
-        <div class="is-messenger">
-            <img src="./assets/images/messenger.png" alt="">
-        </div>
-        <div class="is-btn-hotline">
-            <img src="./assets/images/hotline1.png" alt="">
-        </div>
-        <div class="is-btn-hotline">
-            <img src="./assets/images/hotline2.png" alt="">
-        </div>
-        <div class="is-btn-hotline">
-            <img src="./assets/images/hotline3.png" alt="">
-        </div>
+    <div class="is-btn-hotline">
+      <img src="./assets/images/hotline1.png" alt="">
     </div>
+    <div class="is-btn-hotline">
+      <img src="./assets/images/hotline2.png" alt="">
+    </div>
+    <div class="is-btn-hotline">
+      <img src="./assets/images/hotline3.png" alt="">
+    </div>
+  </div>
+
+  <!-- Your Plugin chat code -->
+  <div id="fb-customer-chat" class="fb-customerchat">
+  </div>
+  <script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "109417457506998");
+    chatbox.setAttribute("attribution", "biz_inbox");
+  </script>
+  <!-- Your SDK code -->
+  <script>
+    window.fbAsyncInit = function() {
+    FB.init({
+        xfbml            : true,
+        version          : 'v14.0'
+    });
+    };
+
+    (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+  
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <!-- Initialize Swiper -->
   <script>

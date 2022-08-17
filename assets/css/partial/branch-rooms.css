@@ -1,6 +1,14 @@
 @import '../layout.css';
 @import '../global.css';
 
+
+.g2j-branch-rooms .main_banner {
+  margin-bottom: 80px;
+}
+.g2j-branch-rooms .layout_footer {
+  margin-top: 0;
+}
+
 .room {
   display: flex;
   flex-wrap: wrap;
@@ -41,6 +49,11 @@
   line-height: 40px;
   text-transform: uppercase;
   color: #333333;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  word-break: break-all;
 }
 .room__price {
   display: flex;
@@ -123,4 +136,69 @@
 }
 .pagination__btn--active {
   color: #E77026 !important;
+}
+
+/* Responsive Mobile */
+@media (max-width: 540px) {
+  .g2j-branch-rooms .main_banner {
+    margin-bottom: 50px;
+  }
+  .g2j-branch-rooms .main_banner_title {
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 43px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    bottom: 10px;
+  }
+  .room__content {
+    padding: 24px 14px;
+  }
+  .room {
+    height: auto;
+    overflow: auto;
+    position: relative;
+  }
+  .room__logo {
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .room__title {
+    width: 100%;
+    -webkit-line-clamp: 2;
+    word-break: break-word;
+  }
+  .room__price {
+    position: absolute;
+    width: fit-content;
+    height: 24px;
+    padding: 0px 14px;
+    top: 20px;
+    right: 10px;
+    background-color: #E77026;
+  }
+  .room__price img {
+    filter: hue-rotate(40deg) saturate(0.5) brightness(390%) saturate(4); 
+  }
+  .room__price--discount {
+    color: white;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .room__price--origin {
+    font-size: 9px;
+    line-height: 11px;
+  }
+  .room__tags {
+    margin-bottom: 20px;
+  }
+  .room__tag {
+    font-size: 12px;
+    line-height: 15px;
+    margin: 0 10px 10px 0;
+  }
+  .room__desc {
+    margin-top: 20px;
+  }
 }

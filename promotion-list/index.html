@@ -62,27 +62,30 @@
                 - #Banner
             -->
             <section class="section banner" aria-label="vision" id="vision">
-                <div class="main_banner">
-                    <div class="main_banner_dummy"></div>
-                    <div class="main_banner_content">
-                        <div class="swiper banner-swiper" data-id="1">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="../assets/images/banner/banner-branch.png" alt="">
-                                </div>
-                                <!-- <div class="swiper-slide">
-                                    <img src="../assets/images/banner/banner-1.jpeg" alt="">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="../assets/images/banner/banner-1.jpeg" alt="">
-                                </div> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="main_banner_title">
-                        <!-- <P>BANNER</P> -->
-                    </div>
+                <div class="main_banner mb-80">
+            <div class="swiper banner-swiper" data-id="1">
+            <div class="swiper-wrapper">
+                <div
+                class="swiper-slide"
+                >
+                <img class="banner-img" src="../assets/images/branch-joyinn-1.jpg" alt="">
                 </div>
+                <div
+                class="swiper-slide"
+                >
+                <img class="banner-img" src="../assets/images/branch-joyinn-2.jpg" alt="">
+                </div>
+                <div
+                class="swiper-slide"
+                >
+                <img class="banner-img" src="../assets/images/branch-joyinn-3.jpg" alt="">
+                </div>
+            </div>
+            </div>
+            <div class="main_banner_title">
+            Khách sạn thuộc chuỗi Joy Hotel
+            </div>
+      </div>
             </section>
              <!-- 
                 - #promotion-list
@@ -174,10 +177,10 @@
                   <img class="logo-image-footer" src="../assets/images/icon/logo-footer.svg" alt="">
                 </div>
                 <div class="footer_left col-md-3">
-                  <h2 style="font-weight: 500;"> LIÊN HỆ</h2>
+                    <h2 class="footer__title"> LIÊN HỆ</h2>
                 </div>
                 <div class="footer_left col-md-3">
-                  <h2 style="font-weight: 500;"> LIÊN KÊT NHANH</h2>
+                    <h2 class="footer__title"> LIÊN KẾT NHANH</h2>
                 </div>
               </div>
               <div class="row mb-40">
@@ -241,9 +244,6 @@
             </div>
           </div>
     <div class="styckyBtn">
-        <div class="is-messenger">
-            <img src="../assets/images/messenger.png" alt="">
-        </div>
         <div class="is-btn-hotline">
             <img src="../assets/images/hotline1.png" alt="">
         </div>
@@ -254,6 +254,35 @@
             <img src="../assets/images/hotline3.png" alt="">
         </div>
     </div>
+
+    <!-- Messenger Plugin chat Code -->
+    <div id="fb-root"></div>
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+    <script>
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "109417457506998");
+        chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+    <!-- Your SDK code -->
+    <script>
+        window.fbAsyncInit = function() {
+        FB.init({
+            xfbml            : true,
+            version          : 'v14.0'
+        });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <!-- Initialize Swiper -->
     <script>

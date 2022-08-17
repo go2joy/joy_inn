@@ -41,8 +41,8 @@
 .styckyBtn {
   display: block;
   position: fixed;
-  bottom: 30%;
-  right: 30px;
+  bottom: 25px;
+  right: 0px;
   z-index: 99;
   font-size: 18px;
   border: none;
@@ -53,6 +53,9 @@
   padding: 15px;
   border-radius: 4px;
   /* pointer-events: none; */
+}
+.styckyBtn-is-mobile {
+  display: none;
 }
 
 .styckyBtn:hover {
@@ -74,4 +77,47 @@
 }
 .is-btn-hotline:hover {
   transform: scale(1.05);
+}
+@media screen and (max-width: 540px) {
+  .styckyBtn {
+    display: none;
+  }
+  .styckyBtn-is-mobile {
+    display: block;
+    position: fixed;
+    bottom: 10%;
+    right: 10px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: none;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 4px;
+    /* pointer-events: none; */
+  }
+  .styckyBtn-is-mobile .is-messenger {
+    padding-right: 5px;
+    text-align: right;
+        height: 55px;
+    width: 75px;
+  }
+  .styckyBtn-is-mobile .is-messenger img{
+    width: 100%;
+    height: auto;
+  }
+  .styckyBtn-is-mobile .is-btn-hotline {
+    text-align: right;
+        height: 55px;
+    width: 75px;
+  }
+  .styckyBtn-is-mobile .is-btn-hotline img{
+    width: 100%;
+    height: auto;
+  }
+  .layout_header {
+    display: none;
+  }
 }

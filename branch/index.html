@@ -18,7 +18,7 @@
   <title>Chi nhánh Joy Inn</title>
 </head>
 <body>
-  <div class="layout">
+  <div class="layout g2j-branch">
     <div class="layout_header">
       <div class="row container">
         <div class="header_left col-md-4 flex ver-center">
@@ -46,7 +46,7 @@
       </div>
     </div>
     <div class="layout_main bg-primary-1">
-      <div class="main_banner mb-80">
+      <div class="main_banner">
         <div class="swiper banner-swiper" data-id="1">
           <div class="swiper-wrapper">
             <div
@@ -72,7 +72,7 @@
       </div>
       <div class="container">
         <div class="branch__container">
-          <div class="branch__container__hotel rounded-xl mr-30">
+          <div class="branch__container__hotel rounded-xl">
             <div class="hotel__title">Joy Inn Cộng Hòa</div>
 
             <div class="facility">
@@ -97,8 +97,8 @@
             </a>
 
           </div>
-          <div class="branch__container__logo rounded-xl">
-            <div class="swiper banner-swiper" data-id="1">
+          <div class="branch__container__logo">
+            <div class="swiper branch-swiper" data-id="1">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <img src="../assets/images/branch-joyinn-cong-hoa.png" alt="">
@@ -113,13 +113,14 @@
                   <img src="../assets/images/branch-joyinn-3.jpg" alt="">
                 </div>
               </div>
+              <div class="swiper-pagination"></div>
             </div>
           </div>
         </div>
 
         <div class="branch__container">
-          <div class="branch__container__logo rounded-xl mr-30">
-            <div class="swiper banner-swiper" data-id="1">
+          <div class="branch__container__logo branch__container__logo--left">
+            <div class="swiper branch-swiper" data-id="1">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <img src="../assets/images/branch-joyinn-cong-hoa.png" alt="">
@@ -134,9 +135,10 @@
                   <img src="../assets/images/branch-joyinn-3.jpg" alt="">
                 </div>
               </div>
+              <div class="swiper-pagination"></div>
             </div>
           </div>
-          <div class="branch__container__hotel rounded-xl">
+          <div class="branch__container__hotel branch__container__hotel--right rounded-xl">
             <div class="hotel__title">Joy Inn Nguyễn Thị Thập</div>
 
             <div class="facility">
@@ -163,7 +165,7 @@
         </div>
 
         <div class="branch__container">
-          <div class="branch__container__hotel rounded-xl mr-30">
+          <div class="branch__container__hotel rounded-xl">
             <div class="hotel__title">Joy Boutique Trung Hòa</div>
 
             <div class="facility">
@@ -187,8 +189,8 @@
             </a>
 
           </div>
-          <div class="branch__container__logo rounded-xl">
-            <div class="swiper banner-swiper" data-id="1">
+          <div class="branch__container__logo">
+            <div class="swiper branch-swiper" data-id="1">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <img src="../assets/images/branch-joyinn-cong-hoa.png" alt="">
@@ -203,6 +205,7 @@
                   <img src="../assets/images/branch-joyinn-3.jpg" alt="">
                 </div>
               </div>
+              <div class="swiper-pagination"></div>
             </div>
           </div>
         </div>
@@ -215,10 +218,10 @@
             <img class="logo-image-footer" src="../assets/images/icon/logo-footer.svg" alt="">
           </div>
           <div class="footer_left col-md-3">
-            <h2 style="font-weight: 500;"> LIÊN HỆ</h2>
+            <h2 class="footer__title"> LIÊN HỆ</h2>
           </div>
           <div class="footer_left col-md-3">
-            <h2 style="font-weight: 500;"> LIÊN KÊT NHANH</h2>
+            <h2 class="footer__title"> LIÊN KẾT NHANH</h2>
           </div>
         </div>
         <div class="row mb-40">
@@ -281,52 +284,74 @@
         </div>
       </div>
     </div>
-  <div class="styckyBtn">
-        <div class="is-messenger">
-            <img src="../assets/images/messenger.png" alt="">
-        </div>
-        <div class="is-btn-hotline">
-            <img src="../assets/images/hotline1.png" alt="">
-        </div>
-        <div class="is-btn-hotline">
-            <img src="../assets/images/hotline2.png" alt="">
-        </div>
-        <div class="is-btn-hotline">
-            <img src="../assets/images/hotline3.png" alt="">
-        </div>
+    <div class="styckyBtn">
+      <div class="is-btn-hotline">
+          <img src="../assets/images/hotline1.png" alt="">
+      </div>
+      <div class="is-btn-hotline">
+          <img src="../assets/images/hotline2.png" alt="">
+      </div>
+      <div class="is-btn-hotline">
+          <img src="../assets/images/hotline3.png" alt="">
+      </div>
     </div>
+  </div>
+
+  
+
+  <!-- Messenger Plugin chat Code -->
+  <div id="fb-root"></div>
+  <!-- Your Plugin chat code -->
+  <div id="fb-customer-chat" class="fb-customerchat" style="display: none;"></div>
+  <script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "109417457506998");
+    chatbox.setAttribute("attribution", "biz_inbox");
+  </script>
+  <!-- Your SDK code -->
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+          xfbml            : true,
+          version          : 'v14.0'
+      });
+
+      // Check FB init complete
+      FB.getLoginStatus(function(res){
+        if(document.querySelector('#fb-root > #fb-customer-chat')) {
+          document.querySelector('#fb-root > #fb-customer-chat').style.display = 'none'
+        }
+        document.getElementsByClassName('styckyBtn')[0].style.display = 'block';
+      });
+      
+    };
+
+    (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <!-- Initialize Swiper -->
   <script>
+    // NOTE: Swiper for Banner layout
     var swiperBanner = new Swiper(".banner-swiper", {
       autoHeight: true
     });
-    var swiperFiveImg = new Swiper(".five-swiper", {
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      loop: true,
-      autoplay: {
-        delay: 250000,
-        disableOnInteraction: false,
-      },
+
+    // NOTE: Swiper for Branch page
+    var swiperBanner = new Swiper(".branch-swiper", {
+      autoHeight: true,
+      spaceBetween: 30,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
-      },
+      }
     });
-    var swiperFiveValue = new Swiper(".five-sense-swiper", {
-      allowTouchMove: false,
-      navigation: {
-        nextEl: ".swiper-button-value-next",
-        prevEl: ".swiper-button-value-prev",
-      },
-    });
-    var swiperFiveValue = new Swiper(".five-sense-detail-swiper", {
-      slidesPerView: 3,
-        spaceBetween: 30,
-    });   
   </script>
 </body>
 </html>
