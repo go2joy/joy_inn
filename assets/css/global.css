@@ -460,6 +460,9 @@ a.hotel-des:hover {
   display: none;
 }
 @media (max-width: 540px) {
+  .main_banner {
+    display: none;
+  }
   .banner-mobile {
     display: block;
     position: relative;
