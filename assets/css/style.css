@@ -328,6 +328,7 @@
 .block-label {
   font-weight: 600;
   font-size: 36px;
+  align-items: end;
 }
 .block-label span{
   color: #E77026;
