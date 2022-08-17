@@ -359,6 +359,21 @@ a.hotel-des:hover {
 .color-g2j {
   color: rgba(231, 112, 38, 1);
 }
+.mar-0 {
+  margin: 0 !important;
+}
+.pad-0 {
+  padding: 0 !important;
+}
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+.mobile-content {
+  display: none;
+}
+.desktop-content {
+  display: block;
+}
 @media (min-width: 768px) {
   .col-md-2,
   .col-md-3,
@@ -404,22 +419,28 @@ a.hotel-des:hover {
   }
   .col-md-9
   {
-    width: 79.16667%;
+    flex-basis: 79.16667%;
   }
   .col-md-10
   {
-    width: 87.5%;
+    flex-basis: 87.5%;
   }
   .col-md-11
   {
-    width: 95.8333%;
+    flex-basis: 95.8333%;
   }
   .col-md-12
   {
-    flex: 0 0 100%;
+    flex-basis: 0 0 100%;
   }
 }
 @media (max-width: 540px) {
+  .desktop-content {
+    display: none !important;
+  }
+  .mobile-content {
+    display: block;
+  }
   .container{
     width: 95%
   }
@@ -434,7 +455,9 @@ a.hotel-des:hover {
   .col-sm-10,
   .col-sm-11,
   .col-sm-12 {
-  float: left;
+    float: left;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
   .col-sm-2
   {
@@ -456,23 +479,22 @@ a.hotel-des:hover {
     flex-basis: 50%; 
   }
   .col-sm-7 {
-    width: 62.5%;
+    flex-basis: 62.5%;
   }
   .col-sm-8 {
-    flex: 0 0 66.666667%;
-    max-width: 66.666667%;
+    flex-basis:66.666667%;
   }
   .col-sm-9 {
-    width: 79.16667%;
+    flex-basis: 79.16667%;
   }
   .col-sm-10 {
-    width: 87.5%;
+    flex-basis: 87.5%;
   }
   .col-sm-11 {
-    width: 95.8333%;
+    flex-basis: 95.8333%;
   }
   .col-sm-12 {
-    max-width: 100%;
+    flex-basis: 100%;
   }
 }
 .banner-mobile {
