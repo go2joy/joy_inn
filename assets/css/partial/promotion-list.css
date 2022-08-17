@@ -21,6 +21,12 @@ body {
 .item-promotion img{ 
     width: 100%;
 }
+.promotion-list {
+    display: block;
+}
+.promotion-list-mobile {
+    display: none;
+}
 @media (max-width: 1200px) {
     .container-section {
         width: 100%;
@@ -96,4 +102,40 @@ text-transform: uppercase;
 	background: linear-gradient(180deg, #E77026 0%, #F3A846 100%) !important;
 	background-color:#ff6400;
     font-size: 19px;
+}
+@media screen and (max-width: 540px) {
+    .promotion-list {
+        display: none;
+    }
+    .promotion-list-mobile {
+        display: block;
+    }
+    .promotion-list-mobile .promotion-block-list {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0;
+    }
+    .promotion-list-mobile .promotion-block-list .item-promotion  {
+        width: 100%;
+        min-height:auto;
+        box-shadow: 0px 60px 80px rgba(0, 0, 0, 0.06);
+        border-radius: 12px;
+        margin-top: 50px;
+    }
+    .promotion-list-mobile .promotion-block-list .item-promotion .content-promotion {
+        padding: 28px 13px;
+    }
+    .promotion-list-mobile .promotion-block-list .item-promotion img {
+        width: 100%;
+    }
+    .promotion-list-mobile .promotion-block-list .item-promotion .is-title-promotion {
+        font-size: 28px;
+    }
+    .promotion-list-mobile .promotion-block-list .item-promotion .is-sub-title-promotion {
+        padding-top:20px
+    }
+    .promotion-list-mobile .promotion-block-list .content-promotion .is-button-promotion input[type="button"] {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }

@@ -70,6 +70,44 @@
           Khách sạn thuộc chuỗi Joy Hotel
         </div>
       </div>
+      <section class="section banner-mobile mb-40" aria-label="banner" id="banner">
+        <div class="section-banner-mobile">
+            <div class="banner-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="block-banner">
+                            <img src="../assets/images/banner/banner-mobile1.png" alt="">
+                        </div>
+                        <div class="banner-background">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="block-banner">
+                            <img src="../assets/images/banner/banner-mobile2.png" alt="">
+                        </div>
+                        <div class="banner-background">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="block-banner">
+                            <img src="../assets/images/banner/banner-mobile3.png" alt="">
+                        </div>
+                        <div class="banner-background">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-banner-mobile">
+                <div class="is-level-page">
+                    <p>Trang chủ / Khách sạn</p>
+                </div>
+                <div class="is-title-banner-mobile">
+                    <p>Chuỗi khách sạn đến từ Hàn Quốc</p>
+                </div>
+            </div>
+            
+        </div>
+      </section>
       <div class="container">
         <div class="branch__container">
           <div class="branch__container__hotel rounded-xl">
@@ -284,16 +322,21 @@
         </div>
       </div>
     </div>
-    <div class="styckyBtn">
-      <div class="is-btn-hotline">
-          <img src="../assets/images/hotline1.png" alt="">
-      </div>
-      <div class="is-btn-hotline">
-          <img src="../assets/images/hotline2.png" alt="">
-      </div>
-      <div class="is-btn-hotline">
-          <img src="../assets/images/hotline3.png" alt="">
-      </div>
+    <div class="styckyBtn" id="styckyBtn" onclick="activeHotline()">
+        <div class="is-hotline">
+            <img src="../assets/images/mobile.png" alt="">
+        </div>
+        <div class="info-hotline" id="info-hotline">
+            <div class="is-btn-hotline">
+                <img src="../assets/images/hotline1.png" alt="">
+            </div>
+            <div class="is-btn-hotline">
+                <img src="../assets/images/hotline2.png" alt="">
+            </div>
+            <div class="is-btn-hotline">
+                <img src="../assets/images/hotline3.png" alt="">
+            </div>
+        </div>
     </div>
   </div>
 
@@ -353,5 +396,25 @@
       }
     });
   </script>
+  <script>
+    // NOTE: Sticky
+    function activeHotline() {
+        const element = document.getElementById('styckyBtn')
+        const elementHotline = document.getElementById('info-hotline')
+        element.classList.add("is-active-styckyBtn")
+        elementHotline.classList.add("is-active-hotline")
+    }
+      var ignoreClickOnMeElement = document.getElementById('styckyBtn');
+
+    document.addEventListener('click', function(event) {
+      var isClickInsideElement = ignoreClickOnMeElement.contains(event.target);
+      if (!isClickInsideElement) {
+          const element = document.getElementById('styckyBtn')
+          const elementHotline = document.getElementById('info-hotline')
+          element.classList.remove("is-active-styckyBtn")
+          elementHotline.classList.remove("is-active-hotline")
+      }
+    });
+    </script>
 </body>
 </html>
