@@ -32,61 +32,112 @@
 <body style="background: rgba(231, 112, 38, 0.03);box-shadow: 0px 60px 80px rgba(0, 0, 0, 0.06);">
     <div class="promotion-list">
         <div class="layout_header">
-            <div class="row container">
-              <div class="header_left col-md-4 flex ver-center">
-                  <a class="header-label ver-center" href="/joy_inn/promotion-list"> ƯU ĐÃI </a>
-                  <a class="header-label ver-center" href="/joy_inn/branch"> ĐẶT PHÒNG </a>
-              </div>
-              <div class="header_center col-md-2 center">
-                <a href="/joy_inn"><img class="logo-image-header" src="../assets/images/icon/logo-header.png" alt=""></a>
-              </div>
-              <div class="align-right col-md-5 flex ver-center">
-                  <a class="header-label ver-center padding-left-right-none" href="/joy_inn/about-us"> HỢP TÁC </a>
-                  <p class="header-label ver-center"> BLOG </p>
-                  <p class="ver-seperate"> </p>
-                  <div class="dropdown ver-center">
-                      <button class="drop-btn bold mr-12">VI</button>
-                      <div class="dropdown-content">
-                          <a class="" href="#">VI</a>
-                          <a class="" href="#">EN</a>
-                      </div>
-                  </div>
-                  <button class="login-button">
-                      ĐĂNG NHẬP
-                  </button>
+            <div class="layout_header--desktop">
+              <div class="flex flex-wrap mx-auto container justify-space-between">
+                <div class="header_left">
+                    <a class="header-label limit-text-line-2" href="/joy_inn/promotion-list"> ƯU ĐÃI </a>
+                    <a class="header-label limit-text-line-2 mr-0" href="/joy_inn/branch"> ĐẶT PHÒNG </a>
+                </div>
+                <div class="header_center center">
+                  <a href="/joy_inn"><img class="logo-image-header" src="../assets/images/icon/logo-header.png" alt=""></a>
+                </div>
+                <div class="header_right">
+                    <a class="header-label limit-text-line-2 padding-left-right-none" href="/joy_inn/about-us"> HỢP TÁC </a>
+                    <p class="header-label limit-text-line-2" style="min-width: 60px;">BLOG</p>
+                    <p class="ver-seperate mr-30"> </p>
+                    <div class="dropdown ver-center mr-30">
+                        <button class="drop-btn bold mr-12">VI</button>
+                        <div class="dropdown-content">
+                            <a class="" href="#">VI</a>
+                            <a class="" href="#">EN</a>
+                        </div>
+                    </div>
+                    <button class="login-button">
+                        ĐĂNG NHẬP
+                    </button>
+                </div>
               </div>
             </div>
-          </div>
+            <div class="layout_header--mobile">
+              <div class="header-mobile__container">
+                <div class="header_left">
+                  <label for="showMenu"><img id="btnMenu" src="../assets/images/icon/icon-nav.svg" alt=""></label>
+                </div>
+                <div class="header_center center">
+                  <a href="/joy_inn">
+                    <img class="logo-image-header" src="../assets/images/icon/logo-header.png" alt="">
+                  </a>
+                </div>
+                <div class="header_right">
+                  <img src="../assets/images/icon/icon-login.svg" alt="">
+                </div>
+              </div>
+        
+              <input type="checkbox" id="showMenu">
+              <div class="menu-sidebar">
+                <div class="position-relative">
+                  <label for="showMenu" id="closeMenu"><i class="fa-solid fa-xmark"></i></label>
+                </div>
+                <ul>
+                  <li>
+                    <a class="header-label" href="/joy_inn/promotion-list"> ƯU ĐÃI </a>
+                  </li>
+                  <li>
+                    <a class="header-label" href="/joy_inn/branch"> ĐẶT PHÒNG </a>
+                  </li>
+                  <li>
+                    <a class="header-label" href="/joy_inn/about-us"> HỢP TÁC </a>
+                  </li>
+                  <li>
+                    <div class="header-label">BLOG</div>
+                  </li>
+                  <li>
+                    <div class="flex align-center ml-4">
+                      <div class="header-label">NGÔN NGỮ: </div>
+                      <div class="dropdown ver-center mr-30">
+                        <button class="drop-btn bold mr-12">VI</button>
+                        <div class="dropdown-content">
+                            <a class="" href="#">VI</a>
+                            <a class="" href="#">EN</a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </div>
         <div class="layout_main">
             <!-- 
                 - #Banner
             -->
             <section class="section banner" aria-label="vision" id="vision">
                 <div class="main_banner mb-80">
-            <div class="swiper banner-swiper" data-id="1">
-            <div class="swiper-wrapper">
-                <div
-                class="swiper-slide"
-                >
-                <img class="banner-img" src="../assets/images/branch-joyinn-1.jpg" alt="">
+                    <div class="swiper banner-swiper" data-id="1">
+                    <div class="swiper-wrapper">
+                        <div
+                        class="swiper-slide"
+                        >
+                        <img class="banner-img" src="../assets/images/branch-joyinn-1.jpg" alt="">
+                        </div>
+                        <div
+                        class="swiper-slide"
+                        >
+                        <img class="banner-img" src="../assets/images/branch-joyinn-2.jpg" alt="">
+                        </div>
+                        <div
+                        class="swiper-slide"
+                        >
+                        <img class="banner-img" src="../assets/images/branch-joyinn-3.jpg" alt="">
+                        </div>
+                    </div>
+                    </div>
+                    <div class="main_banner_title">
+                    Khách sạn thuộc chuỗi Joy Hotel
+                    </div>
                 </div>
-                <div
-                class="swiper-slide"
-                >
-                <img class="banner-img" src="../assets/images/branch-joyinn-2.jpg" alt="">
-                </div>
-                <div
-                class="swiper-slide"
-                >
-                <img class="banner-img" src="../assets/images/branch-joyinn-3.jpg" alt="">
-                </div>
-            </div>
-            </div>
-            <div class="main_banner_title">
-            Khách sạn thuộc chuỗi Joy Hotel
-            </div>
-      </div>
             </section>
+            
              <!-- 
                 - #promotion-list
             -->
@@ -242,16 +293,146 @@
                 </div>
               </div>
             </div>
-          </div>
-    <div class="styckyBtn">
-        <div class="is-btn-hotline">
-            <img src="../assets/images/hotline1.png" alt="">
         </div>
-        <div class="is-btn-hotline">
-            <img src="../assets/images/hotline2.png" alt="">
+    </div>
+    <div class="promotion-list-mobile">
+        <section class="section banner-mobile" aria-label="banner" id="banner">
+            <div class="section-banner-mobile">
+                <div class="banner-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="block-banner">
+                                <img src="../assets/images/banner/banner-mobile1.png" alt="">
+                            </div>
+                            <div class="banner-background">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="block-banner">
+                                <img src="../assets/images/banner/banner-mobile2.png" alt="">
+                            </div>
+                            <div class="banner-background">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="block-banner">
+                                <img src="../assets/images/banner/banner-mobile3.png" alt="">
+                            </div>
+                            <div class="banner-background">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-banner-mobile">
+                    <div class="is-level-page">
+                        <p>Trang chủ / Khuyến mãi</p>
+                    </div>
+                    <div class="is-title-banner-mobile">
+                        <p>Chuỗi khách sạn đến từ Hàn Quốc</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="section container-section">
+            <div class="promotion-block-list">
+                <div class="item-promotion">
+                    <img src="../assets/images/banner/promotion1.png" alt="">
+                </div>
+                <div class="item-promotion">
+                    <div class="content-promotion">
+                        <div class="is-title-promotion color-g2j">
+                            <p>TỐI THỨ 3 VUI VẺ - ĐẶT PHÒNG JOY INN GIÁ HẠT DẺ</p>
+                        </div>
+                        <div class="is-sub-title-promotion">
+                            <p>ĐẾN JOY INN, "SEE" TÌNH HẾT Ý:</p>
+                        </div>
+                        <div class="is-content-promotion">
+                            <ul>
+                                <li>Giảm 30% tối đa 50.000đ khi đặt phòng qua đêm vào thứ 3 hàng tuần.</li>
+                                <li>Tặng combo mỹ phẩm Hàn Quốc cao cấp</li>
+                                <li>Áp dụng khi đặt phòng qua Fanpage cho tất cả chi nhánh.</li>
+                            </ul>
+                        </div>
+                        <a href="/joy_inn/branch">
+                            <div class="is-button-promotion">
+                                <input type="button" value="ĐẶT PHÒNG NGAY" />
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="promotion-block-list">
+                <div class="item-promotion">
+                    <img src="../assets/images/banner/promotion2.png" alt="">
+                </div>
+                <div class="item-promotion">
+                    <div class="content-promotion">
+                        <div class="is-title-promotion color-g2j">
+                            <p>TỐI THỨ 3 VUI VẺ - ĐẶT PHÒNG JOY INN GIÁ HẠT DẺ</p>
+                        </div>
+                        <div class="is-sub-title-promotion">
+                            <p>ĐẶT PHÒNG ÊM ÁI - CẢ HAI CÙNG VUI</p>
+                        </div>
+                        <div class="is-content-promotion">
+                            <ul>
+                                <li>Giảm ngay 10% cho tất cả các loại booking suốt tháng 8</li>
+                                <li>Tặng combo mỹ phẩm Hàn Quốc cao cấp</li>
+                                <li>Áp dụng tại JOY INN NGUYEN THI THAP</li>
+                            </ul>
+                        </div>
+                        <a href="/joy_inn/branch">
+                            <div class="is-button-promotion">
+                                <input type="button" value="ĐẶT PHÒNG NGAY" />
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="promotion-block-list">
+                <div class="item-promotion">
+                    <img src="../assets/images/banner/promotion3.png" alt="">
+                </div>
+                <div class="item-promotion">
+                    <div class="content-promotion">
+                        <div class="is-title-promotion color-g2j">
+                            <p>TỐI THỨ 3 VUI VẺ - ĐẶT PHÒNG JOY INN GIÁ HẠT DẺ</p>
+                        </div>
+                        <div class="is-sub-title-promotion">
+                            <p>MỘT BOOKING RINH NGHÌN ƯU ĐÃI</p>
+                        </div>
+                        <div class="is-content-promotion">
+                            <ul>
+                                <li>GIẢM 50% khi đặt phòng 2GIỜ (Tối đa 50K)</li>
+                                <li>GIẢM 15% khi đặt phòng qua đêm</li>
+                                <li>TẶNG Mỹ phẩm Hàn Quốc cao cấp</li>
+                            </ul>
+                        </div>
+                        <a href="/joy_inn/branch">
+                            <div class="is-button-promotion">
+                                <input type="button" value="ĐẶT PHÒNG NGAY" />
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <div class="styckyBtn" id="styckyBtn" onclick="activeHotline()">
+        <div class="is-hotline">
+            <img src="../assets/images/mobile.png" alt="">
         </div>
-        <div class="is-btn-hotline">
-            <img src="../assets/images/hotline3.png" alt="">
+        <div class="info-hotline" id="info-hotline">
+            <div class="is-btn-hotline">
+                <img src="../assets/images/hotline1.png" alt="">
+            </div>
+            <div class="is-btn-hotline">
+                <img src="../assets/images/hotline2.png" alt="">
+            </div>
+            <div class="is-btn-hotline">
+                <img src="../assets/images/hotline3.png" alt="">
+            </div>
         </div>
     </div>
 
@@ -333,6 +514,26 @@
             }
         }
     }
+    </script>
+    <script>
+    // NOTE: Sticky
+    function activeHotline() {
+        const element = document.getElementById('styckyBtn')
+        const elementHotline = document.getElementById('info-hotline')
+        element.classList.add("is-active-styckyBtn")
+        elementHotline.classList.add("is-active-hotline")
+    }
+        var ignoreClickOnMeElement = document.getElementById('styckyBtn');
+
+        document.addEventListener('click', function(event) {
+        var isClickInsideElement = ignoreClickOnMeElement.contains(event.target);
+        if (!isClickInsideElement) {
+            const element = document.getElementById('styckyBtn')
+            const elementHotline = document.getElementById('info-hotline')
+            element.classList.remove("is-active-styckyBtn")
+            elementHotline.classList.remove("is-active-hotline")
+        }
+        });
     </script>
 </body>
 </html>

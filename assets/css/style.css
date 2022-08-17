@@ -2,11 +2,7 @@
   font-size: 1rem;
   color: #7f7f7f;
 }
-.header-label {
-  font-size: 16px;
-  line-height: 20px;
-  color: #656565;
-}
+
 .homepage_main {
   text-align: center;
   display: block;
@@ -113,6 +109,7 @@
   width: 45vw;
   height: 45vh;
   border-radius: 15px;
+  display: inline-block !important;
 }
 .video-label {
   transform: scale(1) translateY(200px);
@@ -143,6 +140,7 @@
 .custom-img {
   width: 100% !important;
   height: 553px !important;
+  object-fit: cover;
 }
 .img-rabbit {
   width: 167px;
@@ -175,11 +173,11 @@
   position: relative;
   height: 100%;
 }
-.five-sense-bt {
-  top: unset !important;
-  position: relative !important;
-  right: unset !important;
-  left: unset !important;
+.five-sense-swiper .five-sense-bt {
+  top: unset;
+  position: relative;
+  right: unset;
+  left: unset;
   display: block;
 }
 .five-sense-bt.prev {
@@ -244,6 +242,8 @@
 }
 .go2-choise {
   background-image: url(../images/banner/bg-slide.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .go2-choise-content{
   background: linear-gradient(180deg, #E77026 0%, #F3A846 100%);
@@ -323,12 +323,12 @@
 }
 .swiper-go2-choise {
   width: 100%;
-  margin: 40px 0;
-  padding: 45px 0;
+  margin-top: 104px;
 }
 .block-label {
   font-weight: 600;
   font-size: 36px;
+  align-items: end;
 }
 .block-label span{
   color: #E77026;
@@ -349,8 +349,8 @@
 }
 .list-hotel,
 .map-img {
-  height: 500px;
-  width: -webkit-fill-available;
+  height: auto;
+  width: 100%;
   object-fit: cover;
 }
 /* width */
@@ -426,12 +426,13 @@
   height: 40px;
   border: none;
   color: #E77026;
-  padding-top: 8px;
+  padding-top: 10px;
   font-size: 15px;
+  font-weight: 500;
 }
 .swiper-slide-active .watch-room-button:hover {
   background-color: #E77026;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 .globe-icon {
   font-size: 16px;
@@ -442,19 +443,85 @@
   height: 100%;
   object-fit: cover;
 }
+.five-sense_header {
+  flex-direction: column;
+  width: 136px;
+}
 @media (max-width: 1250px) { 
   .content_right {
-    width: 78%;
+    width: 100%;
   }
 }
 @media (max-width: 540px) { 
+  .content_right {
+    width: 100%;
+    height: 300px;
+  }
   .five-content-block {
     flex-direction: column;
   }
-  .desktop-content {
-    display: none !important;
+ 
+  .main_banner,
+  .five-sense-detail-image {
+    height: 300px !important;
   }
-  .main_banner {
+  .watch-room-button {
+    border-radius: 20px;
+  }
+  .swiper-go2-choise {
+    margin-top: 18px;
+  }
+  .go2-choise {
+    height: 442px;
+  }
+  .five-swiper {
+    border-radius: 12px;
+  }
+  .five-content-block{
+    flex-direction: column-reverse;
+  }
+  .float-right-five-sense  {
+    transform: none;
+  }
+  .slider-content {
+    width: 100%;
+    height: auto;
+  }
+  .video-link,
+  .video-label {
+    transform: none;
+    padding: 0;
+  }
+  .video-link {
+    width: 93%;
+    margin: auto;
+    height: 300px;
+  }
+  .box_lable-1 {
+    padding: 0;
+  }
+  .video-box {
+    height: 556.51px;
+    margin: 20px 0;
+  }
+  .content_left {
+    position: relative;
+  }
+  .five-sense-swiper .five-sense-bt {
+    position: absolute;
+    top: 90px;
+  }
+  .five-sense-swiper .five-sense-bt.next {
+    right: 12px;
+  }
+  .five-sense-swiper .five-sense-bt.prev {
+    right: 70px;
+  }
+  .slider-content .swiper {
+    position: unset;
+  }
+  .swiper.libary-swiper,
+  .swiper-slide .libary-img {
     height: 300px;
   }
 }

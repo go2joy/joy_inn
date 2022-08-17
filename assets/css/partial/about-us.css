@@ -271,6 +271,16 @@ a {
         font-weight: 600;
         color: rgba(231, 112, 38, 1);
     }
+    .go2choise-block .block-slide {
+      padding: 19px 20px;
+    }
+    .go2choise-block .swiper-container-go2choise .swiper-slide-active .is-title-slide-go2choise {
+      font-size: 18px !important;
+    }
+    .go2choise-block .swiper-container-go2choise .swiper-slide .is-name {
+      font-size: 16px;
+    }
+
 }
 .collapse-list {
     margin-bottom: 0;
@@ -875,6 +885,18 @@ background: linear-gradient(180deg, #E77026 0%, #F3A846 100%) !important;
     border-radius: 50%;
     background-color: #ffffff !important;
 }
+.go2choise-block .swiper-container-go2choise .swiper-slide-active .is-name{
+  color: #FFFFFF !important;
+}
+.go2choise-block .swiper-container-go2choise .swiper-slide-active .is-locale {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+.go2choise-block .swiper-container-go2choise .swiper-slide .is-name {
+    color: rgba(51, 51, 51, 1);
+}
+.go2choise-block .swiper-container-go2choise .swiper-slide .is-locale {
+    color: #808080;
+}
 .infor-user {
   display: grid;
   text-align: left;
@@ -915,6 +937,7 @@ background: linear-gradient(180deg, #E77026 0%, #F3A846 100%) !important;
   width: 100%;
   background: rgba(231, 112, 38, 0.07);
   height: 740px;
+  margin-bottom: -35px;
 }
 .section-contact-content {
    width: 100%;
@@ -1272,7 +1295,7 @@ cursor: pointer;
     background: rgba(231, 112, 38, 0.5);
   }
   .about-us-is-mobile .go2choise-block {
-    padding: 0;
+    padding: 44px 0 0 0;
   }
   .about-us-is-mobile .section-go2choise {
     padding-top: 44px;
@@ -1314,7 +1337,7 @@ font-size: 20px;
     overflow: hidden;
   }
   .about-us-is-mobile .section-go2choise .top-hotels_slide {
-    padding-top: 23px;
+    padding-top: 0;
   }
   .about-us-is-mobile .section-go2choise .go2choise-block .swiper-container-go2choise-is-mobile .swiper-slide-active {
   box-shadow: 0px 60px 80px rgba(0, 0, 0, 0.06);
@@ -1376,16 +1399,18 @@ font-size: 20px;
     width: 100%;
     padding: 0 17px;
     background: rgba(231, 112, 38, 0.07);
+    padding-bottom: 55px;
+    margin-bottom: -35px;
   }
   .about-us-is-mobile .section-contact-is-mobile .contact-form {
-    padding: 56px 0;
+    padding: 56px 0 30px 0;
   }
   .about-us-is-mobile .section-contact-is-mobile .is-title-contact-form{
     font-size: 28px;
     font-weight: 600;
   }
   .about-us-is-mobile .section-contact-is-mobile .contact-form .form-style .field-input {
-    width: 40% !important;
+    width: 45% !important;
     float: left;
     margin-right: 0;
   }
@@ -1405,8 +1430,9 @@ font-size: 20px;
   border: none;
   padding: 18px 34px;
   float: left;
-  margin-top: 54px;
+  margin-top: 0;
   cursor: pointer;
+  
   }
   .about-us-is-mobile .section-contact-is-mobile .contact-form .form-style input[type="text"],
 .about-us-is-mobile .section-contact-is-mobile .contact-form .form-style input[type="date"],
@@ -1431,8 +1457,32 @@ font-size: 20px;
 	border: none;
 	border-bottom: 1px solid rgba(128, 128, 128, 1);
 	background: transparent;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 	font-size: 16px;
-	height: 45px;
+	height: 65px;
 }
+}
+.grecaptcha-badge {
+  display: none;
+}
+@media screen and (max-width: 340px) {
+  .about-us-is-mobile .section-go2choise .go2choise-block .swiper-container-go2choise-is-mobile .is-name {
+      font-weight: 600;
+      font-size: 16px;
+  }
+  .about-us-is-mobile .section-go2choise .go2choise-block .swiper-container-go2choise-is-mobile .is-locale {
+    font-size: 14px;
+  }
+  .about-us-is-mobile .section-go2choise .block-user-info {
+    padding-top: 14px;
+  }
+  .content-block-joy-hotel {
+      padding-top: 10px;
+  }
+  .about-us-is-mobile .section-joy-hotel .swiper-slide-active .is-content-block-joy-hotel {
+    font-size: 14px;
+  }
+  .about-us-is-mobile .section-go2choise .swiper-container-go2choise-is-mobile .block-slide {
+    padding: 15px 16px
+  }
 }
