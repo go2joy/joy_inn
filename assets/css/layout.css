@@ -101,7 +101,7 @@
   .styckyBtn-is-mobile .is-messenger {
     padding-right: 5px;
     text-align: right;
-        height: 55px;
+    height: 55px;
     width: 75px;
   }
   .styckyBtn-is-mobile .is-messenger img{
@@ -110,14 +110,17 @@
   }
   .styckyBtn-is-mobile .is-btn-hotline {
     text-align: right;
-        height: 55px;
+    height: 55px;
     width: 75px;
   }
   .styckyBtn-is-mobile .is-btn-hotline img{
     width: 100%;
     height: auto;
   }
-  .layout_header {
-    display: none;
+  .lang-footer {
+    justify-content: center;
+  }
+  .five-sense-bt {
+    position: absolute !important;
   }
 }
