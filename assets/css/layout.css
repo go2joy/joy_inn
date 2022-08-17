@@ -42,7 +42,7 @@
   display: block;
   position: fixed;
   bottom: 25px;
-  right: 30px;
+  right: 0px;
   z-index: 99;
   font-size: 18px;
   border: none;
@@ -117,5 +117,7 @@
     width: 100%;
     height: auto;
   }
-
+  .layout_header {
+    display: none;
+  }
 }

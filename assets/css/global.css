@@ -50,7 +50,7 @@ ul{
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
-  word-break: break-word;
+  word-break: break-all;
 }
 .limit-text-line-2 {
   overflow: hidden;
