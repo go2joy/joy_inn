@@ -1449,24 +1449,28 @@
                 counterNumber3()
             }
         });
-        function activeHotline() {
-            const element = document.getElementById('styckyBtn')
-            const elementHotline = document.getElementById('info-hotline')
-            element.classList.add("is-active-styckyBtn")
-            elementHotline.classList.add("is-active-hotline")
-        }
-        var ignoreClickOnMeElement = document.getElementById('styckyBtn');
+        
+    </script>
+      <script>
+          // NOTE: Sticky
+          function activeHotline() {
+              const element = document.getElementById('styckyBtn')
+              const elementHotline = document.getElementById('info-hotline')
+              element.classList.add("is-active-styckyBtn")
+              elementHotline.classList.add("is-active-hotline")
+          }
+          var ignoreClickOnMeElement = document.getElementById('styckyBtn');
 
-        document.addEventListener('click', function(event) {
-        var isClickInsideElement = ignoreClickOnMeElement.contains(event.target);
-        if (!isClickInsideElement) {
-            const element = document.getElementById('styckyBtn')
-            const elementHotline = document.getElementById('info-hotline')
-            element.classList.remove("is-active-styckyBtn")
-            elementHotline.classList.remove("is-active-hotline")
-        }
-        });
-    </script>   
+          document.addEventListener('click', function (event) {
+              var isClickInsideElement = ignoreClickOnMeElement.contains(event.target);
+              if (!isClickInsideElement) {
+                  const element = document.getElementById('styckyBtn')
+                  const elementHotline = document.getElementById('info-hotline')
+                  element.classList.remove("is-active-styckyBtn")
+                  elementHotline.classList.remove("is-active-hotline")
+              }
+          });
+      </script>
 </body>
 
 </html>

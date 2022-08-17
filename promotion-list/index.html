@@ -63,29 +63,67 @@
             -->
             <section class="section banner" aria-label="vision" id="vision">
                 <div class="main_banner mb-80">
-            <div class="swiper banner-swiper" data-id="1">
-            <div class="swiper-wrapper">
-                <div
-                class="swiper-slide"
-                >
-                <img class="banner-img" src="../assets/images/branch-joyinn-1.jpg" alt="">
+                    <div class="swiper banner-swiper" data-id="1">
+                    <div class="swiper-wrapper">
+                        <div
+                        class="swiper-slide"
+                        >
+                        <img class="banner-img" src="../assets/images/branch-joyinn-1.jpg" alt="">
+                        </div>
+                        <div
+                        class="swiper-slide"
+                        >
+                        <img class="banner-img" src="../assets/images/branch-joyinn-2.jpg" alt="">
+                        </div>
+                        <div
+                        class="swiper-slide"
+                        >
+                        <img class="banner-img" src="../assets/images/branch-joyinn-3.jpg" alt="">
+                        </div>
+                    </div>
+                    </div>
+                    <div class="main_banner_title">
+                    Khách sạn thuộc chuỗi Joy Hotel
+                    </div>
                 </div>
-                <div
-                class="swiper-slide"
-                >
-                <img class="banner-img" src="../assets/images/branch-joyinn-2.jpg" alt="">
+            </section>
+            <section class="section banner-mobile" aria-label="banner" id="banner">
+                <div class="section-banner-mobile">
+                    <div class="banner-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="block-banner">
+                                    <img src="../assets/images/banner/banner-mobile1.png" alt="">
+                                </div>
+                                <div class="banner-background">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="block-banner">
+                                    <img src="../assets/images/banner/banner-mobile2.png" alt="">
+                                </div>
+                                <div class="banner-background">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="block-banner">
+                                    <img src="../assets/images/banner/banner-mobile3.png" alt="">
+                                </div>
+                                <div class="banner-background">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-banner-mobile">
+                        <div class="is-level-page">
+                            <p>Trang chủ / Giới thiệu</p>
+                        </div>
+                        <div class="is-title-banner-mobile">
+                            <p>Chuỗi khách sạn đến từ Hàn Quốc</p>
+                        </div>
+                    </div>
+                    
                 </div>
-                <div
-                class="swiper-slide"
-                >
-                <img class="banner-img" src="../assets/images/branch-joyinn-3.jpg" alt="">
-                </div>
-            </div>
-            </div>
-            <div class="main_banner_title">
-            Khách sạn thuộc chuỗi Joy Hotel
-            </div>
-      </div>
             </section>
              <!-- 
                 - #promotion-list
@@ -243,15 +281,20 @@
               </div>
             </div>
           </div>
-    <div class="styckyBtn">
-        <div class="is-btn-hotline">
-            <img src="../assets/images/hotline1.png" alt="">
+    <div class="styckyBtn" id="styckyBtn" onclick="activeHotline()">
+        <div class="is-hotline">
+            <img src="../assets/images/mobile.png" alt="">
         </div>
-        <div class="is-btn-hotline">
-            <img src="../assets/images/hotline2.png" alt="">
-        </div>
-        <div class="is-btn-hotline">
-            <img src="../assets/images/hotline3.png" alt="">
+        <div class="info-hotline" id="info-hotline">
+            <div class="is-btn-hotline">
+                <img src="../assets/images/hotline1.png" alt="">
+            </div>
+            <div class="is-btn-hotline">
+                <img src="../assets/images/hotline2.png" alt="">
+            </div>
+            <div class="is-btn-hotline">
+                <img src="../assets/images/hotline3.png" alt="">
+            </div>
         </div>
     </div>
 
@@ -333,6 +376,26 @@
             }
         }
     }
+    </script>
+    <script>
+    // NOTE: Sticky
+    function activeHotline() {
+        const element = document.getElementById('styckyBtn')
+        const elementHotline = document.getElementById('info-hotline')
+        element.classList.add("is-active-styckyBtn")
+        elementHotline.classList.add("is-active-hotline")
+    }
+        var ignoreClickOnMeElement = document.getElementById('styckyBtn');
+
+        document.addEventListener('click', function(event) {
+        var isClickInsideElement = ignoreClickOnMeElement.contains(event.target);
+        if (!isClickInsideElement) {
+            const element = document.getElementById('styckyBtn')
+            const elementHotline = document.getElementById('info-hotline')
+            element.classList.remove("is-active-styckyBtn")
+            elementHotline.classList.remove("is-active-hotline")
+        }
+        });
     </script>
 </body>
 </html>

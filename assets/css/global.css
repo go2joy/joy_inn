@@ -340,6 +340,9 @@ a.hotel-des:hover {
 .scroll-x {
   overflow-x: scroll;
 }
+.color-g2j {
+  color: rgba(231, 112, 38, 1);
+}
 @media (min-width: 768px) {
   .col-md-2,
   .col-md-3,
@@ -490,6 +493,14 @@ a.hotel-des:hover {
     text-align: center;
     vertical-align: inherit;
     padding: 0 20px;
+  }
+  .banner-mobile .section-banner-mobile .content-banner-mobile p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
   }
   .banner-mobile .section-banner-mobile .content-banner-mobile .is-level-page {
     font-size: 16px;
