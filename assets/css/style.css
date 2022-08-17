@@ -1,6 +1,3 @@
-.homepage {
-  flex-direction: column;
-}
 .homepage_header {
   font-size: 1rem;
   color: #7f7f7f;
@@ -96,10 +93,9 @@
   display: inline-block;
   height: 626.51px;
   width: 100%;
-  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-
+  background-size: auto;
 }
 .box_lable-1 {
   font-weight: 600;
@@ -441,8 +437,24 @@
   font-size: 16px;
   margin-right: 8px;
 }
+.libary-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 @media (max-width: 1250px) { 
   .content_right {
     width: 78%;
+  }
+}
+@media (max-width: 540px) { 
+  .five-content-block {
+    flex-direction: column;
+  }
+  .desktop-content {
+    display: none !important;
+  }
+  .main_banner {
+    height: 300px;
   }
 }
