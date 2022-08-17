@@ -27,28 +27,78 @@
 <body>
   <div class="layout">
     <div class="layout_header">
-      <div class="row container room-detail__header">
-        <div class="header_left col-md-4 flex ver-center">
-            <a class="header-label ver-center" href="/joy_inn/promotion-list"> ƯU ĐÃI </a>
-            <a class="header-label ver-center" href="/joy_inn/branch"> ĐẶT PHÒNG </a>
+      <div class="layout_header--desktop">
+        <div class="flex flex-wrap mx-auto container justify-space-between">
+          <div class="header_left">
+              <a class="header-label limit-text-line-2" href="/joy_inn/promotion-list"> ƯU ĐÃI </a>
+              <a class="header-label limit-text-line-2 mr-0" href="/joy_inn/branch"> ĐẶT PHÒNG </a>
+          </div>
+          <div class="header_center center">
+            <a href="/joy_inn"><img class="logo-image-header" src="../assets/images/icon/logo-header.png" alt=""></a>
+          </div>
+          <div class="header_right">
+              <a class="header-label limit-text-line-2 padding-left-right-none" href="/joy_inn/about-us"> HỢP TÁC </a>
+              <p class="header-label limit-text-line-2" style="min-width: 60px;">BLOG</p>
+              <p class="ver-seperate mr-30"> </p>
+              <div class="dropdown ver-center mr-30">
+                  <button class="drop-btn bold mr-12">VI</button>
+                  <div class="dropdown-content">
+                      <a class="" href="#">VI</a>
+                      <a class="" href="#">EN</a>
+                  </div>
+              </div>
+              <button class="login-button">
+                  ĐĂNG NHẬP
+              </button>
+          </div>
         </div>
-        <div class="header_center col-md-2 center">
-          <a href="/joy_inn"><img class="logo-image-header" src="../assets/images/icon/logo-header.png" alt=""></a>
+      </div>
+      <div class="layout_header--mobile">
+        <div class="header-mobile__container">
+          <div class="header_left">
+            <label for="showMenu"><img id="btnMenu" src="../assets/images/icon/icon-nav.svg" alt=""></label>
+          </div>
+          <div class="header_center center">
+            <a href="/joy_inn">
+              <img class="logo-image-header" src="../assets/images/icon/logo-header.png" alt="">
+            </a>
+          </div>
+          <div class="header_right">
+            <img src="../assets/images/icon/icon-login.svg" alt="">
+          </div>
         </div>
-        <div class="header_right align-right col-md-5 flex ver-center">
-            <a class="header-label ver-center padding-left-right-none" href="/joy_inn/about-us"> HỢP TÁC </a>
-            <p class="header-label ver-center"> BLOG </p>
-            <p class="ver-seperate"> </p>
-            <div class="dropdown ver-center">
-                <button class="drop-btn bold mr-12 btn-lang">VI</button>
-                <div class="dropdown-content">
-                    <a class="btn-lang--item" href="#">VI</a>
-                    <a class="btn-lang--item" href="#">EN</a>
+  
+        <input type="checkbox" id="showMenu">
+        <div class="menu-sidebar">
+          <div class="position-relative">
+            <label for="showMenu" id="closeMenu"><i class="fa-solid fa-xmark"></i></label>
+          </div>
+          <ul>
+            <li>
+              <a class="header-label" href="/joy_inn/promotion-list"> ƯU ĐÃI </a>
+            </li>
+            <li>
+              <a class="header-label" href="/joy_inn/branch"> ĐẶT PHÒNG </a>
+            </li>
+            <li>
+              <a class="header-label" href="/joy_inn/about-us"> HỢP TÁC </a>
+            </li>
+            <li>
+              <div class="header-label">BLOG</div>
+            </li>
+            <li>
+              <div class="flex align-center ml-4">
+                <div class="header-label">NGÔN NGỮ: </div>
+                <div class="dropdown ver-center mr-30">
+                  <button class="drop-btn bold mr-12">VI</button>
+                  <div class="dropdown-content">
+                      <a class="" href="#">VI</a>
+                      <a class="" href="#">EN</a>
+                  </div>
                 </div>
-            </div>
-            <button class="login-button">
-                ĐĂNG NHẬP
-            </button>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -205,7 +255,7 @@
       <div class="container">
         <div class="reference-room__title">Phòng tương tự</div>
         <div class="reference-room__content">
-          <div class="swiper referenceRoomSwiper">
+          <div class="swiper branch-swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <a href="/joy_inn/superior-double-boutique-room" class="card-room">
@@ -375,7 +425,7 @@
     var swiperBanner = new Swiper(".banner-swiper", {
       autoHeight: true
     });
-    var swiper = new Swiper(".referenceRoomSwiper", {
+    var swiper = new Swiper(".branch-swiper", {
       slidesPerView: 3,
       spaceBetween: 30,
       freeMode: true,

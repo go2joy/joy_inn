@@ -5,11 +5,7 @@
   font-size: 1rem;
   color: #7f7f7f;
 }
-.header-label {
-  font-size: 16px;
-  line-height: 20px;
-  color: #656565;
-}
+
 .homepage_main {
   text-align: center;
   display: block;
@@ -435,7 +431,7 @@
 }
 .swiper-slide-active .watch-room-button:hover {
   background-color: #E77026;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 .globe-icon {
   font-size: 16px;
