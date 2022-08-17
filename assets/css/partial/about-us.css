@@ -1441,3 +1441,24 @@ font-size: 20px;
 .grecaptcha-badge {
   display: none;
 }
+@media screen and (max-width: 540px) {
+  .about-us-is-mobile .section-go2choise .go2choise-block .swiper-container-go2choise-is-mobile .is-name {
+      font-weight: 600;
+      font-size: 16px;
+  }
+  .about-us-is-mobile .section-go2choise .go2choise-block .swiper-container-go2choise-is-mobile .is-locale {
+    font-size: 14px;
+  }
+  .about-us-is-mobile .section-go2choise .block-user-info {
+    padding-top: 14px;
+  }
+  .content-block-joy-hotel {
+      padding-top: 10px;
+  }
+  .about-us-is-mobile .section-joy-hotel .swiper-slide-active .is-content-block-joy-hotel {
+    font-size: 14px;
+  }
+  .about-us-is-mobile .section-go2choise .swiper-container-go2choise-is-mobile .block-slide {
+    padding: 15px 16px
+  }
+}
