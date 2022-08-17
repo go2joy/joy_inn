@@ -26,7 +26,7 @@
     <script src="https://kit.fontawesome.com/c5c1190657.js" crossorigin="anonymous"></script>
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-    <script src="https://www.google.com/recaptcha/api.js?render=6LdH0n0hAAAAADeyQDAGx85xEp02VGlvrU-BY-nd">
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfRcXggAAAAANfDFk9ppYmcVo4ztrc_Iyw5UR6Q">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
 </head>
@@ -532,18 +532,22 @@
                             </div>
                             <div class="form-style">
                                 <form>
-                                    <input class="field-input" type="text" name="field1" placeholder="Họ và Tên*" />
-                                    <input class="field-input" type="text" name="field5" placeholder="Số điện thoại*" />
-                                    <input class="field-input" type="email" name="field2" placeholder="Email" />
-                                    <select class="field-input">
+                                    <input class="field-input" type="text" id="contact-name" name="name" placeholder="Họ và Tên*" />
+                                    <input class="field-input" type="text" id="contact-sdt" name="sdt"
+                                        placeholder="Số điện thoại*" />
+                                    <input id="contact-email" class="field-input" type="email" name="email"
+                                        placeholder="Email" />
+                                    <select id="contact-select" class="field-input">
                                         <option value="1">Nhu cầu hợp tác</option>
                                         <option value="2">Nhu cầu hợp tác 1</option>
                                         <option value="3">Nhu cầu hợp tác 2</option>
                                         <option value="4">Nhu cầu hợp tác 3</option>
                                     </select>
-                                    <textarea class="field-area" placeholder="Ghi chú chi tiết"></textarea>
-                                    <button onclick="onClickReCapcha()" type="submit">GỬI THÔNG TIN</button>
+                                    <textarea id="contact-note" name="note" class="field-area"
+                                        placeholder="Ghi chú chi tiết"></textarea>
+                                    
                                 </form>
+                                <button onclick="onClickReCapcha()" type="submit">GỬI THÔNG TIN</button>
                             </div>
                         </div>
                         <div class="contact-image">
@@ -1050,18 +1054,23 @@
                         </div>
                         <div class="form-style">
                             <form>
-                                <input style="margin-right: 24px" class="field-input" type="text" name="field1" placeholder="Họ và tên*" />
-                                <input class="field-input" type="text" name="field5" placeholder="Số điện thoại*" />
-                                <input class="field-input" type="email" name="field2" placeholder="Email" />
-                                <select class="field-input">
+                                <input id="contact-name-mobile" style="margin-right: 24px" class="field-input" type="text"
+                                    name="name" placeholder="Họ và tên*" />
+                                <input id="contact-sdt-mobile" class="field-input" type="text" name="sdt"
+                                    placeholder="Số điện thoại*" />
+                                <input id="contact-email-mobile" class="field-input" type="email" name="email"
+                                    placeholder="Email" />
+                                <select id="contact-select-mobile" class="field-input">
                                     <option value="1">Nhu cầu hợp tác</option>
                                     <option value="2">Nhu cầu hợp tác 1</option>
                                     <option value="3">Nhu cầu hợp tác 2</option>
                                     <option value="4">Nhu cầu hợp tác 3</option>
                                 </select>
-                                <textarea class="field-area" placeholder="Ghi chú chi tiết"></textarea>
-                                <button onclick="onClickReCapcha()" type="submit">GỬI THÔNG TIN</button>
+                                <textarea id="contact-note-mobile" name="note" class="field-area"
+                                    placeholder="Ghi chú chi tiết"></textarea>
+                                
                             </form>
+                            <button onclick="onClickReCapchaMobile()" type="submit">GỬI THÔNG TIN</button>
                         </div>
                     </div>
                 </div>
@@ -1108,35 +1117,87 @@
              fjs.parentNode.insertBefore(js, fjs);
          }(document, 'script', 'facebook-jssdk'));
      </script>
-    <!-- Initialize Swiper -->
+    <!-- ReCapcha -->
     <script>
+        axios.defaults.headers = {
+        'Content-Type': 'application/json',
+        "cache-control":'no-cache'
+        }
         function onClickReCapcha(e) {
             // e?.preventDefault();
                 grecaptcha.ready(function() {
-                grecaptcha.execute('6LdH0n0hAAAAADeyQDAGx85xEp02VGlvrU-BY-nd').then(function(token) {
-                    randomIndex(token)
+                grecaptcha.execute('6LfRcXggAAAAANfDFk9ppYmcVo4ztrc_Iyw5UR6Q').then(function(token) {
+                    postAPISendMail(token)
                 });
             });
         }
-        async function randomIndex(token){
-            const dataform = "<h2>Ho ten: Tuyen </h2> <br><h2>Email: tuyen.le@go2joy.vn</h2>"
+        async function postAPISendMail(token){
+            const name = document.getElementById("contact-name").value;
+            const sdt = document.getElementById("contact-sdt").value;
+            const email = document.getElementById("contact-email").value;
+            const select = document.getElementById('contact-select').value
+            const note = document.getElementById("contact-note").value;
+            const dataform = `<p>Joy Inn Hotel vừa nhận được yêu cầu hợp tác với thông tin như sau: </p> <br>
+            <p>1. Họ tên: ${name}</p>
+            <p>2. Số điện thoại:: ${sdt}</p>
+            <p>3. Email: ${email}</p>
+            <p>4. Nhu cầu hợp tác: ${select}</p>
+            <p>5. Ghi chú: ${note}</p>
+            <p>Trân trọng/.</p>
+            <p>Email từ Website Joy Inn Hotel/.</p>`
+            const params = {
+            token : token,
+            subject: "[Website - Franchise] - Bạn vừa nhận được yêu cầu hợp tác mới",
+            toEmailList: "joyinnhotel.vn@gmail.com",
+            ccEmailList: "",
+            content: dataform
+            }
+            const result = await axios.post("https://staging-api.go2joy.vn/api/v5/web-booking/other/sendEmailForJoyInn",
+            params).then(function (response) {
+            return response.data.data
+            })
+
+        };
+        function onClickReCapchaMobile(e) {
+            // e?.preventDefault();
+            grecaptcha.ready(function() {
+            grecaptcha.execute('6LfRcXggAAAAANfDFk9ppYmcVo4ztrc_Iyw5UR6Q').then(function(token) {
+                postAPISendMailMobile(token)
+                });
+            });
+        }
+        async function postAPISendMailMobile(token){
+            const name = document.getElementById("contact-name-mobile").value;
+            const sdt = document.getElementById("contact-sdt-mobile").value;
+            const email = document.getElementById("contact-email-mobile").value;
+            const select = document.getElementById('contact-select-mobile').value
+            const note = document.getElementById("contact-note-mobile").value;
+            const dataform = `<p>Joy Inn Hotel vừa nhận được yêu cầu hợp tác với thông tin như sau: </p> <br>
+            <p>1. Họ tên: ${name}</p>
+            <p>2. Số điện thoại:: ${sdt}</p>
+            <p>3. Email: ${email}</p>
+            <p>4. Nhu cầu hợp tác: ${select}</p>
+            <p>5. Ghi chú: ${note}</p>
+            <p>Trân trọng/.</p>
+            <p>Email từ Website Joy Inn Hotel/.</p>`
             const params = {
                 token : token,
-                subject: "Send mail",
-                toEmailList: "tuyen.le@go2joy.vn",
-                ccEmailList: "levinhtuyen210@gmail.com",
+                subject: "[Website - Franchise] - Bạn vừa nhận được yêu cầu hợp tác mới",
+                toEmailList: "joyinnhotel.vn@gmail.com",
+                ccEmailList: "",
                 content: dataform
             }
             const result = await axios.post("https://staging-api.go2joy.vn/api/v5/web-booking/other/sendEmailForJoyInn",
             params).then(function (response) {
-                console.log('response :>> ', response);
                 return response.data.data
             })
             
         };
+        
     </script>
-    
+    <!-- Initialize Swiper -->
     <script>
+        // Swiper
         var swiperBanner = new Swiper(".banner-swiper", {
             autoHeight: true
         });
@@ -1244,6 +1305,7 @@
                 }
             }
         }
+        
         //#region - start of - number counter animation
         let counter1 = 0
         let counter2 = 0
