@@ -462,6 +462,7 @@ a.hotel-des:hover {
 @media (max-width: 540px) {
   .banner-mobile {
     display: block;
+    position: relative;
   }
   .banner-mobile .section-banner-mobile {
     width: 100%;
@@ -470,6 +471,7 @@ a.hotel-des:hover {
     position: relative;
     padding: 0;
     margin: 0;
+    overflow: hidden;
   }
   .banner-mobile .section-banner-mobile .block-banner img {
     width: 100%;
