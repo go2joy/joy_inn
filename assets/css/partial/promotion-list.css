@@ -17,6 +17,7 @@ body {
     max-width: 1312px;
     margin: 0 auto;
     padding: 0 24px;
+    
 }
 .item-promotion img{ 
     width: 100%;
@@ -123,19 +124,26 @@ text-transform: uppercase;
         margin-top: 50px;
     }
     .promotion-list-mobile .promotion-block-list .item-promotion .content-promotion {
-        padding: 28px 13px;
+        padding: 28px 15px;
     }
     .promotion-list-mobile .promotion-block-list .item-promotion img {
         width: 100%;
     }
     .promotion-list-mobile .promotion-block-list .item-promotion .is-title-promotion {
         font-size: 28px;
+        text-align: left;
+        padding: 33px 15px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.07);
     }
+    
     .promotion-list-mobile .promotion-block-list .item-promotion .is-sub-title-promotion {
         padding-top:20px
     }
     .promotion-list-mobile .promotion-block-list .content-promotion .is-button-promotion input[type="button"] {
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 24px;
+    }
+    .promotion-list-mobile .content-promotion .is-button-promotion input[type="button"] {
+        padding: 17px 18px;
     }
 }
