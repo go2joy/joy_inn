@@ -227,6 +227,9 @@ a.hotel-des:hover {
   height: 32px;
   margin-top: 8px;
 }
+.gap-12 {
+  gap: 12px;
+}
 .gap-30 {
   gap: 30px;
 }
@@ -263,17 +266,26 @@ a.hotel-des:hover {
   margin-left: auto !important;
   margin-right: auto !important;
 }
+.ml-12 {
+  margin-left: 12px !important;
+}
 .mr-0 {
   margin-right: 0px !important;
 }
 .mr-4 {
   margin-right: 4px !important;
 }
+.mr-6 {
+  margin-right: 6px !important;
+}
 .mr-8 {
   margin-right: 8px !important;
 }
 .mr-12 {
   margin-right: 12px !important;
+}
+.mr-14 {
+  margin-right: 14px !important;
 }
 .mr-30 {
   margin-right: 30px !important;
@@ -284,14 +296,23 @@ a.hotel-des:hover {
 .mt-85 {
   margin-top: 85px !important;
 }
+.mb-0 {
+  margin-bottom: 0 !important;
+}
 .mb-12 {
   margin-bottom: 12px !important;
 }
 .mb-28 {
   margin-bottom: 28px !important;
 }
+.mb-30 {
+  margin-bottom: 30px !important;
+}
 .mb-40 {
   margin-bottom: 40px !important;
+}
+.mb-60 {
+  margin-bottom: 60px !important;
 }
 .mb-80 {
   margin-bottom: 80px !important;
@@ -367,9 +388,6 @@ a.hotel-des:hover {
 }
 .pad-0 {
   padding: 0 !important;
-}
-.mb-0 {
-  margin-bottom: 0 !important;
 }
 .mobile-content {
   display: none;
@@ -548,7 +566,7 @@ a.hotel-des:hover {
   .banner-mobile .section-banner-mobile .content-banner-mobile a {
     margin-right: 6px;
   }
-  .banner-mobile .section-banner-mobile .content-banner-mobile .breadcrumb {
+  .banner-mobile .section-banner-mobile .content-banner-mobile .g2j-breadcrumb {
     display: flex;
     justify-content: center;
     font-size: 16px;
