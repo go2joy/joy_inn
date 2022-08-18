@@ -1122,6 +1122,9 @@ cursor: pointer;
   .about-us-is-mobile .time-mobile-2 {
     padding-top: 117px;
   }
+  .about-us-is-mobile .time-mobile-3 {
+    padding-top: 117px;
+  }
   .about-us-is-mobile .timeline-total::before {
     content: '';
     position: absolute;

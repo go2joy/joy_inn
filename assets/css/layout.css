@@ -67,11 +67,11 @@
 }
 .styckyBtn {
   position: fixed;
-  bottom: 105px;
   right: 12px;
-  bottom: 125px;
-  right: 0px;
+  bottom: 70px;
+  right: 10px;
   z-index: 99;
+  width: 85px;
   width: 85px;
   font-size: 18px;
   border: none;
