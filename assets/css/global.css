@@ -23,7 +23,7 @@ ul{
   list-style: none;
 }
 
-.container {
+.joy-inn-container {
   width: 80%; 
   padding: 0; 
   margin: 0 auto;
@@ -441,7 +441,7 @@ a.hotel-des:hover {
   .mobile-content {
     display: block;
   }
-  .container{
+  .joy-inn-container{
     width: 95%
   }
   .col-sm-2,
