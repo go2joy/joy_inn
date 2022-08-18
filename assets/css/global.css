@@ -196,7 +196,7 @@ a.hotel-des:hover {
 .position-relative {
   position: relative !important;
 }
-.row {
+.joy-inn-row {
   display: flex;
   flex-wrap: wrap;
 }
@@ -281,6 +281,9 @@ a.hotel-des:hover {
 .mt-0 {
   margin-top: 0 !important;
 }
+.mt-85 {
+  margin-top: 85px !important;
+}
 .mb-12 {
   margin-bottom: 12px !important;
 }
@@ -357,7 +360,7 @@ a.hotel-des:hover {
   overflow-x: scroll;
 }
 .color-g2j {
-  color: rgba(231, 112, 38, 1);
+  color: #E77026 !important;
 }
 .mar-0 {
   margin: 0 !important;
@@ -532,24 +535,34 @@ a.hotel-des:hover {
     vertical-align: inherit;
     padding: 0 20px;
   }
-  .banner-mobile .section-banner-mobile .content-banner-mobile p {
+  .banner-mobile .section-banner-mobile .content-banner-mobile p, 
+  .banner-mobile .section-banner-mobile .content-banner-mobile a {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
   }
-  .banner-mobile .section-banner-mobile .content-banner-mobile .is-level-page {
+  .banner-mobile .section-banner-mobile .content-banner-mobile a {
+    margin-right: 6px;
+  }
+  .banner-mobile .section-banner-mobile .content-banner-mobile .breadcrumb {
+    display: flex;
+    justify-content: center;
     font-size: 16px;
     font-weight: 400;
-    color: rgba(255, 255, 255, 1);
+    color: #ffffff;
     padding: 10px;
   }
-  .banner-mobile .section-banner-mobile .content-banner-mobile .is-title-banner-mobile {
-    font-size: 35px;
+  .banner-mobile .section-banner-mobile .content-banner-mobile .is-title-banner-mobile p {
     font-weight: 600;
-    color: rgba(255, 255, 255, 1);
+    font-size: 35px;
+    line-height: 43px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
   }
   .banner-mobile .section-banner-mobile .swiper-slide .banner-background {
     width: 100%;

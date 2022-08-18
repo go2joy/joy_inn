@@ -1,17 +1,17 @@
 /* The following is for the chat bubble */
 .fb_dialog_content>iframe {
-  right: 18px !important;
-  bottom: 160px !important;
+  /* right: 18px !important;
+  bottom: 160px !important; */
 }
 
 /* The following are for the chat box, on display and on hide */
 iframe.fb_customer_chat_bounce_in_v2 {
-  right: 85px !important;
-  bottom: 160px !important;
+  /* right: 85px !important;
+  bottom: 160px !important; */
 }
 iframe.fb_customer_chat_bounce_out_v2 {
-  right: 85px !important;
-  bottom: 160px !important;
+  /* right: 85px !important;
+  bottom: 160px !important; */
 }
 
 /* The following are for the bounce in/out animations */
