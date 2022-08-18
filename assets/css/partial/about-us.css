@@ -133,7 +133,7 @@ a {
 .section {
     /* padding: 86px 0; */
 }
-.about-us {
+.about-us-is-desktop {
   display: block;
 }
 .about-us-is-mobile {
@@ -1034,7 +1034,7 @@ cursor: pointer;
   width: calc(80% + 41px);
 }
 @media screen and (max-width: 540px) {
-  .about-us {
+  .about-us-is-desktop {
     display: none;
   }
   .about-us-is-mobile {
