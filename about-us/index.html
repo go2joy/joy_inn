@@ -616,8 +616,11 @@
                                             placeholder="Ghi chú chi tiết"></textarea>
 
                                     </form>
+                                    
                                     <button class="button--default" onclick="onClickReCapcha()" type="submit">GỬI THÔNG
                                         TIN</button>
+                                        <div id="message_success"></div>
+                                        
                                 </div>
                             </div>
                             <div class="contact-image">
@@ -1450,6 +1453,8 @@
             const result = await axios.post(
                 "https://staging-api.go2joy.vn/api/v5/web-booking/other/sendEmailForJoyInn",
                 params).then(function (response) {
+                const devGet = document.getElementById("message_success")
+                devGet.innerHTML +=`<p style="font-size: 20px; color:#409eff;text-align: left;">Gửi thành công</p>`
                 return response.data.data
             })
 
@@ -1487,6 +1492,8 @@
             const result = await axios.post(
                 "https://staging-api.go2joy.vn/api/v5/web-booking/other/sendEmailForJoyInn",
                 params).then(function (response) {
+                const devGet = document.getElementById("message_success")
+                devGet.innerHTML +=`<p style="font-size: 20px; color:#409eff;text-align: left;">Gửi thành công</p>`
                 return response.data.data
             })
 
