@@ -196,7 +196,7 @@ a.hotel-des:hover {
 .position-relative {
   position: relative !important;
 }
-.row {
+.joy-inn-row {
   display: flex;
   flex-wrap: wrap;
 }
