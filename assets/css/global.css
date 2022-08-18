@@ -560,4 +560,20 @@ a.hotel-des:hover {
     z-index: 1;
     opacity: 0.4;
   }
+  .banner-mobile .swiper-pagination-bullet-active {
+    background: #FFFFFF;
+    width: 31px;
+    height: 6px;
+    border-radius: 3px;
+  }
+  .banner-mobile .swiper-pagination-bullet {
+    height: 6px;
+    left: 923px;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.5)
+
+  }
+  .banner-mobile .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 15px;
+  }
 }

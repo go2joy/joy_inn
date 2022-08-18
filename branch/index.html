@@ -122,7 +122,7 @@
       </div>
       <section class="section banner-mobile mb-40" aria-label="banner" id="banner">
         <div class="section-banner-mobile">
-            <div class="banner-swiper">
+            <div class="banner-swiper-mobile">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="block-banner">
@@ -146,6 +146,7 @@
                         </div>
                     </div>
                 </div>
+                <div class="swiper-pagination"></div>
             </div>
             <div class="content-banner-mobile">
                 <div class="is-level-page">
@@ -481,7 +482,14 @@
     var swiperBanner = new Swiper(".banner-swiper", {
       autoHeight: true
     });
-
+    // NOTE: Swiper for Banner Mobile layout
+    var swiperBannerMobile = new Swiper(".banner-swiper-mobile", {
+        autoHeight: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
     // NOTE: Swiper for Branch page
     var swiperBanner = new Swiper(".branch-swiper", {
       autoHeight: true,
