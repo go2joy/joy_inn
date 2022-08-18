@@ -21,7 +21,7 @@ body {
 .item-promotion img{ 
     width: 100%;
 }
-.promotion-list {
+.promotion-list-desktop {
     display: block;
 }
 .promotion-list-mobile {
@@ -104,7 +104,7 @@ text-transform: uppercase;
     font-size: 19px;
 }
 @media screen and (max-width: 540px) {
-    .promotion-list {
+    .promotion-list-desktop {
         display: none;
     }
     .promotion-list-mobile {
