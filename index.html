@@ -14,33 +14,85 @@
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
   />
+
+  <script src="https://kit.fontawesome.com/c5c1190657.js" crossorigin="anonymous"></script>
   <title>Joy Inn</title>
 </head>
 <body>
   <div class="homepage">
     <div class="layout_header">
-      <div class="row container">
-        <div class="header_left col-md-4 flex ver-center">
-            <a class="header-label ver-center" href="/joy_inn/promotion-list"> ƯU ĐÃI </a>
-            <a class="header-label ver-center" href="/joy_inn/branch"> ĐẶT PHÒNG </a>
+      <div class="layout_header--desktop">
+        <div class="flex flex-wrap mx-auto container justify-space-between">
+          <div class="header_left">
+              <a class="header-label limit-text-line-2" href="/joy_inn/promotion-list"> ƯU ĐÃI </a>
+              <a class="header-label limit-text-line-2 mr-0" href="/joy_inn/branch"> ĐẶT PHÒNG </a>
+          </div>
+          <div class="header_center center">
+            <a href="/joy_inn"><img class="logo-image-header" src="assets/images/icon/logo-header.png" alt=""></a>
+          </div>
+          <div class="header_right">
+              <a class="header-label limit-text-line-2 padding-left-right-none" href="/joy_inn/about-us"> HỢP TÁC </a>
+              <p class="header-label limit-text-line-2" style="min-width: 60px;">BLOG</p>
+              <p class="ver-seperate mr-30"> </p>
+              <div class="dropdown ver-center mr-30">
+                  <button class="drop-btn bold mr-12">VI</button>
+                  <div class="dropdown-content">
+                      <a class="" href="#">VI</a>
+                      <a class="" href="#">EN</a>
+                  </div>
+              </div>
+              <button class="login-button">
+                  ĐĂNG NHẬP
+              </button>
+          </div>
         </div>
-        <div class="header_center col-md-2 center">
-          <a href="/joy_inn"><img class="logo-image-header" src="./assets/images/icon/logo-header.png" alt=""></a>
+      </div>
+      <div class="layout_header--mobile">
+        <div class="header-mobile__container">
+          <div class="header_left">
+            <label for="showMenu"><img id="btnMenu" src="assets/images/icon/icon-nav.svg" alt=""></label>
+          </div>
+          <div class="header_center center">
+            <a href="/joy_inn">
+              <img class="logo-image-header" src="assets/images/icon/logo-header.png" alt="">
+            </a>
+          </div>
+          <div class="header_right">
+            <img src="assets/images/icon/icon-login.svg" alt="">
+          </div>
         </div>
-        <div class="align-right col-md-5 flex ver-center">
-            <a class="header-label ver-center padding-left-right-none" href="/joy_inn/about-us"> HỢP TÁC </a>
-            <p class="header-label ver-center"> BLOG </p>
-            <p class="ver-seperate"> </p>
-            <div class="dropdown ver-center">
-                <button class="drop-btn bold mr-12">VI</button>
-                <div class="dropdown-content">
-                    <a class="" href="#">VI</a>
-                    <a class="" href="#">EN</a>
+  
+        <input type="checkbox" id="showMenu">
+        <div class="menu-sidebar">
+          <div class="position-relative">
+            <label for="showMenu" id="closeMenu"><i class="fa-solid fa-xmark"></i></label>
+          </div>
+          <ul>
+            <li>
+              <a class="header-label" href="/joy_inn/promotion-list"> ƯU ĐÃI </a>
+            </li>
+            <li>
+              <a class="header-label" href="/joy_inn/branch"> ĐẶT PHÒNG </a>
+            </li>
+            <li>
+              <a class="header-label" href="/joy_inn/about-us"> HỢP TÁC </a>
+            </li>
+            <li>
+              <div class="header-label">BLOG</div>
+            </li>
+            <li>
+              <div class="flex align-center ml-4">
+                <div class="header-label">NGÔN NGỮ: </div>
+                <div class="dropdown ver-center mr-30">
+                  <button class="drop-btn bold mr-12">VI</button>
+                  <div class="dropdown-content">
+                      <a class="" href="#">VI</a>
+                      <a class="" href="#">EN</a>
+                  </div>
                 </div>
-            </div>
-            <button class="login-button">
-                ĐĂNG NHẬP
-            </button>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -108,42 +160,42 @@
         <div class="main_four-values container">
           <div class="four-values_title">
             <div class="flex">
-              <img class="four-values_img" src="assets/images/rabbit/Hotel-Joy-Inn-캐릭터(여자).png" alt="">
+              <img class="four-values_img desktop-content" src="assets/images/rabbit/Hotel-Joy-Inn-캐릭터(여자).png" alt="">
               <div class="four-values_label">
                 <p class="four-values_label--organe">JOY HOTEL</p>
                 <p class="four-values_label--size block-label">4 GIÁ TRỊ KHÔNG THỂ BỎ QUA</p>
               </div>
-              <img class="four-values_img" src="assets/images/rabbit/Hotel-Joy-Inn-캐릭터(남자).png" alt="">
+              <img class="four-values_img desktop-content" src="assets/images/rabbit/Hotel-Joy-Inn-캐릭터(남자).png" alt="">
             </div>
           </div>
           <div class="four-values_content">
             <div class="row">
-              <div class="col-md-3">
+              <div class="col-md-3 col-sm-6">
                 <div class="content-box">
                   <img class="content-box_icon" src="assets/images/icon/paid.svg" alt="">
                   <p class="content-box_label--bold">Giá phòng hợp lý</p>
-                  <p class="content-box_label--grey">Thêm nhiều ưu đã độc quyền</p>
+                  <p class="content-box_label--grey desktop-content">Thêm nhiều ưu đã độc quyền</p>
                 </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-md-3 col-sm-6">
                 <div class="content-box">
                   <img class="content-box_icon" src="assets/images/icon/booking.svg" alt="">
                   <p class="content-box_label--bold">Đặt phòng đơn giản</p>
-                  <p class="content-box_label--grey">Thêm nhiều ưu đã độc quyền</p>
+                  <p class="content-box_label--grey desktop-content">Thêm nhiều ưu đã độc quyền</p>
                 </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-md-3 col-sm-6">
                 <div class="content-box">
                   <img class="content-box_icon" src="assets/images/icon/diamon.svg" alt="">
                   <p class="content-box_label--bold">Trải nghiệm tiện nghi</p>
-                  <p class="content-box_label--grey">Chỉ 1 cú chạm, tận hưởng trọn vẹn</p>
+                  <p class="content-box_label--grey desktop-content">Chỉ 1 cú chạm, tận hưởng trọn vẹn</p>
                 </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-md-3 col-sm-6">
                 <div class="content-box">
                   <img class="content-box_icon" src="assets/images/icon/check-in.svg" alt="">
                   <p class="content-box_label--bold">Giá phòng hợp lý</p>
-                  <p class="content-box_label--grey">Dành cho bạn trẻ</p>
+                  <p class="content-box_label--grey desktop-content">Dành cho bạn trẻ</p>
                 </div>
               </div>
             </div>
@@ -151,7 +203,7 @@
         </div>
         <div class="main_video">
           <div class="container">
-            <div style="height: 50px;" >
+            <div style="height: 50px;" class="desktop-content">
               <div class="video-label">
                 <p class="box_lable-1">
                   Joy Hotel không đơn giản chỉ là khách sạn cho cặp đôi !
@@ -162,9 +214,30 @@
               </div>
             </div>
             <div class="video-box">
-              <div></div>
+              <div class="mobile-content">
+                <div class="video-label">
+                  <p class="box_lable-1">
+                    Joy Hotel không đơn giản chỉ là khách sạn cho cặp đôi !
+                  </p>
+                  <p class="box_lable-2">
+                    We have a lot of effort to bring more quality time to you and the people you love. You will have a chance to enjoy meaningful moments together and that's reason why we're here
+                  </p>
+                </div>
+                <div
+                  class="fb-video video-link mobile-content"
+                  data-href="https://www.facebook.com/joyinnhotel.vn/videos/3136840609963286/"
+                  data-width="500"
+                  data-height="300"
+                  data-show-text="false">
+                  <blockquote cite="https://www.facebook.com/joyinnhotel.vn/videos/3136840609963286/" class="fb-xfbml-parse-ignore">
+                    <a href="https://www.facebook.com/joyinnhotel.vn/videos/3136840609963286/">
+                    </a>
+                  </blockquote>
+                </div>
+                <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v14.0" nonce="QgDEDy5v"></script>
+              </div>
             </div>
-            <div style="height: 280px;">
+            <div style="height: 280px;" class="desktop-content">
               <div
                class="fb-video video-link"
                data-href="https://www.facebook.com/joyinnhotel.vn/videos/3136840609963286/"
@@ -186,21 +259,19 @@
           <div class="flex five-content-block container">
             <div class="flex content_left">
               <div class="flex">
-                <div>
+                <div class="flex five-sense_header">
                   <p class="label-five-sense-1"> JOY HOTEL</p>
-                  <div style="width: 135px; height: 112px;">
-                    <div class="swiper five-sense-swiper" data-id="2">
-                      <div class="swiper-wrapper">
-                        <d class="swiper-slide label-2">THỬ</d>
-                        <d class="swiper-slide label-2">NGHE</d>
-                        <d class="swiper-slide label-2">NHÌN</d>
-                        <d class="swiper-slide label-2">TOUCH</d>
-                        <d class="swiper-slide label-2">SMELL</d>
-                      </div>
+                  <div class="swiper five-sense-swiper" data-id="2">
+                    <div class="swiper-wrapper">
+                      <d class="swiper-slide label-2">THỬ</d>
+                      <d class="swiper-slide label-2">NGHE</d>
+                      <d class="swiper-slide label-2">NHÌN</d>
+                      <d class="swiper-slide label-2">TOUCH</d>
+                      <d class="swiper-slide label-2">SMELL</d>
                     </div>
                   </div>
                 </div>
-                <img class="img-rabbit" src="./assets/images/rabbit/캐릭터-응용5-1(커플-사랑표현).png" alt="">
+                <img class="img-rabbit desktop-content" src="./assets/images/rabbit/캐릭터-응용5-1(커플-사랑표현).png" alt="">
               </div>
               <div class="hor-seperate"></div>
               <div class="slider-content">
@@ -282,11 +353,13 @@
                     </div>
                   </div>
                   <img
-                    class="swiper-button-value-prev five-sense-bt prev"
+                    class="swiper-button-value-prev five-sense-bt
+                     prev"
                     src="./assets/images/icon/prev.svg" alt=""
                   >
                   <img
-                    class="swiper-button-value-next five-sense-bt next"
+                    class="swiper-button-value-next five-sense-bt
+                     next"
                     src="./assets/images/icon/next.svg" alt=""
                   >
                 </div>
@@ -303,37 +376,17 @@
                     >
                       <div class="swiper five-sense-detail-swiper">
                         <div class="swiper-wrapper">
-                          <div class="swiper-slide five-sense-detail-slide">
+                           <div class="swiper-slide five-sense-detail-slide">
                             <img class="five-sense-detail-image" src="./assets/images/banner/five.png" alt="">
                           </div>
                           <div class="swiper-slide five-sense-detail-slide">
-                            <img class="five-sense-detail-image" src="./assets/images/banner/five.png" alt="">
+                            <img class="five-sense-detail-image" src="./assets/images/banner/five-2.jpg" alt="">
                           </div>
                           <div class="swiper-slide five-sense-detail-slide">
-                            <img class="five-sense-detail-image" src="./assets/images/banner/five.png" alt="">
+                            <img class="five-sense-detail-image" src="./assets/images/banner/libary-3.jpg" alt="">
                           </div>
                           <div class="swiper-slide five-sense-detail-slide">
-                            <img class="five-sense-detail-image" src="./assets/images/banner/five.png" alt="">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="swiper-slide five-sense-content-slide"
-                    >
-                      <div class="swiper five-sense-detail-swiper">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide five-sense-detail-slide">
-                            <img class="five-sense-detail-image" src="./assets/images/banner/five.png" alt="">
-                          </div>
-                          <div class="swiper-slide five-sense-detail-slide">
-                            <img class="five-sense-detail-image" src="./assets/images/banner/five.png" alt="">
-                          </div>
-                          <div class="swiper-slide five-sense-detail-slide">
-                            <img class="five-sense-detail-image" src="./assets/images/banner/five.png" alt="">
-                          </div>
-                          <div class="swiper-slide five-sense-detail-slide">
-                            <img class="five-sense-detail-image" src="./assets/images/banner/five.png" alt="">
+                            <img class="five-sense-detail-image" src="./assets/images/banner/libary-4.jpg" alt="">
                           </div>
                         </div>
                       </div>
@@ -347,33 +400,13 @@
                             <img class="five-sense-detail-image" src="./assets/images/banner/five.png" alt="">
                           </div>
                           <div class="swiper-slide five-sense-detail-slide">
-                            <img class="five-sense-detail-image" src="./assets/images/banner/five.png" alt="">
+                            <img class="five-sense-detail-image" src="./assets/images/banner/five-2.jpg" alt="">
                           </div>
                           <div class="swiper-slide five-sense-detail-slide">
-                            <img class="five-sense-detail-image" src="./assets/images/banner/five.png" alt="">
+                            <img class="five-sense-detail-image" src="./assets/images/banner/libary-3.jpg" alt="">
                           </div>
                           <div class="swiper-slide five-sense-detail-slide">
-                            <img class="five-sense-detail-image" src="./assets/images/banner/five.png" alt="">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="swiper-slide five-sense-content-slide"
-                    >
-                      <div class="swiper five-sense-detail-swiper">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide five-sense-detail-slide">
-                            <img class="five-sense-detail-image" src="./assets/images/banner/five.png" alt="">
-                          </div>
-                          <div class="swiper-slide five-sense-detail-slide">
-                            <img class="five-sense-detail-image" src="./assets/images/banner/five.png" alt="">
-                          </div>
-                          <div class="swiper-slide five-sense-detail-slide">
-                            <img class="five-sense-detail-image" src="./assets/images/banner/five.png" alt="">
-                          </div>
-                          <div class="swiper-slide five-sense-detail-slide">
-                            <img class="five-sense-detail-image" src="./assets/images/banner/five.png" alt="">
+                            <img class="five-sense-detail-image" src="./assets/images/banner/libary-4.jpg" alt="">
                           </div>
                         </div>
                       </div>
@@ -383,17 +416,57 @@
                     >
                       <div class="swiper five-sense-detail-swiper">
                         <div class="swiper-wrapper">
-                          <div class="swiper-slide five-sense-detail-slide">
+                           <div class="swiper-slide five-sense-detail-slide">
                             <img class="five-sense-detail-image" src="./assets/images/banner/five.png" alt="">
                           </div>
                           <div class="swiper-slide five-sense-detail-slide">
+                            <img class="five-sense-detail-image" src="./assets/images/banner/five-2.jpg" alt="">
+                          </div>
+                          <div class="swiper-slide five-sense-detail-slide">
+                            <img class="five-sense-detail-image" src="./assets/images/banner/libary-3.jpg" alt="">
+                          </div>
+                          <div class="swiper-slide five-sense-detail-slide">
+                            <img class="five-sense-detail-image" src="./assets/images/banner/libary-4.jpg" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="swiper-slide five-sense-content-slide"
+                    >
+                      <div class="swiper five-sense-detail-swiper">
+                        <div class="swiper-wrapper">
+                           <div class="swiper-slide five-sense-detail-slide">
                             <img class="five-sense-detail-image" src="./assets/images/banner/five.png" alt="">
                           </div>
                           <div class="swiper-slide five-sense-detail-slide">
+                            <img class="five-sense-detail-image" src="./assets/images/banner/five-2.jpg" alt="">
+                          </div>
+                          <div class="swiper-slide five-sense-detail-slide">
+                            <img class="five-sense-detail-image" src="./assets/images/banner/libary-3.jpg" alt="">
+                          </div>
+                          <div class="swiper-slide five-sense-detail-slide">
+                            <img class="five-sense-detail-image" src="./assets/images/banner/libary-4.jpg" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="swiper-slide five-sense-content-slide"
+                    >
+                      <div class="swiper five-sense-detail-swiper">
+                        <div class="swiper-wrapper">
+                           <div class="swiper-slide five-sense-detail-slide">
                             <img class="five-sense-detail-image" src="./assets/images/banner/five.png" alt="">
                           </div>
                           <div class="swiper-slide five-sense-detail-slide">
-                            <img class="five-sense-detail-image" src="./assets/images/banner/five.png" alt="">
+                            <img class="five-sense-detail-image" src="./assets/images/banner/five-2.jpg" alt="">
+                          </div>
+                          <div class="swiper-slide five-sense-detail-slide">
+                            <img class="five-sense-detail-image" src="./assets/images/banner/libary-3.jpg" alt="">
+                          </div>
+                          <div class="swiper-slide five-sense-detail-slide">
+                            <img class="five-sense-detail-image" src="./assets/images/banner/libary-4.jpg" alt="">
                           </div>
                         </div>
                       </div>
@@ -422,8 +495,8 @@
                   <img class="custom-img" src="./assets/images/banner/image-16.png" alt="">
                 </div>
               </div>
-              <div class="swiper-button-next custom-sw-bt bt-next cl-white"></div>
-              <div class="swiper-button-prev custom-sw-bt bt-prev cl-white"></div>
+              <div class="swiper-button-next custom-sw-bt bt-next cl-white desktop-content"></div>
+              <div class="swiper-button-prev custom-sw-bt bt-prev cl-white desktop-content"></div>
               <div class="swiper-pagination"></div>
             </div>
           </div>
@@ -509,7 +582,7 @@
         </div>
         <div class="go2-choise">
           <div>
-            <p class="block-label"> <span>GO2CHOICE</span>!</p>
+            <p class="block-label mb-0"> <span>GO2CHOICE</span>!</p>
             <div>
               <div class="go2-choise_slide container">
                 <div class="swiper-go2-choise">
@@ -654,14 +727,13 @@
                   </div>
                 </div>
               </div>
-            </div>
           </div>
         </div>
         <div class="near-you container">
           <div class="left">
             <p class="block-label">TÌM <span>JOY HOTEL</span> GẦN BẠN</p>
             <div class="row">
-              <div class="col-md-4 scroll-y list-hotel">
+              <div class="col-md-4 col-sm-12 scroll-y list-hotel">
                 <div class="hotel-box" onclick="onChangeMap(1)">
                   <p>JOY INN CỘNG HÒA</p>
                   <p>
@@ -684,7 +756,7 @@
                   </p>
                 </div>
               </div>
-              <div class="col-md-8">
+              <div class="col-md-8 col-sm-12">
                 <img id="map-img" class="map-img" src="assets/images/banner/loca-cong-hoa.png" alt="">
               </div>
             </div>
@@ -692,43 +764,80 @@
         </div>
         <div class="libary container">
           <div class="left">
-            <p class="block-label">THƯ VIỆN ẢNH <img class="four-values_img" src="assets/images/rabbit/캐릭터-응용4-1(솔로-사랑표현).png" alt=""></p>
-            <div class="row"> 
-              <img src="assets/images/banner/libary-1.jpg" class="col-md-3 p-0" style="object-fit: cover;">
-              <div class="row col-md-8 p-0" style="flex-direction: column;">
-                <img src="assets/images/banner/libary-2.jpg" class="p-0 fit-img" style="height: 300px;">
-                <div class="flex p-0" style="gap: 2;">
-                  <img src="assets/images/banner/libary-3.jpg" class="p-0" style="width: 50%;height: 300px;">
-                  <img src="assets/images/banner/libary-4.jpg" class="p-0" style="width: 49%;height: 300px;">
+            <p class="block-label flex">THƯ VIỆN ẢNH <img class="four-values_img desktop-content" src="assets/images/rabbit/캐릭터-응용4-1(솔로-사랑표현).png" alt=""></p>
+            <div class="desktop-content">
+              <div class="row"> 
+                <div class="col-md-3 col-sm-12 ">
+                  <img src="assets/images/banner/libary-1.jpg" class="p-0 libary-img" >
+                </div>
+                <div class="flex col-md-8 desktop-content p-0" style="flex-direction: column;">
+                  <img src="assets/images/banner/libary-2.jpg" class="p-0 fit-img  mb-12" style="height: 300px;">
+                  <div class="flex p-0" style="gap: 2;">
+                    <img src="assets/images/banner/libary-3.jpg" class="p-0" style="width: 50%;height: 300px;">
+                    <img src="assets/images/banner/libary-4.jpg" class="p-0" style="width: 49%;height: 300px;">
+                  </div>
                 </div>
               </div>
             </div>
+            <div class="mobile-content">
+              <div class="swiper libary-swiper" data-id="4">
+                <div class="swiper-wrapper">
+                  <div
+                    class="swiper-slide five-slide"
+                  >
+                    <img class="libary-img" src="./assets/images/banner/libary-1.jpg" alt="">
+                  </div>
+                  <div
+                    class="swiper-slide banner-slide"
+                  >
+                    <img class="libary-img" src="./assets/images/banner/libary-2.jpg" alt="">
+                  </div>
+                  <div
+                    class="swiper-slide banner-slide"
+                  >
+                    <img class="libary-img" src="./assets/images/banner/libary-3.jpg" alt="">
+                  </div>
+                </div>
+                <div class="swiper-button-next custom-sw-bt bt-next cl-white desktop-content"></div>
+                <div class="swiper-button-prev custom-sw-bt bt-prev cl-white desktop-content"></div>
+                <div class="swiper-pagination"></div>
+              </div>
             </div>
+          </div>
         </div>
       </div>
     </div>
     <div class="layout_footer">
       <div class="container footer__container">
         <div class="row mb-28">
-          <div class="footer_left col-md-8" class="" >
+          <div class="footer_left col-md-5 col-sm-12" class="" >
             <img class="logo-image-footer" src="assets/images/icon/logo-footer.svg" alt="">
           </div>
-          <div class="footer_left col-md-3">
+          <div class="footer_left col-md-3 desktop-content">
             <h2 class="footer__title"> LIÊN HỆ</h2>
           </div>
-          <div class="footer_left col-md-3">
+          <div class="footer_left col-md-3 desktop-content">
             <h2 class="footer__title"> LIÊN KẾT NHANH</h2>
           </div>
         </div>
         <div class="row mb-40">
-          <div class="footer_left col-md-8">
+          <div class="footer_left col-md-5 col-sm-12">
             <p class="hotel-des">
               "Joy Inn Hotel là chuỗi khách sạn tinh giản dành cho giới trẻ, mang đến hơi thở tươi mới và những trải nghiệm tuyệt vời dành cho các cặp đôi. Vận hành với 2 hệ thống Joy Inn và Joy Boutique Hotel, chúng tôi mang đến cho khách hàng những dịch vụ chuyên nghiệp, tiện nghi từ cơ sở vật chất đến tinh thần sẵn sàng phục vụ của đội ngũ nhân viên.
               <br />
               Joy Inn Hotel -  Check-in một lần là nhớ mãi."
             </p>
           </div>
-          <div class="footer_left col-md-3">
+          <div class="mobile-content">
+            <div class=" flex social">
+              <a href="https://www.facebook.com/joyinnhotel.vn" target="_blank"><img class="footer__icon mr-12" src="assets/images/icon/footer-facebook.svg" alt=""></a>
+              <img class="footer__icon mr-12" src="assets/images/icon/footer-twitter.svg" alt="">
+              <img class="footer__icon mr-12" src="assets/images/icon/footer-instagram.svg" alt="">
+              <img class="footer__icon mr-12" src="assets/images/icon/footer-youtube.svg" alt="">
+            </div>
+          </div>
+          <div class="footer_left col-md-3 col-sm-12">
+            <div class="mobile-content"><h2 class="footer__title"> LIÊN HỆ</h2></div>
             <div class="flex mb-12">
               <img class="logo-contract" src="assets/images/icon/message.svg" alt="">
               <p class="ver-center hotel-des">Joyinnhotel.vn@gmail.com</p>
@@ -742,40 +851,50 @@
               <p class="ver-center hotel-des">419 Cộng Hòa, Phường 15, Quận Tân Bình, Hồ Chí Minh</p>
             </div>
           </div>
-          <div class="footer_left col-md-3">
-            <div class="flex gap-52">
-              <div>
-                <a class="hotel-des" href="/joy_inn/promotion-list"> <p class="mb-12 mt-0">Ưu đãi</p> </a>
-                <a class="hotel-des" href="/joy_inn/about-us"> <p class="mb-12 mt-0">Hợp tác</p> </a>
-                <a class="hotel-des" href="/joy_inn/about-us"> <p class="mb-12 mt-0">Blog</p> </a>
+          <div class="footer_left col-md-3 col-sm-12">
+            <div class="mobile-content"><h2 class="footer__title"> LIÊN KẾT NHANH</h2></div>
+            <div class="desktop-content">
+              <div class="flex gap-52">
+                <div>
+                  <a class="hotel-des" href="/joy_inn/promotion-list"> <p class="mb-12 mt-0">Ưu đãi</p> </a>
+                  <a class="hotel-des" href="/joy_inn/about-us"> <p class="mb-12 mt-0">Hợp tác</p> </a>
+                  <a class="hotel-des" href="/joy_inn/about-us"> <p class="mb-12 mt-0">Blog</p> </a>
+                </div>
+                <div>
+                  <a class="hotel-des" href="#"> <p class="mb-12 mt-0">Chính sách</p> </a>
+                  <a class="hotel-des" href="/joy_inn/branch"> <p class="mb-12 mt-0">Đặt phòng</p> </a>
+                  <a class="hotel-des" href="#"> <p class="mb-12 mt-0">Đăng nhập</p> </a>
+                </div>
               </div>
-              <div>
-                <a class="hotel-des" href="#"> <p class="mb-12 mt-0">Chính sách</p> </a>
-                <a class="hotel-des" href="/joy_inn/branch"> <p class="mb-12 mt-0">Đặt phòng</p> </a>
-                <a class="hotel-des" href="#"> <p class="mb-12 mt-0">Đăng nhập</p> </a>
+            </div>
+            <div class="mobile-content">
+              <div class="row">
+                <a class="hotel-des pad-0 col-sm-3" href="/joy_inn/promotion-list"> <p class="mb-12 mt-0">Ưu đãi</p> </a>
+                <a class="hotel-des pad-0 col-sm-3" href="/joy_inn/about-us"> <p class="mb-12 mt-0">Hợp tác</p> </a>
+                <a class="hotel-des pad-0 col-sm-3" href="/joy_inn/about-us"> <p class="mb-12 mt-0">Blog</p> </a>
+                <a class="hotel-des pad-0 col-sm-3" href="#"> <p class="mb-12 mt-0">Chính sách</p> </a>
+                <a class="hotel-des pad-0 col-sm-3" href="/joy_inn/branch"> <p class="mb-12 mt-0">Đặt phòng</p> </a>
+                <a class="hotel-des pad-0 col-sm-3" href="#"> <p class="mb-12 mt-0">Đăng nhập</p> </a>
               </div>
             </div>
           </div>
         </div>
-        <div class="flex social">
+        <div class="desktop-content flex social">
           <a href="https://www.facebook.com/joyinnhotel.vn" target="_blank"><img class="footer__icon mr-12" src="assets/images/icon/footer-facebook.svg" alt=""></a>
           <img class="footer__icon mr-12" src="assets/images/icon/footer-twitter.svg" alt="">
           <img class="footer__icon mr-12" src="assets/images/icon/footer-instagram.svg" alt="">
           <img class="footer__icon mr-12" src="assets/images/icon/footer-youtube.svg" alt="">
         </div>
         <div class="hor-seperate"></div>
-        <div class="row pb-12 align-center">
-          <div class="col-md-3">
-            <p class="hotel-des flex align-center">
+        <div class="row pb-12">
+          <div class="col-md-3 col-sm-12">
+            <p class="hotel-des flex align-center lang-footer">
               <img class="footer__icon mr-4" src="assets/images/icon/icon-global.svg" alt="">
               <span style="font-weight: 500;">Tiếng Việt</span>
             </p>
           </div>
-          <div class="col-md-8 center">
+          <div class="col-md-5 col-sm-12 center">
             <p class="hotel-des">Copyright © 2022 Joy Inn Hotel.</p>
-          </div>
-          <div class="col-md-3 right">
-            <!-- <img class="logo-image-ser" src="assets/images/icon/ser.svg" alt=""> -->
           </div>
         </div>
       </div>
@@ -874,7 +993,12 @@
   <!-- Initialize Swiper -->
   <script>
     var swiperBanner = new Swiper(".banner-swiper", {
-      autoHeight: true
+      autoHeight: false,
+      breakpoints: {
+        541: {
+          autoHeight: true,
+        },
+      }
     });
     var swiperFiveImg = new Swiper(".five-swiper", {
       navigation: {
@@ -900,14 +1024,19 @@
     });
     var swiperFiveValue = new Swiper(".five-sense-detail-swiper", {
       loop: true,
-      slidesPerView: 3,
+      slidesPerView: 1,
       spaceBetween: 30,
+      breakpoints: {
+        541: {
+          slidesPerView: 3,
+        }
+      }
     });
-    const swiper1 = new Swiper('.swiper-container', {
+    const swiperTopHotel = new Swiper('.swiper-container', {
       centeredSlides: true,
       loop: true,
       speed: 500,
-      slidesPerView: 1.5,
+      slidesPerView: 1.75,
       spaceBetween: 30,
       autoplay: {
           delay: 30000,
@@ -917,26 +1046,16 @@
           prevEl: '.swiper-button-top-prev',
       },
       breakpoints: {
-
-          640: {
-              slidesPerView: 2.5,
-          },
-          768: {
-              slidesPerView: 2.75,
-          },
-          1080: {
-              slidesPerView: 3.25,
-          },
-          1280: {
-              slidesPerView: 3.75,
-          },
+        541: {
+          slidesPerView: 3.75,
+        },
       },
     });
-    const swiper2 = new Swiper('.swiper-go2-choise', {
+    const swiperGo2Choice = new Swiper('.swiper-go2-choise', {
       centeredSlides: true,
       loop: true,
       speed: 500,
-      slidesPerView: 3,
+      slidesPerView: 1,
       spaceBetween: 30,
       autoplay: {
           delay: 3000,
@@ -946,19 +1065,13 @@
         prevEl: '.swiper-button-choice-prev',
       },
       breakpoints: {
-          640: {
-              slidesPerView: 2.5,
-          },
-          768: {
-              slidesPerView: 2.75,
-          },
-          1080: {
-              slidesPerView: 3.25,
-          },
-          1280: {
-              slidesPerView: 3,
-          },
+        541: {
+            slidesPerView: 3,
+        },
       },
+    });
+    var swiperBanner = new Swiper(".libary-swiper", {
+      slidesPerView: 1,
     });
     function onChangeMap(map) {
       switch (map) {

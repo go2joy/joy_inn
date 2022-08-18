@@ -6,9 +6,15 @@
 .swiper-slide {
   height: auto !important;
 }
-a {
+.layout a {
   color: #333333;
   text-decoration: unset !important;
+}
+.layout a:focus, .layout a:hover {
+  color: #E77026;
+}
+.layout a:focus:only-child, .layout a:hover:only-child {
+  color: unset !important;
 }
 .room-detail__header {
   margin-right: auto !important;
@@ -39,19 +45,6 @@ a {
 .btn-lang--item{
   font-size: 16px;
   text-decoration: unset !important;
-}
-.login-button {
-  padding: 12px 10px;
-  font-size: 15px;
-  background-color: #E77026;
-  border-radius: 8px;
-  width: 120px;
-  height: 40px;
-  margin: auto 0;
-  border: none;
-  color: #ffffff;
-  font-weight: 400;
-  line-height: 19px;
 }
 .room-detail__breadcrum {
   font-weight: 400;
@@ -276,13 +269,6 @@ a {
   height: 22px;
 }
 
-/* swiper */
-.swiper-pagination {
-  position: inherit !important;
-  margin-top: 10px;
-  bottom: 0px !important;
-}
-
 /* tabs */
 .tabs {
   position: relative;
@@ -304,7 +290,7 @@ a {
   align-items: center;
   width: calc(100% / 3);
   height: 66px;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 18px;
   line-height: 22px;
   text-transform: uppercase;
@@ -359,4 +345,33 @@ a {
   padding: 0 24px;
   background: #F9F9F9;
   height: 133px;
+}
+
+/* Swiper */
+.branch-swiper {
+  position: relative;
+  padding-bottom: 24px !important;
+}
+.branch-swiper .swiper-slide {
+  border-radius: 12px;
+  overflow: hidden;
+}
+.branch-swiper .swiper-pagination-bullet-active {
+  background-color: #ff6400 !important;
+  width: 31px;
+  height: 6px;
+  border-radius: 3px;
+}
+.branch-swiper .swiper-pagination-bullet {
+  height: 6px;
+  left: 923px;
+  border-radius: 3px;
+  background: #e7702680;
+}
+.branch-swiper .swiper-horizontal>.swiper-pagination-bullets, 
+.branch-swiper .swiper-pagination-bullets.swiper-pagination-horizontal, 
+.branch-swiper .swiper-pagination-custom, 
+.branch-swiper .swiper-pagination-fraction
+{
+  bottom: 5px;
 }
