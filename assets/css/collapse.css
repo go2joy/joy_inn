@@ -27,6 +27,6 @@
   display: none;
 }
 .collapse__checkbox:checked + label + .collapse__content {
-  height: 220px;
+  display: inline;
   opacity: 1;
 }
