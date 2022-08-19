@@ -12,19 +12,6 @@ h1, h3, h4, h5, h6, p {
 body {
     margin: 0;
 }
-.main_banner_title{
-  width: 90%;
-  position: absolute;
-  left: 50%;
-  bottom: 80px;
-  transform: translate(-50%);
-  font-weight: 600;
-  font-size: 55px;
-  line-height: 68px;
-  color: #fff;
-  z-index: 10;
-  text-align: center;
-}
 /* 
 
 html, body, div, span, applet, object, iframe,
@@ -121,14 +108,6 @@ a {
 .main_content {
     background-image: #ffff;
     padding-bottom: 16px;
-}
-.main_banner {
-  position: relative;
-  height: 600px;
-  font-size: 14px;
-  color: #ffff;
-  margin: 0;
-  padding: 0;
 }
 .section {
     /* padding: 86px 0; */
@@ -749,7 +728,7 @@ position:relative;
 }
 .is-block:hover {
     background: linear-gradient(180deg, #E77026 0%, #F3A846 100%);
-    
+     cursor: pointer;
 }
 .is-icon img{
     filter: invert(52%) sepia(81%) saturate(4352%) hue-rotate(2deg) brightness(103%) contrast(107%);

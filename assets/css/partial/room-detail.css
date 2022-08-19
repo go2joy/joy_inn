@@ -3,8 +3,24 @@
 @import '../select.css';
 @import '../style.css';
 
+body {
+  font-size: 12px;
+  font-family: 'Averta Std CY' !important;
+  color: #333333;
+  margin: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+
 .layout_footer {
   margin-top: 0;
+}
+
+.layout_header p {
+  margin-bottom: 0;
 }
 
 .isDesktop {
@@ -163,6 +179,9 @@
 .image_container .image_content {
   position: absolute;
   inset: 0;
+}
+.image_container .image_content img {
+  object-fit: cover;
 }
 
 /* Room introduction */
