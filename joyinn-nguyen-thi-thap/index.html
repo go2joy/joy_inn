@@ -64,9 +64,14 @@
         <input type="checkbox" id="showMenu">
         <div class="menu-sidebar">
           <div class="position-relative">
-            <label for="showMenu" id="closeMenu"><i class="fa-solid fa-xmark"></i></label>
+            <img class="logo-image-footer" src="../assets/images/icon/logo-footer.svg" alt="">
+            <img class="logo-image-footer" id="search" src="../assets/images/icon/icon-search.svg" alt="">
+            <label for="showMenu" id="closeMenu"><img src="../assets/images/icon/icon-close.svg" alt=""></label>
           </div>
           <ul>
+            <li>
+              <a class="header-label" href="/"> TRANG CHỦ </a>
+            </li>
             <li>
               <a class="header-label" href="/promotion-list"> ƯU ĐÃI </a>
             </li>
@@ -80,18 +85,19 @@
               <div class="header-label">BLOG</div>
             </li>
             <li>
-              <div class="flex align-center ml-4">
-                <div class="header-label">NGÔN NGỮ: </div>
-                <div class="dropdown ver-center mr-30">
-                  <button class="drop-btn bold mr-12">VI</button>
-                  <div class="dropdown-content">
-                      <a class="" href="#">VI</a>
-                      <a class="" href="#">EN</a>
-                  </div>
-                </div>
-              </div>
+              <div class="header-label">ĐĂNG NHẬP</div>
             </li>
           </ul>
+
+          <div class="menu-sidebar__footer">
+            <div class="menu-social">
+              <a href="https://www.facebook.com/joyinnhotel.vn" class="mr-14" target="_blank"><img class="footer__icon" src="../assets/images/icon/footer-facebook.svg" alt=""></a>
+              <img class="footer__icon mr-14" src="../assets/images/icon/footer-twitter.svg" alt="">
+              <img class="footer__icon mr-14" src="../assets/images/icon/footer-instagram.svg" alt="">
+              <img class="footer__icon mr-14" src="../assets/images/icon/footer-youtube.svg" alt="">
+            </div>
+            <p class="hotel-des bold">Copyright © 2022 Joy Inn Hotel.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -99,20 +105,30 @@
       <div class="main_banner">
         <div class="swiper banner-swiper" data-id="1">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="../assets/images/banner/banner-branch-1.jpg" alt="">
+            <div
+              class="swiper-slide"
+            >
+              <img class="banner-img" src="../assets/images/banner/banner-branch-1.jpg" alt="">
             </div>
-            <div class="swiper-slide">
-              <img src="../assets/images/banner/banner-branch-2.jpg" alt="">
+            <div
+              class="swiper-slide"
+            >
+              <img class="banner-img" src="../assets/images/banner/banner-branch-2.jpg" alt="">
             </div>
-            <div class="swiper-slide">
-              <img src="../assets/images/banner/banner-branch-3.jpg" alt="">
+            <div
+              class="swiper-slide"
+            >
+              <img class="banner-img" src="../assets/images/banner/banner-branch-3.jpg" alt="">
             </div>
-            <div class="swiper-slide">
-              <img src="../assets/images/banner/banner-branch-4.jpg" alt="">
+            <div
+              class="swiper-slide"
+            >
+              <img class="banner-img" src="../assets/images/banner/banner-branch-4.jpg" alt="">
             </div>
-            <div class="swiper-slide">
-              <img src="../assets/images/banner/banner-branch-5.jpg" alt="">
+            <div
+              class="swiper-slide"
+            >
+              <img class="banner-img" src="../assets/images/banner/banner-branch-5.jpg" alt="">
             </div>
           </div>
         </div>
@@ -120,7 +136,7 @@
           Joy Inn Nguyễn Thị Thập
         </div>
       </div>
-      <section class="section banner-mobile" aria-label="banner" id="banner">
+      <section class="section banner-mobile mb-60" aria-label="banner" id="banner">
         <div class="section-banner-mobile">
             <div class="banner-swiper-mobile">
                 <div class="swiper-wrapper">
@@ -149,8 +165,8 @@
                 <div class="swiper-pagination"></div>
             </div>
             <div class="content-banner-mobile">
-              <div class="breadcrumb">
-                <a href="/">Trang chủ </a> <p>/ Khách sạn</p>
+              <div class="g2j-breadcrumb">
+                <a href="/">Trang chủ </a> <p class="mr-6">/</p> <a href="/branch">Khách sạn </a>
               </div>
               <div class="is-title-banner-mobile">
                 <p>Joy Inn Nguyễn Thị Thập</p>
@@ -413,68 +429,68 @@
       </div>
     </div>
   </div>
-  <div class="styckyBtn" id="styckyBtn" onclick="activeHotline()">
-      <div class="info-hotline" id="info-hotline">
-          <div class="is-btn-hotline">
-              <div class="is-icon-hotline">
-                  <img src="../assets/images/icon/hotline.svg" alt="">
-              </div>
-              <div class="is-location-block">
-                  <div class="is-info-location">
-                      <div class="is-location">
-                          <img src="../assets/images/icon/location1.svg" alt="">
-                      </div>
-                      <div class="is-location-title">
-                          <p>JoyInn Cộng Hòa</p>
-                      </div>
-                  </div>
-                  <div class="is-number-location">
-                      <p>0964 936 939</p>
-                  </div>
-              </div>
-          </div>
-          <div class="is-btn-hotline">
-              <div class="is-icon-hotline">
-                  <img src="../assets/images/icon/hotline.svg" alt="">
-              </div>
-              <div class="is-location-block">
-                  <div class="is-info-location">
-                      <div class="is-location">
-                          <img src="../assets/images/icon/location1.svg" alt="">
-                      </div>
-                      <div class="is-location-title">
-                          <p>JoyInn Cộng Hòa</p>
-                      </div>
-                  </div>
-                  <div class="is-number-location">
-                      <p>0964 936 939</p>
-                  </div>
-              </div>
-          </div>
-          <div class="is-btn-hotline">
-              <div class="is-icon-hotline">
-                  <img src="../assets/images/icon/hotline.svg" alt="">
-              </div>
-              <div class="is-location-block">
-                  <div class="is-info-location">
-                      <div class="is-location">
-                          <img src="../assets/images/icon/location1.svg" alt="">
-                      </div>
-                      <div class="is-location-title">
-                          <p>JoyInn Cộng Hòa</p>
-                      </div>
-                  </div>
-                  <div class="is-number-location">
-                      <p>0964 936 939</p>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="is-hotline">
-          <img src="../assets/images/mobile.svg" alt="">
-      </div>
-      
-  </div>
+    <div class="styckyBtn" id="styckyBtn" onclick="activeHotline()">
+        <div class="info-hotline" id="info-hotline">
+            <div class="is-btn-hotline">
+                <div class="is-icon-hotline">
+                    <img src="../assets/images/icon/hotline.svg" alt="">
+                </div>
+                <div class="is-location-block">
+                    <div class="is-info-location">
+                        <div class="is-location">
+                            <img src="../assets/images/icon/location1.svg" alt="">
+                        </div>
+                        <div class="is-location-title">
+                            <p>JoyInn Cộng Hòa</p>
+                        </div>
+                    </div>
+                    <div class="is-number-location">
+                        <p><a href="tel:+0896688039">0896 688 039</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="is-btn-hotline">
+                <div class="is-icon-hotline">
+                    <img src="../assets/images/icon/hotline.svg" alt="">
+                </div>
+                <div class="is-location-block">
+                    <div class="is-info-location">
+                        <div class="is-location">
+                            <img src="../assets/images/icon/location1.svg" alt="">
+                        </div>
+                        <div class="is-location-title">
+                            <p>JoyInn Nguyễn Thị Thập</p>
+                        </div>
+                    </div>
+                    <div class="is-number-location">
+                        <p><a href="tel:+0896616039">0896 616 039</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="is-btn-hotline">
+                <div class="is-icon-hotline">
+                    <img src="../assets/images/icon/hotline.svg" alt="">
+                </div>
+                <div class="is-location-block">
+                    <div class="is-info-location">
+                        <div class="is-location">
+                            <img src="../assets/images/icon/location1.svg" alt="">
+                        </div>
+                        <div class="is-location-title">
+                            <p>JoyInn Trung Hòa</p>
+                        </div>
+                    </div>
+                    <div class="is-number-location">
+                        <p><a href="tel:+0898088039">0898 088 039</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="is-hotline">
+            <img src="../assets/images/mobile.svg" alt="">
+        </div>
+
+    </div>
 
   <!-- Messenger Plugin chat Code -->
   <div id="fb-root"></div>

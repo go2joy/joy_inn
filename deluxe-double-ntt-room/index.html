@@ -71,9 +71,14 @@
         <input type="checkbox" id="showMenu">
         <div class="menu-sidebar">
           <div class="position-relative">
-            <label for="showMenu" id="closeMenu"><i class="fa-solid fa-xmark"></i></label>
+            <img class="logo-image-footer" src="../assets/images/icon/logo-footer.svg" alt="">
+            <img class="logo-image-footer" id="search" src="../assets/images/icon/icon-search.svg" alt="">
+            <label for="showMenu" id="closeMenu"><img src="../assets/images/icon/icon-close.svg" alt=""></label>
           </div>
           <ul>
+            <li>
+              <a class="header-label" href="/"> TRANG CHỦ </a>
+            </li>
             <li>
               <a class="header-label" href="/promotion-list"> ƯU ĐÃI </a>
             </li>
@@ -87,18 +92,19 @@
               <div class="header-label">BLOG</div>
             </li>
             <li>
-              <div class="flex align-center ml-4">
-                <div class="header-label">NGÔN NGỮ: </div>
-                <div class="dropdown ver-center mr-30">
-                  <button class="drop-btn bold mr-12">VI</button>
-                  <div class="dropdown-content">
-                      <a class="" href="#">VI</a>
-                      <a class="" href="#">EN</a>
-                  </div>
-                </div>
-              </div>
+              <div class="header-label">ĐĂNG NHẬP</div>
             </li>
           </ul>
+
+          <div class="menu-sidebar__footer">
+            <div class="menu-social">
+              <a href="https://www.facebook.com/joyinnhotel.vn" class="mr-14" target="_blank"><img class="footer__icon" src="../assets/images/icon/footer-facebook.svg" alt=""></a>
+              <img class="footer__icon mr-14" src="../assets/images/icon/footer-twitter.svg" alt="">
+              <img class="footer__icon mr-14" src="../assets/images/icon/footer-instagram.svg" alt="">
+              <img class="footer__icon mr-14" src="../assets/images/icon/footer-youtube.svg" alt="">
+            </div>
+            <p class="hotel-des bold">Copyright © 2022 Joy Inn Hotel.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -109,62 +115,65 @@
             <div
               class="swiper-slide"
             >
-              <img src="../assets/images/banner/banner-1.jpeg" alt="">
+              <img class="banner-img" src="../assets/images/banner/banner-branch-1.jpg" alt="">
             </div>
             <div
               class="swiper-slide"
             >
-              <img src="../assets/images/banner/image-13.png" alt="">
+              <img class="banner-img" src="../assets/images/banner/banner-branch-2.jpg" alt="">
             </div>
             <div
               class="swiper-slide"
             >
-              <img src="../assets/images/banner/image-14.jpg" alt="">
+              <img class="banner-img" src="../assets/images/banner/banner-branch-3.jpg" alt="">
+            </div>
+            <div
+              class="swiper-slide"
+            >
+              <img class="banner-img" src="../assets/images/banner/banner-branch-4.jpg" alt="">
+            </div>
+            <div
+              class="swiper-slide"
+            >
+              <img class="banner-img" src="../assets/images/banner/banner-branch-5.jpg" alt="">
             </div>
           </div>
         </div>
       </div>
-      <section class="section banner-mobile" aria-label="banner" id="banner">
+      <section class="section banner-mobile mb-40" aria-label="banner" id="banner">
         <div class="section-banner-mobile">
-            <div class="banner-swiper-mobile">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="block-banner">
-                            <img src="../assets/images/banner/banner-mobile1.png" alt="">
-                        </div>
-                        <div class="banner-background">
-                        </div>
+          <div class="banner-mobile-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="block-banner">
+                        <img src="../assets/images/banner/banner-mobile1.png" alt="">
                     </div>
-                    <div class="swiper-slide">
-                        <div class="block-banner">
-                            <img src="../assets/images/banner/banner-mobile2.png" alt="">
-                        </div>
-                        <div class="banner-background">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="block-banner">
-                            <img src="../assets/images/banner/banner-mobile3.png" alt="">
-                        </div>
-                        <div class="banner-background">
-                        </div>
+                    <div class="banner-background">
                     </div>
                 </div>
-                <div class="swiper-pagination"></div>
-            </div>
-            <div class="content-banner-mobile">
-                <div class="breadcrumb">
-                    <p>Trang chủ / Giới thiệu</p>
+                <div class="swiper-slide">
+                    <div class="block-banner">
+                        <img src="../assets/images/banner/banner-mobile2.png" alt="">
+                    </div>
+                    <div class="banner-background">
+                    </div>
                 </div>
-                <div class="is-title-banner-mobile">
-                    <p>Chuỗi khách sạn đến từ Hàn Quốc</p>
+                <div class="swiper-slide">
+                    <div class="block-banner">
+                        <img src="../assets/images/banner/banner-mobile3.png" alt="">
+                    </div>
+                    <div class="banner-background">
+                    </div>
                 </div>
             </div>
-            
+            <div class="swiper-pagination"></div>
+          </div>            
         </div>
       </section>
       <div class="joy-inn-container">
-        <div class="room-detail__breadcrum">Trang chủ / Khách sạn / Joy Inn Cộng Hòa</div>
+        <div class="room-detail__breadcrum">
+          <a href="/">Trang chủ</a> / <a href="/branch">Khách sạn</a> / <a href="/joyinn-nguyen-thi-thap">Joy Inn Nguyễn Thị Thập</a>
+        </div>
         <div class="room-detail__title">Deluxe Double Room</div>
 
         <div class="room-detail__facilities justify-center">
@@ -211,14 +220,46 @@
             </div>
           </div>
         </div>
+        <div class="room-detail__images__container--mobile">
+          <div class="w-full">
+            <div class="image_container rounded-xl overflow-hidden">
+              <div class="image_dummy" style="margin-top: calc(100% * (229/384));"></div>
+              <div class="image_content">
+                <img class="facility__item__icon w-full h-full" src="../assets/images/branch-joyinn-1.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-12 w-full">
+            <div class="image_container rounded-xl overflow-hidden col-md-3">
+              <div class="image_dummy" style="margin-top: calc(100% * (100/120));"></div>
+              <div class="image_content">
+                <img class="facility__item__icon w-full h-full" src="../assets/images/banner/timeline2.png" alt="">
+              </div>
+            </div>
+            <div class="image_container rounded-xl overflow-hidden col-md-3">
+              <div class="image_dummy" style="margin-top: calc(100% * (100/120));"></div>
+              <div class="image_content">
+                <img class="facility__item__icon w-full h-full" src="../assets/images/banner/timeline2.png" alt="">
+              </div>
+            </div>
+            <div class="image_container rounded-xl overflow-hidden col-md-3">
+              <div class="image_dummy" style="margin-top: calc(100% * (100/120));"></div>
+              <div class="image_content">
+                <img class="facility__item__icon w-full h-full" src="../assets/images/banner/timeline2.png" alt="">
+              </div>
+            </div>
+          </div>
+          
+        </div>
 
         <div class="flex flex-wrap">
-          <div class="room-detail__intro mr-30">
+          <div class="room-detail__intro">
             <div class="room-detail__intro__title">Giới thiệu</div>
             <div class="room-detail__intro__desc">
               Phòng Deluxe Double được nhiều bạn ưu ái lựa chọn bởi không gian thoáng, có cửa sổ lớn view thành phố và ghế tình yêu dành cho các cặp đôi.
             </div>
-            <div class="hor-seperate mb-80"></div>
+            <div class="hor-seperate mb-80 isDesktop"></div>
+            <div class="hor-seperate mb-30 isMobile"></div>
             <div class="room-detail__intro__title">Tiện nghi miễn phí</div>
             <div class="room-detail__facilities">
               <div class="facility__item facility__item--free pointer"><img class="facility__item__icon" src="../assets/images/icon/icon-air-conditioner.svg" alt="">Điều hòa</div>
@@ -279,8 +320,11 @@
               </div>
             </div>
             <div class="room-detail__booking">
-              <a id="booking" href="#" class="button--default rounded-lg" style="width: 224px;">
+              <a id="booking" href="#" class="button--default rounded-lg isDesktop w-full" >
                 Đặt ngay
+              </a>
+              <a id="booking" href="#" class="button--default rounded-lg isMobile w-full">
+                Đặt phòng ngay
               </a>
             </div>
           </div>
@@ -293,7 +337,84 @@
       <div class="joy-inn-container">
         <div class="reference-room__title">Phòng tương tự</div>
         <div class="reference-room__content">
-          <div class="swiper branch-swiper">
+          <div class="swiper branch-swiper isDesktop">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="/standard-with-window-ntt-room" class="card-room">
+                  <div class="card-room__image">
+                    <div class="image_dummy"></div>
+                    <div class="image_content">
+                      <img class="facility__item__icon w-full h-full" src="https://go2joy.s3-ap-southeast-1.amazonaws.com/hotel/12018/4479_1655174126_62a7f3ee9cdd3.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="card-room__content">
+                    <div class="card-room__title">Standard with Window</div>
+                    <div class="card-room__facilities">
+                      <div class="facility__item "><img class="facility__item__icon" src="../assets/images/icon/icon-child.svg" alt=""><span class="limit-text-line-1">1 trẻ em</span></div>
+                      <div class="facility__item limit-text-line-1"><img class="facility__item__icon" src="../assets/images/icon/icon-adults.svg" alt=""><span class="limit-text-line-1">2 người lớn</span></div>
+                      <div class="facility__item limit-text-line-1"><img class="facility__item__icon" src="../assets/images/icon/icon-room.svg" alt=""><span class="limit-text-line-1">100m2</span></div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="/standard-double-no-window-ntt-room" class="card-room">
+                  <div class="card-room__image">
+                    <div class="image_dummy"></div>
+                    <div class="image_content">
+                      <img class="facility__item__icon w-full h-full" src="../assets/images/branch-joyinn-3.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="card-room__content">
+                    <div class="card-room__title">Standard Double No Window</div>
+                    <div class="card-room__facilities">
+                      <div class="facility__item "><img class="facility__item__icon" src="../assets/images/icon/icon-child.svg" alt=""><span class="limit-text-line-1">1 trẻ em</span></div>
+                      <div class="facility__item limit-text-line-1"><img class="facility__item__icon" src="../assets/images/icon/icon-adults.svg" alt=""><span class="limit-text-line-1">2 người lớn</span></div>
+                      <div class="facility__item limit-text-line-1"><img class="facility__item__icon" src="../assets/images/icon/icon-room.svg" alt=""><span class="limit-text-line-1">100m2</span></div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="/superior-double-ntt-room" class="card-room">
+                  <div class="card-room__image">
+                    <div class="image_dummy"></div>
+                    <div class="image_content">
+                      <img class="facility__item__icon w-full h-full" src="https://s3.go2joy.vn/1000w/hotel/12018/4479_1655174883_62a7f6e3592f4.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="card-room__content">
+                    <div class="card-room__title">Superior Double Room</div>
+                    <div class="card-room__facilities">
+                      <div class="facility__item "><img class="facility__item__icon" src="../assets/images/icon/icon-child.svg" alt=""><span class="limit-text-line-1">1 trẻ em</span></div>
+                      <div class="facility__item limit-text-line-1"><img class="facility__item__icon" src="../assets/images/icon/icon-adults.svg" alt=""><span class="limit-text-line-1">2 người lớn</span></div>
+                      <div class="facility__item limit-text-line-1"><img class="facility__item__icon" src="../assets/images/icon/icon-room.svg" alt=""><span class="limit-text-line-1">100m2</span></div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="/deluxe-twin-ntt-room" class="card-room">
+                  <div class="card-room__image">
+                    <div class="image_dummy"></div>
+                    <div class="image_content">
+                      <img class="facility__item__icon w-full h-full" src="../assets/images/Deluxe-Twin-Room.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="card-room__content">
+                    <div class="card-room__title">Deluxe Twin Room</div>
+                    <div class="card-room__facilities">
+                      <div class="facility__item "><img class="facility__item__icon" src="../assets/images/icon/icon-child.svg" alt=""><span class="limit-text-line-1">1 trẻ em</span></div>
+                      <div class="facility__item limit-text-line-1"><img class="facility__item__icon" src="../assets/images/icon/icon-adults.svg" alt=""><span class="limit-text-line-1">2 người lớn</span></div>
+                      <div class="facility__item limit-text-line-1"><img class="facility__item__icon" src="../assets/images/icon/icon-room.svg" alt=""><span class="limit-text-line-1">100m2</span></div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="swiper branch-mobile-swiper isMobile">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <a href="/standard-with-window-ntt-room" class="card-room">
@@ -467,68 +588,68 @@
       </div>
     </div>
   </div>
-  <div class="styckyBtn" id="styckyBtn" onclick="activeHotline()">
-      <div class="info-hotline" id="info-hotline">
-          <div class="is-btn-hotline">
-              <div class="is-icon-hotline">
-                  <img src="../assets/images/icon/hotline.svg" alt="">
-              </div>
-              <div class="is-location-block">
-                  <div class="is-info-location">
-                      <div class="is-location">
-                          <img src="../assets/images/icon/location1.svg" alt="">
-                      </div>
-                      <div class="is-location-title">
-                          <p>JoyInn Cộng Hòa</p>
-                      </div>
-                  </div>
-                  <div class="is-number-location">
-                      <p>0964 936 939</p>
-                  </div>
-              </div>
-          </div>
-          <div class="is-btn-hotline">
-              <div class="is-icon-hotline">
-                  <img src="../assets/images/icon/hotline.svg" alt="">
-              </div>
-              <div class="is-location-block">
-                  <div class="is-info-location">
-                      <div class="is-location">
-                          <img src="../assets/images/icon/location1.svg" alt="">
-                      </div>
-                      <div class="is-location-title">
-                          <p>JoyInn Cộng Hòa</p>
-                      </div>
-                  </div>
-                  <div class="is-number-location">
-                      <p>0964 936 939</p>
-                  </div>
-              </div>
-          </div>
-          <div class="is-btn-hotline">
-              <div class="is-icon-hotline">
-                  <img src="../assets/images/icon/hotline.svg" alt="">
-              </div>
-              <div class="is-location-block">
-                  <div class="is-info-location">
-                      <div class="is-location">
-                          <img src="../assets/images/icon/location1.svg" alt="">
-                      </div>
-                      <div class="is-location-title">
-                          <p>JoyInn Cộng Hòa</p>
-                      </div>
-                  </div>
-                  <div class="is-number-location">
-                      <p>0964 936 939</p>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="is-hotline">
-          <img src="../assets/images/mobile.svg" alt="">
-      </div>
-      
-  </div>
+    <div class="styckyBtn" id="styckyBtn" onclick="activeHotline()">
+        <div class="info-hotline" id="info-hotline">
+            <div class="is-btn-hotline">
+                <div class="is-icon-hotline">
+                    <img src="../assets/images/icon/hotline.svg" alt="">
+                </div>
+                <div class="is-location-block">
+                    <div class="is-info-location">
+                        <div class="is-location">
+                            <img src="../assets/images/icon/location1.svg" alt="">
+                        </div>
+                        <div class="is-location-title">
+                            <p>JoyInn Cộng Hòa</p>
+                        </div>
+                    </div>
+                    <div class="is-number-location">
+                        <p><a href="tel:+0896688039">0896 688 039</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="is-btn-hotline">
+                <div class="is-icon-hotline">
+                    <img src="../assets/images/icon/hotline.svg" alt="">
+                </div>
+                <div class="is-location-block">
+                    <div class="is-info-location">
+                        <div class="is-location">
+                            <img src="../assets/images/icon/location1.svg" alt="">
+                        </div>
+                        <div class="is-location-title">
+                            <p>JoyInn Nguyễn Thị Thập</p>
+                        </div>
+                    </div>
+                    <div class="is-number-location">
+                        <p><a href="tel:+0896616039">0896 616 039</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="is-btn-hotline">
+                <div class="is-icon-hotline">
+                    <img src="../assets/images/icon/hotline.svg" alt="">
+                </div>
+                <div class="is-location-block">
+                    <div class="is-info-location">
+                        <div class="is-location">
+                            <img src="../assets/images/icon/location1.svg" alt="">
+                        </div>
+                        <div class="is-location-title">
+                            <p>JoyInn Trung Hòa</p>
+                        </div>
+                    </div>
+                    <div class="is-number-location">
+                        <p><a href="tel:+0898088039">0898 088 039</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="is-hotline">
+            <img src="../assets/images/mobile.svg" alt="">
+        </div>
+
+    </div>
 
   <!-- Messenger Plugin chat Code -->
   <div id="fb-root"></div>
@@ -569,17 +690,25 @@
     var swiperBanner = new Swiper(".banner-swiper", {
       autoHeight: true
     });
-    var swiperBannerMobile = new Swiper(".banner-swiper-mobile", {
-        autoHeight: true,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
+    var swiperBannerMobile = new Swiper(".banner-mobile-swiper", {
+      autoHeight: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
     });
-    var swiper = new Swiper(".branch-swiper", {
+    var swiperBranch = new Swiper(".branch-swiper", {
       slidesPerView: 3,
       spaceBetween: 30,
       freeMode: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+    var swiperBranchMobile = new Swiper(".branch-mobile-swiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
