@@ -761,7 +761,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="section section-timeline " aria-label="time-line" id="time-line">
+                <section class="section section-timeline " aria-label="time-line" id="time-line-mobile">
                     <div class="is-title-timeline">
                         <p>Những <span class="color-g2j">con số</span> biết nói</p>
                     </div>
@@ -1042,7 +1042,7 @@
                                         <div class="block-slide">
                                             <div class="is-title-slide-go2choise">
                                                 <p>It was fun and memorized!</p>
-                                   ,         </div>
+                                            </div>
                                             <div class="is-content-slide-go2choise">
                                                 <p>" The staff have been amazing and extremely
                                                     helpful. They respond
@@ -1581,6 +1581,8 @@
         function handleClick(a) {
             const element = document.getElementsByName('check')
             const elemented = document.getElementsByName('checked')
+            const elementTimeLine = document.getElementById('time-line-mobile')
+            elementTimeLine.style.paddingTop ='184px'
             for (let i = 0; i < 3; i++) {
                 if (i === a) {
                     element[i].checked = true
