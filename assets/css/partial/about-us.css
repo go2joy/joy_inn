@@ -931,7 +931,7 @@ background: linear-gradient(180deg, #E77026 0%, #F3A846 100%) !important;
   justify-content: space-around;
 }
 .section-contact .contact-image {
-  margin-top: -45px;
+  display: flex;
 }
 .section-contact .contact-form {
   padding: 112px 0;;
