@@ -749,7 +749,7 @@ position:relative;
 }
 .is-block:hover {
     background: linear-gradient(180deg, #E77026 0%, #F3A846 100%);
-    
+     cursor: pointer;
 }
 .is-icon img{
     filter: invert(52%) sepia(81%) saturate(4352%) hue-rotate(2deg) brightness(103%) contrast(107%);
