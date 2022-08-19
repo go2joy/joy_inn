@@ -142,6 +142,8 @@ text-transform: uppercase;
     .promotion-list-mobile .promotion-block-list .content-promotion .is-button-promotion input[type="button"] {
         width: 100%;
         margin-bottom: 24px;
+        height: 52px;
+        z-index: 10;
     }
     .promotion-list-mobile .content-promotion .is-button-promotion input[type="button"] {
         padding: 17px 18px;
