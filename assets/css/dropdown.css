@@ -11,6 +11,9 @@
   text-transform: capitalize;
   color: #E66E31 !important;
 }
+.drop-btn:disabled::after {
+  content: none;
+}
 .drop-btn::after {
   background-image: url(../images/icon/polygon.svg);
   background-position: center;
