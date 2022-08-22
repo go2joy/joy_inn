@@ -227,10 +227,10 @@ a.hotel-des:hover {
   align-items: center;
 }
 .logo-image-header {
-  width: auto;
+  width: 184px;
   height: 82px;
-  object-fit: scale-down;
-  margin: auto;
+  margin: 0;
+
 }
 .logo-image-footer {
   width: 160px;
