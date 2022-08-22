@@ -356,7 +356,7 @@
 }
 .list-hotel,
 .map-img {
-  height: auto;
+  height: 100%;
   width: 100%;
   object-fit: cover;
 }
@@ -453,6 +453,10 @@
 .five-sense_header {
   flex-direction: column;
   width: 136px;
+}
+.hotel-address {
+  font-weight: 600;
+  font-size: 16px;
 }
 @media (max-width: 1250px) { 
   .content_right {
