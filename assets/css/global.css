@@ -44,6 +44,17 @@ ul{
   overflow: hidden !important;
 }
 
+/* disabled */
+.joy-inn-disable {
+  pointer-events: none !important;
+  color: #cccccc !important;
+}
+button:disabled,
+button[disabled]{
+  background-color: white !important;
+  color: #cccccc !important;
+}
+
 /* text */
 .limit-text-line-1 {
   overflow: hidden;
@@ -177,7 +188,7 @@ ul{
 .hotel-des {
   font-weight: 300;
   font-size: 16px;
-  color: #fff !important;
+  color: #fff;
   line-height: 24px;
   margin: 0;
 }
