@@ -194,8 +194,8 @@ a {
 }
 .is-sub-vision-mission-center-content {
     font-size: 16px;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+    color: #ffffff;
     padding-top: 32px;
 }
 .is-title-left {
@@ -578,6 +578,11 @@ position:relative;
 }
 .block {
     padding: 15px;
+}
+.block img{
+  width: 30px;
+  filter: invert(48%) sepia(51%) saturate(1048%) hue-rotate(344deg) brightness(96%) contrast(89%);;
+    transition: filter 0.4s all;
 }
 .content1-info .is-text {
     font-size: 16px;
@@ -1122,6 +1127,11 @@ cursor: pointer;
   .about-us-is-mobile .container-timeline {
     padding: 0;
     
+  }
+  .about-us-is-mobile .block img{
+    width: 20px;
+    filter: invert(48%) sepia(51%) saturate(1048%) hue-rotate(344deg) brightness(96%) contrast(89%);;
+      transition: filter 0.4s all;
   }
   .about-us-is-mobile .timeline-mobile .content {
     background: #FDF1EA;
