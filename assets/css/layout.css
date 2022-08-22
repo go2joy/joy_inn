@@ -58,11 +58,14 @@
   flex: 1;
 }
 .header-label {
-  font-weight: 500 !important;
+  font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  color: #656565 !important;
+  color: #656565;
   margin-right: 40px;
+}
+.header-label--active {
+  color: #E77026 !important;
 }
 .is-hotline {
   text-align: right;
@@ -228,11 +231,14 @@
 .menu-sidebar ul li:hover {
   padding-left: 30px;
 }
-.menu-sidebar .header-label {
+.menu-sidebar li .header-label {
   font-weight: 400 !important;
   font-size: 18px;
   line-height: 1.2;
-  color: #fff !important;
+  color: #fff;
+}
+.menu-sidebar li.active {
+  background-color: #ffffffcc;
 }
 .menu-sidebar__footer {
   margin-top: auto;
@@ -299,6 +305,10 @@
   }
   .header-label {
     margin-right: 0;
+  }
+  .header-label--active {
+    color: #E77026 !important;
+    padding: 0 8px;
   }
 
 
