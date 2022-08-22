@@ -1,3 +1,6 @@
+html{
+scroll-behavior: smooth;
+}
 .layout {
   display: flex;
   flex-direction: column;
@@ -308,4 +311,50 @@
   .five-sense-bt {
     position: absolute !important;
   }
+  .stickyEmail {
+    left: 0 !important;
+  }
+  .styckyBtn {
+    right: 0px !important;
+
+  }
+  .stickyEmail .sticky-email-desktop {
+    display: none !important;
+  }
+  .stickyEmail .sticky-email-mobile {
+    display: block !important;
+  }
+}
+
+.stickyEmail {
+  position: fixed;
+  left: 22px;
+  bottom: 92px;
+  right: 0;
+  z-index: 99;
+  width: 225px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  /* padding: 15px; */
+  /* pointer-events: none; */
+}
+.stickyEmail:hover {
+  transform: scale(1.05);
+}
+.stickyEmail .sticky-email-desktop {
+  display: block;
+}
+.stickyEmail .sticky-email-mobile {
+  display: none;
+}
+.stickyEmail .is-email img{ 
+  width: 100%;
+  height: auto;
+}
+
+.stickyEmail:focus-visible {
+  box-shadow: none;
+  background: none;
 }
