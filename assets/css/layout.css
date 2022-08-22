@@ -91,7 +91,7 @@ scroll-behavior: smooth;
   transition: 1s ease;
 }
 .is-active-styckyBtn {
-  width: 190px !important;
+  width: 220px !important;
 }
 .is-active-hotline {
   opacity: 1 !important;
@@ -132,10 +132,10 @@ scroll-behavior: smooth;
 .styckyBtn .is-btn-hotline {
   display: grid;
   grid-template-columns: 1fr 5fr;
-  height: 35px;
+  height: 40px;
   padding: 6px 15px;
   background: #17c2c9;
-  width: 155px;
+  width: 180px;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1), 0px 0px 10px rgba(0, 0, 0, 0.2);
   border-radius: 999px; 
   margin: 5px;
@@ -173,7 +173,7 @@ scroll-behavior: smooth;
 }
 .styckyBtn .is-location-block .is-number-location a{
   font-weight: 600;
-  font-size: 12px;
+  font-size: 18px;
   color: #FFFFFF;
 }
 .styckyBtn .is-btn-hotline img{
@@ -273,7 +273,7 @@ scroll-behavior: smooth;
 }
 @media screen and (min-width: 1148px) {
   .header_right {
-    min-width: 450px;
+    min-width: 460px;
   }
 }
 @media screen and (min-width: 768px ) and (max-width: 1147px ) {
