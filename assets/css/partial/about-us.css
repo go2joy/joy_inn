@@ -242,7 +242,7 @@ a {
     }
     .content1-info .is-number {
         font-size: 32px !important;
-        font-weight: 600;
+        font-weight: 700;
         color: rgba(231, 112, 38, 1);
     }
     .content2-info .is-number {
@@ -573,7 +573,7 @@ position:relative;
 }
 .content1-info .is-number {
     font-size: 55px;
-    font-weight: 600;
+    font-weight: 700;
     color: rgba(231, 112, 38, 1);
 }
 .block {
@@ -1159,7 +1159,7 @@ cursor: pointer;
     grid-template-columns: 1fr 1fr;
   }
   .about-us-is-mobile .content-info .is-number {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 32px;
     text-align: center;
   }
