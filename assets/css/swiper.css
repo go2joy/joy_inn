@@ -53,3 +53,6 @@
   z-index: 1;
   transform: scale(1.5) !important;
 }
+.swiper-button {
+  cursor: pointer;
+}
