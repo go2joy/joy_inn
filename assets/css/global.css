@@ -521,6 +521,9 @@ a.hotel-des:hover {
 .banner-mobile {
   display: none;
 }
+.contract-row {
+  align-items: flex-start;
+}
 @media (max-width: 540px) {
   .main_banner {
     display: none;
