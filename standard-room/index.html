@@ -631,13 +631,13 @@
     chatbox.setAttribute("page_id", "109417457506998");
     chatbox.setAttribute("attribution", "biz_inbox");
     $(window).bind('load', function () {
-        // show_booking_button();
-        show_booking_button_1()
+        show_booking_button();
+        //show_booking_button_1()
     });
     function show_booking_button() {
-      if ($('#fb-customer-chat').find("iframe").height() > 50) {
+      if ($('div.fb_dialog_content') && $($('div.fb_dialog_content').find('iframe')[0]).height()-chat').find("iframe").height() > 50) {
         $('#booking').css('display', 'block');
-        document.getElementById('#booking').style.display = "block";
+        //document.getElementById('#booking').style.display = "block";
         document.getElementById('booking').addEventListener('click', function(e) {
           if(FB) {
             FB.CustomerChat.showDialog();
