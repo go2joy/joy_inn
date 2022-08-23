@@ -631,13 +631,26 @@
     chatbox.setAttribute("page_id", "109417457506998");
     chatbox.setAttribute("attribution", "biz_inbox");
     $(window).bind('load', function () {
-        show_booking_button()
+        // show_booking_button();
+        show_booking_button_1()
     });
     function show_booking_button() {
-      console.log(1111);
       if ($('#fb-customer-chat').find("iframe").height() > 50) {
-        console.log(22222);
         $('#booking').css('display', 'block');
+        document.getElementById('#booking').style.display = "block";
+        document.getElementById('booking').addEventListener('click', function(e) {
+          if(FB) {
+            FB.CustomerChat.showDialog();
+          }
+        })
+      }else {
+        setTimeout(show_booking_button, 100);
+      }
+    }
+    function show_booking_button_1() {
+      console.log(1111);
+      if (document.getElementById('#fb-customer-chat').hasChildNodes()) {
+        console.log(22222);
         document.getElementById('#booking').style.display = "block";
         document.getElementById('booking').addEventListener('click', function(e) {
           if(FB) {
