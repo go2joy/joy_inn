@@ -273,7 +273,7 @@ scroll-behavior: smooth;
 }
 @media screen and (min-width: 1148px) {
   .header_right {
-    min-width: 460px;
+    /* min-width: 460px; */
   }
 }
 @media screen and (min-width: 768px ) and (max-width: 1147px ) {
