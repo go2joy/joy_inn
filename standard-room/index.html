@@ -641,6 +641,7 @@
     function show_booking_button() {
       if ($('#fb-customer-chat').find("iframe").height() > 50) {
         $('#booking').css('display', 'block');
+        $('#booking').style.display = "block";
       }else {
         setTimeout(show_booking_button, 100);
       }
