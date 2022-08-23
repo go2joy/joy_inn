@@ -48,7 +48,8 @@ ul{
 }
 
 /* disabled */
-.joy-inn-disable {
+.joy-inn-disable,
+.joy-inn-disable * {
   pointer-events: none !important;
   color: #cccccc !important;
 }
@@ -188,7 +189,10 @@ button[disabled]{
   width: 20px;
   height: 20px;
 }
-.hotel-des {
+
+.hotel-des,
+.hotel-des *,
+a.hotel-des * {
   font-weight: 300;
   font-size: 16px;
   color: #fff;
