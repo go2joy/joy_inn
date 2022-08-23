@@ -91,28 +91,27 @@ scroll-behavior: smooth;
   transition: 1s ease;
 }
 .is-active-styckyBtn {
-  width: 220px !important;
+  width: 245px !important;
 }
 .is-active-hotline {
   opacity: 1 !important;
   width: 100% !important;
   max-height: 100% !important; 
   transition: 1s ease;
-  padding-left: 5px;
+  padding-left: 2px;
 }
 .styckyBtn {
   position: fixed;
   right: 12px;
   bottom: 70px;
-  right: 10px;
+  right: 20px;
   z-index: 99;
-  width: 85px;
-  width: 85px;
+  width: 235px;
   font-size: 18px;
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 15px;
+  padding: 5px;
   /* pointer-events: none; */
 }
 .styckyBtn-is-mobile {
@@ -131,19 +130,19 @@ scroll-behavior: smooth;
 }
 .styckyBtn .is-btn-hotline {
   display: grid;
-  grid-template-columns: 1fr 5fr;
-  height: 40px;
-  padding: 6px 15px;
+  grid-template-columns: 1fr 7fr;
+  height: 46px;
+  padding: 4px 15px;
   background: #17c2c9;
-  width: 180px;
+  width: 235px;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1), 0px 0px 10px rgba(0, 0, 0, 0.2);
   border-radius: 999px; 
   margin: 5px;
   align-items: center;
 }
 .styckyBtn .is-icon-hotline {
-  width: 17px;
-  height: 17px;
+  width: 23px;
+  height: 25px;
 }
 .styckyBtn .is-icon-hotline img{ 
   width: 100%;
@@ -158,8 +157,9 @@ scroll-behavior: smooth;
   padding-left: 8px;
 }
 .styckyBtn .is-location-block .is-location {
-  width: 7px;
-  height: 7px;
+  display: none;
+  width: 10px;
+  height: 10px;
 }
 .styckyBtn .is-location-block .is-location img{
   width: 100%;
@@ -167,13 +167,13 @@ scroll-behavior: smooth;
 }
 .styckyBtn .is-location-block .is-location-title{
   font-weight: 600;
-  font-size: 7px;
-  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  color: #ffffff;
   margin-left: 3px;
 }
 .styckyBtn .is-location-block .is-number-location a{
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   color: #FFFFFF;
 }
 .styckyBtn .is-btn-hotline img{
@@ -332,7 +332,7 @@ scroll-behavior: smooth;
     left: 0 !important;
   }
   .styckyBtn {
-    right: 0px !important;
+    right: 8px !important;
 
   }
   .stickyEmail .sticky-email-desktop {
@@ -340,6 +340,22 @@ scroll-behavior: smooth;
   }
   .stickyEmail .sticky-email-mobile {
     display: block !important;
+  }
+  .styckyBtn .is-location-block .is-location-title{
+    font-size: 8px;
+  }
+  .styckyBtn .is-location-block .is-number-location a{
+    font-size: 12px;
+  }
+  .styckyBtn .is-btn-hotline {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    height: 36px;
+    padding: 4px 15px;
+    width: 165px;
+  }
+  .is-active-styckyBtn {
+    width: 175px !important;
   }
 }
 
