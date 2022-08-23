@@ -327,7 +327,7 @@
                 </select>
               </div>
             </div>
-            <div class="room-detail__booking">
+           <div class="room-detail__booking">
               <button id="booking" class="button--default rounded-lg w-full">
                 Đặt phòng ngay
               </button>
@@ -597,7 +597,7 @@
   <div id="fb-customer-chat" class="fb-customerchat">
   </div>
   <script>
-    $('#booking').css('display', 'none');
+    $('.room-detail__booking').css('display', 'none');
     var chatbox = document.getElementById('fb-customer-chat');
     chatbox.setAttribute("page_id", "109417457506998");
     chatbox.setAttribute("attribution", "biz_inbox");
@@ -606,8 +606,8 @@
     });
     function show_booking_button() {
       if ($('div.fb_dialog_content').length > 0 && $($('div.fb_dialog_content').find('iframe')[0]).height() > 50) {
-        $('#booking').css('display', 'block');
-        $('#booking').click(function(){
+        $('.room-detail__booking').css('display', 'block');
+        $('.room-detail__booking').click(function(){
           FB.CustomerChat.showDialog();
         })
         // document.getElementById('booking').addEventListener('click', function(e) {
@@ -619,6 +619,7 @@
         setTimeout(show_booking_button, 100);
       }
     }
+    
   </script>
   <!-- Your SDK code -->
   <script>
