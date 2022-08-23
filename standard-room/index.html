@@ -634,7 +634,9 @@
         show_booking_button()
     });
     function show_booking_button() {
+      console.log(1111);
       if ($('#fb-customer-chat').find("iframe").height() > 50) {
+        console.log(22222);
         $('#booking').css('display', 'block');
         document.getElementById('#booking').style.display = "block";
         document.getElementById('booking').addEventListener('click', function(e) {
