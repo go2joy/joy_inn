@@ -413,6 +413,11 @@ a.hotel-des:hover {
 .desktop-content {
   display: block;
 }
+.text-address{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
 @media (min-width: 768px) {
   .col-md-2,
   .col-md-3,
