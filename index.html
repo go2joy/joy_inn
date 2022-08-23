@@ -41,7 +41,7 @@
           </div>
           <div class="header_right">
               <a class="header-label limit-text-line-2 padding-left-right-none" href="/about-us"> HỢP TÁC </a>
-              <a href="http://joyinn.vn/blog/"  target="_blank"  class="header-label limit-text-line-2 joy-inn-disable" style="min-width: 60px;">BLOG</a>
+              <!-- <a href="http://joyinn.vn/blog/"  target="_blank"  class="header-label limit-text-line-2 joy-inn-disable" style="min-width: 60px;">BLOG</a>
               <p class="ver-seperate mr-30"> </p>
               <div class="dropdown joy-inn-disable ver-center mr-14">
                   <button class="drop-btn bold mr-12" disabled>VI</button>
@@ -52,7 +52,7 @@
               </div>
               <button class="login-button" disabled>
                   ĐĂNG NHẬP
-              </button>
+              </button> -->
           </div>
         </div>
       </div>
@@ -91,12 +91,12 @@
             <li>
               <a class="header-label" href="/about-us"> HỢP TÁC </a>
             </li>
-            <li class="joy-inn-disable">
+            <!-- <li class="joy-inn-disable">
               <a href="http://joyinn.vn/blog/"  target="_blank" class="header-label joy-inn-disable">BLOG</a>
             </li>
             <li class="joy-inn-disable">
               <div class="header-label joy-inn-disable">ĐĂNG NHẬP</div>
-            </li>
+            </li> -->
           </ul>
 
           <div class="menu-sidebar__footer">
@@ -537,21 +537,25 @@
                       class="swiper-slide flex top-hotel-content"
                       style="background-image: url('assets/images/branch-joyinn-1.jpg');"
                     >
-                      <p class="hotel-name"> Joy Boutique Trung Hòa</p>
-                      <p class="hotel-des"> 26/110 Trần Duy Hùng, Phường Trung Hòa, Quận Cầu Giấy, Hà Nội</p>
-                      <a class="watch-room-button" href="/joyinn-boutique-trung-hoa" >
-                        XEM PHÒNG
-                      </a>
+                      <div class="top-hotel-box">
+                        <p class="hotel-name"> Joy Boutique Trung Hòa</p>
+                        <p class="hotel-des"> 26/110 Trần Duy Hùng, Phường Trung Hòa, Quận Cầu Giấy, Hà Nội</p>
+                        <a class="watch-room-button" href="/joyinn-boutique-trung-hoa" >
+                          XEM PHÒNG
+                        </a>
+                      </div>
                     </div>
                     <div
                       class="swiper-slide flex top-hotel-content"
                       style="background-image: url('assets/images/branch-joyinn-2.jpg');"
                     >
-                      <p class="hotel-name"> Joy Inn Nguyen Thi Thap</p>
-                      <p class="hotel-des"> 563 Nguyễn Thị Thập, Phường Tân Phong, Quận 7, Hồ Chí Minh</p>
-                      <a class="watch-room-button" href="/joyinn-nguyen-thi-thap" >
-                        XEM PHÒNG
-                      </a>
+                      <div class="top-hotel-box">
+                        <p class="hotel-name"> Joy Inn Nguyen Thi Thap</p>
+                        <p class="hotel-des"> 563 Nguyễn Thị Thập, Phường Tân Phong, Quận 7, Hồ Chí Minh</p>
+                        <a class="watch-room-button" href="/joyinn-nguyen-thi-thap" >
+                          XEM PHÒNG
+                        </a>
+                      </div>
                     </div>
                     <div
                       class="swiper-slide flex top-hotel-content"
@@ -567,21 +571,25 @@
                       class="swiper-slide flex top-hotel-content"
                       style="background-image: url('assets/images/branch-joyinn-1.jpg');"
                     >
-                      <p class="hotel-name"> Joy Boutique Trung Hòa</p>
-                      <p class="hotel-des"> 26/110 Trần Duy Hùng, Phường Trung Hòa, Quận Cầu Giấy, Hà Nội</p>
-                      <a class="watch-room-button" href="/joyinn-boutique-trung-hoa" >
-                        XEM PHÒNG
-                      </a>
+                      <div class="top-hotel-box">
+                        <p class="hotel-name"> Joy Boutique Trung Hòa</p>
+                        <p class="hotel-des"> 26/110 Trần Duy Hùng, Phường Trung Hòa, Quận Cầu Giấy, Hà Nội</p>
+                        <a class="watch-room-button" href="/joyinn-boutique-trung-hoa" >
+                          XEM PHÒNG
+                        </a>
+                      </div>
                     </div>
                     <div
                       class="swiper-slide flex top-hotel-content"
                       style="background-image: url('assets/images/branch-joyinn-2.jpg');"
                     >
-                      <p class="hotel-name"> Joy Inn Nguyen Thi Thap</p>
-                      <p class="hotel-des"> 563 Nguyễn Thị Thập, Phường Tân Phong, Quận 7, Hồ Chí Minh</p>
-                      <a class="watch-room-button" href="/joyinn-nguyen-thi-thap" >
-                        XEM PHÒNG
-                      </a>
+                      <div class="top-hotel-box">
+                        <p class="hotel-name"> Joy Inn Nguyen Thi Thap</p>
+                        <p class="hotel-des"> 563 Nguyễn Thị Thập, Phường Tân Phong, Quận 7, Hồ Chí Minh</p>
+                        <a class="watch-room-button" href="/joyinn-nguyen-thi-thap" >
+                          XEM PHÒNG
+                        </a>
+                      </div>
                     </div>
                 </div>
                 <img
@@ -755,23 +763,34 @@
                 <div class="desktop-content scroll-y">
                   <div class="hotel-box"  onclick="onChangeMap(1)">
                     <p class="content-box_label--bold">JOY INN CỘNG HÒA</p>
-                    <p class="hotel-address">
+                    <p class="hotel-address text-address">
                       <img class="lo-img" src="assets/images/icon/location.svg" alt="">
-                      419 Cộng Hòa, Phường 15, Quận Tân Bình, Hồ Chí Minh
+                      <span>419 Cộng Hòa, P,15, </span>
+                      <span>Quận Tân Bình, </span>
+                      <span>Hồ Chí Minh</span>
                     </p>
                   </div>
                   <div class="hotel-box " onclick="onChangeMap(2)">
                     <p class="content-box_label--bold">JOY INN NGUYỄN THỊ THẬP</p>
-                    <p class="hotel-address">
+                    <p class="hotel-address text-address">
                       <img class="lo-img" src="assets/images/icon/location.svg" alt="">
-                      563 Nguyễn Thị Thập, Phường Tân Phong, Quận 7, Hồ Chí Minh
+                      <span>563 Nguyễn Thị Thập, </span>
+                      <span>P.Tân Phong, </span>
+                      <span>Quận 7, </span>
+                      <span>Hồ Chí Minh</span>
                     </p>
                   </div>
                   <div class="hotel-box" onclick="onChangeMap(3)">
                     <p class="content-box_label--bold">JOY BOUTIQUE TRUNG HÒA</p>
-                    <p class="hotel-address">
+                    <p class="hotel-address text-address">
                       <img class="lo-img" src="assets/images/icon/location.svg" alt="">
-                      26/110 Trần Duy Hùng, Phường Trung Hòa, Quận Cầu Giấy, Hà Nội
+                      <p class="hotel-address text-address">
+                        <img class="lo-img" src="assets/images/icon/location.svg" alt="">
+                        <span>26/110 Trần Duy Hùng, </span>
+                        <span>P.Trung Hòa, </span>
+                        <span>Quận Cầu Giấy, </span>
+                        <span>Hà Nội</span>
+                      </p>
                     </p>
                   </div>
                 </div>
@@ -825,9 +844,9 @@
                 </div>
                 <div class="flex col-md-8 desktop-content p-0" style="flex-direction: column;">
                   <img src="assets/images/banner/libary-2.jpg" class="p-0 fit-img  mb-12" style="height: 300px;">
-                  <div class="flex p-0" style="gap: 2;">
-                    <img src="assets/images/banner/libary-3.jpg" class="p-0" style="width: 50%;height: 300px;">
-                    <img src="assets/images/banner/libary-4.jpg" class="p-0" style="width: 47%;height: 300px;">
+                  <div class="flex p-0">
+                    <img src="assets/images/banner/libary-3.jpg" class="p-0" style="width: 48.5%;height: 300px;">
+                    <img src="assets/images/banner/libary-4.jpg" class="p-0" style="width: 48.5%;height: 300px;">
                   </div>
                 </div>
               </div>
@@ -897,11 +916,15 @@
             </div>
             <div class="flex mb-12 contract-row">
               <img class="logo-contract" src="assets/images/icon/calling.svg" alt="">
-              <p class="ver-center hotel-des">+84 896 688 039</p>
+              <p class="ver-center hotel-des">+84 896 699 739</p>
             </div>
             <div class="flex mb-12 contract-row">
               <img class="logo-contract" src="assets/images/icon/home.svg" alt="">
-              <p class="ver-center hotel-des">419 Cộng Hòa, P.15, Quận Tân Bình, Hồ Chí Minh</p>
+              <p class="ver-center hotel-des text-address">
+                <span>419 Cộng Hòa, P.15,</span>
+                <span>Quận Tân Bình,</span>
+                <span>Hồ Chí Minh</span>
+              </p>
             </div>
           </div>
           <div class="footer_left col-md-3 col-sm-12">
@@ -911,12 +934,12 @@
                 <div>
                   <a class="hotel-des" href="/promotion-list"> <p class="mb-12 mt-0">Ưu đãi</p> </a>
                   <a class="hotel-des" href="/about-us"> <p class="mb-12 mt-0">Hợp tác</p> </a>
-                  <a class="hotel-des joy-inn-disable" href="http://joyinn.vn/blog/"  target="_blank" > <p class="mb-12 mt-0">Blog</p> </a>
+                  <!-- <a class="hotel-des joy-inn-disable" href="http://joyinn.vn/blog/"  target="_blank" > <p class="mb-12 mt-0">Blog</p> </a> -->
                 </div>
                 <div>
                   <a class="hotel-des" href="#"> <p class="mb-12 mt-0">Chính sách</p> </a>
                   <a class="hotel-des" href="/branch"> <p class="mb-12 mt-0">Đặt phòng</p> </a>
-                  <a class="hotel-des joy-inn-disable" href="#"> <p class="mb-12 mt-0">Đăng nhập</p> </a>
+                  <!-- <a class="hotel-des joy-inn-disable" href="#"> <p class="mb-12 mt-0">Đăng nhập</p> </a> -->
                 </div>
               </div>
             </div>
@@ -924,10 +947,10 @@
               <div class="joy-inn-row">
                 <a class="hotel-des pad-0 col-sm-3" href="/promotion-list"> <p class="mb-12 mt-0">Ưu đãi</p> </a>
                 <a class="hotel-des pad-0 col-sm-3" href="/about-us"> <p class="mb-12 mt-0">Hợp tác</p> </a>
-                <a class="hotel-des pad-0 col-sm-3 joy-inn-disable" href="http://joyinn.vn/blog/"  target="_blank" > <p class="mb-12 mt-0">Blog</p> </a>
+                <!-- <a class="hotel-des pad-0 col-sm-3 joy-inn-disable" href="http://joyinn.vn/blog/"  target="_blank" > <p class="mb-12 mt-0">Blog</p> </a> -->
                 <a class="hotel-des pad-0 col-sm-3" href="#"> <p class="mb-12 mt-0">Chính sách</p> </a>
                 <a class="hotel-des pad-0 col-sm-3" href="/branch"> <p class="mb-12 mt-0">Đặt phòng</p> </a>
-                <a class="hotel-des pad-0 col-sm-3 joy-inn-disable" href="#"> <p class="mb-12 mt-0">Đăng nhập</p> </a>
+                <!-- <a class="hotel-des pad-0 col-sm-3 joy-inn-disable" href="#"> <p class="mb-12 mt-0">Đăng nhập</p> </a> -->
               </div>
             </div>
           </div>
