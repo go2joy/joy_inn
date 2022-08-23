@@ -633,14 +633,28 @@
   <div id="fb-customer-chat" class="fb-customerchat">
   </div>
   <script>
+    $('#booking').css('display', 'none');
     var chatbox = document.getElementById('fb-customer-chat');
     chatbox.setAttribute("page_id", "109417457506998");
     chatbox.setAttribute("attribution", "biz_inbox");
-    document.getElementById('booking').addEventListener('click', function(e) {
-      if(FB) {
-        FB.CustomerChat.showDialog();
+    $(window).bind('load', function () {
+        show_booking_button();
+    });
+    function show_booking_button() {
+      if ($('div.fb_dialog_content').length > 0 && $($('div.fb_dialog_content').find('iframe')[0]).height() > 50) {
+        $('#booking').css('display', 'block');
+        $('#booking').click(function(){
+          FB.CustomerChat.showDialog();
+        })
+        // document.getElementById('booking').addEventListener('click', function(e) {
+        //   if(FB) {
+        //     FB.CustomerChat.showDialog();
+        //   }
+        // })
+      }else {
+        setTimeout(show_booking_button, 100);
       }
-    })
+    }
   </script>
   <!-- Your SDK code -->
   <script>
