@@ -228,9 +228,11 @@ a {
     }
     .timeline-image img {
       width: 400px !important;
+      border-radius: 15px;
     }  
     .timeline-image1 img {
       width: 400px !important;
+      border-radius: 15px;
     }  
     .container-timeline .content2 {
       width: 400px !important;
@@ -647,6 +649,7 @@ position:relative;
     text-align: right;
 }
 .timeline-image img{
+  border-radius: 15px;
     width: 595px;
 }
 .timeline-image1 {
@@ -655,6 +658,7 @@ position:relative;
 }
 .timeline-image1 img{
     width: 595px;
+    border-radius: 15px;
 }
 @media (max-width: 767.98px) {
   .timeline::after {
@@ -720,6 +724,7 @@ position:relative;
 }
 .joy-hotel-block1 img{
     height: calc(100% - 31px);
+    border-radius: 15px;
 }
 .joy-hotel-block2 {
     
@@ -1184,6 +1189,7 @@ cursor: pointer;
   .about-us-is-mobile .time-mobile-image img{
     width: 100%;
     height: auto;
+    border-radius: 15px;
   }
   .about-us-is-mobile .content-info .block {
     padding: 5px;
@@ -1301,7 +1307,7 @@ cursor: pointer;
     margin: 0;
   }
   .about-us-is-mobile .section-joy-hotel .go2choise-block .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
-    bottom: 0px !important;
+    bottom: 0px;
   }
   .about-us-is-mobile .section-go2choise .is-title-go2choise {
     font-size: 28px;
