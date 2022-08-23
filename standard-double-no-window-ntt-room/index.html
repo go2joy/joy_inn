@@ -327,7 +327,7 @@
                 </select>
               </div>
             </div>
-            <div class="room-detail__booking">
+           <div class="room-detail__booking">
               <button id="booking" class="button--default rounded-lg w-full">
                 Đặt phòng ngay
               </button>
@@ -530,18 +530,24 @@
               </div>
           </div>
           <div class="footer_left col-md-4 col-sm-12">
-              <div class="mobile-content"><h2 class="footer__title"> LIÊN HỆ</h2></div>
-              <div class="flex mb-12 contract-row">
-              <img class="logo-contract" src="../assets/images/icon/message.svg" alt="">
-              <p class="ver-center hotel-des">Joyinnhotel.vn@gmail.com</p>
+              <div class="mobile-content">
+                  <h2 class="footer__title"> LIÊN HỆ</h2>
               </div>
               <div class="flex mb-12 contract-row">
-              <img class="logo-contract" src="../assets/images/icon/calling.svg" alt="">
-              <p class="ver-center hotel-des">+84 896 688 039</p>
+                  <img class="logo-contract" src="../assets/images/icon/message.svg" alt="">
+                  <p class="ver-center hotel-des">Joyinnhotel.vn@gmail.com</p>
               </div>
               <div class="flex mb-12 contract-row">
-              <img class="logo-contract" src="../assets/images/icon/home.svg" alt="">
-              <p class="ver-center hotel-des">419 Cộng Hòa, P.15, Quận Tân Bình, Hồ Chí Minh</p>
+                  <img class="logo-contract" src="../assets/images/icon/calling.svg" alt="">
+                  <p class="ver-center hotel-des">+84 896 699 739</p>
+              </div>
+              <div class="flex mb-12 contract-row">
+                  <img class="logo-contract" src="../assets/images/icon/home.svg" alt="">
+                  <p class="ver-center hotel-des text-address">
+                      <span>419 Cộng Hòa, P.15,</span>
+                      <span>Quận Tân Bình,</span>
+                      <span>Hồ Chí Minh</span>
+                  </p>
               </div>
           </div>
           <div class="footer_left col-md-3 col-sm-12">
@@ -663,7 +669,7 @@
   <div id="fb-customer-chat" class="fb-customerchat">
   </div>
   <script>
-    $('#booking').css('display', 'none');
+    $('.room-detail__booking').css('display', 'none');
     var chatbox = document.getElementById('fb-customer-chat');
     chatbox.setAttribute("page_id", "109417457506998");
     chatbox.setAttribute("attribution", "biz_inbox");
@@ -672,8 +678,8 @@
     });
     function show_booking_button() {
       if ($('div.fb_dialog_content').length > 0 && $($('div.fb_dialog_content').find('iframe')[0]).height() > 50) {
-        $('#booking').css('display', 'block');
-        $('#booking').click(function(){
+        $('.room-detail__booking').css('display', 'block');
+        $('.room-detail__booking').click(function(){
           FB.CustomerChat.showDialog();
         })
         // document.getElementById('booking').addEventListener('click', function(e) {
@@ -685,6 +691,7 @@
         setTimeout(show_booking_button, 100);
       }
     }
+    
   </script>
   <!-- Your SDK code -->
   <script>
