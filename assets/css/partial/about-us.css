@@ -1150,11 +1150,11 @@ cursor: pointer;
     border-radius: 15px;
   }
   .about-us-is-mobile .container-timeline::after {
-    right: 47%;
+    right: 47.5%;
     top: -65px;
   }
   .about-us-is-mobile .time-mobile-2 .container-timeline::after {
-    right: 47%;
+    right: 47.5%;
     top: -54px;
   }
   .about-us-is-mobile .content-title-timeline {
