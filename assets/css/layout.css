@@ -234,6 +234,13 @@ scroll-behavior: smooth;
 .menu-sidebar ul li:hover {
   padding-left: 30px;
 }
+.menu-sidebar ul li a {
+  display: block;
+}
+.menu-sidebar ul li a:focus,
+.menu-sidebar ul li a:hover {
+  color: white !important;
+}
 .menu-sidebar li .header-label {
   font-weight: 400 !important;
   font-size: 18px;
