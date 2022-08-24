@@ -606,7 +606,7 @@
     });
     function show_booking_button() {
       if ($('div.fb_dialog_content').length > 0 && $($('div.fb_dialog_content').find('iframe')[0]).height() > 50) {
-        $('.room-detail__booking').css('display', 'block');
+        $('.room-detail__booking').css('display', 'flex');
         $('.room-detail__booking').click(function(){
           FB.CustomerChat.showDialog();
         })
