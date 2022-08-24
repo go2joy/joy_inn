@@ -1037,6 +1037,9 @@ cursor: pointer;
   .about-us-is-mobile .vision-mission {
     height: auto;
   }
+  .collapse-list .collapse-btn {
+    padding: 14px 36px 14px 14px;
+  }
   .about-us-is-mobile .vision-mission-center-content {
     position: relative;
     padding-left: 0;
