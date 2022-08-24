@@ -140,7 +140,7 @@
 .custom-img {
   width: 100% !important;
   height: 553px !important;
-  object-fit: fill !important;
+  object-fit: scale-down !important;
 }
 .img-rabbit {
   width: 167px;
@@ -362,7 +362,6 @@
 }
 .lo-img {
   width: 18px;
-  height: 13px;
   margin-right: 8px;
 }
 .list-hotel,
