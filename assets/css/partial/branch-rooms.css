@@ -31,19 +31,21 @@
 .room__content {
   display: flex;
   flex: 1;
-  flex-direction: column;
-  width: calc(100% - 473px);
-  padding: 24px;
+  flex-wrap: wrap;
+  height: 100%;
+  padding: 0 24px;
   text-align: left;
+  overflow-y: auto;
 }
 .room__content__header {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 25px;
+  margin-top: 16px;
+  margin-bottom: 24px;
 }
 .room__title {
-  width: calc(100% - 190px);
+  /* width: calc(100% - 190px); */
+  width: 100%;
   font-weight: 600;
   font-size: 32px;
   line-height: 40px;
@@ -52,8 +54,9 @@
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
-  word-break: break-all;
+  -webkit-line-clamp: 2;
+  word-break: break-word;
+  margin-bottom: 8px;
 }
 .room__price {
   display: flex;
@@ -82,8 +85,9 @@
 }
 .room__tags {
   display: flex;
+  width: 100%;
   flex-wrap: wrap;
-  margin-bottom: 38px;
+  margin-bottom: 12px;
 }
 .room__tag {
   display: flex;
@@ -99,14 +103,15 @@
   color: #333333cc;
   background: #F9F9F9;
   border-radius: 6px;
+  height: 28px;
 }
 .room__desc {
-  margin-top: 32px;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #808080;
   text-align: left;
+  margin-bottom: 16px;
 }
 
 /* pagination */
@@ -161,8 +166,18 @@
     position: relative;
   }
   .room__logo {
+    width: 100%;
+    height: auto;
     border-radius: 12px;
     overflow: hidden;
+  }
+  .room__logo img {
+    width: 100%;
+    height: auto;
+  }
+  .room__content__header {
+    margin-top: 0;
+    margin-bottom: 18px;
   }
   .room__title {
     font-size: 28px;
@@ -170,15 +185,17 @@
     width: 100%;
     -webkit-line-clamp: 2;
     word-break: break-word;
+    margin-bottom: 18px;
   }
   .room__price {
-    position: absolute;
+    /* position: absolute; */
     width: fit-content;
     height: 24px;
     padding: 0px 14px;
     top: 20px;
     right: 10px;
-    background-color: #E77026;
+    border: none;
+    background-color:#F2A943;
   }
   .room__price img {
     filter: hue-rotate(40deg) saturate(0.5) brightness(390%) saturate(4); 
@@ -191,6 +208,7 @@
   .room__price--origin {
     font-size: 9px;
     line-height: 11px;
+    color: #333333;
   }
   .room__tags {
     margin-bottom: 20px;
@@ -199,8 +217,9 @@
     font-size: 12px;
     line-height: 15px;
     margin: 0 10px 10px 0;
+    height: 32px;
   }
   .room__desc {
-    margin-top: 20px;
+    margin-top: 14px;
   }
 }

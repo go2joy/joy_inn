@@ -330,6 +330,7 @@ scroll-behavior: smooth;
   }
   .stickyEmail {
     left: 0 !important;
+    bottom: 82px !important;
   }
   .styckyBtn {
     right: 8px !important;
