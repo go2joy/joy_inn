@@ -175,7 +175,7 @@ body {
   color: #ffff;
 }
 .image_container .image_dummy {
-  margin-top: 100%;
+  margin-top: calc(100% );
 }
 .image_container .image_content {
   position: absolute;

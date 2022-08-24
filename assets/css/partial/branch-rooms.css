@@ -166,8 +166,14 @@
     position: relative;
   }
   .room__logo {
+    width: 100%;
+    height: auto;
     border-radius: 12px;
     overflow: hidden;
+  }
+  .room__logo img {
+    width: 100%;
+    height: auto;
   }
   .room__content__header {
     margin-top: 0;
