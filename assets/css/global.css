@@ -371,6 +371,9 @@ a.hotel-des:hover {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
+.mt-auto {
+  margin-top: auto !important;
+}
 .col-md-2,
 .col-md-3,
 .col-md-4,
