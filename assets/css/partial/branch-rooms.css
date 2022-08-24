@@ -85,6 +85,7 @@
 }
 .room__tags {
   display: flex;
+  width: 100%;
   flex-wrap: wrap;
   margin-bottom: 12px;
 }
@@ -102,6 +103,7 @@
   color: #333333cc;
   background: #F9F9F9;
   border-radius: 6px;
+  height: 28px;
 }
 .room__desc {
   font-weight: 400;
@@ -167,6 +169,10 @@
     border-radius: 12px;
     overflow: hidden;
   }
+  .room__content__header {
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
   .room__title {
     font-size: 28px;
     line-height: 35px;
@@ -202,6 +208,7 @@
     font-size: 12px;
     line-height: 15px;
     margin: 0 10px 10px 0;
+    height: 32px;
   }
   .room__desc {
     margin-top: 20px;
