@@ -135,12 +135,12 @@
   font-size: 16px;
   line-height: 22px;
   text-align: justify;
-  color: rgba(128, 128, 128, 0.8);
+  color: #3a3737;
 }
 .custom-img {
   width: 100% !important;
   height: 553px !important;
-  object-fit: cover;
+  object-fit: fill !important;
 }
 .img-rabbit {
   width: 167px;
@@ -173,9 +173,21 @@
   position: relative;
   height: 100%;
 }
-.five-sense-swiper .five-sense-bt {
-  top: unset;
+.five-sense-swiper {
+  position: unset !important;
+}
+.content_left {
   position: relative;
+}
+.five-sense-swiper .five-sense-bt.next {
+  left: 92px;
+}
+.five-sense-swiper .five-sense-bt.prev {
+  left: 0px;
+}
+.five-sense-swiper .five-sense-bt {
+  top: 160px;
+  position: absolute;
   right: unset;
   left: unset;
   display: block;
@@ -218,7 +230,7 @@
 }
 .top-hotel-content p {
   color: #fff;
-  margin: 0;
+  margin: 12px 0;
 }
 .hotel-name {
   font-weight: 600;
@@ -327,9 +339,9 @@
 .block-label {
   font-weight: 600;
   font-size: 36px;
-  align-items: end;
 }
-.block-label span{
+
+.top-organe{
   color: #E77026;
 }
 .hotel-box{
@@ -435,7 +447,7 @@
   padding-top: 10px;
   font-size: 15px;
   font-weight: 500;
-  margin-bottom: 12px;
+  margin: 12px 0;
 }
 .swiper-slide-active .watch-room-button:hover {
   background-color: #E77026;
@@ -460,20 +472,36 @@
 }
 .top-hotel-box {
   display: flex;
+  height: 100%;
   flex-direction: column;
   width: 100%;
   align-items: center;
-  box-shadow: 0px 60px 80px rgb(0 0 0 / 6%);
-  border-radius: 12px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(231, 112, 38, 0.85) 79.33%);
+  padding: 0 8px;
 }
-
+.center-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 @media (max-width: 1250px) { 
   .content_right {
     width: 76%;
   }
 }
-@media (max-width: 540px) { 
+@media (max-width: 540px) {
+  .center-label-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .custom-img {
+    height: auto !important;
+    width: 100% !important;
+  }
+  .five-swiper-block {
+    height: 223px;
+  }
   .content_right {
     width: 100%;
     height: 300px;
@@ -481,7 +509,6 @@
   .five-content-block {
     flex-direction: column;
   }
- 
   .main_banner,
   .five-sense-detail-image {
     height: 300px !important;
@@ -525,21 +552,18 @@
     height: 556.51px;
     margin: 20px 0;
   }
-  .content_left {
-    position: relative;
-  }
+  
   .five-sense-swiper .five-sense-bt {
     position: absolute;
     top: 90px;
   }
   .five-sense-swiper .five-sense-bt.next {
     right: 12px;
+    left: unset !important;
   }
   .five-sense-swiper .five-sense-bt.prev {
-    right: 70px;
-  }
-  .slider-content .swiper {
-    position: unset;
+    right: 70px !important;
+    left: unset !important;
   }
   .swiper.libary-swiper,
   .swiper-slide .libary-img {
