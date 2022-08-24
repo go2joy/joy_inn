@@ -314,7 +314,7 @@
                             <div class="container-timeline left">
                                 <div class="content-left">
                                     <div class="date1"><span class="color-g2j is-year-timeline">2022:</span><span
-                                            class="is-sub-year-timeline"> JOY INN Nguyễn Thị Thập</span></div>
+                                            class="is-sub-year-timeline"> JOY INN NGUYỄN THỊ THẬP</span></div>
 
                                     <div class="timeline-image">
                                         <img src="../assets/images/banner/timeline1.png" alt="">
@@ -360,7 +360,7 @@
                         <div class="timeline2">
                             <div class="container-timeline left1 ">
                                 <div class="date"><span class="color-g2j is-year-timeline">2020:</span><span
-                                        class="is-sub-year-timeline"> JOY BOUTIQUE Trung Hòa</span></div>
+                                        class="is-sub-year-timeline"> JOY BOUTIQUE TRUNG HÒA</span></div>
 
                                 <div class="content-timeline">
                                     <div class="content2">
@@ -412,7 +412,7 @@
                                 <div class="content-left">
                                     <div class="date"><span class="color-g2j is-year-timeline">2019:</span><span
                                             class="is-sub-year-timeline"> JOY
-                                            INN Cộng Hòa</span></div>
+                                            INN CỘNG HÒA</span></div>
 
                                     <div class="timeline-image">
                                         <img src="../assets/images/banner/timeline3.png" alt="">
@@ -604,7 +604,7 @@
                         <div class="section-contact-content">
                             <div class="contact-form">
                                 <div class="is-title-contact-form">
-                                    <p>trở thành đối tác của
+                                    <p>trở thành đối tác của <br>
                                         <span class="color-g2j"> Joy Inn Hotel</span></p>
                                 </div>
                                 <div class="form-style">
@@ -1325,7 +1325,7 @@
         </div>
 
     </div>
-    <div class="stickyEmail">
+    <div class="stickyEmail" id="stickyEmail">
         <a class="sticky-email-desktop" href="#stickyEmail">
             <div class="is-email">
                 <img src="../assets/images/contact3.png" alt="">
@@ -1452,6 +1452,8 @@
                 devGet.innerHTML +=`<p style="float: left;font-size: 20px; color:#409eff;text-align: left;">Gửi thông
                     tin thành
                     công! Joy Inn Hotel sẽ sớm liên hệ với bạn.</p>`
+                const getSendmail = document.getElementById("stickyEmailMobile")
+                getSendmail.style.paddingBottom = "105px"
                 return response.data.data
             })
 
@@ -1675,6 +1677,15 @@
                 counter6 = await counterAnimGlobal(counter6, 6)
             }
         });
+    
+        // const collection = document.getElementsByClassName("fb_iframe_widget");
+        // let checkMess = collection[0]?.children[0]?.children[0]?.style.maxHeight;
+        // let btnContact = document.getElementsByClassName("sticky-email-mobile")[0]
+        // if(checkMess === '0px'){
+        //     btnContact.style.position = "absolute"
+        // } else {
+        //     btnContact.style.position = "relative"
+        // }
     </script>
 </body>
 
