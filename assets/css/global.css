@@ -132,6 +132,9 @@ button[disabled]{
 .pointer {
   cursor: pointer;
 }
+.cursor-default {
+  cursor: default;
+}
 /* devider */
 .devider {
   width: 100%;
@@ -218,6 +221,9 @@ a.hotel-des:hover {
   display: flex;
   flex-wrap: wrap;
 }
+.flex-1 {
+  flex: 1 !important;
+}
 .flex-wrap {
   flex-wrap: wrap;
 }
@@ -244,6 +250,9 @@ a.hotel-des:hover {
   width: 70px;
   height: 32px;
   margin-top: 8px;
+}
+.gap-0 {
+  gap: 0px;
 }
 .gap-12 {
   gap: 12px;
@@ -334,6 +343,9 @@ a.hotel-des:hover {
 }
 .mb-80 {
   margin-bottom: 80px !important;
+}
+.pa-24 {
+  padding: 24px !important;
 }
 .pb-12 { 
   padding-bottom: 12px !important;
@@ -600,7 +612,7 @@ a.hotel-des:hover {
     color: #ffffff;
     padding: 10px;
   }
-  .banner-mobile .section-banner-mobile .content-banner-mobile .is-title-banner-mobile p {
+  .banner-mobile .section-banner-mobile .content-banner-mobile .is-title-banner-mobile * {
     font-weight: 600;
     font-size: 35px;
     line-height: 43px;
