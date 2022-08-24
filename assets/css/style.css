@@ -140,7 +140,7 @@
 .custom-img {
   width: 100% !important;
   height: 553px !important;
-  object-fit: cover;
+  object-fit: fill !important;
 }
 .img-rabbit {
   width: 167px;
