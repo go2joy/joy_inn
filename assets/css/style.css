@@ -489,6 +489,12 @@
   }
 }
 @media (max-width: 540px) {
+  .hotel-name {
+    font-size: 20px;
+  }
+  .hotel-des {
+    font-size: 14px !important;
+  }
   .center-label-mobile {
     display: flex;
     flex-direction: column;
