@@ -177,7 +177,7 @@
   }
   .room__content__header {
     margin-top: 0;
-    margin-bottom: 16px;
+    margin-bottom: 18px;
   }
   .room__title {
     font-size: 28px;
@@ -185,15 +185,17 @@
     width: 100%;
     -webkit-line-clamp: 2;
     word-break: break-word;
+    margin-bottom: 18px;
   }
   .room__price {
-    position: absolute;
+    /* position: absolute; */
     width: fit-content;
     height: 24px;
     padding: 0px 14px;
     top: 20px;
     right: 10px;
-    background-color: #E77026;
+    border: none;
+    background-color:#F2A943;
   }
   .room__price img {
     filter: hue-rotate(40deg) saturate(0.5) brightness(390%) saturate(4); 
@@ -206,6 +208,7 @@
   .room__price--origin {
     font-size: 9px;
     line-height: 11px;
+    color: #333333;
   }
   .room__tags {
     margin-bottom: 20px;
@@ -217,6 +220,6 @@
     height: 32px;
   }
   .room__desc {
-    margin-top: 20px;
+    margin-top: 14px;
   }
 }
