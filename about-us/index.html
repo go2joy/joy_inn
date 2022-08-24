@@ -222,7 +222,7 @@
                                                             <p>Tinh thần phục vụ <br>
                                                                 Theo đuổi sự xuất sắc <br>
                                                                 Hành động với tính toàn vẹn <br>
-                                                                Tinh thần kinh doanh <br>
+                                                                Tinh thần khởi nghiệp <br>
                                                                 Sự đổi mới</p>
                                                         </div>
                                                     </div>
@@ -239,7 +239,7 @@
                 <section class="section section-joy-hotel " aria-label="joy-hotel" id="joy-hotel">
                     <div class="joy-hotel">
                         <div class="is-title-joy-hotel">
-                            <p>gia nhập <br> chuỗi khách sạn <br> <span class="color-g2j">joy inn hotel</span></p>
+                            <p>gia nhập chuỗi khách sạn <span class="color-g2j">joy inn hotel</span></p>
                         </div>
                         <div class="joy-hotel-block">
                             <div class="joy-hotel-block1">
@@ -307,7 +307,7 @@
                 </section>
                 <section class="section section-timeline " aria-label="time-line" id="time-line">
                     <div class="is-title-timeline">
-                        <p>Những <span class="color-g2j">con số</span> <br> biết nói</p>
+                        <p>Những <span class="color-g2j">con số</span>  biết nói</p>
                     </div>
                     <div class="timeline">
                         <div class="timeline3">
@@ -604,7 +604,7 @@
                         <div class="section-contact-content">
                             <div class="contact-form">
                                 <div class="is-title-contact-form">
-                                    <p>trở thành đối tác <br>của
+                                    <p>trở thành đối tác của
                                         <span class="color-g2j"> Joy Inn Hotel</span></p>
                                 </div>
                                 <div class="form-style">
@@ -625,10 +625,10 @@
                                             placeholder="Ghi chú chi tiết"></textarea>
 
                                     </form>
-                                    
+                                    <div id="message_success"></div>
                                     <button class="button--default" onclick="onClickReCapcha()" type="submit">GỬI THÔNG
                                         TIN</button>
-                                        <div id="message_success"></div>
+                                        
                                         
                                 </div>
                             </div>
@@ -741,7 +741,7 @@
                                                             <p>Tinh thần phục vụ <br>
                                                                 Theo đuổi sự xuất sắc<br>
                                                                 Hành động với tính toàn vẹn<br>
-                                                                Tinh thần kinh doanh<br>
+                                                                Tinh thần khởi nghiệp<br>
                                                                 Sự đổi mới</p>
                                                         </div>
                                                     </div>
@@ -1153,6 +1153,7 @@
                                         <textarea id="contact-note-mobile" name="note" class="field-area"
                                             placeholder="Ghi chú chi tiết"></textarea>
                                     </form>
+                                    <div id="message_success-mobile"></div>
                                     <button onclick="onClickReCapchaMobile()" type="submit">GỬI
                                         THÔNG TIN</button>
                                 </div>
@@ -1406,7 +1407,8 @@
                 "https://staging-api.go2joy.vn/api/v5/web-booking/other/sendEmailForJoyInn",
                 params).then(function (response) {
                 const devGet = document.getElementById("message_success")
-                devGet.innerHTML +=`<p style="font-size: 20px; color:#409eff;text-align: left;">Gửi thông tin thành
+                devGet.innerHTML +=`<p style="float: left;font-size: 20px; color:#409eff;text-align: left;">Gửi thông
+                    tin thành
                     công! Joy Inn Hotel sẽ sớm liên hệ với bạn.</p>`
                 return response.data.data
             })
@@ -1446,8 +1448,9 @@
             const result = await axios.post(
                 "https://staging-api.go2joy.vn/api/v5/web-booking/other/sendEmailForJoyInn",
                 params).then(function (response) {
-                const devGet = document.getElementById("message_success")
-                devGet.innerHTML +=`<p style="font-size: 20px; color:#409eff;text-align: left;">Gửi thông tin thành
+                const devGet = document.getElementById("message_success-mobile")
+                devGet.innerHTML +=`<p style="float: left;font-size: 20px; color:#409eff;text-align: left;">Gửi thông
+                    tin thành
                     công! Joy Inn Hotel sẽ sớm liên hệ với bạn.</p>`
                 return response.data.data
             })
