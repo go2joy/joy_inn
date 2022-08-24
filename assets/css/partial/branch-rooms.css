@@ -31,19 +31,21 @@
 .room__content {
   display: flex;
   flex: 1;
-  flex-direction: column;
-  width: calc(100% - 473px);
-  padding: 24px;
+  flex-wrap: wrap;
+  height: 100%;
+  padding: 0 24px;
   text-align: left;
+  overflow-y: auto;
 }
 .room__content__header {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 25px;
+  margin-top: 16px;
+  margin-bottom: 24px;
 }
 .room__title {
-  width: calc(100% - 190px);
+  /* width: calc(100% - 190px); */
+  width: 100%;
   font-weight: 600;
   font-size: 32px;
   line-height: 40px;
@@ -52,8 +54,9 @@
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
-  word-break: break-all;
+  -webkit-line-clamp: 2;
+  word-break: break-word;
+  margin-bottom: 8px;
 }
 .room__price {
   display: flex;
@@ -83,7 +86,7 @@
 .room__tags {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 38px;
+  margin-bottom: 12px;
 }
 .room__tag {
   display: flex;
@@ -101,12 +104,12 @@
   border-radius: 6px;
 }
 .room__desc {
-  margin-top: 32px;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #808080;
   text-align: left;
+  margin-bottom: 16px;
 }
 
 /* pagination */
