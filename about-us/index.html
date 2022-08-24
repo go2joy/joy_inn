@@ -813,7 +813,7 @@
                                                 </div>
                                                 <div class="content-block-joy-hotel">
                                                     <p class="is-title-block-joy-hotel">Chuẩn hóa
-                                                        quy trình vận hành
+                                                        quy trình <br> vận hành
                                                     </p>
                                                     <ul class="is-content-block-joy-hotel">
                                                         <li>Cung cấp các SOP tùy chỉnh phù hợp từng
@@ -1677,15 +1677,18 @@
             }
         });
     
+        
+    </script>
+    <script>
         const collection = document.getElementsByClassName("fb_iframe_widget");
         let checkMess = collection[0]?.children[0]?.children[0]?.style.maxHeight;
         let btnContact = document.getElementsByClassName("sticky-email-mobile")[0]
         let sticky = document.getElementById("stickyEmail")
         if(checkMess === '0px'){
-            btnContact?.style.position = "absolute"
-            btnContact?.style.paddingTop= "14px";
+        btnContact?.style.position = "absolute"
+        btnContact?.style.paddingTop= "14px";
         } else {
-            btnContact?.style.position = "relative"
+        btnContact?.style.position = "relative"
         }
     </script>
 </body>
