@@ -1685,25 +1685,34 @@
         $(window).bind('load', function () {
             const collection = document?.getElementsByClassName("pluginSkinLight");
             const btnContact = document?.getElementsByClassName("sticky-email-mobile")[0]
-            if(!collection.length || collection[0]?.clientHeight < 20){ btnContact.style.position="absolute"
-                btnContact.style.paddingTop="14px" ; } else { btnContact.style.position="relative" }
+            console.log('1');
+            if(!collection.length || collection[0]?.clientHeight < 20){ 
+                btnContact.style.position="absolute"
+                btnContact.style.paddingTop="14px" ; 
+            } else { 
+                btnContact.style.position="relative" 
+            
+            console.log('2');}
             show_booking_button();
         });
         function show_booking_button() {
+            console.log('3');
             const collection = document?.getElementsByClassName("pluginSkinLight");
-            if ($('div.fb_dialog_content').length > 0 && collection.length > 0) {
-            
+            if ($('div.fb_dialog_content').length > 0 && $('div.pluginSkinLight').length > 0) {
+                console.log('4');
                 const collection = document?.getElementsByClassName("pluginSkinLight");
                 const btnContact = document?.getElementsByClassName("sticky-email-mobile")[0]
-                if(!collection.length || collection[0]?.clientHeight < 20){ 
-                    btnContact.style.position="absolute"
-                    btnContact.style.paddingTop="14px" ; 
+                if(collection[0]?.clientHeight >= 50){ 
+                    btnContact.style.position="relative"
                 } else { 
-                    btnContact.style.position="relative" 
+                    btnContact.style.position="absolute"
+                    btnContact.style.paddingTop="14px" ;
                 }
             } else {
+                console.log('5');
                 setTimeout(show_booking_button, 1000);
             }
+            
         }
     </script>
 </body>
