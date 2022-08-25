@@ -1681,7 +1681,9 @@
         
     </script>
     <script>
-        
+        let pause = false
+        setTimeout(() => { pause = true }, 20000);
+        console.log('pause :>> ', pause);
         $(window).bind('load', function () {
             const collection = document?.getElementsByClassName("fb_mpn_mobile_landing_page_slide_up");
             const btnContact = document?.getElementsByClassName("sticky-email-mobile")[0]
@@ -1692,26 +1694,38 @@
             } else { 
                 btnContact.style.position="relative" 
             
-            console.log('2');}
+            }
             show_booking_button();
         });
         function show_booking_button() {
-            console.log('3');
+            console.log('2');
             const collection = document?.getElementsByClassName("fb_mpn_mobile_landing_page_slide_up");
             if ($('div.fb_dialog_content').length > 0 && collection.length > 0) {
-                console.log('4');
+                console.log('3');
                 const btnContact = document?.getElementsByClassName("sticky-email-mobile")[0]
-                if(collection[0]?.clientHeight >= 50){ 
+                if(collection[0]?.clientHeight >= 50 && collection[0]?.clientWidth > 100 ){
                     btnContact.style.position="relative"
+                    collection[0].addEventListener('click', disableFuc(), false);
                 } else { 
                     btnContact.style.position="absolute"
                     btnContact.style.paddingTop="14px" ;
                 }
             } else {
-                console.log('5');
-                setTimeout(show_booking_button, 1000);
+                if(!pause){
+                    setTimeout(show_booking_button, 1000);
+                }
+                
             }
             
+        }
+        
+        
+        function disableFuc() {
+            console.log('5');
+            const btnContact = document?.getElementsByClassName("sticky-email-mobile")[0]
+            btnContact.style.position="absolute"
+            btnContact.style.paddingTop="14px" ;
+
         }
     </script>
 </body>
