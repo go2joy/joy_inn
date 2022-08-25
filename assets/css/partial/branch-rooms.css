@@ -142,7 +142,11 @@
 .pagination__btn--active {
   color: #E77026 !important;
 }
-
+.room-sub {
+  margin-left: 12px;
+  color: #333333cc;
+  font-style: italic;
+}
 /* Responsive Mobile */
 @media (max-width: 540px) {
   .g2j-branch-rooms .main_banner {
@@ -222,4 +226,5 @@
   .room__desc {
     margin-top: 14px;
   }
+ 
 }
