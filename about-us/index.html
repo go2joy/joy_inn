@@ -1681,6 +1681,8 @@
         
     </script>
     <script>
+        let btnContact = document?.getElementsByClassName("stickyEmail")[0]
+        console.log('btnContact :>> ', btnContact);
         let pause = false
         setTimeout(() => { pause = true }, 30000);
         $(window).bind('load', function () {
@@ -1689,12 +1691,12 @@
         });
         function getPaddingTop() {
             console.log('2');
-            const collection = document?.getElementsByClassName("fb_mpn_mobile_landing_page_slide_up");
-            const btnContact = document?.getElementsByClassName("stickyEmail")[0]
-            if ($('div.fb_dialog_content').length > 0 && collection[0]?.clientHeight >= 50 && collection[0]?.clientWidth
+            let collection = document?.getElementsByClassName("fb_mpn_mobile_landing_page_slide_up");
+            
+            if (collection[0]?.clientHeight >= 50 && collection[0]?.clientWidth
             > 100) {
                 console.log('3');
-                btnContact.style.paddingTop="82px" ;
+                btnContact.style.bottom="82px" ;
                 collection[0].addEventListener('click', disableFuc(), false);
             } else {
                 console.log('4');
@@ -1709,8 +1711,7 @@
         
         
         function disableFuc() {
-            console.log('5');
-            const btnContact = document?.getElementsByClassName("stickyEmail")[0]
+            console.log('6');
             btnContact.style.paddingTop="20px" ;
 
         }
