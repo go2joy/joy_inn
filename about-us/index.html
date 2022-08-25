@@ -1690,9 +1690,8 @@
             show_booking_button();
         });
         function show_booking_button() {
-            const btnContact = document?.getElementsByClassName("sticky-email-mobile")[0]
-            if ($('div.fb_dialog_content').length > 0 && $($('div.fb_dialog_content').find('iframe')[0]).height() > 50
-            && btnContact) {
+            const collection = document?.getElementsByClassName("pluginSkinLight");
+            if ($('div.fb_dialog_content').length > 0 && collection) {
             
                 const collection = document?.getElementsByClassName("pluginSkinLight");
                 const btnContact = document?.getElementsByClassName("sticky-email-mobile")[0]
