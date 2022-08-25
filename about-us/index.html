@@ -1680,16 +1680,13 @@
         
     </script>
     <script>
-        const collection = document.getElementsByClassName("welcomePageModalSheetContent");
-        let btnContact = document.getElementsByClassName("sticky-email-mobile")[0]
-        let sticky = document.getElementById("stickyEmail")
-        console.log('collection :>> ', collection);
-        console.log('btnContact :>> ', btnContact);
-        if(collection[0]?.clientHeight < 50){
-            btnContact?.style.position = "absolute"
-            btnContact?.style.paddingTop= "14px";
+        const collection = document?.getElementsByClassName("welcomePageModalSheetContent");
+        const btnContact = document?.getElementsByClassName("sticky-email-mobile")[0]
+        if(!collection.length || collection[0]?.clientHeight < 20){
+            btnContact.style.position = "absolute"
+            btnContact.style.paddingTop= "14px";
         } else {
-            btnContact?.style.position = "relative"
+            btnContact.style.position = "relative"
         }
     </script>
 </body>
