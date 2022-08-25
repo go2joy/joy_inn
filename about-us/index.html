@@ -1680,7 +1680,8 @@
         
     </script>
     <script>
-        const collection = document?.getElementsByClassName("welcomePageModalSheetContent");
+        const collection = document?.getElementsByClassName("pluginSkinLight");
+        console.log('collection :>> ', collection);
         const btnContact = document?.getElementsByClassName("sticky-email-mobile")[0]
         if(!collection.length || collection[0]?.clientHeight < 20){
             btnContact.style.position = "absolute"
