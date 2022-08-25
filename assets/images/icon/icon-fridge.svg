@@ -1,14 +1,1 @@
-<svg width="48" height="48" xmlns="http://www.w3.org/2000/svg">
-
- <g>
-  <title>Layer 1</title>
-  <rect id="svg_5" height="30.09708" width="25.43689" y="8.95146" x="11.28155" stroke="#000" fill="none"/>
-  <line id="svg_6" y2="11.57282" x2="36.23301" y1="11.76699" x1="11.76699" stroke="#000" fill="none"/>
-  <line id="svg_7" y2="26.23301" x2="14.09709" y1="21.76699" x1="14.09709" stroke="#000" fill="none"/>
-  <line id="svg_8" y2="41.47572" x2="12.34952" y1="39.3398" x1="12.34952" stroke="#000" fill="none"/>
-  <line stroke="#000" id="svg_13" y2="41.47572" x2="12.34952" y1="39.3398" x1="12.34952" fill="none"/>
-  <line stroke="#000" id="svg_12" y2="41.47572" x2="12.34952" y1="39.3398" x1="12.34952" fill="none"/>
-  <line stroke="#000" id="svg_15" y2="41.47572" x2="12.34952" y1="39.3398" x1="12.34952" fill="none"/>
-  <line stroke="#000" id="svg_16" y2="41.47386" x2="35.65049" y1="39.14563" x1="35.65049" fill="none"/>
- </g>
-</svg>
+<svg id="efbqihmMXdE1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"><g transform="translate(-.000048-1.213585)"><path d="M0,0h25.4369v30.0971h-25.4369L0,0Z" transform="translate(11.2816 8.95145)" fill="none" stroke="#333" stroke-width="1.5" stroke-linejoin="round" stroke-dashoffset="1"/><path d="M11.76699,11.76699l24.46602-.19417" transform="translate(.00005 1.083812)" fill="none" stroke="#333" stroke-width="1.5"/><path d="M14.09709,21.76699v4.46602" fill="none" stroke="#333"/><path d="M12.34952,39.3398v2.13592" transform="translate(.00048-.097763)" fill="none" stroke="#333" stroke-width="1.5"/><path d="M35.65049,39.14563v2.32823" fill="none" stroke="#333" stroke-width="1.5"/></g></svg>
