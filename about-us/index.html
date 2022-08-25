@@ -1683,7 +1683,7 @@
     <script>
         
         $(window).bind('load', function () {
-            const collection = document?.getElementsByClassName("pluginSkinLight");
+            const collection = document?.getElementsByClassName("fb_mpn_mobile_landing_page_slide_up");
             const btnContact = document?.getElementsByClassName("sticky-email-mobile")[0]
             console.log('1');
             if(!collection.length || collection[0]?.clientHeight < 20){ 
@@ -1697,10 +1697,9 @@
         });
         function show_booking_button() {
             console.log('3');
-            const collection = document?.getElementsByClassName("pluginSkinLight");
-            if ($('div.fb_dialog_content').length > 0 && $('div.pluginSkinLight').length > 0) {
+            const collection = document?.getElementsByClassName("fb_mpn_mobile_landing_page_slide_up");
+            if ($('div.fb_dialog_content').length > 0 && collection.length > 0) {
                 console.log('4');
-                const collection = document?.getElementsByClassName("pluginSkinLight");
                 const btnContact = document?.getElementsByClassName("sticky-email-mobile")[0]
                 if(collection[0]?.clientHeight >= 50){ 
                     btnContact.style.position="relative"
