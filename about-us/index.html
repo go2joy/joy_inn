@@ -24,6 +24,7 @@
     <script src="https://www.google.com/recaptcha/api.js?render=6LfRcXggAAAAANfDFk9ppYmcVo4ztrc_Iyw5UR6Q">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <meta name="format-detection" content="telephone=no">
     <!-- SEO -->
     <title>Hợp tác</title>
@@ -1680,14 +1681,24 @@
         
     </script>
     <script>
-        const collection = document?.getElementsByClassName("pluginSkinLight");
-        console.log('collection :>> ', collection);
-        const btnContact = document?.getElementsByClassName("sticky-email-mobile")[0]
-        if(!collection.length || collection[0]?.clientHeight < 20){
-            btnContact.style.position = "absolute"
-            btnContact.style.paddingTop= "14px";
-        } else {
-            btnContact.style.position = "relative"
+        
+        $(window).bind('load', function () {
+            show_booking_button();
+        });
+        function show_booking_button() {
+            if ($('div.fb_dialog_content').length > 0 && $($('div.fb_dialog_content').find('iframe')[0]).height() > 50) {
+            
+                const collection = document?.getElementsByClassName("pluginSkinLight");
+                const btnContact = document?.getElementsByClassName("sticky-email-mobile")[0]
+                if(!collection.length || collection[0]?.clientHeight < 20){ 
+                    btnContact.style.position="absolute"
+                    btnContact.style.paddingTop="14px" ; 
+                } else { 
+                    btnContact.style.position="relative" 
+                }
+            } else {
+                setTimeout(show_booking_button, 1000);
+            }
         }
     </script>
 </body>
