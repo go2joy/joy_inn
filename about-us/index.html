@@ -1692,16 +1692,15 @@
             
             if (collection[0]?.clientHeight >= 50 && collection[0]?.clientWidth
             > 100) {
+                collection[0].addEventListener('click', function handleClick(event) {
+                    btnContact.style.bottom="20px" ;
+                });
                 btnContact.style.bottom="82px" ;
-                collection[0].addEventListener('click', disableFuc(), false);
             } else {
                 if(!pause){
                     setTimeout(getPaddingTop, 1000);
                 }
             }
-        }
-        function disableFuc() {
-            btnContact.style.bottom="20px" ;
         }
     </script>
 </body>
