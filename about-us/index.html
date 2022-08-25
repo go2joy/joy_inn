@@ -1682,38 +1682,26 @@
     </script>
     <script>
         let btnContact = document?.getElementsByClassName("stickyEmail")[0]
-        console.log('btnContact :>> ', btnContact);
         let pause = false
         setTimeout(() => { pause = true }, 30000);
         $(window).bind('load', function () {
-            console.log('1');
             getPaddingTop(); 
         });
         function getPaddingTop() {
-            console.log('2');
             let collection = document?.getElementsByClassName("fb_mpn_mobile_landing_page_slide_up");
             
             if (collection[0]?.clientHeight >= 50 && collection[0]?.clientWidth
             > 100) {
-                console.log('3');
                 btnContact.style.bottom="82px" ;
                 collection[0].addEventListener('click', disableFuc(), false);
             } else {
-                console.log('4');
                 if(!pause){
-                    console.log('5');
                     setTimeout(getPaddingTop, 1000);
                 }
-                
             }
-            
         }
-        
-        
         function disableFuc() {
-            console.log('6');
-            btnContact.style.paddingTop="20px" ;
-
+            btnContact.style.bottom="20px" ;
         }
     </script>
 </body>
