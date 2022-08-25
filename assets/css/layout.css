@@ -332,7 +332,6 @@ scroll-behavior: smooth;
   }
   .stickyEmail {
     left: 0 !important;
-    bottom: 82px !important;
   }
   .styckyBtn {
     right: 8px !important;
@@ -365,7 +364,7 @@ scroll-behavior: smooth;
 .stickyEmail {
   position: fixed;
   left: 22px;
-  bottom: 92px;
+  bottom: 20px;
   right: 0;
   z-index: 99;
   width: 225px;
