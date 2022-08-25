@@ -1683,10 +1683,16 @@
     <script>
         
         $(window).bind('load', function () {
+            const collection = document?.getElementsByClassName("pluginSkinLight");
+            const btnContact = document?.getElementsByClassName("sticky-email-mobile")[0]
+            if(!collection.length || collection[0]?.clientHeight < 20){ btnContact.style.position="absolute"
+                btnContact.style.paddingTop="14px" ; } else { btnContact.style.position="relative" }
             show_booking_button();
         });
         function show_booking_button() {
-            if ($('div.fb_dialog_content').length > 0 && $($('div.fb_dialog_content').find('iframe')[0]).height() > 50) {
+            const btnContact = document?.getElementsByClassName("sticky-email-mobile")[0]
+            if ($('div.fb_dialog_content').length > 0 && $($('div.fb_dialog_content').find('iframe')[0]).height() > 50
+            && btnContact) {
             
                 const collection = document?.getElementsByClassName("pluginSkinLight");
                 const btnContact = document?.getElementsByClassName("sticky-email-mobile")[0]
