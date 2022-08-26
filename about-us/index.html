@@ -255,7 +255,7 @@
                                         <p class="is-title-block-joy-hotel">Tối ưu chi phí đầu tư</p>
                                         <ul class="is-content-block-joy-hotel">
                                             <li>Cải tạo nội thất với chi phí hiệu quả</li>
-                                            <li> Các gói nhượng quyền tùy chỉnh, tương thíc với qui mô và định hướng <br> vận
+                                            <li> Các gói nhượng quyền tùy chỉnh, tương thích với qui mô và định hướng <br> vận
                                                 hành của từng khách sạn</li>
                                         </ul>
                                     </div>
@@ -776,7 +776,7 @@
                                                         <li>Cải tạo nội thất với chi phí hiệu quả
                                                         </li>
                                                         <li> Các gói nhượng quyền tùy chỉnh, tương
-                                                            thíc với qui mô
+                                                            thích với qui mô
                                                             và định
                                                             hướng <br>
                                                             vận
@@ -1682,6 +1682,7 @@
     </script>
     <script>
         let btnContact = document?.getElementsByClassName("stickyEmail")[0]
+        
         let pause = false
         setTimeout(() => { pause = true }, 30000);
         $(window).bind('load', function () {
@@ -1692,9 +1693,6 @@
             
             if (collection[0]?.clientHeight >= 50 && collection[0]?.clientWidth
             > 100) {
-                collection[0].addEventListener('click', function handleClick(event) {
-                    btnContact.style.bottom="20px" ;
-                });
                 btnContact.style.bottom="82px" ;
             } else {
                 if(!pause){
@@ -1702,6 +1700,13 @@
                 }
             }
         }
+    </script>
+    <script>
+        let collection = document?.getElementsByClassName("fb_mpn_mobile_landing_page_slide_up");
+        collection[0].addEventListener('click', function handleClick(event) {
+            let btnContact = document?.getElementsByClassName("stickyEmail")[0]
+            btnContact.add("bottom-20") ;
+        });
     </script>
 </body>
 
