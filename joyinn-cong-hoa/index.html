@@ -3,10 +3,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../assets/css/partial/branch-rooms.css">
-  <link rel="stylesheet" href="../assets/css/dropdown.css">
-  <link rel="stylesheet" href="../assets/css/swiper.css">
   <link rel="stylesheet" href="../assets/css/global.css">
+  <link rel="stylesheet" href="../assets/css/swiper.css">
+  <link rel="stylesheet" href="../assets/css/dropdown.css">
+  <link rel="stylesheet" href="../assets/css/partial/branch-rooms.css">
   <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
   <script src="https://kit.fontawesome.com/c5c1190657.js" crossorigin="anonymous"></script>
   <!-- Link Swiper's CSS -->
@@ -146,41 +146,46 @@
       </div>
       <section class="section banner-mobile mb-60" aria-label="banner" id="banner">
         <div class="section-banner-mobile">
-            <div class="banner-swiper-mobile">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="block-banner">
-                            <img src="../assets/images/banner/banner-mobile1.png" alt="">
-                        </div>
-                        <div class="banner-background">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="block-banner">
-                            <img src="../assets/images/banner/banner-mobile2.png" alt="">
-                        </div>
-                        <div class="banner-background">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="block-banner">
-                            <img src="../assets/images/banner/banner-mobile3.png" alt="">
-                        </div>
-                        <div class="banner-background">
-                        </div>
-                    </div>
+          <div class="banner-swiper-mobile">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="image_container overflow-hidden">
+                  <div class="image_dummy" style="margin-top: calc(100% * (275/414))"></div>
+                  <div class="image_content">
+                    <img class="w-full h-auto" src="../assets/images/CongHoa-1.jpg" alt="">
+                  </div>
                 </div>
-                <div class="swiper-pagination"></div>
-            </div>
-            <div class="content-banner-mobile">
-              <div class="g2j-breadcrumb">
-                <a href="/">Trang chủ </a> <p class="mr-6">/</p> <a href="/branch">Khách sạn </a>
+                <div class="banner-background"></div>
               </div>
-              <div class="is-title-banner-mobile">
-                <span>Joy Inn</span> <br/> <span>Cộng Hòa</span>
+              <div class="swiper-slide">
+                <div class="image_container overflow-hidden">
+                  <div class="image_dummy" style="margin-top: calc(100% * (275/414))"></div>
+                  <div class="image_content">
+                    <img class="w-full h-auto" src="../assets/images/CongHoa-2.jpg" alt="">
+                  </div>
+                </div>
+                <div class="banner-background"></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="image_container overflow-hidden">
+                  <div class="image_dummy" style="margin-top: calc(100% * (275/414))"></div>
+                  <div class="image_content">
+                    <img class="w-full h-auto" src="../assets/images/CongHoa-3.jpg" alt="">
+                  </div>
+                </div>
+                <div class="banner-background"></div>
               </div>
             </div>
-            
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="content-banner-mobile">
+            <div class="g2j-breadcrumb">
+              <a href="/">Trang chủ </a> <p class="mr-6">/</p> <a href="/branch">Khách sạn </a>
+            </div>
+            <div class="is-title-banner-mobile">
+              <span>Joy Inn</span> <br/> <span>Cộng Hòa</span>
+            </div>
+          </div>
         </div>
       </section>
       <div class="joy-inn-container">
@@ -519,9 +524,12 @@
     });
     var swiperBannerMobile = new Swiper(".banner-swiper-mobile", {
         autoHeight: true,
+        autoplay: {
+          delay: 3000,
+        },
         pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
+          el: '.swiper-pagination',
+          clickable: true,
         },
     }); 
   </script>

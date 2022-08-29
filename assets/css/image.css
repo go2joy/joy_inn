@@ -1,0 +1,18 @@
+/* Image square by width*/
+.image_container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  font-size: 14px;
+  color: #ffff;
+}
+.image_container .image_dummy {
+  margin-top: calc(100% );
+}
+.image_container .image_content {
+  position: absolute;
+  inset: 0;
+}
+.image_container .image_content img {
+  object-fit: cover;
+}

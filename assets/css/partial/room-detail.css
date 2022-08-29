@@ -505,6 +505,10 @@ body {
     font-size: 14px;
     line-height: 17px;
   }
+
+  .banner-mobile .section-banner-mobile {
+    min-height: auto;
+  }
 }
 
 /* Swiper */

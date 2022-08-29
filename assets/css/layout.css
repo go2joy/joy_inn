@@ -322,7 +322,12 @@ scroll-behavior: smooth;
     color: #E77026 !important;
     padding: 0 8px;
   }
-
+  .header_left { 
+    justify-content: flex-start;
+  }
+  .header_right {
+    justify-content: flex-end;
+  }
 
   .lang-footer {
     justify-content: center;

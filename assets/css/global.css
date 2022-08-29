@@ -1,5 +1,6 @@
 @import url('./font.css');
 @import url('./custom-fb-chat.css');
+@import url('./image.css');
 
 body {
   font-size: 12px;
@@ -39,6 +40,9 @@ ul{
 }
 .h-full {
   height: 100%;
+}
+.h-auto {
+  height: auto !important;
 }
 .border {
   border: 1px solid #333333;
