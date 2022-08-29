@@ -165,6 +165,10 @@
   .facility {
     margin-bottom: 20px;
   }
+
+  .banner-mobile .section-banner-mobile {
+    min-height: auto;
+  }
 }
 
 /* Swiper */
