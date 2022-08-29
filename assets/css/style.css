@@ -577,4 +577,7 @@
   .hotel-box {
     justify-content: space-between;
   }
+  .coppy-right {
+    text-align: center;
+  }
 }
