@@ -391,13 +391,11 @@
                     </div>
                   </div>
                   <img
-                    class="swiper-button swiper-button-value-prev five-sense-bt
-                     prev"
+                    class="swiper-button swiper-button-value-prev five-sense-bt prev"
                     src="./assets/images/icon/prev.svg" alt=""
                   >
                   <img
-                    class="swiper-button swiper-button-value-next five-sense-bt
-                     next"
+                    class="swiper-button swiper-button-value-next five-sense-bt next"
                     src="./assets/images/icon/next.svg" alt=""
                   >
                 </div>
@@ -408,7 +406,7 @@
             >
               <div class="float-right-five-sense">
                 <div
-                  class="swiper-slide five-sense-content-slide"
+                  class="five-sense-content-slide"
                 >
                   <div class="desktop-content">
                     <div class="swiper five-sense-detail-swiper">
@@ -967,7 +965,7 @@
             </p>
           </div>
           <div class="mobile-content">
-            <div class=" flex social">
+            <div class="flex social pa-15">
               <a href="https://www.facebook.com/joyinnhotel.vn" target="_blank"><img class="footer__icon mr-12" src="assets/images/icon/footer-facebook.svg" alt=""></a>
               <img class="footer__icon mr-12" src="assets/images/icon/footer-twitter.svg" alt="">
               <img class="footer__icon mr-12" src="assets/images/icon/footer-instagram.svg" alt="">
@@ -980,7 +978,7 @@
             <div class="flex mb-12 contract-row">
               <img class="logo-contract" src="assets/images/icon/message.svg" alt="">
               <p class="ver-center hotel-des text-address">
-                Joyinnhotel.gmail.com
+                joyinnhotel.vn@gmail.com
               </p>
             </div>
             <div class="flex mb-12 contract-row">
@@ -1026,7 +1024,8 @@
               <img class="footer__icon mr-12" src="assets/images/icon/footer-youtube.svg" alt="">
             </div>
             <div class="col-md-7">
-              <p style="font-size: 8px;">Công ty cổ phần Go2Joy Việt Nam - 5A/2 Trần Phú, P.4, Q.5, HCM - 0311850218 </p>
+              <p style="font-size: 8px;">
+                Công ty cổ phần Go2Joy Việt Nam - 5A/2 Trần Phú, P.4, Q.5, HCM - 0311850218 </p>
             </div>
           </div>
         </div>
@@ -1038,7 +1037,7 @@
               <span style="font-weight: 500;">Tiếng Việt</span>
             </p>
           </div>
-          <div class="col-md-5 col-sm-12 center">
+          <div class="col-md-5 col-sm-12 coppy-right">
             <p class="hotel-des">Copyright © 2022 Joy Inn Hotel.</p>
           </div>
         </div>
@@ -1156,6 +1155,7 @@
       },
     });
     var swiperFiveValue = new Swiper(".five-sense-swiper", {
+      loop: false,
       allowTouchMove: false,
       navigation: {
         nextEl: ".swiper-button-value-next",
