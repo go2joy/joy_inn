@@ -1,10 +1,10 @@
-@import url('./font.css');
-@import url('./custom-fb-chat.css');
-@import url('./image.css');
+@import url("./font.css");
+@import url("./custom-fb-chat.css");
+@import url("./image.css");
 
 body {
   font-size: 12px;
-  font-family: 'Averta Std CY';
+  font-family: "Averta Std CY";
   color: #333333;
   margin: 0;
   overflow-x: hidden;
@@ -20,16 +20,17 @@ a {
   color: #333333;
   text-decoration: unset;
 }
-a:focus, a:hover {
-  color: #E77026 !important;
+a:focus,
+a:hover {
+  color: #e77026 !important;
 }
-ul{
+ul {
   list-style: none;
 }
 
 .joy-inn-container {
-  width: 80%; 
-  padding: 0; 
+  width: 80%;
+  padding: 0;
   margin: 0 auto;
 }
 .w-full {
@@ -58,7 +59,7 @@ ul{
   color: #cccccc !important;
 }
 button:disabled,
-button[disabled]{
+button[disabled] {
   background-color: white !important;
   color: #cccccc !important;
 }
@@ -83,7 +84,7 @@ button[disabled]{
   background: rgba(231, 112, 38, 0.03) !important;
 }
 .bg-primary-2 {
-  background: linear-gradient(90deg, #E77026 0%, #F3A846 100%);
+  background: linear-gradient(90deg, #e77026 0%, #f3a846 100%);
 }
 .bg-white {
   background-color: white !important;
@@ -95,7 +96,7 @@ button[disabled]{
   padding: 18px;
   cursor: pointer;
   color: #ffffff !important;
-  background-color: #E77026;
+  background-color: #e77026;
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
@@ -107,10 +108,10 @@ button[disabled]{
 .button--default:hover {
   text-decoration: unset;
   color: #ffffff !important;
-  background: linear-gradient(180deg, #E77026 0%, #F3A846 100%) !important;
+  background: linear-gradient(180deg, #e77026 0%, #f3a846 100%) !important;
 }
 .login-button {
-  background-color: #E77026;
+  background-color: #e77026;
   border-radius: 8px;
   width: 140px;
   height: 40px;
@@ -143,7 +144,7 @@ button[disabled]{
 .devider {
   width: 100%;
   height: 1px;
-  background: rgba(0, 0, 0, 0.07);;
+  background: rgba(0, 0, 0, 0.07);
 }
 
 /* main */
@@ -167,7 +168,7 @@ button[disabled]{
   inset: 0;
   overflow: hidden;
 }
-.main_banner_title{
+.main_banner_title {
   width: 90%;
   position: absolute;
   left: 50%;
@@ -184,13 +185,13 @@ button[disabled]{
   padding-top: 20px;
 }
 .footer__title {
-  font-family: 'Averta Std CY';
+  font-family: "Averta Std CY";
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .footer__icon {
   width: 20px;
@@ -244,7 +245,6 @@ a.hotel-des:hover {
   width: 184px;
   height: 82px;
   margin: 0;
-
 }
 .logo-image-footer {
   width: 160px;
@@ -351,10 +351,10 @@ a.hotel-des:hover {
 .pa-24 {
   padding: 24px !important;
 }
-.pa-15 { 
+.pa-15 {
   padding: 15px !important;
 }
-.pb-12 { 
+.pb-12 {
   padding-bottom: 12px !important;
 }
 .pb-30 {
@@ -421,7 +421,7 @@ a.hotel-des:hover {
   overflow-x: scroll;
 }
 .color-g2j {
-  color: #E77026 !important;
+  color: #e77026 !important;
 }
 .mar-0 {
   margin: 0 !important;
@@ -435,7 +435,7 @@ a.hotel-des:hover {
 .desktop-content {
   display: block;
 }
-.text-address{
+.text-address {
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
@@ -451,52 +451,40 @@ a.hotel-des:hover {
   .col-md-9,
   .col-md-10,
   .col-md-11,
-  .col-md-12
-  {
+  .col-md-12 {
     float: left;
   }
-  .col-md-2
-  {
+  .col-md-2 {
     flex-basis: 16.666%;
   }
-  .col-md-3
-  {
+  .col-md-3 {
     flex-basis: 25%;
   }
-  .col-md-4
-  {
+  .col-md-4 {
     flex-basis: 33.333%;
   }
-  .col-md-5
-  {
-    flex-basis: 41.666%; 
+  .col-md-5 {
+    flex-basis: 41.666%;
   }
-  .col-md-6
-  {
-    flex-basis: 50%; 
+  .col-md-6 {
+    flex-basis: 50%;
   }
-  .col-md-7
-  {
+  .col-md-7 {
     flex-basis: 58.334%;
   }
-  .col-md-8
-  {
+  .col-md-8 {
     flex-basis: 66.667%;
   }
-  .col-md-9
-  {
+  .col-md-9 {
     flex-basis: 75%;
   }
-  .col-md-10
-  {
+  .col-md-10 {
     flex-basis: 83.334%;
   }
-  .col-md-11
-  {
+  .col-md-11 {
     flex-basis: 95.8333%;
   }
-  .col-md-12
-  {
+  .col-md-12 {
     flex-basis: 0 0 100%;
   }
 }
@@ -507,8 +495,8 @@ a.hotel-des:hover {
   .mobile-content {
     display: block;
   }
-  .joy-inn-container{
-    width: 95%
+  .joy-inn-container {
+    width: 95%;
   }
   .col-sm-2,
   .col-sm-3,
@@ -525,30 +513,26 @@ a.hotel-des:hover {
     padding-top: 15px;
     padding-bottom: 15px;
   }
-  .col-sm-2
-  {
+  .col-sm-2 {
     flex-basis: 16.666%;
   }
-  .col-sm-3
-  {
+  .col-sm-3 {
     flex-basis: 25%;
   }
-  .col-sm-4
-  {
+  .col-sm-4 {
     flex-basis: 33.333%;
   }
-  .col-sm-5
-  {
-    flex-basis: 41.666%; 
+  .col-sm-5 {
+    flex-basis: 41.666%;
   }
-  .col-sm-6{
-    flex-basis: 50%; 
+  .col-sm-6 {
+    flex-basis: 50%;
   }
   .col-sm-7 {
     flex-basis: 62.5%;
   }
   .col-sm-8 {
-    flex-basis:66.666667%;
+    flex-basis: 66.666667%;
   }
   .col-sm-9 {
     flex-basis: 79.16667%;
@@ -591,7 +575,7 @@ a.hotel-des:hover {
     height: 312px;
   }
   .banner-mobile .section-banner-mobile .content-banner-mobile {
-    position:absolute;
+    position: absolute;
     bottom: 35px;
     left: 0;
     right: 0;
@@ -601,7 +585,7 @@ a.hotel-des:hover {
     vertical-align: inherit;
     padding: 0 20px;
   }
-  .banner-mobile .section-banner-mobile .content-banner-mobile p, 
+  .banner-mobile .section-banner-mobile .content-banner-mobile p,
   .banner-mobile .section-banner-mobile .content-banner-mobile a {
     margin: 0;
     padding: 0;
@@ -622,13 +606,17 @@ a.hotel-des:hover {
     color: #ffffff;
     padding: 10px;
   }
-  .banner-mobile .section-banner-mobile .content-banner-mobile .is-title-banner-mobile * {
+  .banner-mobile
+    .section-banner-mobile
+    .content-banner-mobile
+    .is-title-banner-mobile
+    * {
     font-weight: 600;
     font-size: 35px;
     line-height: 43px;
     text-align: center;
     letter-spacing: 0.01em;
-    color: #FFFFFF;
+    color: #ffffff;
   }
   .banner-mobile .section-banner-mobile .swiper-slide .banner-background {
     width: 100%;
@@ -640,7 +628,7 @@ a.hotel-des:hover {
     opacity: 0.4;
   }
   .banner-mobile .swiper-pagination-bullet-active {
-    background: #FFFFFF;
+    background: #ffffff;
     width: 31px;
     height: 6px;
     border-radius: 3px;
@@ -649,10 +637,12 @@ a.hotel-des:hover {
     height: 6px;
     left: 923px;
     border-radius: 3px;
-    background: rgba(255, 255, 255, 0.5)
-
+    background: rgba(255, 255, 255, 0.5);
   }
-  .banner-mobile .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+  .banner-mobile .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
     bottom: 15px;
   }
 }
