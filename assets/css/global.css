@@ -20,7 +20,7 @@ a {
   color: #333333;
   text-decoration: unset;
 }
-a:focus,
+/* a:focus, */
 a:hover {
   color: #e77026 !important;
 }
