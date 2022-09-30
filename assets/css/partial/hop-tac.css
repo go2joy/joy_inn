@@ -249,6 +249,7 @@
 }
 .contact-form *::placeholder {
   color: white;
+  font-family: "Averta Std CY";
 }
 .contact-form select option {
   color: rgb(117, 117, 117);
