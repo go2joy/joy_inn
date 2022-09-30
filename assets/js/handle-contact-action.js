@@ -36,7 +36,7 @@ async function postAPISendMail(token) {
   const params = {
     token: token,
     subject: "[Website - Franchise] - Bạn vừa nhận được yêu cầu hợp tác mới",
-    toEmailList: "nam.nguyen@go2joy.vn", //"joyinnhotel.vn@gmail.com",
+    toEmailList: "support@joyinn.vn",
     ccEmailList: "",
     content: dataform,
   };
@@ -82,7 +82,7 @@ async function postAPISendMailMobile(token) {
   const params = {
     token: token,
     subject: "[Website - Franchise] - Bạn vừa nhận được yêu cầu hợp tác mới",
-    toEmailList: "joyinnhotel.vn@gmail.com",
+    toEmailList: "support@joyinn.vn",
     ccEmailList: "",
     content: dataform,
   };
