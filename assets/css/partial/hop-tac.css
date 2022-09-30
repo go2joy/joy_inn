@@ -361,6 +361,9 @@
   .landing-footer__header {
     font-size: 28px;
   }
+  .landing-footer__wrapper__item {
+    border-radius: 8px;
+  }
 
   /* Form Hop tac mobile */
   .section-contact__content {
