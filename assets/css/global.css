@@ -15,6 +15,7 @@ p {
 }
 * {
   box-sizing: border-box;
+  font-family: "Averta Std CY";
 }
 a {
   color: #333333;
