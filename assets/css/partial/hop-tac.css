@@ -35,7 +35,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 8px;
-  font-size: 28px;
+  font-size: 32px;
   font-weight: 400;
   line-height: 1.2;
   text-align: center;
@@ -60,14 +60,15 @@
   text-align: left;
   padding: 8px 12px;
 }
-.landing-benefits__item__icon {
+.landing-benefits__item__icon img {
   width: 71px;
 }
 .landing-benefits__item__header {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 600;
+  width: 100%;
   height: 48px;
-  line-height: 24px;
+  line-height: 27px;
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -76,7 +77,7 @@
   margin: 4px 0;
 }
 .landing-benefits__item__desc {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   color: #808080;
@@ -139,11 +140,17 @@
   flex-direction: column;
   gap: 8px;
 }
+.partner__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65px;
+}
 .partner__logo img {
   width: 60px;
 }
 .partner__title {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 550;
   line-height: 1.2;
 }
@@ -269,7 +276,7 @@
   border-bottom: 1px solid rgba(128, 128, 128, 1);
   background: transparent;
   margin-bottom: 10px;
-  font: 16px Arial, Helvetica, sans-serif;
+  font: 16px "Averta Std CY";
   height: 70px;
 }
 .contact-form input.field-input,
@@ -289,20 +296,52 @@
     background-size: 140%;
   }
 
-  .landing-header a {
-    font-size: 14px;
-    padding: 4px 12px;
+  .landing-header__btn {
+    bottom: 5%;
+    font-size: 10px;
+    padding: 0px 12px;
+  }
+
+  .landing-promotion__header {
+    font-size: 20px;
   }
 
   .landing-benefits {
     padding: 8px;
   }
+  .landing-benefits__item__icon {
+    display: inline-flex;
+    margin-right: 8px;
+  }
+  .landing-benefits__item__icon img {
+    width: 35px;
+    display: inline-block;
+  }
+  .landing-benefits__wrapper
+    .landing-benefits__item:first-child
+    .landing-benefits__item__icon {
+    width: 35px;
+  }
+  .landing-benefits__wrapper .landing-benefits__item:first-child img {
+    width: 28px;
+  }
   .landing-benefits__item__header {
+    display: inline-flex;
     overflow: unset;
+    font-size: 20px;
+    width: calc(100% - 50px);
     height: unset;
-    margin-bottom: 14px;
+    margin-bottom: 0px;
+  }
+  .landing-benefits__item__desc {
+    font-size: 16px;
+    margin-top: 8px;
+    margin-bottom: 8px;
   }
 
+  .landing-partners__header {
+    font-size: 28px;
+  }
   .landing-partners__wrapper {
     padding: 14px;
   }
@@ -310,10 +349,24 @@
     padding: 8px;
     width: calc(100% / 3);
   }
+  .partner__logo {
+    height: 60px;
+  }
+  .partner__logo img {
+    width: 50px;
+  }
+
+  /* Footer mobile */
+  .landing-footer__header {
+    font-size: 28px;
+  }
 
   /* Form Hop tac mobile */
   .section-contact__content {
     grid-template-columns: auto;
+  }
+  .section-contact__title {
+    font-size: 28px;
   }
   .section-contact .contact-image {
     display: none;
