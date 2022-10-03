@@ -324,7 +324,7 @@
             </div>
             <div class="section-contact__content">
               <div class="contact-form">
-                <input class="field-input" type="text" id="contact-name" name="name" placeholder="Họ và Tên*" />
+                <input class="field-input" type="text" id="contact-name" name="name" placeholder="Họ và Tên*" style="width: 100%;"/>
                 <input class="field-input" type="text" id="contact-sdt" name="sdt" placeholder="Số điện thoại*" />
                 <input id="contact-email" class="field-input" type="email" name="email" placeholder="Email" />
                 <select id="contact-select" class="field-input">
@@ -333,7 +333,13 @@
                   <option value="2">Cho thuê</option>
                   <option value="3">Đầu tư</option>
                 </select>
-                <textarea id="contact-note" name="note" class="field-area" placeholder="Ghi chú chi tiết"></textarea>
+                <select id="areas-select" class="field-input">
+                  <option value="0">Khu vực</option>
+                  <option value="1">Hồ Chí Minh</option>
+                  <option value="2">Hà Nội</option>
+                  <option value="3">Khác</option>
+                </select>
+                <textarea id="contact-note" name="note" class="field-area mt-8" placeholder="Ghi chú chi tiết"></textarea>
                 <div id="message_success"></div>
               </div>
               <div class="contact-image">
