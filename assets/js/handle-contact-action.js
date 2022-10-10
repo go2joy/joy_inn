@@ -51,7 +51,7 @@ async function postAPISendMail(token) {
     )
     .then(function (response) {
       const devGet = document.getElementById("message_success");
-      devGet.innerHTML += `<p style="float: left;font-size: 20px; color:#409eff;text-align: left;">Gửi thông
+      devGet.innerHTML += `<p style="float: left;font-size: 20px; color:#fff;text-align: left;">Gửi thông
                 tin thành
                 công! Joy Inn Hotel sẽ sớm liên hệ với bạn.</p>`;
       return response.data.data;
