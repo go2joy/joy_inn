@@ -6,9 +6,43 @@ axios.defaults.headers = {
   "Content-Type": "application/json",
   "cache-control": "no-cache",
 };
+const validatePhoneNumber = (phone) => {
+  const tmpPhoneVN = /(\+84|0)(3|5|7|8|9|1[2689])([0-9]{8})\b/
+  return tmpPhoneVN.test(phone)
+}
+const validateFormContact = () => {
+  //Validate Name
+  const name = document.getElementById("contact-name");
+  if(!name.value.trim()) {
+    name.value = ''
+    return {
+      status: false,
+      message: 'Hãy nhập họ và tên của bạn!'
+    }
+  }
 
-function onClickReCapcha(e) {
+  //Validate Phone
+  const sdt = document.getElementById("contact-sdt");
+  sdt.value = sdt.value.trim();
+  if(!validatePhoneNumber(sdt.value)) {
+    return {
+      status: false,
+      message: 'Hãy nhập đúng số điện thoại!'
+    }
+  }
+  
+  return {
+    status: true,
+    message: 'Success!'
+  }
+}
+function onSubmitContact(e) {
   // e?.preventDefault();
+  const validateForm = validateFormContact()
+  if(!validateForm.status) {
+    alert(validateForm.message)
+    return false
+  }
   grecaptcha.ready(function () {
     grecaptcha
       .execute("6LfRcXggAAAAANfDFk9ppYmcVo4ztrc_Iyw5UR6Q")
