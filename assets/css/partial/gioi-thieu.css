@@ -668,7 +668,7 @@ body {
 }
 .section-go2choise {
   margin-top: 68px;
-  background: url(../../images/banner/bg-slide.jpg);
+  background: url(../../images/banner/bg-slide.webp);
   max-height: 668px;
 }
 .swiper-container-go2choise {
@@ -1233,7 +1233,7 @@ body {
   }
   .about-us-is-mobile .section-go2choise {
     margin-top: 68px;
-    background: url(../../images/banner/bg-slide.jpg);
+    background: url(../../images/banner/bg-slide.webp);
     max-height: 668px;
     position: relative;
     width: 100%;
