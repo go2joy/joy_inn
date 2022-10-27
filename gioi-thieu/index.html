@@ -21,10 +21,7 @@
   <script src="https://kit.fontawesome.com/c5c1190657.js" crossorigin="anonymous"></script>
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-  <script src="https://www.google.com/recaptcha/api.js?render=6LfRcXggAAAAANfDFk9ppYmcVo4ztrc_Iyw5UR6Q"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <meta name="format-detection" content="telephone=no" />
 
   <!-- Handle Contact Form -->
   <script src="https://www.google.com/recaptcha/api.js?render=6LfRcXggAAAAANfDFk9ppYmcVo4ztrc_Iyw5UR6Q"></script>
@@ -41,6 +38,7 @@
   <meta hid="og:description" property="og:description"
     content="Joy Inn là khách sạn tiên phong nâng cấp và đổi mới tiêu chuẩn về khách sạn theo giờ, từ đó nâng cao giá trị cả thị trường ở phân khúc này." />
   <meta hid="og:image" property="og:image" content="https://joyinn.vn/assets/images/branch-joyinn-1.jpg" />
+  <meta name="format-detection" content="telephone=no" />
 
   <!-- Google Tag Manager -->
   <script src="../assets/js/gtmScript.js"></script>
@@ -150,16 +148,16 @@
             <div class="swiper banner-swiper" data-id="1">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <img class="banner-img" src="../assets/images/banner/banner-branch-3.jpg" alt="" />
+                  <img class="swiper-lazy banner-img" data-src="../assets/images/banner/banner-branch-3.jpg" alt="" />
                 </div>
                 <div class="swiper-slide">
-                  <img class="banner-img" src="../assets/images/banner/1.jpg" alt="" />
+                  <img class="swiper-lazy banner-img" data-src="../assets/images/banner/1.jpg" alt="" />
                 </div>
                 <div class="swiper-slide">
-                  <img class="banner-img" src="../assets/images/banner/banner-branch-4.jpg" alt="" />
+                  <img class="swiper-lazy banner-img" data-src="../assets/images/banner/banner-branch-4.jpg" alt="" />
                 </div>
                 <div class="swiper-slide">
-                  <img class="banner-img" src="../assets/images/banner/banner-branch-5.jpg" alt="" />
+                  <img class="swiper-lazy banner-img" data-src="../assets/images/banner/banner-branch-5.jpg" alt="" />
                 </div>
               </div>
             </div>
@@ -505,19 +503,19 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="block-banner">
-                    <img src="../assets/images/banner/banner-mobile3.jpg" alt="" />
+                    <img class="swiper-lazy" data-src="../assets/images/banner/banner-mobile3.jpg" alt="" />
                   </div>
                   <div class="banner-background"></div>
                 </div>
                 <div class="swiper-slide">
                   <div class="block-banner">
-                    <img src="../assets/images/banner/1_mobile.png" alt="" />
+                    <img class="swiper-lazy" data-src="../assets/images/banner/1_mobile.png" alt="" />
                   </div>
                   <div class="banner-background"></div>
                 </div>
                 <div class="swiper-slide">
                   <div class="block-banner">
-                    <img src="../assets/images/banner/banner-mobile2.jpg" alt="" />
+                    <img class="swiper-lazy" data-src="../assets/images/banner/banner-mobile2.jpg" alt="" />
                   </div>
                   <div class="banner-background"></div>
                 </div>
@@ -634,7 +632,7 @@
                     <div class="block-slide">
                       <div class="joy-hotel-block-content is-block">
                         <div class="is-icon">
-                          <img src="../assets/images/icon/mobile.svg" alt="" />
+                          <img class="swiper-lazy" data-src="../assets/images/icon/mobile.svg" alt="" />
                         </div>
                         <div class="content-block-joy-hotel">
                           <p class="is-title-block-joy-hotel">
@@ -656,7 +654,7 @@
                     <div class="block-slide">
                       <div class="joy-hotel-block-content is-block">
                         <div class="is-icon">
-                          <img src="../assets/images/icon/mobile.svg" alt="" />
+                          <img class="swiper-lazy" data-src="../assets/images/icon/mobile.svg" alt="" />
                         </div>
                         <div class="content-block-joy-hotel">
                           <p class="is-title-block-joy-hotel">
@@ -679,7 +677,7 @@
                     <div class="block-slide">
                       <div class="joy-hotel-block-content is-block">
                         <div class="is-icon">
-                          <img src="../assets/images/icon/mobile.svg" alt="" />
+                          <img class="swiper-lazy" data-src="../assets/images/icon/mobile.svg" alt="" />
                         </div>
                         <div class="content-block-joy-hotel">
                           <p class="is-title-block-joy-hotel">
@@ -708,7 +706,7 @@
                     <div class="block-slide">
                       <div class="joy-hotel-block-content is-block">
                         <div class="is-icon">
-                          <img src="../assets/images/icon/mobile.svg" alt="" />
+                          <img class="swiper-lazy" data-src="../assets/images/icon/mobile.svg" alt="" />
                         </div>
                         <div class="content-block-joy-hotel">
                           <p class="is-title-block-joy-hotel">
@@ -1194,36 +1192,12 @@
   <!-- Initialize Swiper -->
   <script>
     // Swiper
-    var swiperBanner = new Swiper(".banner-swiper", {
+    const swiperBanner = new Swiper(".banner-swiper", {
+      lazy: true,
       autoHeight: true,
     });
-    const swiper = new Swiper(".swiper-container-go2choise", {
-      centeredSlides: true,
-      loop: true,
-      speed: 500,
-      slidesPerView: 3,
-      spaceBetween: 80,
-      autoplay: {
-        delay: 30000,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      breakpoints: {
-        1280: {
-          slidesPerView: 3,
-        },
-        2561: {
-          slidesPerView: 3,
-        },
-      },
-    });
     const swiperJoyHotel = new Swiper(".swiper-container-joy-hotel", {
+      lazy: true,
       centeredSlides: false,
       loop: true,
       speed: 500,
@@ -1245,32 +1219,8 @@
         },
       },
     });
-    const swiperGo2choiseIsMobile = new Swiper(
-      ".swiper-container-go2choise-is-mobile",
-      {
-        centeredSlides: false,
-        loop: true,
-        speed: 500,
-        spaceBetween: 20,
-        slidesPerView: 1,
-        autoplay: {
-          delay: 30000,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        breakpoints: {
-          320: {
-            slidesPerView: 1,
-          },
-          540: {
-            slidesPerView: 1,
-          },
-        },
-      }
-    );
-    var swiperBannerMobile = new Swiper(".banner-swiper-mobile", {
+    const swiperBannerMobile = new Swiper(".banner-swiper-mobile", {
+      lazy: true,
       autoHeight: true,
       pagination: {
         el: ".swiper-pagination",
