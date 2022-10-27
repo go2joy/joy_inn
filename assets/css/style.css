@@ -83,7 +83,7 @@
   position: relative;
 }
 .video-box {
-  background-image: url("../images/banner/video-bg.png");
+  background-image: url("../images/banner/video-bg.webp");
   color: #fff;
   display: inline-block;
   height: 626.51px;
@@ -252,7 +252,7 @@
   position: relative;
 }
 .go2-choise {
-  background-image: url(../images/banner/bg-slide.jpg);
+  background-image: url(../images/banner/bg-slide.webp);
   background-repeat: no-repeat;
   background-size: cover;
 }
