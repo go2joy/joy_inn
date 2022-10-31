@@ -15,11 +15,6 @@
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 
-  <!-- Handle Contact Form -->
-  <script src="https://www.google.com/recaptcha/api.js?render=6LfRcXggAAAAANfDFk9ppYmcVo4ztrc_Iyw5UR6Q"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
-  <script src="../assets/js/handle-contact-action.js"></script>
-
   <!-- SEO -->
   <title>Đột phá doanh thu - Tối ưu chi phí cùng Joy Inn</title>
   <meta hid="og:title" property="og:title" content="Đột phá doanh thu - Tối ưu chi phí cùng Joy Inn" />
@@ -32,13 +27,18 @@
   <meta hid="og:image" property="og:image" content="https://joyinn.vn/assets/images/landing-page-header.png" />
   <meta name="format-detection" content="telephone=no" />
 
+  <!-- Detect bot -->
+  <script src="../assets/js/bot-info.js"></script>
   <!-- Google Tag Manager -->
-  <script src="../assets/js/gtmScript.js"></script>
-  <script src="../assets/js/gtagScript.js"></script>
-  <!-- End Google Tag Manager -->
+  <script async src="../assets/js/gtmScript.js"></script>
+  <script async src="../assets/js/gtagScript.js"></script>
+  <!-- Handle Contact Form -->
+  <script src="https://www.google.com/recaptcha/api.js?render=6LfRcXggAAAAANfDFk9ppYmcVo4ztrc_Iyw5UR6Q"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+  <script src="../assets/js/handle-contact-action.js"></script>
 
   <!-- Meta Pixel Code -->
-  <script src="../assets/js/fbPixelScript.js"></script>
+  <script async src="../assets/js/fbPixelScript.js"></script>
   <noscript>
     <img height="1" width="1" style="display: none"
       src="https://www.facebook.com/tr?id=1393559917839091&ev=PageView&noscript=1" />
@@ -326,7 +326,8 @@
             </div>
             <div class="section-contact__content">
               <div class="contact-form">
-                <input class="field-input" type="text" id="contact-name" name="name" placeholder="Họ và Tên*" style="width: 100%;"/>
+                <input class="field-input" type="text" id="contact-name" name="name" placeholder="Họ và Tên*"
+                  style="width: 100%;" />
                 <input class="field-input" type="text" id="contact-sdt" name="sdt" placeholder="Số điện thoại*" />
                 <input id="contact-email" class="field-input" type="email" name="email" placeholder="Email" />
                 <select id="contact-select" class="field-input">
@@ -374,7 +375,8 @@
                   <option value="35">Thừa Thiên Huế</option>
                   <option value="36">Vĩnh Phúc</option>
                 </select>
-                <textarea id="contact-note" name="note" class="field-area mt-8" placeholder="Ghi chú chi tiết"></textarea>
+                <textarea id="contact-note" name="note" class="field-area mt-8"
+                  placeholder="Ghi chú chi tiết"></textarea>
                 <div id="message_success"></div>
               </div>
               <div class="contact-image">

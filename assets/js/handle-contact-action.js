@@ -5,8 +5,8 @@ if (!botInfo?.detectBot()?.isBot) {
   // TODO: Handle js with not bot
 
   // Must import 2 library to layout:
-  // <script src="https://www.google.com/recaptcha/api.js?render=6LfRcXggAAAAANfDFk9ppYmcVo4ztrc_Iyw5UR6Q"></script>
-  // <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+  // <script async src="https://www.google.com/recaptcha/api.js?render=6LfRcXggAAAAANfDFk9ppYmcVo4ztrc_Iyw5UR6Q"></script>
+  // <script async src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
 
   axios.defaults.headers = {
     "Content-Type": "application/json",
