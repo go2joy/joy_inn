@@ -8,10 +8,10 @@ if (!botInfo?.detectBot()?.isBot) {
   // <script async src="https://www.google.com/recaptcha/api.js?render=6LfRcXggAAAAANfDFk9ppYmcVo4ztrc_Iyw5UR6Q"></script>
   // <script async src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
 
-  axios.defaults.headers = {
-    "Content-Type": "application/json",
-    "cache-control": "no-cache",
-  };
+  // axios.defaults.headers = {
+  //   "Content-Type": "application/json",
+  //   "cache-control": "no-cache",
+  // };
   const validatePhoneNumber = (phone) => {
     const tmpPhoneVN = /(\+84|0)(3|5|7|8|9|1[2689])([0-9]{8})\b/;
     return tmpPhoneVN.test(phone);
