@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="https://cdn-66q.pages.dev/joyinn/css/form-contact.css" />
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
   <!-- Font -->
   <script src="https://kit.fontawesome.com/c5c1190657.js" crossorigin="anonymous"></script>
 
@@ -30,17 +30,24 @@
   <meta name="format-detection" content="telephone=no" />
 
   <!-- Detect bot -->
-  <script src="https://cdn-66q.pages.dev/joyinn/js/bot-info.js"></script>
+  <script src="../assets/js/bot-info.js"></script>
   <!-- Google Tag Manager -->
-  <script async src="https://cdn-66q.pages.dev/joyinn/js/gtmScript.js"></script>
-  <script async src="https://cdn-66q.pages.dev/joyinn/js/gtagScript.js"></script>
+  <script async src="../assets/js/gtmScript.js"></script>
+  <script async src="../assets/js/gtagScript.js"></script>
   <!-- Handle Contact Form -->
-  <script async src="https://www.google.com/recaptcha/api.js?render=6LfRcXggAAAAANfDFk9ppYmcVo4ztrc_Iyw5UR6Q"></script>
-  <script async src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
-  <script async src="https://cdn-66q.pages.dev/joyinn/js/handle-contact-action.js"></script>
+  <script src="../assets/js/axiosScript.js"></script>
+  <script async src="../assets/js/recaptchaScript.js"></script>
+  <script async src="../assets/js/handle-contact-action.js"></script>
+  <!-- Jquery -->
+  <script src="../assets/js/jqueryScript.js"></script>
+  <!-- Swiper -->
+  <script src="../assets/js/swiperScript.js"></script>
 
   <!-- Meta Pixel Code -->
-  <script async src="https://cdn-66q.pages.dev/joyinn/js/fbPixelScript.js"></script>
+  <script async src="../assets/js/fbPixelScript.js"></script>
+  <!-- Facebook Customer Chat -->
+  <script async src="../assets/js/fbCustomerChat.js"></script>
+
   <noscript>
     <img height="1" width="1" style="display: none"
       src="https://www.facebook.com/tr?id=1393559917839091&ev=PageView&noscript=1" />
@@ -1192,7 +1199,6 @@
     </div>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <!-- Messenger Plugin chat Code -->
   <div id="fb-root"></div>
   <!-- Your Plugin chat code -->
@@ -1202,63 +1208,9 @@
     chatbox.setAttribute("page_id", "109417457506998");
     chatbox.setAttribute("attribution", "biz_inbox");
   </script>
-  <!-- Your SDK code -->
-  <script>
-    window.fbAsyncInit = function () {
-      FB.init({
-        xfbml: true,
-        version: "v14.0",
-      });
-    };
 
-    (function (d, s, id) {
-      var js,
-        fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s);
-      js.id = id;
-      js.src = "https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js";
-      fjs.parentNode.insertBefore(js, fjs);
-    })(document, "script", "facebook-jssdk");
-  </script>
   <!-- Initialize Swiper -->
   <script>
-    // Swiper
-    const swiperBanner = new Swiper(".banner-swiper", {
-      lazy: true,
-      autoHeight: true,
-    });
-    const swiperJoyHotel = new Swiper(".swiper-container-joy-hotel", {
-      lazy: true,
-      centeredSlides: false,
-      loop: true,
-      speed: 500,
-      slidesPerView: 1.5,
-      spaceBetween: 10,
-      autoplay: {
-        delay: 30000,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      breakpoints: {
-        320: {
-          slidesPerView: 1.25,
-        },
-        540: {
-          slidesPerView: 2,
-        },
-      },
-    });
-    const swiperBannerMobile = new Swiper(".banner-swiper-mobile", {
-      lazy: true,
-      autoHeight: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
     // Collapse
     function handleClick(a) {
       const element = document.getElementsByName("check");
@@ -1291,6 +1243,43 @@
         }
       }
     }
+    setTimeout(() => {
+      const swiperBanner = new Swiper(".banner-swiper", {
+        lazy: true,
+        autoHeight: true,
+      });
+      const swiperJoyHotel = new Swiper(".swiper-container-joy-hotel", {
+        lazy: true,
+        centeredSlides: false,
+        loop: true,
+        speed: 500,
+        slidesPerView: 1.5,
+        spaceBetween: 10,
+        autoplay: {
+          delay: 30000,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1.25,
+          },
+          540: {
+            slidesPerView: 2,
+          },
+        },
+      });
+      const swiperBannerMobile = new Swiper(".banner-swiper-mobile", {
+        lazy: true,
+        autoHeight: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    }, 200)
   </script>
   <script>
     // NOTE: Sticky
@@ -1404,9 +1393,11 @@
     setTimeout(() => {
       pause = true;
     }, 30000);
-    $(window).bind("load", function () {
-      getPaddingTop();
-    });
+    setTimeout(() => {
+      $(window).bind("load", function () {
+        getPaddingTop();
+      });
+    }, 500)
     function getPaddingTop() {
       let collection = document?.getElementsByClassName(
         "fb_mpn_mobile_landing_page_slide_up"
