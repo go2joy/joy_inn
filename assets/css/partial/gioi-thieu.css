@@ -783,9 +783,6 @@ body {
   text-transform: uppercase;
   text-align: left;
 }
-.grecaptcha-badge {
-  display: none;
-}
 @media screen and (max-width: 1366px) {
   .vision_joy-hotel_banner img {
     width: 80%;

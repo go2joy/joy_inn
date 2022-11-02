@@ -53,6 +53,11 @@ ul {
   overflow: hidden !important;
 }
 
+/* Hide Recapcha */
+.grecaptcha-badge {
+  display: none;
+}
+
 /* disabled */
 .joy-inn-disable,
 .joy-inn-disable * {
